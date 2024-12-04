@@ -7,17 +7,86 @@
  <teiHeader>
   <fileDesc>
     <titleStmt>
-    <title></title>
-    </titleStmt> 
+      <title>Encoding of three different versions of "Le regole del gioco" of Edoardo Sanguineti's "Il Giuoco dell'Oca"</title>
+      <respStmt xml:id="f3mf">
+        <resp>TEI encoding</resp>
+        <name>Enrica Bruno, Maria Franesca Bocchi, Francesca Massarenti</name>
+      </respStmt>
+    </titleStmt>
     <publicationStmt>
-    <publisher></publisher>
-    </publicationStmt> 
+      <p>CC BY 4.0</p>
+    </publicationStmt>
     <sourceDesc>
-    <p></p>
+      <listWit>
+        <witness xml:id="A">
+          <biblFull>
+            <titleStmt>
+              <title></title>
+              <author></author>
+              <author></author>
+              <author></author>
+            </titleStmt>
+            <editionStmt>
+              <edition></edition>
+            </editionStmt>
+            <extent></extent>
+            <publicationStmt>
+              <publisher></publisher>
+              <pubPlace></pubPlace>
+              <date></date>
+            </publicationStmt>
+          </biblFull>
+        </witness>
+        <witness xml:id="B">
+          <biblFull>
+            <titleStmt>
+              <title></title>
+              <author></author>
+              <author></author>
+              <author></author>
+            </titleStmt>
+            <editionStmt>
+              <edition></edition>
+            </editionStmt>
+            <extent></extent>
+            <publicationStmt>
+              <publisher></publisher>
+              <pubPlace></pubPlace>
+              <date></date>
+            </publicationStmt>
+          </biblFull>
+        </witness>
+        <witness xml:id="C">
+          <biblFull>
+            <titleStmt>
+              <title></title>
+              <author></author>
+              <author></author>
+              <author></author>
+            </titleStmt>
+            <editionStmt>
+              <edition></edition>
+            </editionStmt>
+            <extent></extent>
+            <publicationStmt>
+              <publisher></publisher>
+              <pubPlace></pubPlace>
+              <date></date>
+            </publicationStmt>
+          </biblFull>
+        </witness>
+      </listWit>
     </sourceDesc>
   </fileDesc>
+   <profileDesc>
+     <particDesc>
+       <listPerson>
+         <person></person>
+     </listPerson>
+     </particDesc>
+   </profileDesc>
  </teiHeader>
- <text>
+ <text xml:lang="Italian">
   <front>
 <!-- front matter of copy text, if any, goes here -->
   </front>
