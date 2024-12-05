@@ -7,7 +7,7 @@
  <teiHeader>
   <fileDesc>
     <titleStmt>
-      <title>Encoding of three different versions of "Le regole del gioco" of Edoardo Sanguineti's "Il Giuoco dell'Oca"</title>
+      <title>Encoding of three different versions of "Le regole del gioco" by Edoardo Sanguineti's "Il Giuoco dell'Oca"</title>
       <respStmt xml:id="f3mf">
         <resp>TEI encoding</resp>
         <name>Enrica Bruno, Maria Franesca Bocchi, Francesca Massarenti</name>
@@ -21,57 +21,55 @@
         <witness xml:id="A">
           <biblFull>
             <titleStmt>
-              <title></title>
-              <author></author>
-              <author></author>
-              <author></author>
+              <title>Il Giuoco dell'Oca</title>
+              <author>Edoardo Sanguineti</author>
             </titleStmt>
             <editionStmt>
-              <edition></edition>
+              <p>First edition</p>
             </editionStmt>
-            <extent></extent>
+            <extent>238 pp.</extent>
             <publicationStmt>
-              <publisher></publisher>
-              <pubPlace></pubPlace>
-              <date></date>
+              <publisher>Feltrinelli</publisher>
+              <pubPlace>Milano</pubPlace>
+              <date>1967</date>
+              <idno type="OCLC">797756985</idno>
             </publicationStmt>
           </biblFull>
         </witness>
         <witness xml:id="B">
           <biblFull>
             <titleStmt>
-              <title></title>
-              <author></author>
-              <author></author>
-              <author></author>
+              <title>Il Giuoco dell'Oca</title>
+              <author>Marca Stella</author>
             </titleStmt>
             <editionStmt>
-              <edition></edition>
+              <p>Edizioni Marca Stella</p>
             </editionStmt>
-            <extent></extent>
+            <extent>347 x 492 mm.</extent>
             <publicationStmt>
-              <publisher></publisher>
-              <pubPlace></pubPlace>
-              <date></date>
+              <publisher>Marca Stella</publisher>
+              <pubPlace>Milan</pubPlace>
+              <date>XX secolo</date>
             </publicationStmt>
           </biblFull>
         </witness>
         <witness xml:id="C">
           <biblFull>
             <titleStmt>
-              <title></title>
-              <author></author>
-              <author></author>
-              <author></author>
+              <title type="main">Il volto del poeta</title>
+              <title type="sub">Gioco dell'Oca</title>
+              <author>GAM - Galleria d'Arte Moderna di Torino</author>
+              <author>Gianfranco Baruchello</author>
             </titleStmt>
             <editionStmt>
-              <edition></edition>
+              <edition>SilvanaEditoriale</edition>
             </editionStmt>
-            <extent></extent>
+            <extent>117 pp.</extent>
             <publicationStmt>
-              <publisher></publisher>
-              <pubPlace></pubPlace>
-              <date></date>
+              <publisher>SilvanaEditoriale</publisher>
+              <pubPlace>Turin</pubPlace>
+              <idno type="ISBN">9788836654314</idno>
+              <date>2023</date>
             </publicationStmt>
           </biblFull>
         </witness>
