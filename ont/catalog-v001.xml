@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/x/datatype/" uri="http://www.rdaregistry.info/xml/Elements/x/datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/w/datatype/" uri="http://www.rdaregistry.info/xml/Elements/w/datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/t/datatype/" uri="http://www.rdaregistry.info/xml/Elements/t/datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/p/datatype/" uri="http://www.rdaregistry.info/xml/Elements/p/datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/n/datatype/" uri="http://www.rdaregistry.info/xml/Elements/n/datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/m/datatype/" uri="http://www.rdaregistry.info/xml/Elements/m/datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/i/datatype/" uri="http://www.rdaregistry.info/xml/Elements/i/datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/e/datatype/" uri="http://www.rdaregistry.info/xml/Elements/e/datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/a/datatype/" uri="http://www.rdaregistry.info/xml/Elements/a/datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/x/object/" uri="http://www.rdaregistry.info/xml/Elements/x/object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/w/object/" uri="http://www.rdaregistry.info/xml/Elements/w/object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/t/object/" uri="http://www.rdaregistry.info/xml/Elements/t/object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/p/object/" uri="http://www.rdaregistry.info/xml/Elements/p/object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/n/object/" uri="http://www.rdaregistry.info/xml/Elements/n/object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/m/object/" uri="http://www.rdaregistry.info/xml/Elements/m/object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/i/object/" uri="http://www.rdaregistry.info/xml/Elements/i/object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/e/object/" uri="http://www.rdaregistry.info/xml/Elements/e/object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/a/object/" uri="http://www.rdaregistry.info/xml/Elements/a/object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/c/" uri="http://www.rdaregistry.info/xml/Elements/c.xml"/>
+</catalog>
