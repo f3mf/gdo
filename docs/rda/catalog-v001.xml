@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/c/" uri="imports/elements/classes.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/a/object/" uri="imports/elements/agent-object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/x/object/" uri="imports/elements/rda-object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/w/object/" uri="imports/elements/work-object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/t/object/" uri="imports/elements/timestamp-object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/p/object/" uri="imports/elements/place-object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/n/object/" uri="imports/elements/nomen-object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/m/object/" uri="imports/elements/manifestation-object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/i/object/" uri="imports/elements/item-object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/e/object/" uri="imports/elements/expression-object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/a/object/" uri="imports/elements/agent-object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/a/datatype/" uri="imports/elements/agent-datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/x/datatype/" uri="imports/elements/rda-datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/w/datatype/" uri="imports/elements/work-datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/t/datatype/" uri="imports/elements/timestamp-datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/p/datatype/" uri="imports/elements/place-datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/n/datatype/" uri="imports/elements/nomen-datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/m/datatype/" uri="imports/elements/manifestation-datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/i/datatype/" uri="imports/elements/item-datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/e/datatype/" uri="imports/elements/expression-datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/a/datatype/" uri="imports/elements/agent-datatype.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/bookFormat/" uri="imports/terms/bookFormat.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/formatNoteMus/" uri="imports/terms/formatNoteMus.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/frequency/" uri="imports/terms/frequency.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/IllusContent/" uri="imports/terms/IllusContent.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/ModeIssue/" uri="imports/terms/ModeIssue.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/MusNotation/" uri="imports/terms/MusNotation.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/RDACarrierEU/" uri="imports/terms/RDACarrierEU.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/RDACarrierType/" uri="imports/terms/RDACarrierType.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/RDAColourContent/" uri="imports/terms/RDAColourContent.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/RDAContentType/" uri="imports/terms/RDAContentType.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/RDAExtensionPlan/" uri="imports/terms/RDAExtensionPlan.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/RDAGeneration/" uri="imports/terms/RDAGeneration.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/RDAMaterial/" uri="imports/terms/RDAMaterial.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/RDAproductionMethod/" uri="imports/terms/RDAproductionMethod.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/RDARecordingSources/" uri="imports/terms/RDARecordingSources.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/RDATypeOfBinding/" uri="imports/terms/RDATypeOfBinding.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/RDAUnitOfTime/" uri="imports/terms/RDAUnitOfTime.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/termList/typeRec/" uri="imports/terms/typeRec.xml"/>
+</catalog>
