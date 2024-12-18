@@ -161,7 +161,7 @@
 
     <!-- http://sws.geonames.org/5134086/ -->
 
-    <owl:NamedIndividual rdf:about="http://sws.geonames.org/5134086/">
+    <owl:NamedIndividual rdf:about="https://sws.geonames.org/5134086/">
         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
         <rdfs:label>Rochester, New York, United States</rdfs:label>
     </owl:NamedIndividual>
@@ -220,7 +220,7 @@
     <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo-rda/jack-kirby">
         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
         <rdaao:P50118 rdf:resource="https://sws.geonames.org/5402405/"/>
-        <rdaao:P50119 rdf:resource="ttp://sws.geonames.org/5128581/"/>
+        <rdaao:P50119 rdf:resource="https://sws.geonames.org/5128581/"/>
         <rdaao:P50428 rdf:resource="https://f3mf.github.io/gdo/gdo-rda/jon-henri"/>
         <rdaao:P51104 rdf:resource="https://f3mf.github.io/gdo/gdo-rda/simon-kirby-studio"/>
         <rdaad:P50103>J. Kirby</rdaad:P50103>
@@ -256,8 +256,8 @@
 
     <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo-rda/joe-simon">
         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-        <rdaao:P50118 rdf:resource="ttp://sws.geonames.org/5128581/"/>
-        <rdaao:P50119 rdf:resource="http://sws.geonames.org/5134086/"/>
+        <rdaao:P50118 rdf:resource="https://sws.geonames.org/5128581/"/>
+        <rdaao:P50119 rdf:resource="https://sws.geonames.org/5134086/"/>
         <rdaao:P50428 rdf:resource="https://f3mf.github.io/gdo/gdo-rda/jon-henri"/>
         <rdaao:P51104 rdf:resource="https://f3mf.github.io/gdo/gdo-rda/simon-kirby-studio"/>
         <rdaad:P50103>Hymie Simon</rdaad:P50103>
@@ -465,6 +465,7 @@
     <!-- https://www.geonames.org/5110629/ -->
 
     <owl:NamedIndividual rdf:about="https://www.geonames.org/5110629/">
+        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
         <rdfs:label>Buffalo, New York, United States</rdfs:label>
     </owl:NamedIndividual>
     
@@ -482,14 +483,15 @@
     <!-- https://www.geonames.org/6252001/ -->
 
     <owl:NamedIndividual rdf:about="https://www.geonames.org/6252001/">
+        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
         <rdfs:label>United States</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- ttp://sws.geonames.org/5128581/ -->
+    <!-- https://sws.geonames.org/5128581/ -->
 
-    <owl:NamedIndividual rdf:about="ttp://sws.geonames.org/5128581/">
+    <owl:NamedIndividual rdf:about="https://sws.geonames.org/5128581/">
         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
         <rdfs:label>New York City, New York, United States</rdfs:label>
     </owl:NamedIndividual>
