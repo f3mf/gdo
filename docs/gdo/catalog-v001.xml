@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/w/object/" uri="file:/home/francesca/Desktop/GitHub/gdo/docs/rda/imports/elements/work-object.xml"/>
+    <uri id="Imports Wizard Entry" name="http://rdaregistry.info/Elements/c/" uri="file:/home/francesca/Desktop/GitHub/gdo/docs/rda/imports/elements/classes.xml"/>
+    <uri id="Imports Wizard Entry" name="http://iflastandards.info/ns/lrm/lrmoo/" uri="file:/home/francesca/Desktop/GitHub/gdo/docs/cidoc-crm/imports/LRMoo_v1.0.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.cidoc-crm.org/cidoc-crm/" uri="file:/home/francesca/Desktop/GitHub/gdo/docs/cidoc-crm/imports/CIDOC_CRM_v7.1.3_PC.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1734361152705" name="https://f3mf.github.io/gdo/gdo/" uri="gdo.rdf"/>
+    </group>
+</catalog>

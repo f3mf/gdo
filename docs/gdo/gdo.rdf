@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://f3mf.github.io/gdo/gdo/"
+     xml:base="https://f3mf.github.io/gdo/gdo/"
+     xmlns:w="http://rdaregistry.info/Elements/w/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:lrmoo="http://iflastandards.info/ns/lrm/lrmoo/"
+     xmlns:regap="http://metadataregistry.org/uri/profile/regap/"
+     xmlns:object="http://rdaregistry.info/Elements/w/object/"
+     xmlns:rdakit="http://metadataregistry.org/uri/profile/rdakit/"
+     xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/">
+    <owl:Ontology rdf:about="https://f3mf.github.io/gdo/gdo">
+        <owl:imports rdf:resource="http://rdaregistry.info/Elements/c/"/>
+        <owl:imports rdf:resource="http://rdaregistry.info/Elements/w/object/"/>
+        <owl:imports rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+        <owl:imports rdf:resource="https://cidoc-crm.org/extensions/lrmoo/owl/1.0/LRMoo_v1.0.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R1_is_logical_successor_of -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R1_is_logical_successor_of">
+        <owl:equivalentProperty rdf:resource="http://rdaregistry.info/Elements/w/object/P10122"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R2_is_derivative_of -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R2_is_derivative_of">
+        <owl:equivalentProperty rdf:resource="http://rdaregistry.info/Elements/w/object/P10337"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R67_has_part -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R67_has_part">
+        <owl:equivalentProperty rdf:resource="http://rdaregistry.info/Elements/w/object/P10147"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R68_is_inspired_by -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R68_is_inspired_by">
+        <owl:equivalentProperty rdf:resource="http://rdaregistry.info/Elements/w/object/P10290"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F11_Corporate_Body -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F11_Corporate_Body">
+        <owl:equivalentClass rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F12_Nomen -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F12_Nomen">
+        <owl:equivalentClass rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F1_Work -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F1_Work">
+        <owl:equivalentClass rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F2_Expression -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression">
+        <owl:equivalentClass rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F39_Family -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F39_Family">
+        <owl:equivalentClass rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation">
+        <owl:equivalentClass rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F55_Collective_Agent -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F55_Collective_Agent">
+        <owl:equivalentClass rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F5_Item -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F5_Item">
+        <owl:equivalentClass rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://rdaregistry.info/Elements/c/C10002 -->
+
+    <rdf:Description rdf:about="http://rdaregistry.info/Elements/c/C10002">
+        <owl:equivalentClass rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://rdaregistry.info/Elements/c/C10004 -->
+
+    <rdf:Description rdf:about="http://rdaregistry.info/Elements/c/C10004">
+        <owl:equivalentClass rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://rdaregistry.info/Elements/c/C10009 -->
+
+    <rdf:Description rdf:about="http://rdaregistry.info/Elements/c/C10009">
+        <owl:equivalentClass rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://rdaregistry.info/Elements/c/C10010 -->
+
+    <rdf:Description rdf:about="http://rdaregistry.info/Elements/c/C10010">
+        <owl:equivalentClass rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://rdaregistry.info/Elements/c/C10013 -->
+
+    <rdf:Description rdf:about="http://rdaregistry.info/Elements/c/C10013">
+        <owl:equivalentClass rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://f3mf.github.io/gdo/gdo/gdo-84-e -->
+
+    <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo/gdo-84-e">
+        <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <dc:creator>Francesca Massarenti</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-16T12:28:01Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://f3mf.github.io/gdo/gdo/gdo-84-sentence -->
+
+    <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo/gdo-84-sentence">
+        <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <cidoc-crm:P106i_forms_part_of rdf:resource="https://f3mf.github.io/gdo/gdo/gdo-84-e"/>
+        <dc:creator>Francesca Massarenti</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-16T12:28:42Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://f3mf.github.io/gdo/gdo/gdo-84-w -->
+
+    <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo/gdo-84-w">
+        <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+        <lrmoo:R3_is_realised_in rdf:resource="https://f3mf.github.io/gdo/gdo/gdo-84-e"/>
+        <cidoc-crm:P130_shows_features_of rdf:resource="https://f3mf.github.io/gdo/gdo/occhio-degli-occhi-w"/>
+        <dc:creator>Francesca Massarenti</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-16T14:00:12Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://f3mf.github.io/gdo/gdo/gdo-w -->
+
+    <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo/gdo-w">
+        <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+        <lrmoo:R67_has_part rdf:resource="https://f3mf.github.io/gdo/gdo/gdo-84-w"/>
+        <dc:creator>Francesca Massarenti</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-16T12:29:04Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://f3mf.github.io/gdo/gdo/occhio-degli-occhi-e -->
+
+    <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo/occhio-degli-occhi-e">
+        <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <lrmoo:R4i_is_embodied_in rdf:resource="https://f3mf.github.io/gdo/gdo/occhio-degli-occhi-m"/>
+        <lrmoo:R75_incorporates rdf:resource="https://f3mf.github.io/gdo/gdo/gdo-84-sentence"/>
+        <dc:creator>Francesca Massarenti</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-16T12:29:16Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://f3mf.github.io/gdo/gdo/occhio-degli-occhi-m -->
+
+    <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo/occhio-degli-occhi-m">
+        <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+        <dc:creator>Francesca Massarenti</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-16T12:29:26Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://f3mf.github.io/gdo/gdo/occhio-degli-occhi-w -->
+
+    <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo/occhio-degli-occhi-w">
+        <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+        <lrmoo:R3_is_realised_in rdf:resource="https://f3mf.github.io/gdo/gdo/occhio-degli-occhi-e"/>
+        <dc:creator>Francesca Massarenti</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-16T12:29:34Z</dc:date>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,16 @@
+digraph g {
+	"occhio-degli-occhi-e" -> "gdo-84-sentence" [label="'R75 incorporates'"]
+	"gdo-84-sentence" -> "gdo-84-e" [label="'P106i forms part of'"]
+	"'F2 Expression'" -> "gdo-84-sentence" [label="has individual"]
+	"'F1 Work'" -> "occhio-degli-occhi-w" [label="has individual"]
+	"gdo-84-w" -> "occhio-degli-occhi-w" [label="'P130 shows features of'"]
+	"gdo-84-w" -> "gdo-84-e" [label="'R3 is realised in'"]
+	"'F2 Expression'" -> "occhio-degli-occhi-e" [label="has individual"]
+	"'F1 Work'" -> "gdo-w" [label="has individual"]
+	"gdo-w" -> "gdo-84-w" [label="'R67 has part'"]
+	"occhio-degli-occhi-e" -> "occhio-degli-occhi-m" [label="'R4i is embodied in'"]
+	"'F3 Manifestation'" -> "occhio-degli-occhi-m" [label="has individual"]
+	"occhio-degli-occhi-w" -> "occhio-degli-occhi-e" [label="'R3 is realised in'"]
+	"'F2 Expression'" -> "gdo-84-e" [label="has individual"]
+	"'F1 Work'" -> "gdo-84-w" [label="has individual"]
+}
