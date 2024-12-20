@@ -226,7 +226,7 @@ aat:300417758 a skos:Concept ;
                       ] ;
                       crm:P7_took_place_at gn:3164603 ;
                       rdfs:label "45th Venice Biennale"@en ,
-                                 "XVL Esposizione Internazionale d'Arte di Venezia"@it .
+                                 "XLV Esposizione Internazionale d'Arte di Venezia"@it .
 
   # Curation of Opera Italiana: Trittici - Imagina
   :curation-trittici-imagina a crm:E87_Curation_Activity ;
