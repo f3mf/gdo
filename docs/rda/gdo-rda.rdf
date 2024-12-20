@@ -22,7 +22,6 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
      xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-     xmlns:rdabf="http://rdaregistry.info/termList/bookFormat/"
      xmlns:rdacc="http://rdaregistry.info/termList/RDAColourContent/"
      xmlns:rdaco="http://rdaregistry.info/termList/RDAContentType/"
      xmlns:rdact="http://rdaregistry.info/termList/RDACarrierType/"
@@ -44,7 +43,6 @@
      xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
      xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
      xmlns:rdatr="http://rdaregistry.info/termList/typeRec/"
-     xmlns:rdaut="http://rdaregistry.info/termList/RDAUnitOfTime/"
      xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
      xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
      xmlns:rdaxd="http://rdaregistry.info/Elements/x/datatype/"
@@ -59,9 +57,10 @@
      xmlns:rdacarx="http://rdaregistry.info/termList/RDACarrierEU/"
      xmlns:rdasource="http://rdaregistry.info/termList/RDARecordingSources/">
     <owl:Ontology rdf:about="https://f3mf.github.io/gdo/gdo-rda">
+        <owl:imports rdf:resource="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"/>
+        <owl:imports rdf:resource="http://rdaregistry.info/Elements/c/"/>
         <owl:imports rdf:resource="http://rdaregistry.info/Elements/a/datatype/"/>
         <owl:imports rdf:resource="http://rdaregistry.info/Elements/a/object/"/>
-        <owl:imports rdf:resource="http://rdaregistry.info/Elements/c/"/>
         <owl:imports rdf:resource="http://rdaregistry.info/Elements/e/datatype/"/>
         <owl:imports rdf:resource="http://rdaregistry.info/Elements/e/object/"/>
         <owl:imports rdf:resource="http://rdaregistry.info/Elements/i/datatype/"/>
@@ -90,9 +89,7 @@
         <owl:imports rdf:resource="http://rdaregistry.info/termList/RDAMaterial/"/>
         <owl:imports rdf:resource="http://rdaregistry.info/termList/RDARecordingSources/"/>
         <owl:imports rdf:resource="http://rdaregistry.info/termList/RDATypeOfBinding/"/>
-        <owl:imports rdf:resource="http://rdaregistry.info/termList/RDAUnitOfTime/"/>
         <owl:imports rdf:resource="http://rdaregistry.info/termList/RDAproductionMethod/"/>
-        <owl:imports rdf:resource="http://rdaregistry.info/termList/bookFormat/"/>
         <owl:imports rdf:resource="http://rdaregistry.info/termList/formatNoteMus/"/>
         <owl:imports rdf:resource="http://rdaregistry.info/termList/frequency/"/>
         <owl:imports rdf:resource="http://rdaregistry.info/termList/typeRec/"/>
@@ -114,7 +111,13 @@
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-     
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
 
 
     <!-- 
@@ -142,8 +145,8 @@
 
     <owl:NamedIndividual rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026515">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026266"/>
         <rdfs:label xml:lang="en">Romance comics</rdfs:label>
+        <skos:broader rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026266"/>
         <skos:prefLabel xml:lang="en">Romance comics</skos:prefLabel>
     </owl:NamedIndividual>
     
@@ -159,13 +162,47 @@
     
 
 
-    <!-- http://sws.geonames.org/5134086/ -->
+    <!-- http://viaf.org/viaf/100267886 -->
 
-    <owl:NamedIndividual rdf:about="https://sws.geonames.org/5134086/">
-        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-        <rdfs:label>Rochester, New York, United States</rdfs:label>
+    <owl:NamedIndividual rdf:about="http://viaf.org/viaf/100267886">
+        <owl:sameAs rdf:resource="https://f3mf.github.io/gdo/gdo-rda/jack-kirby"/>
     </owl:NamedIndividual>
     
+
+
+    <!-- https://f3mf.github.io/gdo/gdo-rda/jack-kirby -->
+
+    <rdf:Description rdf:about="https://f3mf.github.io/gdo/gdo-rda/jack-kirby"/>
+    
+
+
+    <!-- http://viaf.org/viaf/100271165 -->
+
+    <owl:NamedIndividual rdf:about="http://viaf.org/viaf/100271165">
+        <owl:sameAs rdf:resource="https://f3mf.github.io/gdo/gdo-rda/joe-simon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://f3mf.github.io/gdo/gdo-rda/joe-simon -->
+
+    <rdf:Description rdf:about="https://f3mf.github.io/gdo/gdo-rda/joe-simon"/>
+    
+
+
+    <!-- http://viaf.org/viaf/7871147270711335700002 -->
+
+    <owl:NamedIndividual rdf:about="http://viaf.org/viaf/7871147270711335700002">
+        <owl:sameAs rdf:resource="https://f3mf.github.io/gdo/gdo-rda/ben-oda"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://f3mf.github.io/gdo/gdo-rda/ben-oda -->
+
+    <rdf:Description rdf:about="https://f3mf.github.io/gdo/gdo-rda/ben-oda"/>
+    
+
 
     <!-- https://f3mf.github.io/gdo/gdo-rda/ben-oda -->
 
@@ -181,7 +218,6 @@
         <rdaad:P50291>Oda</rdaad:P50291>
         <rdaad:P50292>Ben</rdaad:P50292>
         <rdaad:P50428>Ed Stuart</rdaad:P50428>
-        <owl:sameAs rdf:resource="http://viaf.org/viaf/7871147270711335700002"/>
         <dc:creator>Francesca Massarenti</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-12T04:55:26Z</dc:date>
         <rdfs:label xml:lang="en">Ben Oda</rdfs:label>
@@ -207,9 +243,9 @@
 
     <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo-rda/glossy-paper">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
         <dc:creator>Francesca Massarenti</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-12T15:22:33Z</dc:date>
+        <skos:broader rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
         <skos:prefLabel xml:lang="en">glossy paper</skos:prefLabel>
     </owl:NamedIndividual>
     
@@ -244,7 +280,6 @@
         <rdaad:P50428>Richard Lee</rdaad:P50428>
         <rdaad:P50428>Ted Grey</rdaad:P50428>
         <rdaad:P50428>Teddy</rdaad:P50428>
-        <owl:sameAs rdf:resource="http://viaf.org/viaf/100267886"/>
         <dc:creator>Francesca Massarenti</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-12T04:55:02Z</dc:date>
         <rdfs:label xml:lang="en">Jack Kirby</rdfs:label>
@@ -271,7 +306,6 @@
         <rdaad:P50428>Floyd Kelly</rdaad:P50428>
         <rdaad:P50428>Gregory Sykes</rdaad:P50428>
         <rdaad:P50428>Jon Henery</rdaad:P50428>
-        <owl:sameAs rdf:resource="http://viaf.org/viaf/100271165"/>
         <dc:creator>Francesca Massarenti</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-12T04:54:52Z</dc:date>
         <rdfs:label xml:lang="en">Joe Simon</rdfs:label>
@@ -294,10 +328,10 @@
 
     <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo-rda/newspaper">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
         <dc:creator>Francesca Massarenti</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-12T15:23:57Z</dc:date>
-        <skos:prefLabel xml:lang="en">newspaper</skos:prefLabel>
+        <skos:broader rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+        <skos:prefLabel xml:lang="en">newsprint</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -371,7 +405,7 @@
         <rdaeo:P20338 rdf:resource="https://f3mf.github.io/gdo/gdo-rda/joe-simon"/>
         <dc:creator>Francesca Massarenti</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-12T04:54:05Z</dc:date>
-        <rdfs:label xml:lang="en">Young Romance vol. 4, no. 2 (26), edited</rdfs:label>
+        <rdfs:label xml:lang="en">Young Romance vol. 4, no. 2 (26), Edited</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -444,6 +478,24 @@
     
 
 
+    <!-- https://sws.geonames.org/5128581/ -->
+
+    <owl:NamedIndividual rdf:about="https://sws.geonames.org/5128581/">
+        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+        <rdfs:label>New York City, New York, United States</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sws.geonames.org/5134086/ -->
+
+    <owl:NamedIndividual rdf:about="https://sws.geonames.org/5134086/">
+        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+        <rdfs:label>Rochester, New York, United States</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://sws.geonames.org/5402405/ -->
 
     <owl:NamedIndividual rdf:about="https://sws.geonames.org/5402405/">
@@ -484,16 +536,7 @@
 
     <owl:NamedIndividual rdf:about="https://www.geonames.org/6252001/">
         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-        <rdfs:label>United States</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://sws.geonames.org/5128581/ -->
-
-    <owl:NamedIndividual rdf:about="https://sws.geonames.org/5128581/">
-        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-        <rdfs:label>New York City, New York, United States</rdfs:label>
+        <rdfs:label xml:lang="en">United States</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

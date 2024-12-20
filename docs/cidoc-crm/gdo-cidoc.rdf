@@ -12,10 +12,10 @@
      xmlns:lrmoo="http://iflastandards.info/ns/lrm/lrmoo/"
      xmlns:pressoo="http://www.iflastandards.info/fr/pressoo/">
     <owl:Ontology rdf:about="https://f3mf.github.io/gdo/gdo-cidoc">
+        <owl:imports rdf:resource="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"/>
         <owl:imports rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
         <owl:imports rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
         <owl:imports rdf:resource="http://www.iflastandards.info/fr/pressoo/"/>
-        <owl:imports rdf:resource="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"/>
     </owl:Ontology>
     
 
@@ -426,6 +426,7 @@
 
     <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo-cidoc/creation-young-romance">
         <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation"/>
+        <lrmoo:R10i_has_member rdf:resource="https://f3mf.github.io/gdo/gdo-cidoc/young-romance-26-w"/>
         <lrmoo:R16_created rdf:resource="https://f3mf.github.io/gdo/gdo-cidoc/young-romance-prize-sw"/>
         <crm:P14_carried_out_by rdf:resource="https://f3mf.github.io/gdo/gdo-cidoc/feature-publications"/>
         <crm:P4_has_time-span rdf:resource="https://f3mf.github.io/gdo/gdo-cidoc/young-romance-timespan"/>
@@ -980,7 +981,6 @@
 
     <owl:NamedIndividual rdf:about="https://f3mf.github.io/gdo/gdo-cidoc/young-romance-26-w">
         <rdf:type rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
-        <lrmoo:R10_is_member_of rdf:resource="https://f3mf.github.io/gdo/gdo-cidoc/creation-young-romance"/>
         <lrmoo:R3_is_realised_in rdf:resource="https://f3mf.github.io/gdo/gdo-cidoc/young-romance-26-e"/>
         <dc:creator>Francesca Massarenti</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-15T08:52:24Z</dc:date>

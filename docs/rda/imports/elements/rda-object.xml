@@ -36,6 +36,25 @@
 
 <!-- Properties -->
 
+<!-- Property: has category of RDA entity -->
+<rdf:Description rdf:about="http://rdaregistry.info/Elements/x/object/P00029">
+  <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/x/object/"/>
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+  <rdfs:label xml:lang="en">has category of RDA entity</rdfs:label>
+  <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/x/object/categoryOfRDAEntity.en"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdfs:domain rdf:resource="http://rdaregistry.info/Elements/c/C10013"/>
+  <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/x/P00029"/>
+  <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/w/object/P10004"/>
+  <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/i/object/P40096"/>
+  <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/m/object/P30335"/>
+  <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/n/object/P80078"/>
+  <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/p/object/P70044"/>
+  <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/a/object/P50490"/>
+  <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/t/object/P70059"/>
+  <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/object/P20331"/>
+</rdf:Description>
+
 <!-- Property: has access point for RDA entity -->
 <rdf:Description rdf:about="http://rdaregistry.info/Elements/x/object/P00016">
   <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/x/object/"/>

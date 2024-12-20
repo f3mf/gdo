@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf" uri="https://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1734511378195" name="http://iflastandards.info/ns/lrm/lrmoo/" uri="imports/LRMoo_v1.0.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1734511378195" name="http://www.cidoc-crm.org/cidoc-crm/" uri="imports/CIDOC_CRM_v7.1.3_PC.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1734511378195" name="http://www.iflastandards.info/fr/pressoo/" uri="imports/PRESSoo_v1.3.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1734511378195" name="https://f3mf.github.io/gdo/gdo-cidoc/" uri="gdo-cidoc.rdf"/>
-    </group>
+    <uri name="http://iflastandards.info/ns/lrm/lrmoo/" uri="imports/LRMoo_v1.0.owl"/>
+    <uri name="http://www.cidoc-crm.org/cidoc-crm/" uri="imports/CIDOC_CRM_v7.1.3_PC.owl"/>
+    <uri name="http://www.iflastandards.info/fr/pressoo/" uri="imports/PRESSoo_v1.3.owl"/>
+    <uri name="https://f3mf.github.io/gdo/gdo-cidoc/" uri="gdo-cidoc.rdf"/>
 </catalog>

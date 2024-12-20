@@ -16,22 +16,9 @@
     <dc:contributor>RSC Technical Working Group</dc:contributor>
     <dc:publisher>ALA Digital Reference</dc:publisher>
     <dc:type rdf:resource="http://rdaregistry.info/termList/RDALinkedDataWork/1003"/>
-  
-        
-        
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-18</dc:issued>
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        <owl:versionInfo>v5.1.1</owl:versionInfo>
-        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-06</dc:modified>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-18</dc:issued>
+    <owl:versionInfo>v5.1.1</owl:versionInfo>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-06</dc:modified>
     </owl:Ontology>
 
 <!-- Properties -->
@@ -43,7 +30,6 @@
     <rdfs:label xml:lang="en">has frequency</rdfs:label>
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/w/object/frequency.en"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-
     <rdfs:domain rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
     <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/w/P10368"/>
@@ -74,6 +60,17 @@
   <rdfs:label xml:lang="en">has category of work</rdfs:label>
   <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/w/P10004"/>
   <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/x/object/P00029"/>
+</rdf:Description>
+
+<!-- Property: has content type of representative expression -->
+<rdf:Description rdf:about="http://rdaregistry.info/Elements/w/object/P10349">
+  <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/w/object/"/>
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+  <rdfs:label xml:lang="en">has content type of representative expression</rdfs:label>
+  <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/w/object/contentTypeOfRepresentativeExpression.en"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdfs:domain rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+  <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/w/P10349"/>
 </rdf:Description>
 
 <!-- Property: has extension plan -->
