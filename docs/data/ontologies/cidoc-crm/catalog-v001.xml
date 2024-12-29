@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri name="http://iflastandards.info/ns/lrm/lrmoo/" uri="imports/LRMoo_v1.0.owl"/>
+    <uri name="http://www.cidoc-crm.org/cidoc-crm/" uri="imports/CIDOC_CRM_v7.1.3_PC.owl"/>
+    <uri name="http://www.iflastandards.info/fr/pressoo/" uri="imports/PRESSoo_v1.3.owl"/>
+    <uri name="https://f3mf.github.io/gdo/gdo-cidoc/" uri="gdo-cidoc.rdf"/>
+</catalog>
