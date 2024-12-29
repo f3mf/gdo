@@ -476,54 +476,63 @@
 Machine-readable literary criticism in the age of semantic libraries.</p>
 <h2 id="state-of-the-art">State-of-the-art</h2>
 <h2 id="workflow">Workflow</h2>
+<style>
+  [data-md-color-scheme="default"] {
+    --md-mermaid-label-bg-color: #EDEDED;
+  }
+
+  [data-md-color-scheme="slate"] {
+    --md-mermaid-label-bg-color: #363941;
+  }
+</style>
 <pre class="mermaid"><code>flowchart TB
-  D[Study of the domain]
-  IS[Item selection]
-  MM[Metadata mining]
-  I[Ideation]
-  m[(Metadata)]
+  Domain[Study of the domain]
+  Items[Item selection]
+  Mining[Metadata mining]
+  Ideation[Ideation]
+  Records@{ shape: documents, label: "Metadata records" }
 
   subgraph Knowledge Organization
-    C[Conception]
-    MA[Metadata analysis]
-    M[Mapping]
-    DI[Data interpretation]
-    OD[Ontology design]
-    CM([Conceptual map])
+    Formalization[Formalization]
+    Analysis[Metadata analysis]
+    Mapping[Mapping]
+    Interpretation[Data interpretation]
+    Ontology[Ontology design]
+    Map([Conceptual map])
     ER([E/R model])
-    TM([Theoretical model])
-    CMo{{Conceptual model}}
+    Theoretical([Theoretical model])
+    Conceptual{{Conceptual model}}
   end
 
   subgraph Knowledge Representation
-    ID[Item description]
-    NR[Name reconciliation]
+    Description[Item description]
+    Reconciliation[Entity reconciliation]
     RDF@{ shape: processes, label: "RDF Production" }
-    f[(Knowledge graph)]
+    Graph[(Knowledge graph)]
   end
 
-  D --&gt; IS
-  D --&gt; I
-  I ---&gt; C
-  C --&gt; CM
-  C --&gt; ER
-  C ---&gt; DI
-  IS --&gt; MM
-  IS --&gt; CM
-  MM --&gt; MA
-  MM --&gt; m
-  MA --&gt; M
-  M --&gt; DI
-  DI --&gt; OD
-  DI --&gt; TM
-  DI -.-&gt;|enrich| ER
-  OD --&gt; CMo
+  Domain --&gt; Items
+  Domain --&gt; Ideation
+  Ideation ---&gt; Formalization
+  Formalization --&gt; Map
+  Formalization --&gt; ER
+  Formalization ---&gt; Interpretation
+  Items --&gt; Mining
+  Items --&gt; Map
+  Mining --&gt; Analysis
+  Mining --&gt; Records
+  Analysis --&gt; Mapping
+  Mapping --&gt; Interpretation
+  Interpretation --&gt; Ontology
+  Interpretation --&gt; Theoretical
+  Interpretation -.-&gt;|enrichment| ER
+  Ontology --&gt; Conceptual
 
-  m ----&gt; ID
-  CMo --&gt; ID
-  ID --&gt; NR
-  NR --&gt; RDF
-  RDF --&gt; f
+  Records ----&gt; Description
+  Conceptual --&gt; Description
+  Description --&gt; Reconciliation
+  Reconciliation --&gt; RDF
+  RDF --&gt; Graph
 </code></pre>
 <h2 id="goals">Goals</h2>
 <h3 id="scalable-modeling">Scalable modeling</h3>

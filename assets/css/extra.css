@@ -1,11 +1,17 @@
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: #DB1F74;
   --md-accent-fg-color: #FA5C52;
+  --md-primary-fg-color--dark: #640E35;
+  --md-mermaid-node-bg-color: #FBF5F7D4;
+  --md-mermaid-node-fg-color: #E4978F;
 }
 
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #B81A61;
   --md-accent-fg-color: #E64B49;
+  --md-primary-fg-color--dark: #640E35;
+  --md-mermaid-node-bg-color: #292c3ede;
+  --md-mermaid-node-fg-color: #795858;
 }
 
 [data-md-color-scheme="default"] table td:empty {
@@ -37,6 +43,11 @@ h2 {
 }
 
 @media (max-width: 768px) {
+    .md-logo {
+    width: 45px;
+    height: auto;
+    }
+
     .grid-right {
         float: none;
         width: 100%;
