@@ -7,55 +7,65 @@ Machine-readable literary criticism in the age of semantic libraries.
 
 ## Workflow
 
+<style>
+  [data-md-color-scheme="default"] {
+    --md-mermaid-label-bg-color: #EDEDED;
+  }
+
+  [data-md-color-scheme="slate"] {
+    --md-mermaid-label-bg-color: #363941;
+  }
+</style>
+
 ``` mermaid
 flowchart TB
-  D[Study of the domain]
-  IS[Item selection]
-  MM[Metadata mining]
-  I[Ideation]
-  m[(Metadata)]
+  Domain[Study of the domain]
+  Items[Item selection]
+  Mining[Metadata mining]
+  Ideation[Ideation]
+  Records@{ shape: documents, label: "Metadata records" }
 
   subgraph Knowledge Organization
-    C[Conception]
-    MA[Metadata analysis]
-    M[Mapping]
-    DI[Data interpretation]
-    OD[Ontology design]
-    CM([Conceptual map])
+    Formalization[Formalization]
+    Analysis[Metadata analysis]
+    Mapping[Mapping]
+    Interpretation[Data interpretation]
+    Ontology[Ontology design]
+    Map([Conceptual map])
     ER([E/R model])
-    TM([Theoretical model])
-    CMo{{Conceptual model}}
+    Theoretical([Theoretical model])
+    Conceptual{{Conceptual model}}
   end
 
   subgraph Knowledge Representation
-    ID[Item description]
-    NR[Name reconciliation]
+    Description[Item description]
+    Reconciliation[Entity reconciliation]
     RDF@{ shape: processes, label: "RDF Production" }
-    f[(Knowledge graph)]
+    Graph[(Knowledge graph)]
   end
 
-  D --> IS
-  D --> I
-  I ---> C
-  C --> CM
-  C --> ER
-  C ---> DI
-  IS --> MM
-  IS --> CM
-  MM --> MA
-  MM --> m
-  MA --> M
-  M --> DI
-  DI --> OD
-  DI --> TM
-  DI -.->|enrich| ER
-  OD --> CMo
+  Domain --> Items
+  Domain --> Ideation
+  Ideation ---> Formalization
+  Formalization --> Map
+  Formalization --> ER
+  Formalization ---> Interpretation
+  Items --> Mining
+  Items --> Map
+  Mining --> Analysis
+  Mining --> Records
+  Analysis --> Mapping
+  Mapping --> Interpretation
+  Interpretation --> Ontology
+  Interpretation --> Theoretical
+  Interpretation -.->|enrichment| ER
+  Ontology --> Conceptual
 
-  m ----> ID
-  CMo --> ID
-  ID --> NR
-  NR --> RDF
-  RDF --> f
+  Records ----> Description
+  Conceptual --> Description
+  Description --> Reconciliation
+  Reconciliation --> RDF
+  RDF --> Graph
 
 ```
 
