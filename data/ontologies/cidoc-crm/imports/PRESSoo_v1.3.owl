@@ -1,0 +1,1724 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:pressoo="http://www.iflastandards.info/fr/pressoo/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:base="http://www.iflastandards.info/fr/pressoo/">
+  <!--
+OWL implementation of PRESSoo v1.3 August, 2016 (https://www.cidoc-crm.org/pressoo/ModelVersion/version-1.3-1)).
+
+Created by FORTH-ICS - February, 2024
+CC BY 4.0 https://creativecommons.org/licenses/by/4.0/legalcode
+
+-->
+  <owl:Ontology rdf:about="">
+    <rdfs:label xml:lang="en">PRESSoo next version preparation (DRAFT) / OWL</rdfs:label>
+    <owl:versionInfo xml:lang="en">PRESSoo Ontology next version preparation (DRAFT). Based on Stable version 1.3 (March 2017), that included references to Cidoc-CRM 6.2 and FRBRoo 2.4. Current encoding (February, 2024) references Cidoc-CRM 7.1.3 and FRBRoo 2.4 and can only be used as DRAFT.</owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:about="Z1_Serial_Transformation">
+    <rdfs:label xml:lang="en">Z1 Serial Transformation</rdfs:label>
+    <skos:notation>Z1</skos:notation>
+    <skos:prefLabel xml:lang="en">Serial Transformation</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation"/>
+    <rdfs:comment xml:lang="en">Scope note:
+This class comprises activities that transform instances of F18 Serial Work into new instances of F18 Serial Work.
+An instance of Z1 Serial Transformation consists of having the idea of starting the publication of one or more than one new serial (this is a particular case of F27 Work Conception), with a distinct intention of thus prolonging, under a new identity, one or more than one earlier serial, the publication of which has ceased, either due directly to the transformation project, or for any other reason.
+The idea of starting a new serial can be contiguous with the disappearance of a serial, or occur quite some time after that event.
+A transformation can be complete or only partial (e.g., a serial devoted to history of the Middle Ages and Renaissance can cease to be published as such and be continued by a new serial that is devoted to the Middle Ages only). This information element can be reflected through the P2 has type (is type of): E55 Type from the CIDOC CRM model.
+The most frequent cases of serial transformation are: continuation (in which a serial undergoes a major title change), replacement (in which a new serial supersedes an earlier serial), split (in which one serial is transformed into at least two serials), and merger (in which at least two serials are transformed into one serial).
+The temporary substitution of a serial with another serial (either pre-existing or created for that purpose) is not regarded as a serial transformation but simply as an episode within the publication process of the serial that temporarily disappeared (see Scope Note for Z4 Temporary Substitution).
+Cases of separation and absorption are not regarded as serial transformations either, as they do not involve the combination of the disappearance of a serial and the appearance of another serial, but just either the latter or the former.
+
+Examples:
+Changing the title ‘Journal of the Chemical Society. Dalton transactions’ (ISSN ‘0300-9246’) into ‘Dalton: an international journal of inorganic chemistry’ (ISSN ‘1470-479X’) (a major title change)
+- Splitting the periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) into the two periodicals entitled ‘Colloids and surfaces. A, Physicochemical and engineering aspects’ (ISSN ‘0927-7757’) and ‘Colloids and surfaces. B, Biointerfaces’ (ISSN ‘0927-7765’) (a split)
+- Merging the periodicals entitled ‘Animal research’ (ISSN ‘1627-3583’), ‘Animal science’ (ISSN ‘1357-7298’), and ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) into the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (a merger)
+- Replacing the periodical entitled ‘Le Patriote de Saône-et-Loire’ (ISSN ‘1959-9935’) with the new periodical entitled ‘Le Démocrate de Saône-et-Loire’ (ISSN ‘1959-9943’) after the former was suppressed by censorship in 1850 (a definitive replacement)
+</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="Z2_Absorption">
+    <rdfs:label xml:lang="en">Z2 Absorption</rdfs:label>
+    <skos:notation>Z2</skos:notation>
+    <skos:prefLabel xml:lang="en">Absorption</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+    <rdfs:comment xml:lang="en">Scope note:
+This class comprises activities that result in instances of F18 Serial Work being absorbed by pre-existing instances of F18 Serial Work.
+An absorption can be complete or only partial (e.g., a serial devoted to history in general can absorb specifically the portion devoted to the history of the Middle Ages of another serial that is devoted to the Middle Ages and Renaissance, while the portion devoted to the Renaissance is just abandoned). This information element can be reflected through the P2 has type (is type of): E55 Type from the CIDOC CRM model.
+
+Examples:
+Absorbing the periodical entitled ‘Archiv für mathematische Logik und Grundlagenforschung’ (ISSN ‘0003-9268’) into the periodical entitled ‘Archiv für Philosophie’ (ISSN ‘0066-6467’)
+</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="Z3_Separation">
+    <rdfs:label xml:lang="en">Z3 Separation</rdfs:label>
+    <skos:notation>Z3</skos:notation>
+    <skos:prefLabel xml:lang="en">Separation</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation"/>
+    <rdfs:comment xml:lang="en">Scope note:
+This class comprises activities that result in new instances of F18 Serial Work coming into being as the ‘offspring’ of pre-existing instances of F18 Serial Work that continue to be published after the separation has occurred.
+
+Examples:
+Separating, in 1992, the periodical entitled ‘The Electrochemical society interface’ (ISSN ‘1064-8208’) from the periodical entitled ‘Journal of the Electrochemical society’ (ISSN ‘0013-4651’), which was founded in 1948 and continued to exist after 1992
+- Separating, in 1989, the annual publication entitled ‘Means plumbing cost data’ (ISSN ‘1042-3850’) from the periodical entitled ‘Means mechanical cost data’ (ISSN ‘0748-2698), which was founded in 1983 and continued to exist after 1989
+</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="Z4_Temporary_Substitution">
+    <rdfs:label xml:lang="en">Z4 Temporary Substitution</rdfs:label>
+    <skos:notation>Z4</skos:notation>
+    <skos:prefLabel xml:lang="en">Temporary Substitution</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F30_Manifestation_Creation"/>
+    <rdfs:comment xml:lang="en">Scope note:
+This class comprises activities that consist of publishing an instance of F18 Serial Work as a temporary replacement for another instance of F18 Serial Work. The replacing instance of F18 Serial Work can either pre-exist the replacement, or be created specifically for the purpose of replacing the other instance of F18 Serial Work.
+
+Examples:
+Temporarily substituting the periodical entitled ‘Le Petit Ardennais’ (ISSN ‘2019-2606’) with the periodical entitled ‘Le Journal ardennais’ (ISSN ‘2103-1622’) during a strike of printers and typographers from 23 December 1922 to 5 January 1923 [Comment: the periodical entitled ‘Le Journal ardennais’ was created specifically for the purpose of being substituted to ‘Le Petit Ardennais’ during the strike, and ceased to be published after the end of the strike]
+- Temporarily substituting the periodical entitled ‘L’Annonce: journal universel d’annonces civiles, judiciaires, commerciales et d’avis divers du département de la Seine’ with the periodical entitled ‘Le Pont-Neuf’ in April 1840 [Comment: the periodical entitled ‘Le Pont-Neuf’ already existed prior to April 1840, and continued to be published after the periodical entitled ‘L’Annonce…’ resumed being published]
+</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="Z5_Issuing_Rule_Change">
+    <rdfs:label xml:lang="en">Z5 Issuing Rule Change</rdfs:label>
+    <skos:notation>Z5</skos:notation>
+    <skos:prefLabel xml:lang="en">Issuing Rule Change</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+    <rdfs:comment xml:lang="en">Scope note:
+This class comprises activities resulting in the modification of an element of the issuing policy followed in publishing a given continuing resource.
+
+Examples:
+Transforming the bimonthly periodical entitled ‘L’Avispa’ (ISSN ‘1022-5870’) into a quarterly from issue No. 9 (1992, April-June)
+- Changing the complete title of the periodical ‘L’Avispa’ (ISSN ‘1022-5870’) from: ‘L’Avispa, bimensual de teoría y debate’ to: ‘L’Avispa, revista trimestrial de teoría y debate’ from issue No. 9 (1992, April-June)
+</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="Z6_Starting_of_Publication">
+    <rdfs:label xml:lang="en">Z6 Starting of Publication</rdfs:label>
+    <skos:notation>Z6</skos:notation>
+    <skos:prefLabel xml:lang="en">Starting of Publication</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F30_Manifestation_Creation"/>
+    <rdfs:comment xml:lang="en">Scope note:
+This class comprises activities that consist of publishing the first issue of a given continuing resource.
+An instance of Z6 Starting of Publication is part of the instance of F30 Manifestation Creation that realises the entire continuing resource, and it is associated with it through property P116 starts (is started by) (i.e., the starting point of the instance of Z6 Starting of Publication coincides with the starting point of the instance of F30 Manifestation Creation).
+This class and Z7 Ending of Publication are not declared as disjoint, as the publication of the first issue of a continuing resource can also be the publication of its last issue, in cases where only one issue of a continuing resource was ever published. If no other issue of a continuing resource is published after the first issue, then both the instance of Z6 Starting of Publication and the instance of Z7 Ending of Publication P114 [are] equal in time to the instance of F30 Manifestation Creation. As a matter of fact, the same event is then an instance of all three classes.
+
+Examples:
+The publication of Volume 1, Number 1, of the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) in February 1997
+</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="Z7_Ending_of_Publication">
+    <rdfs:label xml:lang="en">Z7 Ending of Publication</rdfs:label>
+    <skos:notation>Z7</skos:notation>
+    <skos:prefLabel xml:lang="en">Ending of Publication</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F30_Manifestation_Creation"/>
+    <rdfs:comment xml:lang="en">Scope note:
+This class comprises activities that consist of publishing the latest known issue of a given continuing resource.
+An instance of Z7 Ending of Publication is part of the instance of F30 Manifestation Creation that realises the entire continuing resource, and it is associated with it through property P115 finishes (is finished by) (i.e., the ending point of the instance of Z7 Ending of Publication coincides with the ending point of the instance of F30 Manifestation Creation).
+This class and Z6 Starting of Publication are not declared as disjoint, as the publication of the first issue of a continuing resource can also be the publication of its latest known issue, in cases where only one issue of a continuing resource was ever published. If no other issue of a continuing resource is published after the first issue, then both the instance of Z6 Starting of Publication and the instance of Z7 Ending of Publication P114 [are] equal in time to the instance of F30 Manifestation Creation. As a matter of fact, the same event is then an instance of all three classes.
+
+Examples:
+The publication of Volume 15, Number 4, of the periodical entitled ‘The Mask’ in December 1929, which was not followed by the publication of any other issue of that periodical
+</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="Z8_Metadata_Management">
+    <rdfs:label xml:lang="en">Z8 Metadata Management</rdfs:label>
+    <skos:notation>Z8</skos:notation>
+    <skos:prefLabel xml:lang="en">Metadata Management</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+    <rdfs:comment xml:lang="en">Scope note:
+This class comprises activities performed by ISSN agencies (either at the international or a regional level) and consisting of exerting a responsibility on the metadata relating to a continuing resource identified by an ISSN, which includes, among other things: storing and preserving the metadata, checking the accuracy of the recorded information, making decisions as to whether new records and new ISSNs are required or not due to modifications in the continuing resource described, checking the uniqueness of key titles, etc. Z8 Metadata Management does not necessarily include the activity of creating the metadata.
+A set of ISSN metadata can be managed by various agencies over time, but at a given point in time it cannot be managed by more than one agency. In practice, information relating to the agency that was previously responsible for a given set of metadata is erased from that set of metadata when the responsibility on it is handed over to another agency.
+[Comment. This scope note is very restrictive and specific, while the label for the class is deliberately very vague and general. The intention is to make it possible in the future, if needed, to generalize this class and include it in other conceptual models.]
+
+Examples:
+The activities performed by U.S. ISSN Center with regard to the metadata relating to the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’)
+</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="Z10_Sequencing_Pattern">
+    <rdfs:label xml:lang="en">Z10 Sequencing Pattern</rdfs:label>
+    <skos:notation>Z10</skos:notation>
+    <skos:prefLabel xml:lang="en">Sequencing Pattern</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">Scope note:
+This class comprises ‘forms anticipated to be used in designating volumes/issues, etc. and/or dates for the individual units of the serial (e.g. Volume ..., number ...)’ [FRBR definition].
+A sequencing pattern is a type exemplified in one or more than one statement transcribed from one or more than one issue of a serial. The type itself is never recorded as such, but is only inferred from the transcribed statements.
+
+Examples:
+The pattern consisting of a volume number in Arabic numerals, and an issue number in Arabic numerals, as exemplified by the statement ‘Vol. 272, no. 5 (Nov. 1993)-’
+</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="Z11_URL">
+    <rdfs:label xml:lang="en">Z11 URL</rdfs:label>
+    <skos:notation>Z11</skos:notation>
+    <skos:prefLabel xml:lang="en">URL</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
+    <rdfs:comment xml:lang="en">Scope note:
+This class comprises identifiers for servers from which digital files can be obtained online.
+
+Examples:
+‘http://www.mechanics-industry.org/action/displayJournal?jid=MIN’
+</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="Z12_Issuing_Rule">
+    <rdfs:label xml:lang="en">Z12 Issuing Rule</rdfs:label>
+    <skos:notation>Z12</skos:notation>
+    <skos:prefLabel xml:lang="en">Issuing Rule</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+    <rdfs:comment xml:lang="en">Scope note:
+This class comprises plans that specify bits of the issuing policy followed at some point in time for instances of F18 Serial Work.
+The notion of issuing policy may include: regularity, frequency, sequencing pattern, the language of the linguistic objects contained in each issue, dimension of each issue, the font used to print each issue, the layout and editorial rules adhered to in each issue, etc.
+[Note: The notion of issuing rule is to be understood differently in PRESS(OO) than in FRBR(OO). In FRBR(OO), property R11 has issuing rule (is issuing rule) points to a complete issuing policy that comprises a variety of parameters (regularity, frequency, dimension, language, etc.), while in PRESS(OO) an instance of Z12 Issuing Rule focuses on only one of those parameters and consists of a plan for just the expected regularity, just the expected frequency, just the expected dimension, etc. This perspective shift was made necessary when it was realized that any change (i.e., any instance of Z5 Issuing Rule Change) in just one of those parameters led to a new instantiation of Z12 Issuing Rule and new instantiations of all the ranges of the associated properties, with exactly the same value for each of them except for the one parameter that changes. It was deemed preferable to associate an instance of Z12 Issuing Rule with just one parameter of the issuing policy, which makes it possible that, e.g., a monthly was transformed into a quarterly without having to repeat that the expected language of its issues remains English.]
+
+Examples:
+The policy consisting of publishing a magazine (entitled ‘The Atlantic Monthly’, ISSN ‘1072-7825’) the issues of which are to be released every month
+- The policy consisting of publishing a magazine (ISSN ‘1072-7825’) the issues of which are to be entitled ‘The Atlantic Monthly’
+- The policy consisting of publishing a magazine (entitled ‘The Atlantic Monthly’, ISSN ‘1072-7825’) the issues of which are to contain articles in English
+</rdfs:comment>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="Y1_provided_a_continuation_to">
+    <rdfs:label xml:lang="en">Y1 provided a continuation to</rdfs:label>
+    <skos:notation>Y1</skos:notation>
+    <skos:prefLabel xml:lang="en">provided a continuation to</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y1i_was_continued_through"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,1:0,1)
+
+Shortcut Of: Z1 Serial Transformation. Y2 initiated as continuation: F18 Serial Work. R23i was realised through: F30 Manifestation Creation. P134 continued: F30 Manifestation Creation. R23 created a realisation of: F18 Serial Work
+
+Scope note:
+This property associates an instance of Z1 Serial Transformation with an instance of F18 Serial Work that underwent a ‘major’ title change that transformed it into another instance of F18 Serial Work.
+
+Examples:
+Changing the title ‘Journal of the Chemical Society. Dalton transactions’ (ISSN ‘0300-9246’) into ‘Dalton: an international journal of inorganic chemistry’ (ISSN ‘1470-479X’) (Z1) Y1 provided a continuation to the periodical entitled ‘Journal of the Chemical Society. Dalton transactions’ (ISSN ‘0300-9246’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y1i_was_continued_through">
+    <rdfs:label xml:lang="en">Y1i was continued through</rdfs:label>
+    <skos:notation>Y1i</skos:notation>
+    <skos:prefLabel xml:lang="en">was continued through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y1_provided_a_continuation_to"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,1:0,1)
+
+Shortcut Of of the inverse property: Z1 Serial Transformation. Y2 initiated as continuation: F18 Serial Work. R23i was realised through: F30 Manifestation Creation. P134 continued: F30 Manifestation Creation. R23 created a realisation of: F18 Serial Work
+
+Scope note of the inverse property:
+This property associates an instance of Z1 Serial Transformation with an instance of F18 Serial Work that underwent a ‘major’ title change that transformed it into another instance of F18 Serial Work.
+
+Examples of the inverse property:
+Changing the title ‘Journal of the Chemical Society. Dalton transactions’ (ISSN ‘0300-9246’) into ‘Dalton: an international journal of inorganic chemistry’ (ISSN ‘1470-479X’) (Z1) Y1 provided a continuation to the periodical entitled ‘Journal of the Chemical Society. Dalton transactions’ (ISSN ‘0300-9246’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y2_initiated_as_continuation">
+    <rdfs:label xml:lang="en">Y2 initiated as continuation</rdfs:label>
+    <skos:notation>Y2</skos:notation>
+    <skos:prefLabel xml:lang="en">initiated as continuation</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y2i_was_initiated_as_continuation_through"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R16_created"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,1:0,1)
+
+Scope note:
+This property associates an instance of Z1 Serial Transformation with an instance of F18 Serial Work that resulted from a ‘major’ title change that affected another instance of F18 Serial Work.
+
+Examples:
+Changing the title ‘Journal of the Chemical Society. Dalton transactions’ (ISSN ‘0300-9246’) into ‘Dalton: an international journal of inorganic chemistry’ (ISSN ‘1470-479X’) (Z1) Y2 initiated as continuation the periodical entitled ‘Dalton: an international journal of inorganic chemistry’ (ISSN ‘1470-479X’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y2i_was_initiated_as_continuation_through">
+    <rdfs:label xml:lang="en">Y2i was initiated as continuation through</rdfs:label>
+    <skos:notation>Y2i</skos:notation>
+    <skos:prefLabel xml:lang="en">was initiated as continuation through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y2_initiated_as_continuation"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R16i_was_created_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,1:0,1)
+
+Scope note of the inverse property:
+This property associates an instance of Z1 Serial Transformation with an instance of F18 Serial Work that resulted from a ‘major’ title change that affected another instance of F18 Serial Work.
+
+Examples of the inverse property:
+Changing the title ‘Journal of the Chemical Society. Dalton transactions’ (ISSN ‘0300-9246’) into ‘Dalton: an international journal of inorganic chemistry’ (ISSN ‘1470-479X’) (Z1) Y2 initiated as continuation the periodical entitled ‘Dalton: an international journal of inorganic chemistry’ (ISSN ‘1470-479X’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y3_provided_a_replacement_to">
+    <rdfs:label xml:lang="en">Y3 provided a replacement to</rdfs:label>
+    <skos:notation>Y3</skos:notation>
+    <skos:prefLabel xml:lang="en">provided a replacement to</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y3i_was_replaced_through"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,1)
+
+Shortcut Of: Z1 Serial Transformation. Y4 initiated as replacement: F18 Serial Work. R23i was realised through: F30 Manifestation Creation. P134 continued: F30 Manifestation Creation. R23 created a realisation of: F18 Serial Work
+
+Scope note:
+This property associates an instance of Z1 Serial Transformation with an instance of F18 Serial Work the publication of which had ceased and that was superseded by one or more than one instance of F18 Serial Work.
+
+Examples:
+Replacing the periodical entitled ‘Le Patriote de Saône-et-Loire’ (ISSN ‘1959-9935’) with the new periodical entitled ‘Le Démocrate de Saône-et-Loire’ (ISSN ‘1959-9943’) after the former had been suppressed by censorship in 1850 (Z1) Y3 provided a replacement to the periodical entitled ‘Le Patriote de Saône-et-Loire’ (ISSN ‘1959-9935’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y3i_was_replaced_through">
+    <rdfs:label xml:lang="en">Y3i was replaced through</rdfs:label>
+    <skos:notation>Y3i</skos:notation>
+    <skos:prefLabel xml:lang="en">was replaced through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y3_provided_a_replacement_to"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,1)
+
+Shortcut Of of the inverse property: Z1 Serial Transformation. Y4 initiated as replacement: F18 Serial Work. R23i was realised through: F30 Manifestation Creation. P134 continued: F30 Manifestation Creation. R23 created a realisation of: F18 Serial Work
+
+Scope note of the inverse property:
+This property associates an instance of Z1 Serial Transformation with an instance of F18 Serial Work the publication of which had ceased and that was superseded by one or more than one instance of F18 Serial Work.
+
+Examples of the inverse property:
+Replacing the periodical entitled ‘Le Patriote de Saône-et-Loire’ (ISSN ‘1959-9935’) with the new periodical entitled ‘Le Démocrate de Saône-et-Loire’ (ISSN ‘1959-9943’) after the former had been suppressed by censorship in 1850 (Z1) Y3 provided a replacement to the periodical entitled ‘Le Patriote de Saône-et-Loire’ (ISSN ‘1959-9935’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y4_initiated_as_replacement">
+    <rdfs:label xml:lang="en">Y4 initiated as replacement</rdfs:label>
+    <skos:notation>Y4</skos:notation>
+    <skos:prefLabel xml:lang="en">initiated as replacement</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y4i_was_initiated_as_replacement_through"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R16_created"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,1)
+
+Scope note:
+This property associates an instance of Z1 Serial Transformation with an instance of F18 Serial Work that was created with the distinct intention of being published in lieu of another instance of F18 Serial Work the publication of which had ceased.
+
+Examples:
+Replacing the periodical entitled ‘Le Patriote de Saône-et-Loire’ (ISSN ‘1959-9935’) with the new periodical entitled ‘Le Démocrate de Saône-et-Loire’ (ISSN ‘1959-9943’) after the former had been suppressed by censorship in 1850 (Z1) Y4 initiated as replacement the periodical entitled ‘Le Démocrate de Saône-et-Loire’ (ISSN ‘1959-9943’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y4i_was_initiated_as_replacement_through">
+    <rdfs:label xml:lang="en">Y4i was initiated as replacement through</rdfs:label>
+    <skos:notation>Y4i</skos:notation>
+    <skos:prefLabel xml:lang="en">was initiated as replacement through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y4_initiated_as_replacement"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R16i_was_created_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,1)
+
+Scope note of the inverse property:
+This property associates an instance of Z1 Serial Transformation with an instance of F18 Serial Work that was created with the distinct intention of being published in lieu of another instance of F18 Serial Work the publication of which had ceased.
+
+Examples of the inverse property:
+Replacing the periodical entitled ‘Le Patriote de Saône-et-Loire’ (ISSN ‘1959-9935’) with the new periodical entitled ‘Le Démocrate de Saône-et-Loire’ (ISSN ‘1959-9943’) after the former had been suppressed by censorship in 1850 (Z1) Y4 initiated as replacement the periodical entitled ‘Le Démocrate de Saône-et-Loire’ (ISSN ‘1959-9943’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y5_split">
+    <rdfs:label xml:lang="en">Y5 split</rdfs:label>
+    <skos:notation>Y5</skos:notation>
+    <skos:prefLabel xml:lang="en">split</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y5i_was_split_through"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,1:0,1)
+
+Shortcut Of: Z1 Serial Transformation. Y6 initiated: F18 Serial Work. R23i was realised through: F30 Manifestation Creation. P134 continued: F30 Manifestation Creation. R23 created a realisation of: F18 Serial Work
+
+Scope note:
+This property associates an instance of Z1 Serial Transformation with an instance of F18 Serial Work that was split in order to create new instances of F18 Serial Work.
+
+Examples:
+Splitting the periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) into the two periodicals entitled ‘Colloids and surfaces. A, Physicochemical and engineering aspects’ (ISSN ‘0927-7757’) and ‘Colloids and surfaces. B, Biointerfaces’ (ISSN ‘0927-7765’) (Z1) Y5 split the periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y5i_was_split_through">
+    <rdfs:label xml:lang="en">Y5i was split through</rdfs:label>
+    <skos:notation>Y5i</skos:notation>
+    <skos:prefLabel xml:lang="en">was split through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y5_split"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,1:0,1)
+
+Shortcut Of of the inverse property: Z1 Serial Transformation. Y6 initiated: F18 Serial Work. R23i was realised through: F30 Manifestation Creation. P134 continued: F30 Manifestation Creation. R23 created a realisation of: F18 Serial Work
+
+Scope note of the inverse property:
+This property associates an instance of Z1 Serial Transformation with an instance of F18 Serial Work that was split in order to create new instances of F18 Serial Work.
+
+Examples of the inverse property:
+Splitting the periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) into the two periodicals entitled ‘Colloids and surfaces. A, Physicochemical and engineering aspects’ (ISSN ‘0927-7757’) and ‘Colloids and surfaces. B, Biointerfaces’ (ISSN ‘0927-7765’) (Z1) Y5 split the periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y6_initiated">
+    <rdfs:label xml:lang="en">Y6 initiated</rdfs:label>
+    <skos:notation>Y6</skos:notation>
+    <skos:prefLabel xml:lang="en">initiated</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y6i_resulted_from_split"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R16_created"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,1)
+
+Scope note:
+This property associates an instance of Z1 Serial Transformation with one or more than one instance of F18 Serial Work that resulted from splitting another instance of F18 Serial Work.
+
+Examples:
+Splitting the periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) into the two periodicals entitled ‘Colloids and surfaces. A, Physicochemical and engineering aspects’ (ISSN ‘0927-7757’) and ‘Colloids and surfaces. B, Biointerfaces’ (ISSN ‘0927-7765’) (Z1) Y6 initiated the periodical entitled ‘Colloids and surfaces. A, Physicochemical and engineering aspects’ (ISSN ‘0927-7757’) (F18)
+- Splitting the periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) into the two periodicals entitled ‘Colloids and surfaces. A, Physicochemical and engineering aspects’ (ISSN ‘0927-7757’) and ‘Colloids and surfaces. B, Biointerfaces’ (ISSN ‘0927-7765’) (Z1) Y6 initiated the periodical entitled ‘Colloids and surfaces. B, Biointerfaces’ (ISSN ‘0927-7765’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y6i_resulted_from_split">
+    <rdfs:label xml:lang="en">Y6i resulted from split</rdfs:label>
+    <skos:notation>Y6i</skos:notation>
+    <skos:prefLabel xml:lang="en">resulted from split</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y6_initiated"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R16i_was_created_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,1)
+
+Scope note of the inverse property:
+This property associates an instance of Z1 Serial Transformation with one or more than one instance of F18 Serial Work that resulted from splitting another instance of F18 Serial Work.
+
+Examples of the inverse property:
+Splitting the periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) into the two periodicals entitled ‘Colloids and surfaces. A, Physicochemical and engineering aspects’ (ISSN ‘0927-7757’) and ‘Colloids and surfaces. B, Biointerfaces’ (ISSN ‘0927-7765’) (Z1) Y6 initiated the periodical entitled ‘Colloids and surfaces. A, Physicochemical and engineering aspects’ (ISSN ‘0927-7757’) (F18)
+- Splitting the periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) into the two periodicals entitled ‘Colloids and surfaces. A, Physicochemical and engineering aspects’ (ISSN ‘0927-7757’) and ‘Colloids and surfaces. B, Biointerfaces’ (ISSN ‘0927-7765’) (Z1) Y6 initiated the periodical entitled ‘Colloids and surfaces. B, Biointerfaces’ (ISSN ‘0927-7765’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y7_merged">
+    <rdfs:label xml:lang="en">Y7 merged</rdfs:label>
+    <skos:notation>Y7</skos:notation>
+    <skos:prefLabel xml:lang="en">merged</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y7i_was_merged_through"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,1)
+
+Shortcut Of: Z1 Serial Transformation. Y8 merged into: F18 Serial Work. R23i was realised through: F30 Manifestation Creation. P134 continued: F30 Manifestation Creation. R23 created a realisation of: F18 Serial Work
+
+Scope note:
+This property associates an instance of Z1 Serial Transformation with any one of the instances of F18 Serial Work that were merged with each other in order to create a new instance of F18 Serial Work.
+
+Examples:
+Merging the periodicals entitled ‘Animal research’ (ISSN ‘1627-3583’), ‘Animal science’ (ISSN ‘1357-7298’), and ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) into the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (Z1) Y7 merged the periodical entitled ‘Animal research’ (ISSN ‘1627-3583’) (F18)
+- Merging the periodicals entitled ‘Animal research’ (ISSN ‘1627-3583’), ‘Animal science’ (ISSN ‘1357-7298’), and ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) into the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (Z1) Y7 merged the periodical entitled ‘Animal science’ (ISSN ‘1357-7298’) (F18)
+- Merging the periodicals entitled ‘Animal research’ (ISSN ‘1627-3583’), ‘Animal science’ (ISSN ‘1357-7298’), and ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) into the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (Z1) Y7 merged the periodical entitled ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y7i_was_merged_through">
+    <rdfs:label xml:lang="en">Y7i was merged through</rdfs:label>
+    <skos:notation>Y7i</skos:notation>
+    <skos:prefLabel xml:lang="en">was merged through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y7_merged"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,1)
+
+Shortcut Of of the inverse property: Z1 Serial Transformation. Y8 merged into: F18 Serial Work. R23i was realised through: F30 Manifestation Creation. P134 continued: F30 Manifestation Creation. R23 created a realisation of: F18 Serial Work
+
+Scope note of the inverse property:
+This property associates an instance of Z1 Serial Transformation with any one of the instances of F18 Serial Work that were merged with each other in order to create a new instance of F18 Serial Work.
+
+Examples of the inverse property:
+Merging the periodicals entitled ‘Animal research’ (ISSN ‘1627-3583’), ‘Animal science’ (ISSN ‘1357-7298’), and ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) into the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (Z1) Y7 merged the periodical entitled ‘Animal research’ (ISSN ‘1627-3583’) (F18)
+- Merging the periodicals entitled ‘Animal research’ (ISSN ‘1627-3583’), ‘Animal science’ (ISSN ‘1357-7298’), and ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) into the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (Z1) Y7 merged the periodical entitled ‘Animal science’ (ISSN ‘1357-7298’) (F18)
+- Merging the periodicals entitled ‘Animal research’ (ISSN ‘1627-3583’), ‘Animal science’ (ISSN ‘1357-7298’), and ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) into the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (Z1) Y7 merged the periodical entitled ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y8_merged_into">
+    <rdfs:label xml:lang="en">Y8 merged into</rdfs:label>
+    <skos:notation>Y8</skos:notation>
+    <skos:prefLabel xml:lang="en">merged into</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y8i_resulted_from_merger"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R16_created"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,1:0,1)
+
+Scope note:
+This property associates an instance of Z1 Serial Transformation with the instance of F18 Serial Work that resulted from merging other instances of F18 Serial Work.
+
+Examples:
+Merging the periodicals entitled ‘Animal research’ (ISSN ‘1627-3583’), ‘Animal science’ (ISSN ‘1357-7298’), and ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) into the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (Z1) Y8 merged into the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y8i_resulted_from_merger">
+    <rdfs:label xml:lang="en">Y8i resulted from merger</rdfs:label>
+    <skos:notation>Y8i</skos:notation>
+    <skos:prefLabel xml:lang="en">resulted from merger</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z1_Serial_Transformation"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y8_merged_into"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R16i_was_created_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,1:0,1)
+
+Scope note of the inverse property:
+This property associates an instance of Z1 Serial Transformation with the instance of F18 Serial Work that resulted from merging other instances of F18 Serial Work.
+
+Examples of the inverse property:
+Merging the periodicals entitled ‘Animal research’ (ISSN ‘1627-3583’), ‘Animal science’ (ISSN ‘1357-7298’), and ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) into the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (Z1) Y8 merged into the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y9_absorbed">
+    <rdfs:label xml:lang="en">Y9 absorbed</rdfs:label>
+    <skos:notation>Y9</skos:notation>
+    <skos:prefLabel xml:lang="en">absorbed</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z2_Absorption"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y9i_was_absorbed_through"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"/>
+    <rdfs:comment xml:lang="en">Quantification: (1,n:0,1)
+
+Scope note:
+This property associates an instance of Z2 Absorption with an instance of F18 Serial Work that was absorbed in another instance of F18 Serial Work.
+
+Examples:
+Absorbing the periodical entitled ‘Archiv für mathematische Logik und Grundlagenforschung’ (ISSN ‘0003-9268’) in the periodical entitled ‘Archiv für Philosophie’ (ISSN ‘0066-6467’) (Z2) Y9 absorbed the periodical entitled ‘Archiv für mathematische Logik und Grundlagenforschung’ (ISSN ‘0003-9268’) (F18)
+- Absorbing the periodical entitled ‘Recueil des travaux chimiques des Pays-Bas’ (ISSN ‘0165-0513’) in the periodicals entitled ‘Liebigs Annalen’ (ISSN ‘0947-3440’) and ‘Chemische Berichte’ (ISSN ‘0009-2940’) (Z2) Y9 absorbed the periodical entitled ‘Recueil des travaux chimiques des Pays-Bas’ (ISSN ‘0165-0513’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y9i_was_absorbed_through">
+    <rdfs:label xml:lang="en">Y9i was absorbed through</rdfs:label>
+    <skos:notation>Y9i</skos:notation>
+    <skos:prefLabel xml:lang="en">was absorbed through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z2_Absorption"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y9_absorbed"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (1,n:0,1)
+
+Scope note of the inverse property:
+This property associates an instance of Z2 Absorption with an instance of F18 Serial Work that was absorbed in another instance of F18 Serial Work.
+
+Examples of the inverse property:
+Absorbing the periodical entitled ‘Archiv für mathematische Logik und Grundlagenforschung’ (ISSN ‘0003-9268’) in the periodical entitled ‘Archiv für Philosophie’ (ISSN ‘0066-6467’) (Z2) Y9 absorbed the periodical entitled ‘Archiv für mathematische Logik und Grundlagenforschung’ (ISSN ‘0003-9268’) (F18)
+- Absorbing the periodical entitled ‘Recueil des travaux chimiques des Pays-Bas’ (ISSN ‘0165-0513’) in the periodicals entitled ‘Liebigs Annalen’ (ISSN ‘0947-3440’) and ‘Chemische Berichte’ (ISSN ‘0009-2940’) (Z2) Y9 absorbed the periodical entitled ‘Recueil des travaux chimiques des Pays-Bas’ (ISSN ‘0165-0513’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y10_enhanced">
+    <rdfs:label xml:lang="en">Y10 enhanced</rdfs:label>
+    <skos:notation>Y10</skos:notation>
+    <skos:prefLabel xml:lang="en">enhanced</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z2_Absorption"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y10i_was_enhanced_through"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"/>
+    <rdfs:comment xml:lang="en">Quantification: (1,n:0,n)
+
+Scope note:
+This property associates an instance of Z2 Absorption with an instance of F18 Serial Work that absorbed another instance of F18 Serial Work.
+
+Examples:
+Absorbing the periodical entitled ‘Archiv für mathematische Logik und Grundlagenforschung’ (ISSN ‘0003-9268’) in the periodical entitled ‘Archiv für Philosophie’ (ISSN ‘0066-6467’) (Z2) Y10 enhanced the periodical entitled ‘Archiv für Philosophie’ (ISSN ‘0066-6467’) (F18)
+- Absorbing the periodical entitled ‘Recueil des travaux chimiques des Pays-Bas’ (ISSN ‘0165-0513’) in the periodicals entitled ‘Liebigs Annalen’ (ISSN ‘0947-3440’) and ‘Chemische Berichte’ (ISSN ‘0009-2940’) (Z2) Y10 enhanced the periodical entitled ‘Liebigs Annalen’ (ISSN ‘0947-3440’) (F18), and Y10 enhanced the periodical entitled ‘Chemische Berichte’ (ISSN ‘0009-2940’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y10i_was_enhanced_through">
+    <rdfs:label xml:lang="en">Y10i was enhanced through</rdfs:label>
+    <skos:notation>Y10i</skos:notation>
+    <skos:prefLabel xml:lang="en">was enhanced through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z2_Absorption"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y10_enhanced"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (1,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z2 Absorption with an instance of F18 Serial Work that absorbed another instance of F18 Serial Work.
+
+Examples of the inverse property:
+Absorbing the periodical entitled ‘Archiv für mathematische Logik und Grundlagenforschung’ (ISSN ‘0003-9268’) in the periodical entitled ‘Archiv für Philosophie’ (ISSN ‘0066-6467’) (Z2) Y10 enhanced the periodical entitled ‘Archiv für Philosophie’ (ISSN ‘0066-6467’) (F18)
+- Absorbing the periodical entitled ‘Recueil des travaux chimiques des Pays-Bas’ (ISSN ‘0165-0513’) in the periodicals entitled ‘Liebigs Annalen’ (ISSN ‘0947-3440’) and ‘Chemische Berichte’ (ISSN ‘0009-2940’) (Z2) Y10 enhanced the periodical entitled ‘Liebigs Annalen’ (ISSN ‘0947-3440’) (F18), and Y10 enhanced the periodical entitled ‘Chemische Berichte’ (ISSN ‘0009-2940’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y11_separated">
+    <rdfs:label xml:lang="en">Y11 separated</rdfs:label>
+    <skos:notation>Y11</skos:notation>
+    <skos:prefLabel xml:lang="en">separated</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z3_Separation"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y11i_was_separated_through"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R16_created"/>
+    <rdfs:comment xml:lang="en">Quantification: (1,n:0,n)
+
+Scope note:
+This property associates an instance of Z3 Separation with an instance of F18 Serial Work that resulted from the separation.
+
+Examples:
+Separating, in 1992, the periodical entitled ‘The Electrochemical society interface’ (ISSN ‘1064-8208’) from the periodical entitled ‘Journal of the Electrochemical society’ (ISSN ‘0013-4651’), which was founded in 1948 and continued to exist after 1992 (Z3) Y11 separated the periodical entitled ‘The Electrochemical society interface’ (ISSN ‘1064-8208’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y11i_was_separated_through">
+    <rdfs:label xml:lang="en">Y11i was separated through</rdfs:label>
+    <skos:notation>Y11i</skos:notation>
+    <skos:prefLabel xml:lang="en">was separated through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z3_Separation"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y11_separated"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R16i_was_created_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (1,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z3 Separation with an instance of F18 Serial Work that resulted from the separation.
+
+Examples of the inverse property:
+Separating, in 1992, the periodical entitled ‘The Electrochemical society interface’ (ISSN ‘1064-8208’) from the periodical entitled ‘Journal of the Electrochemical society’ (ISSN ‘0013-4651’), which was founded in 1948 and continued to exist after 1992 (Z3) Y11 separated the periodical entitled ‘The Electrochemical society interface’ (ISSN ‘1064-8208’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y12_separated_from">
+    <rdfs:label xml:lang="en">Y12 separated from</rdfs:label>
+    <skos:notation>Y12</skos:notation>
+    <skos:prefLabel xml:lang="en">separated from</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z3_Separation"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y12i_was_diminished_through"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of"/>
+    <rdfs:comment xml:lang="en">Quantification: (1,n:0,n)
+
+Scope note:
+This property associates an instance of Z3 Separation with the instance of F18 Serial Work that was diminished through the separation.
+
+Examples:
+Separating, in 1992, the periodical entitled ‘The Electrochemical society interface’ (ISSN ‘1064-8208’) from the periodical entitled ‘Journal of the Electrochemical society’ (ISSN ‘0013-4651’), which was founded in 1948 and continued to exist after 1992 (Z3) Y12 separated from the periodical entitled ‘Journal of the Electrochemical society’ (ISSN ‘0013-4651’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y12i_was_diminished_through">
+    <rdfs:label xml:lang="en">Y12i was diminished through</rdfs:label>
+    <skos:notation>Y12i</skos:notation>
+    <skos:prefLabel xml:lang="en">was diminished through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z3_Separation"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y12_separated_from"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (1,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z3 Separation with the instance of F18 Serial Work that was diminished through the separation.
+
+Examples of the inverse property:
+Separating, in 1992, the periodical entitled ‘The Electrochemical society interface’ (ISSN ‘1064-8208’) from the periodical entitled ‘Journal of the Electrochemical society’ (ISSN ‘0013-4651’), which was founded in 1948 and continued to exist after 1992 (Z3) Y12 separated from the periodical entitled ‘Journal of the Electrochemical society’ (ISSN ‘0013-4651’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y13_provided_surrogate_to">
+    <rdfs:label xml:lang="en">Y13 provided surrogate to</rdfs:label>
+    <skos:notation>Y13</skos:notation>
+    <skos:prefLabel xml:lang="en">provided surrogate to</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z4_Temporary_Substitution"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y13i_had_surrogate_through"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R16_created"/>
+    <rdfs:comment xml:lang="en">Quantification: (1,n:0,n)
+
+Scope note:
+This property associates an instance of Z4 Temporary Substitution with an instance of F18 Serial Work the publication of which was interrupted and replaced with the publication of a distinct instance of F18 Serial Work.
+
+Examples:
+Temporarily substituting the periodical entitled ‘Le Petit Ardennais’ (ISSN ‘2019-2606’) with the periodical entitled ‘Le Journal ardennais’ (ISSN ‘2103-1622’) during a strike of printers and typographers from 23 December 1922 to 5 January 1923 (Z4) Y13 provided surrogate to the periodical entitled ‘Le Petit Ardennais’ (ISSN ‘2019-2606’) (F18) [Comment: the periodical entitled ‘Le Journal ardennais’ was created specifically for the purpose of being substituted to ‘Le Petit Ardennais’ during the strike, and ceased to be published after the end of the strike]
+- Temporarily substituting the periodical entitled ‘L’Annonce: journal universel d’annonces civiles, judiciaires, commerciales et d’avis divers du département de la Seine’ with the periodical entitled ‘Le Pont-Neuf’ in April 1840 (Z4) Y13 provided surrogate to the periodical entitled ‘L’Annonce: journal universel d’annonces civiles, judiciaires, commerciales et d’avis divers du département de la Seine’ (ISSN ‘2019-2606’) (F18) [Comment: the periodical entitled ‘Le Pont-Neuf’ already existed prior to April 1840, and continued to be published after the periodical entitled ‘L’Annonce…’ resumed being published]
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y13i_had_surrogate_through">
+    <rdfs:label xml:lang="en">Y13i had surrogate through</rdfs:label>
+    <skos:notation>Y13i</skos:notation>
+    <skos:prefLabel xml:lang="en">had surrogate through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z4_Temporary_Substitution"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y13_provided_surrogate_to"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R16i_was_created_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (1,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z4 Temporary Substitution with an instance of F18 Serial Work the publication of which was interrupted and replaced with the publication of a distinct instance of F18 Serial Work.
+
+Examples of the inverse property:
+Temporarily substituting the periodical entitled ‘Le Petit Ardennais’ (ISSN ‘2019-2606’) with the periodical entitled ‘Le Journal ardennais’ (ISSN ‘2103-1622’) during a strike of printers and typographers from 23 December 1922 to 5 January 1923 (Z4) Y13 provided surrogate to the periodical entitled ‘Le Petit Ardennais’ (ISSN ‘2019-2606’) (F18) [Comment: the periodical entitled ‘Le Journal ardennais’ was created specifically for the purpose of being substituted to ‘Le Petit Ardennais’ during the strike, and ceased to be published after the end of the strike]
+- Temporarily substituting the periodical entitled ‘L’Annonce: journal universel d’annonces civiles, judiciaires, commerciales et d’avis divers du département de la Seine’ with the periodical entitled ‘Le Pont-Neuf’ in April 1840 (Z4) Y13 provided surrogate to the periodical entitled ‘L’Annonce: journal universel d’annonces civiles, judiciaires, commerciales et d’avis divers du département de la Seine’ (ISSN ‘2019-2606’) (F18) [Comment: the periodical entitled ‘Le Pont-Neuf’ already existed prior to April 1840, and continued to be published after the periodical entitled ‘L’Annonce…’ resumed being published]
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y14_substituted_with">
+    <rdfs:label xml:lang="en">Y14 substituted with</rdfs:label>
+    <skos:notation>Y14</skos:notation>
+    <skos:prefLabel xml:lang="en">substituted with</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z4_Temporary_Substitution"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y14i_became_surrogate_through"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"/>
+    <rdfs:comment xml:lang="en">Quantification: (1,n:0,n)
+
+Scope note:
+This property associates an instance of Z4 Temporary Substitution with an instance of F18 Serial Work that temporarily replaced a distinct instance of F18 Serial Work the publication of which was interrupted.
+
+Examples:
+Temporarily substituting the periodical entitled ‘Le Petit Ardennais’ (ISSN ‘2019-2606’) with the periodical entitled ‘Le Journal ardennais’ (ISSN ‘2103-1622’) during a strike of printers and typographers from 23 December 1922 to 5 January 1923 (Z4) Y14 substituted with the periodical entitled ‘Le Journal ardennais’ (ISSN ‘2103-1622’) (F18) [Comment: the periodical entitled ‘Le Journal ardennais’ was created specifically for the purpose of being substituted to ‘Le Journal ardennais’ during the strike, and ceased to be published after the end of the strike]
+- Temporarily substituting the periodical entitled ‘L’Annonce: journal universel d’annonces civiles, judiciaires, commerciales et d’avis divers du département de la Seine’ with the periodical entitled ‘Le Pont-Neuf’ in April 1840 (Z4) Y14 substituted with the periodical entitled ‘Le Pont-Neuf’ (F18) [Comment: the periodical entitled ‘Le Pont-Neuf’ already existed prior to April 1840, and continued to be published after that date]
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y14i_became_surrogate_through">
+    <rdfs:label xml:lang="en">Y14i became surrogate through</rdfs:label>
+    <skos:notation>Y14i</skos:notation>
+    <skos:prefLabel xml:lang="en">became surrogate through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z4_Temporary_Substitution"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y14_substituted_with"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (1,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z4 Temporary Substitution with an instance of F18 Serial Work that temporarily replaced a distinct instance of F18 Serial Work the publication of which was interrupted.
+
+Examples of the inverse property:
+Temporarily substituting the periodical entitled ‘Le Petit Ardennais’ (ISSN ‘2019-2606’) with the periodical entitled ‘Le Journal ardennais’ (ISSN ‘2103-1622’) during a strike of printers and typographers from 23 December 1922 to 5 January 1923 (Z4) Y14 substituted with the periodical entitled ‘Le Journal ardennais’ (ISSN ‘2103-1622’) (F18) [Comment: the periodical entitled ‘Le Journal ardennais’ was created specifically for the purpose of being substituted to ‘Le Journal ardennais’ during the strike, and ceased to be published after the end of the strike]
+- Temporarily substituting the periodical entitled ‘L’Annonce: journal universel d’annonces civiles, judiciaires, commerciales et d’avis divers du département de la Seine’ with the periodical entitled ‘Le Pont-Neuf’ in April 1840 (Z4) Y14 substituted with the periodical entitled ‘Le Pont-Neuf’ (F18) [Comment: the periodical entitled ‘Le Pont-Neuf’ already existed prior to April 1840, and continued to be published after that date]
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y15_replaced">
+    <rdfs:label xml:lang="en">Y15 replaced</rdfs:label>
+    <skos:notation>Y15</skos:notation>
+    <skos:prefLabel xml:lang="en">replaced</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z5_Issuing_Rule_Change"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y15i_was_replaced_through"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of"/>
+    <rdfs:comment xml:lang="en">Quantification: (1,1:0,1)
+
+Scope note:
+This property associates an instance of Z5 Issuing Rule Change with the instance of Z12 Issuing Rule that became obsolete through that process.
+
+Examples:
+Transforming the bimonthly periodical entitled ‘L’Avispa’ (ISSN ‘1022-5870’) into a quarterly from issue No. 9 (1992, April-June) (Z5) Y15 replaced the policy of issuing the periodical entitled ‘L’Avispa’ (ISSN ‘1022-5870’) every two months (Z12)
+- Changing the title of the periodical identified by ISSN ‘1022-5870’ from: ‘L’Avispa, bimensual de teoría y debate’ to: ‘L’Avispa, revista trimestrial de teoría y debate’ from issue No. 9 (1992, April-June) (Z5) Y15 replaced the policy of issuing the periodical identified by ISSN ‘1022-5870’ with the title: ‘L’Avispa, bimensual de teoría y debate’ (Z12)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y15i_was_replaced_through">
+    <rdfs:label xml:lang="en">Y15i was replaced through</rdfs:label>
+    <skos:notation>Y15i</skos:notation>
+    <skos:prefLabel xml:lang="en">was replaced through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z5_Issuing_Rule_Change"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y15_replaced"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (1,1:0,1)
+
+Scope note of the inverse property:
+This property associates an instance of Z5 Issuing Rule Change with the instance of Z12 Issuing Rule that became obsolete through that process.
+
+Examples of the inverse property:
+Transforming the bimonthly periodical entitled ‘L’Avispa’ (ISSN ‘1022-5870’) into a quarterly from issue No. 9 (1992, April-June) (Z5) Y15 replaced the policy of issuing the periodical entitled ‘L’Avispa’ (ISSN ‘1022-5870’) every two months (Z12)
+- Changing the title of the periodical identified by ISSN ‘1022-5870’ from: ‘L’Avispa, bimensual de teoría y debate’ to: ‘L’Avispa, revista trimestrial de teoría y debate’ from issue No. 9 (1992, April-June) (Z5) Y15 replaced the policy of issuing the periodical identified by ISSN ‘1022-5870’ with the title: ‘L’Avispa, bimensual de teoría y debate’ (Z12)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y16_replaced_with">
+    <rdfs:label xml:lang="en">Y16 replaced with</rdfs:label>
+    <skos:notation>Y16</skos:notation>
+    <skos:prefLabel xml:lang="en">replaced with</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z5_Issuing_Rule_Change"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y16i_was_introduced_through"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"/>
+    <rdfs:comment xml:lang="en">Quantification: (1,1:0,1)
+
+Scope note:
+This property associates an instance of Z5 Issuing Rule Change with the instance of Z12 Issuing Rule that came into force through that process.
+
+Examples:
+Transforming the bimonthly periodical entitled ‘L’Avispa’ (ISSN ‘1022-5870’) into a quarterly from issue No. 9 (1992, April-June) (Z5) Y16 replaced with the policy of issuing the periodical entitled ‘L’Avispa’ (ISSN ‘1022-5870’) every three months (Z12)
+- Changing the title of the periodical identified by ISSN ‘1022-5870’ from: ‘L’Avispa, bimensual de teoría y debate’ to: ‘L’Avispa, revista trimestrial de teoría y debate’ from issue No. 9 (1992, April-June) (Z5) Y16 replaced with the policy of issuing the periodical identified by ISSN ‘1022-5870’ with the title: ‘L’Avispa, revista trimestrial de teoría y debate’ (Z12)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y16i_was_introduced_through">
+    <rdfs:label xml:lang="en">Y16i was introduced through</rdfs:label>
+    <skos:notation>Y16i</skos:notation>
+    <skos:prefLabel xml:lang="en">was introduced through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z5_Issuing_Rule_Change"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y16_replaced_with"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (1,1:0,1)
+
+Scope note of the inverse property:
+This property associates an instance of Z5 Issuing Rule Change with the instance of Z12 Issuing Rule that came into force through that process.
+
+Examples of the inverse property:
+Transforming the bimonthly periodical entitled ‘L’Avispa’ (ISSN ‘1022-5870’) into a quarterly from issue No. 9 (1992, April-June) (Z5) Y16 replaced with the policy of issuing the periodical entitled ‘L’Avispa’ (ISSN ‘1022-5870’) every three months (Z12)
+- Changing the title of the periodical identified by ISSN ‘1022-5870’ from: ‘L’Avispa, bimensual de teoría y debate’ to: ‘L’Avispa, revista trimestrial de teoría y debate’ from issue No. 9 (1992, April-June) (Z5) Y16 replaced with the policy of issuing the periodical identified by ISSN ‘1022-5870’ with the title: ‘L’Avispa, revista trimestrial de teoría y debate’ (Z12)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y17_launched">
+    <rdfs:label xml:lang="en">Y17 launched</rdfs:label>
+    <skos:notation>Y17</skos:notation>
+    <skos:prefLabel xml:lang="en">launched</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z6_Starting_of_Publication"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y17i_was_launched_through"/>
+    <rdfs:comment xml:lang="en">Quantification: (1,1:1,1)
+
+Shortcut Of: Z6 Starting of Publication. P116 starts (is started by): F30 Manifestation Creation. R23 created a realisation of (was realised through): F18 Serial Work
+
+Scope note:
+This property associates an instance of Z6 Starting of Publication with the serial the first issue of which was published through that process.
+
+Examples:
+The publication of Volume 1, Number 1, of the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) in February 1997 (Z6) Y17 launched the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y17i_was_launched_through">
+    <rdfs:label xml:lang="en">Y17i was launched through</rdfs:label>
+    <skos:notation>Y17i</skos:notation>
+    <skos:prefLabel xml:lang="en">was launched through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z6_Starting_of_Publication"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y17_launched"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (1,1:1,1)
+
+Shortcut Of of the inverse property: Z6 Starting of Publication. P116 starts (is started by): F30 Manifestation Creation. R23 created a realisation of (was realised through): F18 Serial Work
+
+Scope note of the inverse property:
+This property associates an instance of Z6 Starting of Publication with the serial the first issue of which was published through that process.
+
+Examples of the inverse property:
+The publication of Volume 1, Number 1, of the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) in February 1997 (Z6) Y17 launched the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y18_ended">
+    <rdfs:label xml:lang="en">Y18 ended</rdfs:label>
+    <skos:notation>Y18</skos:notation>
+    <skos:prefLabel xml:lang="en">ended</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z7_Ending_of_Publication"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y18i_was_ended_through"/>
+    <rdfs:comment xml:lang="en">Quantification: (1,1:0,1)
+
+Shortcut Of: Z7 Ending of Publication. P115 finishes (is finished by): F30 Manifestation Creation. R23 created a realisation of (was realised through): F18 Serial Work
+
+Scope note:
+This property associates an instance of Z7 Ending of Publication with the serial the last issue of which was published through that process.
+
+Examples:
+The publication of Volume 15, Number 4, of the periodical entitled ‘The Mask’ in December 1929, which was not followed by the publication of any other issue of that periodical (Z7) Y18 ended the periodical entitled ‘The Mask’ (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y18i_was_ended_through">
+    <rdfs:label xml:lang="en">Y18i was ended through</rdfs:label>
+    <skos:notation>Y18i</skos:notation>
+    <skos:prefLabel xml:lang="en">was ended through</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z7_Ending_of_Publication"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y18_ended"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (1,1:0,1)
+
+Shortcut Of of the inverse property: Z7 Ending of Publication. P115 finishes (is finished by): F30 Manifestation Creation. R23 created a realisation of (was realised through): F18 Serial Work
+
+Scope note of the inverse property:
+This property associates an instance of Z7 Ending of Publication with the serial the last issue of which was published through that process.
+
+Examples of the inverse property:
+The publication of Volume 15, Number 4, of the periodical entitled ‘The Mask’ in December 1929, which was not followed by the publication of any other issue of that periodical (Z7) Y18 ended the periodical entitled ‘The Mask’ (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y19_concerned">
+    <rdfs:label xml:lang="en">Y19 concerned</rdfs:label>
+    <skos:notation>Y19</skos:notation>
+    <skos:prefLabel xml:lang="en">concerned</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z8_Metadata_Management"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y19i_was_the_concern_of"/>
+    <rdfs:comment xml:lang="en">Quantification: (1,1:0,1)
+
+Shortcut Of: Z8 Metadata Management. P16 used specific object (was used for): E32 Authority Document. P71 lists (is listed in): F18 Serial Work
+
+Scope note:
+This property associates an instance of Z8 Metadata Management with the instance of F18 Serial Work that is described in the metadata over which the ISSN agency performing the instance of Z8 Metadata Management has a responsibility.
+
+Examples:
+The activities performed by U.S. ISSN Center with regard to the metadata relating to the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (Z8) Y19 concerned the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y19i_was_the_concern_of">
+    <rdfs:label xml:lang="en">Y19i was the concern of</rdfs:label>
+    <skos:notation>Y19i</skos:notation>
+    <skos:prefLabel xml:lang="en">was the concern of</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z8_Metadata_Management"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y19_concerned"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (1,1:0,1)
+
+Shortcut Of of the inverse property: Z8 Metadata Management. P16 used specific object (was used for): E32 Authority Document. P71 lists (is listed in): F18 Serial Work
+
+Scope note of the inverse property:
+This property associates an instance of Z8 Metadata Management with the instance of F18 Serial Work that is described in the metadata over which the ISSN agency performing the instance of Z8 Metadata Management has a responsibility.
+
+Examples of the inverse property:
+The activities performed by U.S. ISSN Center with regard to the metadata relating to the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (Z8) Y19 concerned the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y20_foresees_type">
+    <rdfs:label xml:lang="en">Y20 foresees type</rdfs:label>
+    <skos:notation>Y20</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees type</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y20i_is_type_foreseen_in"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67_refers_to"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Scope note:
+This property associates an instance of Z12 Issuing Rule with an instance of E55 Type that the issues of the continuing resource published while the instance of Z12 Issuing Rule obtained should have.
+The Y20.1 has type property of the property allows the nature of the association to be specified; examples of types of types foreseen in instances of Z12 Issuing Rule include: regularity, frequency, nature of the carrier, digital format, content type, media type, target audience, etc.
+
+Examples:
+The policy followed in publishing the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (Z12) Y20 foresees type regular (E55) Y20.1 has type regularity policy (E55)
+- The policy followed in publishing the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (Z12) Y20 foresees type monthly (E55) Y20.1 has type frequency (E55)
+- The policy followed in publishing the periodical entitled ‘L’Avispa, bimensual de teoría y debate’ (ISSN ‘1022-5870’) before April 1992 (Z12) Y20 foresees type bimonthly (E55) Y20.1 has type frequency (E55)
+- The policy followed in publishing the periodical entitled ‘L’Avispa, revista trimestrial de teoría y debate’ (ISSN ‘1022-5870’) from April 1992 on (Z12) Y20 foresees type quarterly (E55) Y20.1 has type frequency (E55)
+- The policy followed in publishing the periodical entitled ‘Kid’s again’ (ISSN ‘1950-7534’) (Z12) Y20 foresees type CDROM (E55) or DVD (E55) Y20.1 has type carrier type policy (E55)
+- The policy followed in publishing the periodical entitled ‘Bibliodiversity: publishing &amp; globalisation’ (ISSN ‘1775-3759’) (Z12) Y20 foresees type PDF (E55), and Y20 foresees type ePub (E55) Y20.1 has type digital format policy (E55)
+- The policy followed in publishing the periodical entitled ‘The journal of interactive technology and pedagogy’ (ISSN ‘2166-6245’) (Z12) Y20 foresees type text (E55), Y20 foresees type three-dimensional moving image (E55), and Y20 foresees type spoken word (E55) Y20.1 has type content type policy (E55)
+- The policy followed in publishing the periodical entitled ‘The journal of interactive technology and pedagogy’ (ISSN ‘2166-6245’) (Z12) Y20 foresees type computer (E55), Y20 foresees type video (E55), and Y20 foresees type audio (E55) Y20.1 has type media type policy (E55)
+
+Properties:
+- Y20.1 has type:
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y20i_is_type_foreseen_in">
+    <rdfs:label xml:lang="en">Y20i is type foreseen in</rdfs:label>
+    <skos:notation>Y20i</skos:notation>
+    <skos:prefLabel xml:lang="en">is type foreseen in</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y20_foresees_type"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z12 Issuing Rule with an instance of E55 Type that the issues of the continuing resource published while the instance of Z12 Issuing Rule obtained should have.
+The Y20.1 has type property of the property allows the nature of the association to be specified; examples of types of types foreseen in instances of Z12 Issuing Rule include: regularity, frequency, nature of the carrier, digital format, content type, media type, target audience, etc.
+
+Examples of the inverse property:
+The policy followed in publishing the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (Z12) Y20 foresees type regular (E55) Y20.1 has type regularity policy (E55)
+- The policy followed in publishing the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (Z12) Y20 foresees type monthly (E55) Y20.1 has type frequency (E55)
+- The policy followed in publishing the periodical entitled ‘L’Avispa, bimensual de teoría y debate’ (ISSN ‘1022-5870’) before April 1992 (Z12) Y20 foresees type bimonthly (E55) Y20.1 has type frequency (E55)
+- The policy followed in publishing the periodical entitled ‘L’Avispa, revista trimestrial de teoría y debate’ (ISSN ‘1022-5870’) from April 1992 on (Z12) Y20 foresees type quarterly (E55) Y20.1 has type frequency (E55)
+- The policy followed in publishing the periodical entitled ‘Kid’s again’ (ISSN ‘1950-7534’) (Z12) Y20 foresees type CDROM (E55) or DVD (E55) Y20.1 has type carrier type policy (E55)
+- The policy followed in publishing the periodical entitled ‘Bibliodiversity: publishing &amp; globalisation’ (ISSN ‘1775-3759’) (Z12) Y20 foresees type PDF (E55), and Y20 foresees type ePub (E55) Y20.1 has type digital format policy (E55)
+- The policy followed in publishing the periodical entitled ‘The journal of interactive technology and pedagogy’ (ISSN ‘2166-6245’) (Z12) Y20 foresees type text (E55), Y20 foresees type three-dimensional moving image (E55), and Y20 foresees type spoken word (E55) Y20.1 has type content type policy (E55)
+- The policy followed in publishing the periodical entitled ‘The journal of interactive technology and pedagogy’ (ISSN ‘2166-6245’) (Z12) Y20 foresees type computer (E55), Y20 foresees type video (E55), and Y20 foresees type audio (E55) Y20.1 has type media type policy (E55)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y21_foresees_use_of_language">
+    <rdfs:label xml:lang="en">Y21 foresees use of language</rdfs:label>
+    <skos:notation>Y21</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees use of language</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E56_Language"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y21i_is_language_foreseen_in"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y20_foresees_type"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Scope note:
+This property associates an instance of Z12 Issuing Rule with one or more than one language in which the contents of the serial are planned to be expressed.
+The Y21.1 mode of use property of the property makes it possible to specify whether the language pointed to is envisioned as the language of the main body of text or of the abstracts only or as one of several parallel languages, etc.
+
+Examples:
+The language policy followed in publishing the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (Z12) Y21 foresees use of language English (E56) Y21.1 mode of use language of main text (E55)
+- The language policy followed in publishing the periodical entitled ‘Aber’ (ISSN ‘1625-3787’) (Z12) Y21 foresees use of language Breton (E56) Y21.1 mode of use language of main text (E55), and Y21 foresees use of language English (E56) Y21.1 mode of use language of abstracts (E55)
+
+Properties:
+- Y21.1 mode of use:
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y21i_is_language_foreseen_in">
+    <rdfs:label xml:lang="en">Y21i is language foreseen in</rdfs:label>
+    <skos:notation>Y21i</skos:notation>
+    <skos:prefLabel xml:lang="en">is language foreseen in</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E56_Language"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y21_foresees_use_of_language"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y20i_is_type_foreseen_in"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z12 Issuing Rule with one or more than one language in which the contents of the serial are planned to be expressed.
+The Y21.1 mode of use property of the property makes it possible to specify whether the language pointed to is envisioned as the language of the main body of text or of the abstracts only or as one of several parallel languages, etc.
+
+Examples of the inverse property:
+The language policy followed in publishing the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (Z12) Y21 foresees use of language English (E56) Y21.1 mode of use language of main text (E55)
+- The language policy followed in publishing the periodical entitled ‘Aber’ (ISSN ‘1625-3787’) (Z12) Y21 foresees use of language Breton (E56) Y21.1 mode of use language of main text (E55), and Y21 foresees use of language English (E56) Y21.1 mode of use language of abstracts (E55)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y22_foresees_sequencing_pattern">
+    <rdfs:label xml:lang="en">Y22 foresees sequencing pattern</rdfs:label>
+    <skos:notation>Y22</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees sequencing pattern</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z10_Sequencing_Pattern"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y22i_is_sequencing_pattern_foreseen_in"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y20_foresees_type"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Scope note:
+This property associates an instance of Z12 Issuing Rule with a sequencing pattern foreseen for the issues of a serial that follows that policy.
+Typically, a sequencing pattern is not recorded in its archetypical form, but through the transcription of a statement found on one or more than one issue of the serial. The complete semantics of the relation between the serial described and the statement transcribed is contained in the following circle: F18 Serial Work R10 has member F19 Publication Work [ = the concepts of the individual issue from which the statement is transcribed] R3 is realised in F24 Publication Expression R15 has fragment F23 Expression Fragment Y43 is indicative of Z10 Sequencing Pattern Y22i is sequencing pattern foreseen in Z12 Issuing Rule Y37i is former or current issuing rule of F18 Serial Work.
+FRBR(ER) distinguishes between the archetypical Sequencing Pattern, an attribute of the Expression entity, and the actual Numbering, an attribute of the Manifestation entity. The FRBR(ER) Sequencing Pattern notion corresponds to Z10 Sequencing Pattern in PRESS(OO), while the FRBR(ER) Numbering corresponds to the instance of F23 Expression Fragment used to convey the archetypical sequencing pattern and does not call for a specific class in PRESS(OO).
+
+Examples:
+The sequencing pattern policy followed in publishing the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (Z12) Y22 foresees sequencing pattern the pattern consisting of a volume number in Arabic numerals, and an issue number in Arabic numerals, as exemplified by the statement ‘Vol. 272, no. 5 (Nov. 1993)-’ transcribed in the record found in the Library of Congress’s catalogue (Z10)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y22i_is_sequencing_pattern_foreseen_in">
+    <rdfs:label xml:lang="en">Y22i is sequencing pattern foreseen in</rdfs:label>
+    <skos:notation>Y22i</skos:notation>
+    <skos:prefLabel xml:lang="en">is sequencing pattern foreseen in</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z10_Sequencing_Pattern"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y22_foresees_sequencing_pattern"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y20i_is_type_foreseen_in"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z12 Issuing Rule with a sequencing pattern foreseen for the issues of a serial that follows that policy.
+Typically, a sequencing pattern is not recorded in its archetypical form, but through the transcription of a statement found on one or more than one issue of the serial. The complete semantics of the relation between the serial described and the statement transcribed is contained in the following circle: F18 Serial Work R10 has member F19 Publication Work [ = the concepts of the individual issue from which the statement is transcribed] R3 is realised in F24 Publication Expression R15 has fragment F23 Expression Fragment Y43 is indicative of Z10 Sequencing Pattern Y22i is sequencing pattern foreseen in Z12 Issuing Rule Y37i is former or current issuing rule of F18 Serial Work.
+FRBR(ER) distinguishes between the archetypical Sequencing Pattern, an attribute of the Expression entity, and the actual Numbering, an attribute of the Manifestation entity. The FRBR(ER) Sequencing Pattern notion corresponds to Z10 Sequencing Pattern in PRESS(OO), while the FRBR(ER) Numbering corresponds to the instance of F23 Expression Fragment used to convey the archetypical sequencing pattern and does not call for a specific class in PRESS(OO).
+
+Examples of the inverse property:
+The sequencing pattern policy followed in publishing the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (Z12) Y22 foresees sequencing pattern the pattern consisting of a volume number in Arabic numerals, and an issue number in Arabic numerals, as exemplified by the statement ‘Vol. 272, no. 5 (Nov. 1993)-’ transcribed in the record found in the Library of Congress’s catalogue (Z10)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y23_foresees_dimension">
+    <rdfs:label xml:lang="en">Y23 foresees dimension</rdfs:label>
+    <skos:notation>Y23</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees dimension</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y23i_is_dimension_foreseen_in"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67_refers_to"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Scope note:
+This property associates an instance of Z12 Issuing Rule with a dimension foreseen for exemplars of the issues of a serial that follows that policy.
+Typically, this property is observed on one exemplar of an issue of a serial, and extrapolated to all other exemplars of the issue and of other issues to come. This logical inference is an induction along the path that can be modelled as: F18 Serial Work Y37 has former or current issuing rule Z12 Issuing Rule, and F18 Serial Work R10 has member F19 Publication Work R3 is realised in F24 Publication Expression R6i is carried by F5 Item P39i was measured by E16 Measurement P40 observed dimension E54 Dimension. [adapted from scope note for CLP43 should have dimension in FRBR(OO)]
+
+Examples:
+The dimension policy followed in publishing the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (Z12) Y23 foresees dimension the dimension observed on the copy of the issue of ‘The Atlantic Monthly’ that was used to create the ISSN Registry bibliographic record for ‘The Atlantic Monthly’, namely: 27 cm (E54)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y23i_is_dimension_foreseen_in">
+    <rdfs:label xml:lang="en">Y23i is dimension foreseen in</rdfs:label>
+    <skos:notation>Y23i</skos:notation>
+    <skos:prefLabel xml:lang="en">is dimension foreseen in</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y23_foresees_dimension"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z12 Issuing Rule with a dimension foreseen for exemplars of the issues of a serial that follows that policy.
+Typically, this property is observed on one exemplar of an issue of a serial, and extrapolated to all other exemplars of the issue and of other issues to come. This logical inference is an induction along the path that can be modelled as: F18 Serial Work Y37 has former or current issuing rule Z12 Issuing Rule, and F18 Serial Work R10 has member F19 Publication Work R3 is realised in F24 Publication Expression R6i is carried by F5 Item P39i was measured by E16 Measurement P40 observed dimension E54 Dimension. [adapted from scope note for CLP43 should have dimension in FRBR(OO)]
+
+Examples of the inverse property:
+The dimension policy followed in publishing the periodical entitled ‘The Atlantic Monthly’ (ISSN ‘1072-7825’) (Z12) Y23 foresees dimension the dimension observed on the copy of the issue of ‘The Atlantic Monthly’ that was used to create the ISSN Registry bibliographic record for ‘The Atlantic Monthly’, namely: 27 cm (E54)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y24_foresees_use_of_title">
+    <rdfs:label xml:lang="en">Y24 foresees use of title</rdfs:label>
+    <skos:notation>Y24</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees use of title</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E35_Title"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y24i_is_title_foreseen_in"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67_refers_to"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Scope note:
+This property associates an instance of Z12 Issuing Rule with the title that each individual issue of a serial should display as long as that serial follows that policy.
+The property Y24.1 has type allows for specifying a particular type of title, the same way as the CIDOC CRM property P102 has title (is title of) from E71 Man-Made Thing to E35 Title has a property, P102.1 has type, that makes it possible to clarify the relationship between a man-made thing and the title associated with it.
+The key title and abridged key title used to identify a serial cannot be referred to through this property, as they are artificial constructs forged by cataloguers, even though they may happen to look identical with the title proper foreseen by the issuing policy. The relationship between an instance of F18 Serial Work and a key title or abridged key title is expressed by using the P48 has preferred identifier property from CIDOC CRM.
+
+Examples:
+The title policy according to which the periodical entitled ‘L’Avispa’ (ISSN ‘1022-5870’) was to be issued every three months and each of its issues was to be entitled ‘L’Avispa: revista trimestrial de teoría y debate’ (Z12) Y24 foresees use of title ‘revista trimestrial de teoría y debate’ (E35) Y24.1 has type other title information (E55)
+- The title policy according to which each issue of the yearbook entitled ‘Canadian minerals yearbook’ (ISSN ‘0068-9270’) was to have spine title: ‘CMY ... review and outlook’ (Z12) Y24 foresees use of title ‘CMY ... review and outlook’ (E35) Y24.1 has type spine title (E55)
+
+Properties:
+- Y24.1 has type:
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y24i_is_title_foreseen_in">
+    <rdfs:label xml:lang="en">Y24i is title foreseen in</rdfs:label>
+    <skos:notation>Y24i</skos:notation>
+    <skos:prefLabel xml:lang="en">is title foreseen in</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E35_Title"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y24_foresees_use_of_title"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z12 Issuing Rule with the title that each individual issue of a serial should display as long as that serial follows that policy.
+The property Y24.1 has type allows for specifying a particular type of title, the same way as the CIDOC CRM property P102 has title (is title of) from E71 Man-Made Thing to E35 Title has a property, P102.1 has type, that makes it possible to clarify the relationship between a man-made thing and the title associated with it.
+The key title and abridged key title used to identify a serial cannot be referred to through this property, as they are artificial constructs forged by cataloguers, even though they may happen to look identical with the title proper foreseen by the issuing policy. The relationship between an instance of F18 Serial Work and a key title or abridged key title is expressed by using the P48 has preferred identifier property from CIDOC CRM.
+
+Examples of the inverse property:
+The title policy according to which the periodical entitled ‘L’Avispa’ (ISSN ‘1022-5870’) was to be issued every three months and each of its issues was to be entitled ‘L’Avispa: revista trimestrial de teoría y debate’ (Z12) Y24 foresees use of title ‘revista trimestrial de teoría y debate’ (E35) Y24.1 has type other title information (E55)
+- The title policy according to which each issue of the yearbook entitled ‘Canadian minerals yearbook’ (ISSN ‘0068-9270’) was to have spine title: ‘CMY ... review and outlook’ (Z12) Y24 foresees use of title ‘CMY ... review and outlook’ (E35) Y24.1 has type spine title (E55)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y25_foresees_association_with">
+    <rdfs:label xml:lang="en">Y25 foresees association with</rdfs:label>
+    <skos:notation>Y25</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees association with</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y25i_foresees_to_be_associated_with"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P69_has_association_with"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Scope note:
+This property associates an instance of Z12 Issuing Rule with an instance of Z12 Issuing Rule associated with a continuing resource that the first instance of Z12 Issuing Rule regards as related in some way with the continuing resource of which it is an issuing rule.
+It can denote a dynamic, asymmetric relationship where the range expresses the dependant publication, if such a direction can be established. Otherwise, it denotes a symmetric relationship, where none of the two continuing resources is regarded as dependant on the other.
+The Y25.1 has type property of the property allows the nature of the association to be specified; examples of types of association between instances of Z12 Issuing Rule include: supplement, issued with, insert, etc.
+
+Examples:
+The association policy followed in publishing the periodical entitled ‘Applied economics quarterly’ (ISSN ‘1611-6607’) (Z12) Y25 foresees association with the association policy followed in publishing the periodical entitled ‘Applied economics quarterly. Supplement’ (ISSN ‘1612-2127’) (Z12) Y25.1 has type supplement (E55)
+- The association policy followed in publishing the periodical entitled ‘BMS. Bulletin de méthodologie sociologique’ (ISSN ‘0759-1063’) (Z12) Y25 foresees association with the association policy followed in publishing the periodical entitled ‘RC 33 newsletter’ (ISSN ‘1023-5833’) (Z12) Y25.1 has type insert (E55)
+- The association policy followed in publishing the periodical entitled ‘La Revue européenne’ (ISSN ‘1147-6818’) (Z12) Y25 foresees association with the association policy followed in publishing the series entitled ‘Collection de la Revue européenne’ (ISSN ‘1245-5601’) (Z12)
+
+Properties:
+- Y25.1 has type:
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y25i_foresees_to_be_associated_with">
+    <rdfs:label xml:lang="en">Y25i foresees to be associated with</rdfs:label>
+    <skos:notation>Y25i</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees to be associated with</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y25_foresees_association_with"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P69i_is_associated_with"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z12 Issuing Rule with an instance of Z12 Issuing Rule associated with a continuing resource that the first instance of Z12 Issuing Rule regards as related in some way with the continuing resource of which it is an issuing rule.
+It can denote a dynamic, asymmetric relationship where the range expresses the dependant publication, if such a direction can be established. Otherwise, it denotes a symmetric relationship, where none of the two continuing resources is regarded as dependant on the other.
+The Y25.1 has type property of the property allows the nature of the association to be specified; examples of types of association between instances of Z12 Issuing Rule include: supplement, issued with, insert, etc.
+
+Examples of the inverse property:
+The association policy followed in publishing the periodical entitled ‘Applied economics quarterly’ (ISSN ‘1611-6607’) (Z12) Y25 foresees association with the association policy followed in publishing the periodical entitled ‘Applied economics quarterly. Supplement’ (ISSN ‘1612-2127’) (Z12) Y25.1 has type supplement (E55)
+- The association policy followed in publishing the periodical entitled ‘BMS. Bulletin de méthodologie sociologique’ (ISSN ‘0759-1063’) (Z12) Y25 foresees association with the association policy followed in publishing the periodical entitled ‘RC 33 newsletter’ (ISSN ‘1023-5833’) (Z12) Y25.1 has type insert (E55)
+- The association policy followed in publishing the periodical entitled ‘La Revue européenne’ (ISSN ‘1147-6818’) (Z12) Y25 foresees association with the association policy followed in publishing the series entitled ‘Collection de la Revue européenne’ (ISSN ‘1245-5601’) (Z12)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y26_foresees_other_edition">
+    <rdfs:label xml:lang="en">Y26 foresees other edition</rdfs:label>
+    <skos:notation>Y26</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees other edition</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y26i_foresees_to_be_another_edition_of"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y25_foresees_association_with"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Scope note:
+This property associates an instance of Z12 Issuing Rule with an instance of Z12 Issuing Rule associated with a continuing resource that the first instance of Z12 Issuing Rule regards as another edition of the continuing resource of which it is an issuing rule.
+It can denote a dynamic, asymmetric relationship where the range expresses the dependant publication, if such a direction can be established. Otherwise, it denotes a symmetric relationship, where none of the two continuing resources is regarded as dependant on the other.
+In addition to being a subproperty of Y25 foresees association with (foresees to be associated with), it can also be analysed as a shortcut of the more developed path: Z12 Issuing Rule Y37i is former or current issuing rule of F18 Serial Work R10i is member of F15 Complex Work R10 has member F18 Serial Work Y37 has former or current issuing rule Z12 Issuing Rule.
+The Y26.1 has type property of the property allows the nature of the association to be specified; examples of types of association between instances of Z12 Issuing Rule include: other edition, other format, local edition, other edition on a different type of carrier, abridged edition, edition in a different language, etc.
+
+Examples:
+The multi-edition policy followed in publishing the printed periodical entitled ‘East European politics’ (ISSN ‘2159-9165’) (Z12) Y26 foresees other edition the multi-edition policy followed in publishing the online periodical entitled ‘East European politics’ (ISSN ‘2159-9173’) (Z12) Y26.1 has type other edition on a different type of carrier (E55)
+- The multi-edition policy followed in publishing the periodical entitled ‘The Garden Conservancy open days directory’ ([national edition]) (ISSN ‘1087-7738’) (Z12) Y26 foresees other edition the multi-edition policy followed in publishing the periodical entitled ‘The Garden Conservancy open days directory. The guide to visiting private gardens in the Midwest’ (ISSN ‘1546-8747’) (Z12) Y26.1 has type local edition (E55)
+- The multi-edition policy followed in publishing the periodical entitled ‘Чернобыль-индекс’ (Z12) Y26 foresees other edition the multi-edition policy followed in publishing the periodical entitled ‘Chernobyl digest of current relevant literature’ (Z12) Y26.1 has type abridged edition (E55)
+- The multi-edition policy followed in publishing the periodical entitled ‘Wall Street journal (Eastern ed.)’ (ISSN ‘0099-9660’) (Z12) Y26 foresees other edition the multi-edition policy followed in publishing the periodical entitled ‘Wall Street journal (Central ed.)’ (ISSN ‘1092-0935’) (Z12) Y26.1 has type other edition (E55)
+- Propriétés:	Y26.1 has type: E55 Type
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y26i_foresees_to_be_another_edition_of">
+    <rdfs:label xml:lang="en">Y26i foresees to be another edition of</rdfs:label>
+    <skos:notation>Y26i</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees to be another edition of</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y26_foresees_other_edition"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y25i_foresees_to_be_associated_with"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z12 Issuing Rule with an instance of Z12 Issuing Rule associated with a continuing resource that the first instance of Z12 Issuing Rule regards as another edition of the continuing resource of which it is an issuing rule.
+It can denote a dynamic, asymmetric relationship where the range expresses the dependant publication, if such a direction can be established. Otherwise, it denotes a symmetric relationship, where none of the two continuing resources is regarded as dependant on the other.
+In addition to being a subproperty of Y25 foresees association with (foresees to be associated with), it can also be analysed as a shortcut of the more developed path: Z12 Issuing Rule Y37i is former or current issuing rule of F18 Serial Work R10i is member of F15 Complex Work R10 has member F18 Serial Work Y37 has former or current issuing rule Z12 Issuing Rule.
+The Y26.1 has type property of the property allows the nature of the association to be specified; examples of types of association between instances of Z12 Issuing Rule include: other edition, other format, local edition, other edition on a different type of carrier, abridged edition, edition in a different language, etc.
+
+Examples of the inverse property:
+The multi-edition policy followed in publishing the printed periodical entitled ‘East European politics’ (ISSN ‘2159-9165’) (Z12) Y26 foresees other edition the multi-edition policy followed in publishing the online periodical entitled ‘East European politics’ (ISSN ‘2159-9173’) (Z12) Y26.1 has type other edition on a different type of carrier (E55)
+- The multi-edition policy followed in publishing the periodical entitled ‘The Garden Conservancy open days directory’ ([national edition]) (ISSN ‘1087-7738’) (Z12) Y26 foresees other edition the multi-edition policy followed in publishing the periodical entitled ‘The Garden Conservancy open days directory. The guide to visiting private gardens in the Midwest’ (ISSN ‘1546-8747’) (Z12) Y26.1 has type local edition (E55)
+- The multi-edition policy followed in publishing the periodical entitled ‘Чернобыль-индекс’ (Z12) Y26 foresees other edition the multi-edition policy followed in publishing the periodical entitled ‘Chernobyl digest of current relevant literature’ (Z12) Y26.1 has type abridged edition (E55)
+- The multi-edition policy followed in publishing the periodical entitled ‘Wall Street journal (Eastern ed.)’ (ISSN ‘0099-9660’) (Z12) Y26 foresees other edition the multi-edition policy followed in publishing the periodical entitled ‘Wall Street journal (Central ed.)’ (ISSN ‘1092-0935’) (Z12) Y26.1 has type other edition (E55)
+- Propriétés:	Y26.1 has type: E55 Type
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y27_foresees_translation_in">
+    <rdfs:label xml:lang="en">Y27 foresees translation in</rdfs:label>
+    <skos:notation>Y27</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees translation in</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y27i_foresees_translation_of"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y26_foresees_other_edition"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Scope note:
+This property associates an instance of Z12 Issuing Rule with an instance of Z12 Issuing Rule associated with a continuing resource that, according to the respective issuing policies of the two continuing resources, should contain a translation of the content of the first continuing resource.
+This is not the same notion as the association of a continuing resource with one or more than one ‘edition in a different language’, which is expressed through property Y26 foresees other edition (foresees to be another edition of).
+
+Examples:
+The translation policy followed in publishing the French-language periodical entitled ‘Sud de France: la lettre’ (ISSN ‘1962-3305’) (Z12) Y27 foresees translation in the translation policy followed in publishing the English-language periodical entitled ‘Sud de France: newsletter’ (ISSN ‘1962-3313’) (Z12)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y27i_foresees_translation_of">
+    <rdfs:label xml:lang="en">Y27i foresees translation of</rdfs:label>
+    <skos:notation>Y27i</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees translation of</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y27_foresees_translation_in"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y26i_foresees_to_be_another_edition_of"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z12 Issuing Rule with an instance of Z12 Issuing Rule associated with a continuing resource that, according to the respective issuing policies of the two continuing resources, should contain a translation of the content of the first continuing resource.
+This is not the same notion as the association of a continuing resource with one or more than one ‘edition in a different language’, which is expressed through property Y26 foresees other edition (foresees to be another edition of).
+
+Examples of the inverse property:
+The translation policy followed in publishing the French-language periodical entitled ‘Sud de France: la lettre’ (ISSN ‘1962-3305’) (Z12) Y27 foresees translation in the translation policy followed in publishing the English-language periodical entitled ‘Sud de France: newsletter’ (ISSN ‘1962-3313’) (Z12)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y28_foresees_URL">
+    <rdfs:label xml:lang="en">Y28 foresees URL</rdfs:label>
+    <skos:notation>Y28</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees URL</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z11_URL"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y28i_is_URL_foreseen_in"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67_refers_to"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Scope note:
+This property associates an instance of Z12 Issuing Rule with an instance of Z11 URL that identifies the server from which digital files containing the issues of the continuing resource with which the instance of Z12 Issuing Rule is associated are available on the Web.
+
+Examples:
+The URL policy followed in publishing the online periodical entitled ‘Mechanics &amp; industry: an international journal on mechanical sciences and engineering applications’ (ISSN ‘2257-7750’) (Z12) Y28 foresees URL ‘http://www.mechanics-industry.org/action/display Journal?jid=MIN’ (E51)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y28i_is_URL_foreseen_in">
+    <rdfs:label xml:lang="en">Y28i is URL foreseen in</rdfs:label>
+    <skos:notation>Y28i</skos:notation>
+    <skos:prefLabel xml:lang="en">is URL foreseen in</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z11_URL"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y28_foresees_URL"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z12 Issuing Rule with an instance of Z11 URL that identifies the server from which digital files containing the issues of the continuing resource with which the instance of Z12 Issuing Rule is associated are available on the Web.
+
+Examples of the inverse property:
+The URL policy followed in publishing the online periodical entitled ‘Mechanics &amp; industry: an international journal on mechanical sciences and engineering applications’ (ISSN ‘2257-7750’) (Z12) Y28 foresees URL ‘http://www.mechanics-industry.org/action/display Journal?jid=MIN’ (E51)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y29_evolved_into">
+    <rdfs:label xml:lang="en">Y29 evolved into</rdfs:label>
+    <skos:notation>Y29</skos:notation>
+    <skos:prefLabel xml:lang="en">evolved into</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y29i_continues"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,1:0,1)
+
+Shortcut Of: F18 Serial Work. Y1i was continued through: Z1 Serial Transformation. Y2 initiated as continuation: F18 Serial Work
+
+Scope note:
+This property associates an instance of F18 Serial Work with the instance of F18 Serial Work into which it was transformed, due to a ‘major’ title change.
+
+Examples:
+The periodical entitled ‘Journal of the Chemical Society. Dalton transactions’ (ISSN ‘0300-9246’) (F18) Y29 evolved into the periodical entitled ‘Dalton: an international journal of inorganic chemistry’ (ISSN ‘1470-479X’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y29i_continues">
+    <rdfs:label xml:lang="en">Y29i continues</rdfs:label>
+    <skos:notation>Y29i</skos:notation>
+    <skos:prefLabel xml:lang="en">continues</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y29_evolved_into"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,1:0,1)
+
+Shortcut Of of the inverse property: F18 Serial Work. Y1i was continued through: Z1 Serial Transformation. Y2 initiated as continuation: F18 Serial Work
+
+Scope note of the inverse property:
+This property associates an instance of F18 Serial Work with the instance of F18 Serial Work into which it was transformed, due to a ‘major’ title change.
+
+Examples of the inverse property:
+The periodical entitled ‘Journal of the Chemical Society. Dalton transactions’ (ISSN ‘0300-9246’) (F18) Y29 evolved into the periodical entitled ‘Dalton: an international journal of inorganic chemistry’ (ISSN ‘1470-479X’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y30_was_partially_continued_by">
+    <rdfs:label xml:lang="en">Y30 was partially continued by</rdfs:label>
+    <skos:notation>Y30</skos:notation>
+    <skos:prefLabel xml:lang="en">was partially continued by</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y30i_was_separated_from"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Shortcut Of: F18 Serial Work. Y12i was diminished through (separated from): Z3 Separation. Y11 separated (was separated through): F18 Serial Work
+
+Scope note:
+This property associates an instance of F18 Serial Work with an instance of F18 Serial Work that was separated from it through an instance of Z3 Separation.
+
+Examples:
+The periodical entitled ‘Journal of the Electrochemical society’ (ISSN ‘0013-4651’) (F18) Y30 was partially continued by the periodical entitled ‘The Electrochemical society interface’ (ISSN ‘1064-8208’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y30i_was_separated_from">
+    <rdfs:label xml:lang="en">Y30i was separated from</rdfs:label>
+    <skos:notation>Y30i</skos:notation>
+    <skos:prefLabel xml:lang="en">was separated from</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y30_was_partially_continued_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Shortcut Of of the inverse property: F18 Serial Work. Y12i was diminished through (separated from): Z3 Separation. Y11 separated (was separated through): F18 Serial Work
+
+Scope note of the inverse property:
+This property associates an instance of F18 Serial Work with an instance of F18 Serial Work that was separated from it through an instance of Z3 Separation.
+
+Examples of the inverse property:
+The periodical entitled ‘Journal of the Electrochemical society’ (ISSN ‘0013-4651’) (F18) Y30 was partially continued by the periodical entitled ‘The Electrochemical society interface’ (ISSN ‘1064-8208’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y31_was_superseded_by">
+    <rdfs:label xml:lang="en">Y31 was superseded by</rdfs:label>
+    <skos:notation>Y31</skos:notation>
+    <skos:prefLabel xml:lang="en">was superseded by</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y31i_superseded"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Shortcut Of: F18 Serial Work. Y3i was replaced through: Z1 Serial Transformation. Y4 initiated as replacement: F18 Serial Work
+
+Scope note:
+This property associates an instance of Z1 Serial Transformation with an instance of F18 Serial Work that was created with the distinct intention of being published in lieu of another instance of F18 Serial Work the publication of which had ceased.
+
+Examples:
+The periodical entitled ‘Le Patriote de Saône-et-Loire’ (ISSN ‘1959-9935’) (F18) Y31 was superseded by the periodical entitled ‘Le Démocrate de Saône-et-Loire’ (ISSN ‘1959-9943’)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y31i_superseded">
+    <rdfs:label xml:lang="en">Y31i superseded</rdfs:label>
+    <skos:notation>Y31i</skos:notation>
+    <skos:prefLabel xml:lang="en">superseded</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y31_was_superseded_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Shortcut Of of the inverse property: F18 Serial Work. Y3i was replaced through: Z1 Serial Transformation. Y4 initiated as replacement: F18 Serial Work
+
+Scope note of the inverse property:
+This property associates an instance of Z1 Serial Transformation with an instance of F18 Serial Work that was created with the distinct intention of being published in lieu of another instance of F18 Serial Work the publication of which had ceased.
+
+Examples of the inverse property:
+The periodical entitled ‘Le Patriote de Saône-et-Loire’ (ISSN ‘1959-9935’) (F18) Y31 was superseded by the periodical entitled ‘Le Démocrate de Saône-et-Loire’ (ISSN ‘1959-9943’)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y32_was_split_into">
+    <rdfs:label xml:lang="en">Y32 was split into</rdfs:label>
+    <skos:notation>Y32</skos:notation>
+    <skos:prefLabel xml:lang="en">was split into</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y32i_resulted_from_splitting"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,1)
+
+Shortcut Of: F18 Serial Work. Y5i was split through: Z1 Serial Transformation. Y6 initiated: F18 Serial Work
+
+Scope note:
+This property associates an instance of F18 Serial Work with any one of the instances of F18 Serial Work that were created on the occasion of its split.
+
+Examples:
+The periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) (F18) Y32 was split into the periodical entitled ‘Colloids and surfaces. A, Physicochemical and engineering aspects’ (ISSN ‘0927-7757’) (F18)
+- The periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) (F18) Y32 was split into the periodical entitled ‘Colloids and surfaces. B, Biointerfaces’ (ISSN ‘0927-7765’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y32i_resulted_from_splitting">
+    <rdfs:label xml:lang="en">Y32i resulted from splitting</rdfs:label>
+    <skos:notation>Y32i</skos:notation>
+    <skos:prefLabel xml:lang="en">resulted from splitting</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y32_was_split_into"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,1)
+
+Shortcut Of of the inverse property: F18 Serial Work. Y5i was split through: Z1 Serial Transformation. Y6 initiated: F18 Serial Work
+
+Scope note of the inverse property:
+This property associates an instance of F18 Serial Work with any one of the instances of F18 Serial Work that were created on the occasion of its split.
+
+Examples of the inverse property:
+The periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) (F18) Y32 was split into the periodical entitled ‘Colloids and surfaces. A, Physicochemical and engineering aspects’ (ISSN ‘0927-7757’) (F18)
+- The periodical entitled ‘Colloids and surfaces’ (ISSN ‘0166-6622’) (F18) Y32 was split into the periodical entitled ‘Colloids and surfaces. B, Biointerfaces’ (ISSN ‘0927-7765’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y33_was_merged_with">
+    <rdfs:label xml:lang="en">Y33 was merged with</rdfs:label>
+    <skos:notation>Y33</skos:notation>
+    <skos:prefLabel xml:lang="en">was merged with</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Shortcut Of: F18 Serial Work. Y7i was merged through: Z1 Serial Transformation. Y7 merged: F18 Serial Work
+
+Scope note:
+This symmetrical property associates an instance of F18 Serial Work with any one of the instances of F18 Serial Work with which it was merged in order to create a new instance of F18 Serial Work.
+
+Examples:
+The periodical entitled ‘Animal research’ (ISSN ‘1627-3583’) (F18) Y33 was merged with the periodical entitled ‘Animal science’ (ISSN ‘1357-7298’) (F18)
+- The periodical entitled ‘Animal research’ (ISSN ‘1627-3583’) (F18) Y33 was merged with the periodical entitled ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y34_was_merged_to_form">
+    <rdfs:label xml:lang="en">Y34 was merged to form</rdfs:label>
+    <skos:notation>Y34</skos:notation>
+    <skos:prefLabel xml:lang="en">was merged to form</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y34i_resulted_from_merging"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,1:0,n)
+
+Shortcut Of: F18 Serial Work. Y7i was merged through: Z1 Serial Transformation. Y8 merged into: F18 Serial Work
+
+Scope note:
+This property associates instances of F18 Serial Work with an instance of F18 Serial Work that was created by merging them.
+
+Examples:
+The periodical entitled ‘Animal research’ (ISSN ‘1627-3583’) (F18) Y34 was merged to form the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (F18)
+- The periodical entitled ‘Animal science’ (ISSN ‘1357-7298’) (F18) Y34 was merged to form the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (F18)
+- The periodical entitled ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) (F18) Y34 was merged to form the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y34i_resulted_from_merging">
+    <rdfs:label xml:lang="en">Y34i resulted from merging</rdfs:label>
+    <skos:notation>Y34i</skos:notation>
+    <skos:prefLabel xml:lang="en">resulted from merging</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y34_was_merged_to_form"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,1:0,n)
+
+Shortcut Of of the inverse property: F18 Serial Work. Y7i was merged through: Z1 Serial Transformation. Y8 merged into: F18 Serial Work
+
+Scope note of the inverse property:
+This property associates instances of F18 Serial Work with an instance of F18 Serial Work that was created by merging them.
+
+Examples of the inverse property:
+The periodical entitled ‘Animal research’ (ISSN ‘1627-3583’) (F18) Y34 was merged to form the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (F18)
+- The periodical entitled ‘Animal science’ (ISSN ‘1357-7298’) (F18) Y34 was merged to form the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (F18)
+- The periodical entitled ‘Reproduction nutrition development’ (ISSN ‘0926-5287’) (F18) Y34 was merged to form the periodical entitled ‘Animal’ (ISSN ‘1751-7311’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y35_was_absorbed_in">
+    <rdfs:label xml:lang="en">Y35 was absorbed in</rdfs:label>
+    <skos:notation>Y35</skos:notation>
+    <skos:prefLabel xml:lang="en">was absorbed in</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y35i_was_enhanced_by_absorbing"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Shortcut Of: F18 Serial Work. Y9i was absorbed through: Z2 Absorption. Y10 enhanced: F18 Serial Work
+
+Scope note:
+This property associates instances of F18 Serial Work with the instances of F18 Serial Work that absorbed them.
+
+Examples:
+The periodical entitled ‘Archiv für mathematische Logik und Grundlagenforschung’ (ISSN ‘0003-9268’) (F18) Y35 was absorbed in the periodical entitled ‘Archiv für Philosophie’ (ISSN ‘0066-6467’) (F18)
+- The periodical entitled ‘Recueil des travaux chimiques des Pays-Bas’ (ISSN ‘0165-0513’) Y35 was absorbed in the periodical entitled ‘Liebigs Annalen’ (ISSN ‘0947-3440’) (F18), and Y35 was absorbed in the periodical entitled ‘Chemische Berichte’ (ISSN ‘0009-2940’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y35i_was_enhanced_by_absorbing">
+    <rdfs:label xml:lang="en">Y35i was enhanced by absorbing</rdfs:label>
+    <skos:notation>Y35i</skos:notation>
+    <skos:prefLabel xml:lang="en">was enhanced by absorbing</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y35_was_absorbed_in"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Shortcut Of of the inverse property: F18 Serial Work. Y9i was absorbed through: Z2 Absorption. Y10 enhanced: F18 Serial Work
+
+Scope note of the inverse property:
+This property associates instances of F18 Serial Work with the instances of F18 Serial Work that absorbed them.
+
+Examples of the inverse property:
+The periodical entitled ‘Archiv für mathematische Logik und Grundlagenforschung’ (ISSN ‘0003-9268’) (F18) Y35 was absorbed in the periodical entitled ‘Archiv für Philosophie’ (ISSN ‘0066-6467’) (F18)
+- The periodical entitled ‘Recueil des travaux chimiques des Pays-Bas’ (ISSN ‘0165-0513’) Y35 was absorbed in the periodical entitled ‘Liebigs Annalen’ (ISSN ‘0947-3440’) (F18), and Y35 was absorbed in the periodical entitled ‘Chemische Berichte’ (ISSN ‘0009-2940’) (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y36_had_surrogate">
+    <rdfs:label xml:lang="en">Y36 had surrogate</rdfs:label>
+    <skos:notation>Y36</skos:notation>
+    <skos:prefLabel xml:lang="en">had surrogate</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y36i_was_surrogate_for"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Shortcut Of: F18 Serial Work. Y13i had surrogate through: Z4 Temporary Substitution. Y14 substituted with: F18 Serial Work
+
+Scope note:
+This property associates an instance of F18 Serial Work with an instance of F18 Serial Work that temporarily replaced it.
+
+Examples:
+The periodical entitled ‘Le Petit Ardennais’ (ISSN ‘2019-2606’) (F18) Y36 had surrogate the periodical entitled ‘Le Journal ardennais’ (ISSN ‘2103-1622’) (F18)
+- The periodical entitled ‘L’Annonce: journal universel d’annonces civiles, judiciaires, commerciales et d’avis divers du département de la Seine’ (F18) Y36 had surrogate the periodical entitled ‘Le Pont-Neuf’ (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y36i_was_surrogate_for">
+    <rdfs:label xml:lang="en">Y36i was surrogate for</rdfs:label>
+    <skos:notation>Y36i</skos:notation>
+    <skos:prefLabel xml:lang="en">was surrogate for</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y36_had_surrogate"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Shortcut Of of the inverse property: F18 Serial Work. Y13i had surrogate through: Z4 Temporary Substitution. Y14 substituted with: F18 Serial Work
+
+Scope note of the inverse property:
+This property associates an instance of F18 Serial Work with an instance of F18 Serial Work that temporarily replaced it.
+
+Examples of the inverse property:
+The periodical entitled ‘Le Petit Ardennais’ (ISSN ‘2019-2606’) (F18) Y36 had surrogate the periodical entitled ‘Le Journal ardennais’ (ISSN ‘2103-1622’) (F18)
+- The periodical entitled ‘L’Annonce: journal universel d’annonces civiles, judiciaires, commerciales et d’avis divers du département de la Seine’ (F18) Y36 had surrogate the periodical entitled ‘Le Pont-Neuf’ (F18)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y37_has_former_or_current_issuing_rule">
+    <rdfs:label xml:lang="en">Y37 has former or current issuing rule</rdfs:label>
+    <skos:notation>Y37</skos:notation>
+    <skos:prefLabel xml:lang="en">has former or current issuing rule</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y37i_is_former_or_current_issuing_rule_of"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R11_has_issuing_rule"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Scope note:
+This property associates an instance of F18 Serial Work with instances of Z12 Issuing Rule that specify aspects of the issuing policy planned at some time by this Work, such as sequencing pattern, expected frequency or expected regularity. This property does not specify whether these instances of Z12 Issuing Rule are still in force at the time of validity of the record or database containing the statement that uses this property, and it can point to obsolete instances of Z12 Issuing Rule.
+
+Examples:
+The periodical identified by ISSN ‘1022-5870’ (‘L’Avispa’) (F18) Y37 has former or current issuing rule the rule that obtained prior to 1992, according to which the periodical identified by ISSN ‘1022-5870’ (‘L’Avispa’) was to be issued every two months (Z12)
+- The periodical identified by ISSN ‘1022-5870’ (‘L’Avispa’) (F18) Y37 has former or current issuing rule the rule that obtained prior to 1992, according to which the periodical identified by ISSN ‘1022-5870’ was to be issued with the complete title: ‘L’Avispa, bimensual de teoría y debate’ (Z12)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y37i_is_former_or_current_issuing_rule_of">
+    <rdfs:label xml:lang="en">Y37i is former or current issuing rule of</rdfs:label>
+    <skos:notation>Y37i</skos:notation>
+    <skos:prefLabel xml:lang="en">is former or current issuing rule of</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y37_has_former_or_current_issuing_rule"/>
+    <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R11i_is_issuing_rule_of"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of F18 Serial Work with instances of Z12 Issuing Rule that specify aspects of the issuing policy planned at some time by this Work, such as sequencing pattern, expected frequency or expected regularity. This property does not specify whether these instances of Z12 Issuing Rule are still in force at the time of validity of the record or database containing the statement that uses this property, and it can point to obsolete instances of Z12 Issuing Rule.
+
+Examples of the inverse property:
+The periodical identified by ISSN ‘1022-5870’ (‘L’Avispa’) (F18) Y37 has former or current issuing rule the rule that obtained prior to 1992, according to which the periodical identified by ISSN ‘1022-5870’ (‘L’Avispa’) was to be issued every two months (Z12)
+- The periodical identified by ISSN ‘1022-5870’ (‘L’Avispa’) (F18) Y37 has former or current issuing rule the rule that obtained prior to 1992, according to which the periodical identified by ISSN ‘1022-5870’ was to be issued with the complete title: ‘L’Avispa, bimensual de teoría y debate’ (Z12)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y38_has_current_issuing_rule">
+    <rdfs:label xml:lang="en">Y38 has current issuing rule</rdfs:label>
+    <skos:notation>Y38</skos:notation>
+    <skos:prefLabel xml:lang="en">has current issuing rule</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y38i_is_current_issuing_rule_of"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y37_has_former_or_current_issuing_rule"/>
+    <rdfs:comment xml:lang="en">Quantification: (1,1:0,n)
+
+Scope note:
+This property associates an instance of F18 Serial Work with instances of Z12 Issuing Rule that specify aspects of the issuing policy planned by this Work, such as sequencing pattern, expected frequency or expected regularity, at the time of validity of the record or database containing the statement that uses this property.
+If the publication has ceased, this property reflects the latest known issuing rules followed by the continuing resource when its last known issue was released (i.e., the issuing rules followed in the instance of Z7 Ending of Publication associated with the continuing resource), rather than the ‘current’ issuing rules (since in that case, strictly speaking, there are no ‘current’ issuing rules).
+
+Examples:
+The periodical identified by ISSN ‘1022-5870’ (‘L’Avispa’) (F18) Y38 has current issuing rule the rule that obtained after 1992, according to which the periodical identified by ISSN ‘1022-5870’ (‘L’Avispa’) is to be issued every three months (Z12)
+- The periodical identified by ISSN ‘1022-5870’ (‘L’Avispa’) (F18) Y38 has current issuing rule the rule that obtained after 1992, according to which the periodical identified by ISSN ‘1022-5870’ is to be issued with the complete title: ‘L’Avispa, revista trimestrial de teoría y debate’ (Z12)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y38i_is_current_issuing_rule_of">
+    <rdfs:label xml:lang="en">Y38i is current issuing rule of</rdfs:label>
+    <skos:notation>Y38i</skos:notation>
+    <skos:prefLabel xml:lang="en">is current issuing rule of</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y38_has_current_issuing_rule"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y37i_is_former_or_current_issuing_rule_of"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (1,1:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of F18 Serial Work with instances of Z12 Issuing Rule that specify aspects of the issuing policy planned by this Work, such as sequencing pattern, expected frequency or expected regularity, at the time of validity of the record or database containing the statement that uses this property.
+If the publication has ceased, this property reflects the latest known issuing rules followed by the continuing resource when its last known issue was released (i.e., the issuing rules followed in the instance of Z7 Ending of Publication associated with the continuing resource), rather than the ‘current’ issuing rules (since in that case, strictly speaking, there are no ‘current’ issuing rules).
+
+Examples of the inverse property:
+The periodical identified by ISSN ‘1022-5870’ (‘L’Avispa’) (F18) Y38 has current issuing rule the rule that obtained after 1992, according to which the periodical identified by ISSN ‘1022-5870’ (‘L’Avispa’) is to be issued every three months (Z12)
+- The periodical identified by ISSN ‘1022-5870’ (‘L’Avispa’) (F18) Y38 has current issuing rule the rule that obtained after 1992, according to which the periodical identified by ISSN ‘1022-5870’ is to be issued with the complete title: ‘L’Avispa, revista trimestrial de teoría y debate’ (Z12)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y41_has_former_or_current_area_of_publication">
+    <rdfs:label xml:lang="en">Y41 has former or current area of publication</rdfs:label>
+    <skos:notation>Y41</skos:notation>
+    <skos:prefLabel xml:lang="en">has former or current area of publication</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y41i_is_former_or_current_area_of_publication_of"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Shortcut Of: F18 Serial Work R23i was realised through (created a realisation of): F30 Manifestation Creation. P14 carried out by (performed): E39 Actor. P74 has current or former residence (is current or former residence of): E53 Place [a city]. P89 falls within (contains): E53 Place [a country]
+
+Scope note:
+This property associates an instance of F18 Serial Work with an instance of E53 Place that corresponds to the country (in the sense of ISO standard ISO 3166) in which the publisher (or one of the publishers) of the serial work is established.
+It makes no statement as to whether the publisher whose headquarters is located within the country referred to is still the publisher of the serial work at the time of validity of the record or database containing the statement that uses this property, nor does it make any statement as to whether the publisher is still located within that country.
+
+Examples:
+The periodical entitled ‘Aschkenas: Zeitschrift für Geschichte und Kultur der Juden’ (ISSN ‘1016-4987’), published first in Vienna, Austria, from 1991 to 2003, then in Tübingen, Germany, from 2003 on (F18) Y41 has former or current area of publication Austria (E53)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y41i_is_former_or_current_area_of_publication_of">
+    <rdfs:label xml:lang="en">Y41i is former or current area of publication of</rdfs:label>
+    <skos:notation>Y41i</skos:notation>
+    <skos:prefLabel xml:lang="en">is former or current area of publication of</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y41_has_former_or_current_area_of_publication"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Shortcut Of of the inverse property: F18 Serial Work R23i was realised through (created a realisation of): F30 Manifestation Creation. P14 carried out by (performed): E39 Actor. P74 has current or former residence (is current or former residence of): E53 Place [a city]. P89 falls within (contains): E53 Place [a country]
+
+Scope note of the inverse property:
+This property associates an instance of F18 Serial Work with an instance of E53 Place that corresponds to the country (in the sense of ISO standard ISO 3166) in which the publisher (or one of the publishers) of the serial work is established.
+It makes no statement as to whether the publisher whose headquarters is located within the country referred to is still the publisher of the serial work at the time of validity of the record or database containing the statement that uses this property, nor does it make any statement as to whether the publisher is still located within that country.
+
+Examples of the inverse property:
+The periodical entitled ‘Aschkenas: Zeitschrift für Geschichte und Kultur der Juden’ (ISSN ‘1016-4987’), published first in Vienna, Austria, from 1991 to 2003, then in Tübingen, Germany, from 2003 on (F18) Y41 has former or current area of publication Austria (E53)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y42_has_current_area_of_publication">
+    <rdfs:label xml:lang="en">Y42 has current area of publication</rdfs:label>
+    <skos:notation>Y42</skos:notation>
+    <skos:prefLabel xml:lang="en">has current area of publication</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y42i_is_current_area_of_publication_of"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y41_has_former_or_current_area_of_publication"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Scope note:
+This property associates an instance of F18 Serial Work with an instance of E53 Place that corresponds to the country (in the sense of ISO standard ISO 3166) in which the publisher (or one of the publishers) of the serial work is established, at the time of validity of the record or database containing the statement that uses this property.
+[Comment: The choice of the ISSN agency that performs an instance of Z8 Metadata Management on a given instance of F18 Serial Work is determined by the current area(s) of publication of that instance of F18 Serial Work.]
+
+Examples:
+The periodical entitled ‘Aschkenas: Zeitschrift für Geschichte und Kultur der Juden’ (ISSN ‘1016-4987’), published first in Vienna, Austria, from 1991 to 2003, then in Tübingen, Germany, from 2003 on (F18) Y42 has current area of publication Germany (E53)
+- The periodical entitled ‘St-Barth weekly’ (ISSN ‘1766-9278’) (F18) Y43 has current area of publication Guadeloupe (E53)
+- The periodical entitled ‘International music &amp; opera guide’ (ISSN ‘0955-7121’), published jointly in London by Tantivy Press and in New York by New York Zoetrope (F18) Y43 has current area of publication United-Kingdom (E53), and Y43 has current area of publication United States of America (E53)
+- The periodical entitled ‘SPARC newsletter, a project of the World climate research programme’ (ISSN ‘1245-4680’), published in Paris by Météo-France from 1993 to 2004, in Toronto by the University of Toronto from 2004 to 2012, and in Zurich by ETH Zurich from 2012 on (F18) Y43 has current area of publication Switzerland (E53)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y42i_is_current_area_of_publication_of">
+    <rdfs:label xml:lang="en">Y42i is current area of publication of</rdfs:label>
+    <skos:notation>Y42i</skos:notation>
+    <skos:prefLabel xml:lang="en">is current area of publication of</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y42_has_current_area_of_publication"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y41i_is_former_or_current_area_of_publication_of"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of F18 Serial Work with an instance of E53 Place that corresponds to the country (in the sense of ISO standard ISO 3166) in which the publisher (or one of the publishers) of the serial work is established, at the time of validity of the record or database containing the statement that uses this property.
+[Comment: The choice of the ISSN agency that performs an instance of Z8 Metadata Management on a given instance of F18 Serial Work is determined by the current area(s) of publication of that instance of F18 Serial Work.]
+
+Examples of the inverse property:
+The periodical entitled ‘Aschkenas: Zeitschrift für Geschichte und Kultur der Juden’ (ISSN ‘1016-4987’), published first in Vienna, Austria, from 1991 to 2003, then in Tübingen, Germany, from 2003 on (F18) Y42 has current area of publication Germany (E53)
+- The periodical entitled ‘St-Barth weekly’ (ISSN ‘1766-9278’) (F18) Y43 has current area of publication Guadeloupe (E53)
+- The periodical entitled ‘International music &amp; opera guide’ (ISSN ‘0955-7121’), published jointly in London by Tantivy Press and in New York by New York Zoetrope (F18) Y43 has current area of publication United-Kingdom (E53), and Y43 has current area of publication United States of America (E53)
+- The periodical entitled ‘SPARC newsletter, a project of the World climate research programme’ (ISSN ‘1245-4680’), published in Paris by Météo-France from 1993 to 2004, in Toronto by the University of Toronto from 2004 to 2012, and in Zurich by ETH Zurich from 2012 on (F18) Y43 has current area of publication Switzerland (E53)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y43_is_indicative_of">
+    <rdfs:label xml:lang="en">Y43 is indicative of</rdfs:label>
+    <skos:notation>Y43</skos:notation>
+    <skos:prefLabel xml:lang="en">is indicative of</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z10_Sequencing_Pattern"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y43i_is_exemplified_by"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,1:0,n)
+
+Scope note:
+This property associates an instance of F23 Expression Fragment with the instance of Z10 Sequencing Pattern of which it provides an example.
+
+Examples:
+‘Vol. 272, No. 5 (1993, Nov.)’ (F23) Y43 is indicative of the pattern consisting of a volume number in Arabic numerals, corresponding to the year of publication, and an issue number in Arabic numerals, corresponding to the month of publication (Z10)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y43i_is_exemplified_by">
+    <rdfs:label xml:lang="en">Y43i is exemplified by</rdfs:label>
+    <skos:notation>Y43i</skos:notation>
+    <skos:prefLabel xml:lang="en">is exemplified by</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z10_Sequencing_Pattern"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y43_is_indicative_of"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,1:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of F23 Expression Fragment with the instance of Z10 Sequencing Pattern of which it provides an example.
+
+Examples of the inverse property:
+‘Vol. 272, No. 5 (1993, Nov.)’ (F23) Y43 is indicative of the pattern consisting of a volume number in Arabic numerals, corresponding to the year of publication, and an issue number in Arabic numerals, corresponding to the month of publication (Z10)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y44_foresees_topic">
+    <rdfs:label xml:lang="en">Y44 foresees topic</rdfs:label>
+    <skos:notation>Y44</skos:notation>
+    <skos:prefLabel xml:lang="en">foresees topic</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y44i_is_topic_foreseen_in"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67_refers_to"/>
+    <rdfs:comment xml:lang="en">Quantification: (0,n:0,n)
+
+Scope note:
+This property associates an instance of Z12 Issuing Rule with an instance of E1 CRM Entity that is the main subject that all articles aggregated in each single issue of the serial should be about, even more or less loosely.
+
+Examples:
+The editorial policy followed in publishing the periodical entitled ‘FBI. Fishing boat international’ (ISSN ‘0998-3201’) (Z12) Y44 foresees topic fishing (E55, a type of activity)
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Y44i_is_topic_foreseen_in">
+    <rdfs:label xml:lang="en">Y44i is topic foreseen in</rdfs:label>
+    <skos:notation>Y44i</skos:notation>
+    <skos:prefLabel xml:lang="en">is topic foreseen in</skos:prefLabel>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:range rdf:resource="http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule"/>
+    <owl:inverseOf rdf:resource="http://www.iflastandards.info/fr/pressoo/Y44_foresees_topic"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"/>
+    <rdfs:comment xml:lang="en">Quantification of the inverse property: (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of Z12 Issuing Rule with an instance of E1 CRM Entity that is the main subject that all articles aggregated in each single issue of the serial should be about, even more or less loosely.
+
+Examples of the inverse property:
+The editorial policy followed in publishing the periodical entitled ‘FBI. Fishing boat international’ (ISSN ‘0998-3201’) (Z12) Y44 foresees topic fishing (E55, a type of activity)
+</rdfs:comment>
+  </owl:ObjectProperty>
+</rdf:RDF>

@@ -1,0 +1,39 @@
+What could NOT be represented in RDA:
+- Ben Oda being an employee of Simond and Kirby Studio from 1949 to 1957
+- 'Employee of' forces Simon and Kirby Studio to a corporate body (it was not always the case)
+- Infer that because a manif. has an alternative nomen of a publisher it is publshed by that publisher
+- Chained inferences in general, only inferences on tuples from specific to general are supported. Could be beautifully extended
+- State extent as integer + unit of measure from a controlled vocabulary, needs external reification
+- Cannot specify the mereology of objects except for the generic part-of and support/added material. Needs extension in our case
+- Modified frequency of issuance over time (in principle multiple Serial Works should be recorded)
+- First and last issue of Serial Work, they are (incorrectly) proposed as manifestation properties
+
+What CAN be represented:
+- A LOT of specific roles of creators for films
+- Notated music and supports (vynil) for Marilyn
+
+Other remarks:
+- Very heavy, 80 000~ axioms
+- Many redundant properties to cover bibliographical recording fields (access points, note on...), unnecessary in a LOD context
+- Does not make the most of OWL inferences
+- Flexibility of duplicated object and data properties: properties can hold either literals or controlled vocabulary if available
+- Very punctual description of objects drawn from bibliographic standards
+- Multiplication of properties, one for each possibile combination of classes from specific to general
+
+###################################################################################################################################
+
+What could NOT be represented in CIDOC-CRM:
+- The specific type for extent (E54 Dimension) and medium/genre (E55 Type) declaration
+- The editor forseen in the serial publication
+
+What CAN be represented:
+- Dimensions reified as a class to which refer a data property (has value) + an object property (unit of measure)
+
+Other remarks:
+- Very solid taxonomy
+- Exponential growth of entities because of forced events whenever time and place need to be represented
+- PRESSoo is still implemented over FRBRoo
+- F12 Nomen from LRM is not well integrated within the taxonomy, it should have been an equivalent class to E41 Appellation
+
+
+The fundamental difference for Serial Works is that in LRMoo/PRESSoo the aggregation happens at a work level: the Serial Work Creation (Publication) Event (F27) has member (R10i, which is a generic relation from E28 Conceptual Object to F1 Work) the Issue (Publication) Work. IN RDA, the integration might happen both at a work level, where the (Serial) Work "has issue" the Issue Work, or at the expression level with "aggregates". We argue that linking the issue creation with the Serial publication (carried out by the publisher) as in LRMoo/PRESSoo is conceptually wrong in the LRM framework.

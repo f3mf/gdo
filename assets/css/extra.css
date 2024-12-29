@@ -1,0 +1,50 @@
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #DB1F74;
+  --md-accent-fg-color: #FA5C52;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #B81A61;
+  --md-accent-fg-color: #E64B49;
+}
+
+[data-md-color-scheme="default"] table td:empty {
+    background-color: #f0f0f0;
+}
+
+[data-md-color-scheme="slate"] table td:empty {
+    background-color: #1B1E25;
+}
+
+.md-logo {
+    width: 30px;
+    height: auto;
+}
+
+h2 {
+    clear: both;
+}
+
+.grid-right {
+    float: right;
+    width: 49%;
+    margin-left: 20px !important;
+    margin-top: 0 !important;
+}
+
+.grid.cards li.span-2 {
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+    .grid-right {
+        float: none;
+        width: 100%;
+        margin-left: 0px !important;
+    }
+
+    .grid.cards li.span-2 {
+        grid-column: inherit;
+    }
+
+}

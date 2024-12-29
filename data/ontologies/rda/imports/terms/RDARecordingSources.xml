@@ -1,0 +1,1082 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://rdaregistry.info/termList/RDARecordingSources/"
+     xml:base="http://rdaregistry.info/termList/RDARecordingSources/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:reg="http://metadataregistry.org/uri/profile/regap/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:rdakit="http://metadataregistry.org/uri/profile/rdakit/">
+    <owl:Ontology rdf:about="http://rdaregistry.info/termList/RDARecordingSources/">
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#licence -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#licence"/>
+    
+
+
+    <!-- http://metadataregistry.org/uri/profile/rdakit/toolkitDefinition -->
+
+    <owl:AnnotationProperty rdf:about="http://metadataregistry.org/uri/profile/rdakit/toolkitDefinition"/>
+    
+
+
+    <!-- http://metadataregistry.org/uri/profile/rdakit/toolkitLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://metadataregistry.org/uri/profile/rdakit/toolkitLabel"/>
+    
+
+
+    <!-- http://metadataregistry.org/uri/profile/regap/status -->
+
+    <owl:AnnotationProperty rdf:about="http://metadataregistry.org/uri/profile/regap/status"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://metadataregistry.org/uri/RegStatus/1001 -->
+
+    <owl:NamedIndividual rdf:about="http://metadataregistry.org/uri/RegStatus/1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Published</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <cc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/deed.en_US"/>
+        <dc:contributor>RSC Technical Working Group</dc:contributor>
+        <dc:creator>RDA Steering Committee</dc:creator>
+        <dc:description xml:lang="de">Begriffe für eine Informationsquelle eines Metadatenwerks, bei der es sich um eine unstrukturierte Beschreibung handelt, die aus einer beschriebenen Manifestation transkribiert ist.</dc:description>
+        <dc:description xml:lang="fr">Concepts décrivant une source d’information pour une œuvre de métadonnées qui consiste en une description non structurée transcrite d’une manifestation qui est décrite.</dc:description>
+        <dc:description xml:lang="en">Concepts for a source of information for a metadata work that is an unstructured description transcribed from a manifestation that is being described.</dc:description>
+        <dc:description xml:lang="fi">Käsitteet metatietoteoksen tiedonlähteelle, joka on rakenteistamaton kuvailu jäljennettynä manifestaatiosta, joka on kuvailtavana.</dc:description>
+        <dc:description xml:lang="ar">مفاهيم لمصدر معلومات لعمل ميتاداتا عبارة عن وصف غير محدد منسوخ من تجسيدة موصوفة.</dc:description>
+        <dc:description xml:lang="zh-hans-cn">用于一种元数据作品（即转录自被描述载体表现的非结构化描述）的一个信息源的概念</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-16</dc:issued>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-06</dc:modified>
+        <dc:publisher>ALA Digital Reference</dc:publisher>
+        <dc:rights xml:lang="fi">Copyright © 2020 American Library Association, Canadian Federation of Library Associations ja CILIP: Chartered Institute of Library and Information Professionals</dc:rights>
+        <dc:rights xml:lang="de">Copyright © 2020 American Library Association, Canadian Federation of Library Associations, and CILIP: Chartered Institute of Library and Information Professionals</dc:rights>
+        <dc:rights xml:lang="en">Copyright © 2020 American Library Association, Canadian Federation of Library Associations, and CILIP: Chartered Institute of Library and Information Professionals</dc:rights>
+        <dc:rights xml:lang="fr">Copyright © 2020 American Library Association, Fédération canadienne des associations de bibliothèques et CILIP: Chartered Institute of Library and Information Professionals</dc:rights>
+        <dc:rights xml:lang="ar">حقوق النشر© 2020، جمعية المكتبات الأمريكية، والاتحاد الكندي لجمعيات المكتبات، والمعهد القانوني للمكتبات ومهنيي المعلومات</dc:rights>
+        <dc:rights xml:lang="zh-hans-cn">版权 ? 2020 美国图书馆协会、加拿大图书馆协会联盟、英国图书馆和信息从业人员学会</dc:rights>
+        <dc:title xml:lang="en">RDA Recording Source</dc:title>
+        <dc:title xml:lang="de">RDA-Vokabular für Aufnahmequellen</dc:title>
+        <dc:title xml:lang="fi">RDA:n merkintälähde</dc:title>
+        <dc:title xml:lang="zh-hans-cn">RDA记录信息源</dc:title>
+        <dc:title xml:lang="fr">Source d’enregistrement RDA</dc:title>
+        <dc:title xml:lang="ar">مصدر تسجيل &quot;وام&quot;</dc:title>
+        <dc:type rdf:resource="http://rdaregistry.info/termList/RDALinkedDataWork/1002"/>
+        <vann:preferredNamespacePrefix>rdasource</vann:preferredNamespacePrefix>
+        <owl:versionInfo>v5.1.1</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1001 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="hu">A megjelenési formához tartozó adatforrás, amely a megjelenési formától fizikailag elkülöníthető tároló eszköz.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that is a housing that is physically separable from the manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses on kaitsekate, mis on kehastusest füüsiliselt eraldatav.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die een behuizing is die fysiek scheidbaar is van de manifestatie.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein Gehäuse, das von der Manifestation physisch trennbar ist und als Informationsquelle einer Manifestation dient.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="no">En informasjonskilde i en manifestasjon som består av emballasje som kan skilles rent fysisk fra manifestasjonen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que és un embolcall que està separat físicament de la manifestació.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da un alloggiamento fisicamente separabile dalla manifestazione.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - ietvere, kas ir fiziski nošķirama no manifestācijas.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="da">Kilde til oplysninger i en manifestation der er en beholder der er fysisk adskilt fra manifestationen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä kotelo, joka on fyysisesti erotettavissa manifestaatiosta.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui consiste en un contenant qui est physiquement séparable de la manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر للمعلومات في تجسيدة عبارة عن حاوية يمكن فصلها ماديًا عن التجسيدة.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">作为外壳且在物理上与载体表现可分离的一种载体表现的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Behältnis</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="no">beholder</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">container</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">conteneur</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">contenidor</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">contenitore</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">houder</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">ietvere</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">kotelo</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="da">opbevaringsudstyr</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="hu">tok</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">ümbris</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">حاوية</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">容器</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">ümbris</rdfs:label>
+        <skos:definition xml:lang="hu">A megjelenési formához tartozó adatforrás, amely a megjelenési formától fizikailag elkülöníthető tároló eszköz.</skos:definition>
+        <skos:definition xml:lang="en">A source of information in a manifestation that is a housing that is physically separable from the manifestation.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses on kaitsekate, mis on kehastusest füüsiliselt eraldatav.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die een behuizing is die fysiek scheidbaar is van de manifestatie.</skos:definition>
+        <skos:definition xml:lang="de">Ein Gehäuse, das von der Manifestation physisch trennbar ist und als Informationsquelle einer Manifestation dient.</skos:definition>
+        <skos:definition xml:lang="no">En informasjonskilde i en manifestasjon som består av emballasje som kan skilles rent fysisk fra manifestasjonen.</skos:definition>
+        <skos:definition xml:lang="ca">Font d&apos;informació en una manifestació que és un embolcall que està separat físicament de la manifestació.</skos:definition>
+        <skos:definition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da un alloggiamento fisicamente separabile dalla manifestazione.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - ietvere, kas ir fiziski nošķirama no manifestācijas.</skos:definition>
+        <skos:definition xml:lang="da">Kilde til oplysninger i en manifestation der er en beholder der er fysisk adskilt fra manifestationen.</skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä kotelo, joka on fyysisesti erotettavissa manifestaatiosta.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui consiste en un contenant qui est physiquement séparable de la manifestation.</skos:definition>
+        <skos:definition xml:lang="ar">مصدر للمعلومات في مظهر مادي عبارة عن حاوية يمكن فصلها ماديًا عن المظهر المادي.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">作为外壳且在物理上与载体表现可分离的一种载体表现的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1001</skos:notation>
+        <skos:prefLabel xml:lang="de">Behältnis</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">beholder</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">container</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">conteneur</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">contenidor</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">contenitore</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">houder</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">ietvere</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">kotelo</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">opbevaringsudstyr</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">tok</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">حاوية</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">容器</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1002 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1002">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy film egy kockája, amely információt tartalmaz a főcímről, a szerzőségi közlésről, a megjelenésről, vagy a megjelenési forma egyéb aspektusáról.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that is a frame of a film that contains information about title proper, statement of responsibility, publication, or other aspect of the manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses on filmi kaader, mis sisaldab infot põhipealkirja, vastutusandmete, avaldamise või kehastuse muude aspektide kohta.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die een beeld van een film is dat informatie bevat over de hoofdtitel, verantwoordelijkheidsvermelding, publicatie of ander aspect van de manifestatie.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein Bildfeld eines Films, das Informationen über den Haupttitel, die Verantwortlichkeitsangabe, die Veröffentlichung oder andere Eigenschaften der Manifestation enthält und als Informationsquelle einer Manifestation dient.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="no">En informasjonskilde i en manifestasjon som er en tittelrute som inneholder informasjon om hovedtittel, ansvarsangivelse, publisering eller andre aspekter ved manifestasjonen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que és un fotograma d’una pel·lícula que conté informació sobre el títol propi, la menció de responsabilitat, o un altre aspecte de la manifestació.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita dal fotogramma di un film che contiene le informazioni sul titolo proprio, la formulazione di responsabilità, la pubblicazione o altri aspetti della manifestazione.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - filmas kadrs, kas satur informāciju par darba nosaukumu, atbildības un izdošanas ziņām vai citiem aspektiem attiecībā uz manifestāciju.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="da">Kilde til oplysninger i en manifestation der er et billede af en film der indeholder oplysninger om hovedtitel, ophav, udgivelse eller andre aspekter af manifestationen. </rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä filmiruutu, joka sisältää tietoa päänimekkeestä, vastuullisuudesta, julkaisusta tai muusta manifestaatioon liittyvästä.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui consiste en une image d’un film contenant de l’information sur un titre propre, une mention de responsabilité, la publication ou tout autre aspect de la manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر للمعلومات في تجسيدة عبارة عن إطار لفيلم يحتوي على معلومات عن العنوان الفعلي أو عن بيان المسؤولية أو بيانات النشر أو عن أي جانب آخر من التجسيدة.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">包含关于正题名、责任说明、出版、或该载体表现其他方面之信息的、作为胶片的一帧的一种载体表现的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Titelbildfeld</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">alku- ja/tai lopputekstit</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="hu">filmfőcím</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">fotograma de títol</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">fotogramma del titolo</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">image-titre</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">tiitelkaader</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">titelbeeld</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="da">titelbillede</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">title frame</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="no">tittelsekvens</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">titulkadrs</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">إطار العنوان</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">题名帧</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">tiitelkaader</rdfs:label>
+        <skos:altLabel xml:lang="fr">image du titre</skos:altLabel>
+        <skos:definition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy film egy kockája, amely információt tartalmaz a főcímről, a szerzőségi közlésről, a megjelenésről, vagy a megjelenési forma egyéb aspektusáról.</skos:definition>
+        <skos:definition xml:lang="en">A source of information in a manifestation that is a frame of a film that contains information about title proper, statement of responsibility, publication, or other aspect of the manifestation.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses on filmi kaader, mis sisaldab infot põhipealkirja, vastutusandmete, avaldamise või kehastuse muude aspektide kohta.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die een beeld van een film is dat informatie bevat over de hoofdtitel, verantwoordelijkheidsvermelding, publicatie of ander aspect van de manifestatie.</skos:definition>
+        <skos:definition xml:lang="de">Ein Bildfeld eines Films, das Informationen über den Haupttitel, die Verantwortlichkeitsangabe, die Veröffentlichung oder andere Eigenschaften der Manifestation enthält und als Informationsquelle einer Manifestation dient.</skos:definition>
+        <skos:definition xml:lang="no">En informasjonskilde i en manifestasjon som er en tittelrute som inneholder informasjon om hovedtittel, ansvarsangivelse, publisering eller andre aspekter ved manifestasjonen.</skos:definition>
+        <skos:definition xml:lang="ca">Font d&apos;informació en una manifestació que és un fotograma d&apos;una pel·lícula que conté informació sobre el títol propi, la menció de responsabilitat, o un altre aspecte de la manifestació.</skos:definition>
+        <skos:definition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita dal fotogramma di un film che contiene le informazioni sul titolo proprio, la formulazione di responsabilità, la pubblicazione o altri aspetti della manifestazione.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - filmas kadrs, kas satur informāciju par darba nosaukumu, atbildības un izdošanas ziņām vai citiem aspektiem attiecībā uz manifestāciju.</skos:definition>
+        <skos:definition xml:lang="da">Kilde til oplysninger i en manifestation der er et billede af en film der indeholder oplysninger om hovedtitel, ophav, udgivelse eller andre aspekter af manifestationen. </skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä filmiruutu, joka sisältää tietoa päänimekkeestä, vastuullisuudesta, julkaisusta tai muusta manifestaatioon liittyvästä.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui consiste en une image d’un film contenant de l’information sur un titre propre, une mention de responsabilité, la publication ou tout autre aspect de la manifestation.</skos:definition>
+        <skos:definition xml:lang="ar">مصدر للمعلومات في مظهر مادي عبارة عن إطار لفيلم يحتوي على معلومات عن العنوان الفعلي أو بيان المسؤولية أو بيانات النشر أو أي جانب آخر من المظهر المادي.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">包含关于正题名、责任说明、出版、或该载体表现其他方面之信息的、作为胶片的一帧的一种载体表现的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1002</skos:notation>
+        <skos:prefLabel xml:lang="de">Titelbildfeld</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">alku- ja/tai lopputekstit</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">filmfőcím</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">fotograma de títol</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">fotogramma del titolo</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">image-titre</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">titelbeeld</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">titelbillede</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">title frame</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">tittelsekvens</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">titulkadrs</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">إطار العنوان</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">题名帧</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1003 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1003">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy kötet egy oldala, amely információt tartalmaz a főcímről, a szerzőségi közlésről, a megjelenésről, vagy a megjelenési forma egyéb aspektusáról.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that is a page of a volume that contains information about title proper, statement of responsibility, publication, or other aspect of the manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses on köite lehekülg, mis sisaldab infot põhipealkirja, vastutusandmete, avaldamise või kehastuse muude aspektide kohta.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die een pagina uit een band is die informatie bevat over de hoofdtitel, verantwoordelijkheidsvermelding, publicatie of ander aspect van de manifestatie.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Seite eines Bands, die Informationen über den Haupttitel, die Verantwortlichkeitsangabe, die Veröffentlichung oder andere Eigenschaften der Manifestation enthält und als Informationsquelle einer Manifestation dient.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="no">En informasjonskilde i en manifestasjon som er en side i et bind som inneholder informasjon om hovedtittel, ansvarsangivelse, publisering eller andre aspekter ved manifestasjonen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que és una pàgina d’un volum que conté informació sobre el títol propi, la menció de responsabilitat, o un altre aspecte de la manifestació.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita dalla pagina di un volume che contiene le informazioni sul titolo proprio, la formulazione di responsabilità, la pubblicazione o altri aspetti della manifestazione.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - sējuma lapa, kas satur informāciju par darba nosaukumu, atbildības un izdošanas ziņām vai citiem aspektiem attiecībā uz manifestāciju.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="da">Kilde til oplysninger i en manifestation der er en side af et bind der indeholder oplysninger om hovedtitel, ophav, udgivelse eller andre aspekter af manifestationen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä niteeseen sisältyvä sivu, joka sisältää tietoa päänimekkeestä, vastuullisuudesta, julkaisusta tai muusta manifestaatioon liittyvästä.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui consiste en une page d’un volume contenant de l’information sur un titre propre, une mention de responsabilité, la publication ou tout autre aspect de la manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر للمعلومات في تجسيدة، عبارة عن صفحة من مجلد تحتوي على معلومات عن العنوان الفعلي، أو على بيان المسؤولية، أو بيانات النشر، أو على أي جانب آخر من جوانب التجسيدة.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">包含关于正题名、责任说明、出版、或该载体表现其他方面之信息的、作为一卷的一页的一种载体表现的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Titelseite</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="hu">címoldal</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">frontespizio</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">nimiösivu</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">page de titre</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">portada</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">tiitelleht</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">titelpagina</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="da">titelside</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">title page</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="no">tittelside</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">titullapa</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">صفحة العنوان</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">正题名</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">tiitelleht</rdfs:label>
+        <skos:definition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy kötet egy oldala, amely információt tartalmaz a főcímről, a szerzőségi közlésről, a megjelenésről, vagy a megjelenési forma egyéb aspektusáról.</skos:definition>
+        <skos:definition xml:lang="en">A source of information in a manifestation that is a page of a volume that contains information about title proper, statement of responsibility, publication, or other aspect of the manifestation.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses on köite lehekülg, mis sisaldab infot põhipealkirja, vastutusandmete, avaldamise või kehastuse muude aspektide kohta.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die een pagina uit een band is die informatie bevat over de hoofdtitel, verantwoordelijkheidsvermelding, publicatie of ander aspect van de manifestatie.</skos:definition>
+        <skos:definition xml:lang="de">Eine Seite eines Bands, die Informationen über den Haupttitel, die Verantwortlichkeitsangabe, die Veröffentlichung oder andere Eigenschaften der Manifestation enthält und als Informationsquelle einer Manifestation dient.</skos:definition>
+        <skos:definition xml:lang="no">En informasjonskilde i en manifestasjon som er en side i et bind som inneholder informasjon om hovedtittel, ansvarsangivelse, publisering eller andre aspekter ved manifestasjonen.</skos:definition>
+        <skos:definition xml:lang="ca">Font d&apos;informació en una manifestació que és una pàgina d&apos;un volum que conté informació  sobre el títol propi, la menció de responsabilitat, o un altre aspecte de la manifestació.</skos:definition>
+        <skos:definition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita dalla pagina di un volume che contiene le informazioni sul titolo proprio, la formulazione di responsabilità, la pubblicazione o altri aspetti della manifestazione.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - sējuma lapa, kas satur informāciju par darba nosaukumu, atbildības un izdošanas ziņām vai citiem aspektiem attiecībā uz manifestāciju.</skos:definition>
+        <skos:definition xml:lang="da">Kilde til oplysninger i en manifestation der er en side af et bind der indeholder oplysninger om hovedtitel, ophav, udgivelse eller andre aspekter af manifestationen.</skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä niteeseen sisältyvä sivu, joka sisältää tietoa päänimekkeestä, vastuullisuudesta, julkaisusta tai muusta manifestaatioon liittyvästä.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui consiste en une page d’un volume contenant de l’information sur un titre propre, une mention de responsabilité, la publication ou tout autre aspect de la manifestation.</skos:definition>
+        <skos:definition xml:lang="ar">مصدر للمعلومات في مظهر مادي عبارة عن صفحة من مجلد تحتوي على معلومات عن العنوان الفعلي أو بيان المسؤولية أو بيانات النشر أو أي جانب آخر من المظهر المادي.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">包含关于正题名、责任说明、出版、或该载体表现其他方面之信息的、作为一卷的一页的一种载体表现的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1003</skos:notation>
+        <skos:prefLabel xml:lang="de">Titelseite</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">címoldal</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">frontespizio</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">nimiösivu</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">page de titre</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">portada</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">titelpagina</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">titelside</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">title page</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">tittelside</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">titullapa</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">صفحة العنوان</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">正题名</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1004 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1004">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy digitális megjelenési forma egy képernyőképe, amely információt tartalmaz a főcímről, a szerzőségi közlésről, a megjelenésről, vagy a megjelenési forma egyéb aspektusáról.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that is a screen of a digital manifestation that contains information about title proper, statement of responsibility, publication, or other aspect of the manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses on digitaalse kehastuse kuva, mis sisaldab infot põhipealkirja, vastutusandmete, avaldamise või kehastuse muude aspektide kohta.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die een scherm is van een digitale manifestatie die informatie bevat over de hoofdtitel, verantwoordelijkheidsvermelding, publicatie of ander aspect van de manifestatie.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein Bildschirm einer digitalen Ressource, der Informationen über den Haupttitel, die Verantwortlichkeitsangabe, die Veröffentlichung oder andere Eigenschaften der Manifestation enthält und als Informationsquelle einer Manifestation dient.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="no">En informasjonskilde i en manifestasjon som er et skjermbilde i en digital manifestasjon som inneholder informasjon om hovedtittel, ansvarsangivelse, publisering eller andre aspekter ved manifestasjonen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que és una pantalla d’una manifestació digital que conté informació sobre el títol propi, la menció de responsabilitat, o un altre aspecte de la manifestació.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita dalla schermata di una manifestazione digitale che contiene le informazioni sul titolo proprio, la formulazione di responsabilità, la pubblicazione o altri aspetti della manifestazione.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - digitālās manifestācijas ekrānskats, kas satur informāciju par darba nosaukumu, atbildības un izdošanas ziņām vai citiem aspektiem attiecībā uz manifestāciju.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="da">Kilde til oplysninger i en manifestaton der et skærmbillede af en digital manifestation der indeholder oplysninger om hovedtitel, ophav, udgivelse og andre aspekter af manifestationen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä digitaalisen manifestaation näkymä, joka sisältää tietoa päänimekkeestä, vastuullisuudesta, julkaisusta tai muusta manifestaatioon liittyvästä.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui consiste en un écran d’une manifestation numérique contenant de l’information sur un titre propre, une mention de responsabilité, la publication ou tout autre aspect de la manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر للمعلومات في تجسيدة عبارة عن شاشة لتجسيدة رقمية تحتوي على معلومات عن العنوان الفعلي، أو عن بيان المسؤولية، أو عن بيانات النشر، أو عن أي جانب آخر من التجسيدة.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">包含关于正题名、责任说明、出版、或该载体表现其他方面之信息的、作为一种数字载体表现的一屏的一种载体表现的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Titelbildschirm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="hu">címképernyő</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">nimiönäyttö</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">pantalla de títol</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">schermata del titolo</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">tiitelkuva</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">titelscherm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="da">titelskærmbillede</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">title screen</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="no">tittelskjermbilde</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">titula ekrānskats</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">écran-titre</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">شاشة العنوان</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">题名屏</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">tiitelkuva</rdfs:label>
+        <skos:definition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy digitális megjelenési forma egy képernyőképe, amely információt tartalmaz a főcímről, a szerzőségi közlésről, a megjelenésről, vagy a megjelenési forma egyéb aspektusáról.</skos:definition>
+        <skos:definition xml:lang="en">A source of information in a manifestation that is a screen of a digital manifestation that contains information about title proper, statement of responsibility, publication, or other aspect of the manifestation.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses on digitaalse kehastuse kuva, mis sisaldab infot põhipealkirja, vastutusandmete, avaldamise või kehastuse muude aspektide kohta.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die een scherm is van een digitale manifestatie die informatie bevat over de hoofdtitel, verantwoordelijkheidsvermelding, publicatie of ander aspect van de manifestatie.</skos:definition>
+        <skos:definition xml:lang="de">Ein Bildschirm einer digitalen Ressource, der Informationen über den Haupttitel, die Verantwortlichkeitsangabe, die Veröffentlichung oder andere Eigenschaften der Manifestation enthält und als Informationsquelle einer Manifestation dient.</skos:definition>
+        <skos:definition xml:lang="no">En informasjonskilde i en manifestasjon som er et skjermbilde i en digital manifestasjon som inneholder informasjon om hovedtittel, ansvarsangivelse, publisering eller andre aspekter ved manifestasjonen.</skos:definition>
+        <skos:definition xml:lang="ca">Font d&apos;informació en una manifestació que és una pantalla d&apos;una manifestació digital que conté informació sobre el títol propi, la menció de responsabilitat, o un altre aspecte de la manifestació.</skos:definition>
+        <skos:definition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita dalla schermata di una manifestazione digitale che contiene le informazioni sul titolo proprio, la formulazione di responsabilità, la pubblicazione o altri aspetti della manifestazione.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - digitālās manifestācijas ekrānskats, kas satur informāciju par darba nosaukumu, atbildības un izdošanas ziņām vai citiem aspektiem attiecībā uz manifestāciju.</skos:definition>
+        <skos:definition xml:lang="da">Kilde til oplysninger i en manifestaton der et skærmbillede af en digital manifestation der indeholder oplysninger om hovedtitel, ophav, udgivelse og andre aspekter af manifestationen.</skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä digitaalisen manifestaation näkymä, joka sisältää tietoa päänimekkeestä, vastuullisuudesta, julkaisusta tai muusta manifestaatioon liittyvästä.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui consiste en un écran d’une manifestation numérique contenant de l’information sur un titre propre, une mention de responsabilité, la publication ou tout autre aspect de la manifestation.</skos:definition>
+        <skos:definition xml:lang="ar">مصدر للمعلومات في مظهر مادي عبارة عن شاشة لمظهر مادي رقمي تحتوي على معلومات عن العنوان الفعلي أو بيان المسؤولية أو بيانات النشر أو أي جانب آخر من المظهر المادي.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">包含关于正题名、责任说明、出版、或该载体表现其他方面之信息的、作为一种数字载体表现的一屏的一种载体表现的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1004</skos:notation>
+        <skos:prefLabel xml:lang="de">Titelbildschirm</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">címképernyő</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">nimiönäyttö</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">pantalla de títol</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">schermata del titolo</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">titelscherm</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">titelskærmbillede</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">title screen</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">tittelskjermbilde</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">titula ekrānskats</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">écran-titre</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">شاشة العنوان</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">题名屏</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1005 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1005">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy lap egy lapkötegen belül, amely információt tartalmaz a főcímről, a szerzőségi közlésről, a megjelenésről, vagy a megjelenési forma egyéb aspektusáról.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that is a sheet in a set of sheets that contains information about title proper, statement of responsibility, publication, or other aspect of the manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses on lehtede kogumi leht, mis sisaldab infot põhipealkirja, vastutusandmete, avaldamise või kehastuse muude aspektide kohta.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die een vel is in een verzameling van vellen dat informatie bevat over de hoofdtitel, verantwoordelijkheidsvermelding, publicatie of ander aspect van de manifestatie.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eins von mehreren Blättern, das Informationen über den Haupttitel, die Verantwortlichkeitsangabe, die Veröffentlichung oder andere Eigenschaften der Manifestation enthält und als Informationsquelle einer Manifestation dient.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="no">En informasjonskilde i en manifestasjon som er et ark i et sett av ark som inneholder informasjon om hovedtittel, ansvarsangivelse, publisering eller andre aspekter ved manifestasjonen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que és un full en un conjunt de fulls que conté informació sobre el títol propi, la menció de responsabilitat, o un altre aspecte de la manifestació.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da un foglio in un set di fogli che contiene le informazioni sul titolo proprio, la formulazione di responsabilità, la pubblicazione o altri aspetti della manifestazione.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - loksne lokšņu komplektā, kas ietver informāciju par pamatnosaukumu, atbildības ziņas, ziņas par publicēšanu vai citu manifestācijas aspektu.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="da">Kilde til oplysninger i en manifestation der er et ark i et set af ark der indeholder oplysninger om hovedtitel, ophav, udgivelse eller andre aspekter af manifestationen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä arkki arkkikokoelmassa, joka sisältää tietoa päänimekkeestä, vastuullisuudesta, julkaisusta tai muusta manifestaatioon liittyvästä.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui consiste en une feuille appartenant à un jeu de feuilles et contenant de l’information sur un titre propre, une mention de responsabilité, la publication ou tout autre aspect de la manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر للمعلومات في تجسيدة عبارة عن ورقة ضمن مجموعة أوراق تتضمن معلومات عن العنوان الفعلي، أو عن بيان المسؤولية، أو عن بيانات النشر، أو عن أي جانب آخر من التجسيدة.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">包含关于正题名、责任说明、出版、或该载体表现其他方面之信息的、作为一套张之一张的一种载体表现的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Titelblatt</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="hu">címlap</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">feuille de titre</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">foglio del titolo</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">full de títol</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">irdtiitelleht</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">nimiöarkki</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="da">titelblad</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">titelvel</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">title sheet</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="no">tittelark</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">titulloksne</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">ورقة العنوان</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">题名张</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">irdtiitelleht</rdfs:label>
+        <skos:definition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy lap egy lapkötegen belül, amely információt tartalmaz a főcímről, a szerzőségi közlésről, a megjelenésről, vagy a megjelenési forma egyéb aspektusáról.</skos:definition>
+        <skos:definition xml:lang="en">A source of information in a manifestation that is a sheet in a set of sheets that contains information about title proper, statement of responsibility, publication, or other aspect of the manifestation.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses on lehtede kogumi leht, mis sisaldab infot põhipealkirja, vastutusandmete, avaldamise või kehastuse muude aspektide kohta.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die een vel is in een verzameling van vellen dat informatie bevat over de hoofdtitel, verantwoordelijkheidsvermelding, publicatie of ander aspect van de manifestatie.</skos:definition>
+        <skos:definition xml:lang="de">Eins von mehreren Blättern, das Informationen über den Haupttitel, die Verantwortlichkeitsangabe, die Veröffentlichung oder andere Eigenschaften der Manifestation enthält und als Informationsquelle einer Manifestation dient.</skos:definition>
+        <skos:definition xml:lang="no">En informasjonskilde i en manifestasjon som er et ark i et sett av ark som inneholder informasjon om hovedtittel, ansvarsangivelse, publisering eller andre aspekter ved manifestasjonen.</skos:definition>
+        <skos:definition xml:lang="ca">Font d&apos;informació en una manifestació que és un full en un conjunt de fulls que conté informació sobre el títol propi, la menció de responsabilitat, o un altre aspecte de la manifestació.</skos:definition>
+        <skos:definition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da un foglio in un set di fogli che contiene le informazioni sul titolo proprio, la formulazione di responsabilità, la pubblicazione o altri aspetti della manifestazione.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - loksne lokšņu komplektā, kas ietver informāciju par pamatnosaukumu, atbildības ziņas, ziņas par publicēšanu vai citu manifestācijas aspektu.</skos:definition>
+        <skos:definition xml:lang="da">Kilde til oplysninger i en manifestation der er et ark i et set af ark der indeholder oplysninger om hovedtitel, ophav, udgivelse eller andre aspekter af manifestationen.</skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä arkki arkkikokoelmassa, joka sisältää tietoa päänimekkeestä, vastuullisuudesta, julkaisusta tai muusta manifestaatioon liittyvästä.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui consiste en une feuille appartenant à un jeu de feuilles et contenant de l’information sur un titre propre, une mention de responsabilité, la publication ou tout autre aspect de la manifestation.</skos:definition>
+        <skos:definition xml:lang="ar">مصدر للمعلومات في مظهر مادي عبارة عن فرخ من الورق في مجموعة من الأوراق تحتوي على معلومات عن العنوان الفعلي أو بيان المسؤولية أو بيانات النشر أو أي جانب آخر من المظهر المادي.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">包含关于正题名、责任说明、出版、或该载体表现其他方面之信息的、作为一套张之一张的一种载体表现的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1005</skos:notation>
+        <skos:prefLabel xml:lang="de">Titelblatt</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">címlap</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">feuille de titre</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">foglio del titolo</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">full de títol</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">nimiöarkki</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">titelblad</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">titelvel</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">title sheet</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">tittelark</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">titulloksne</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">ورقة العنوان</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">题名张</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1006 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1006">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy kártyalap egy kártyakötegen belül, amely információt tartalmaz a főcímről, a szerzőségi közlésről, a megjelenésről, vagy a megjelenési forma egyéb aspektusáról.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that is a card in a set of cards that contains information about title proper, statement of responsibility, publication, or other aspect of the manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses on kaartide kogumi kaart, mis sisaldab infot põhipealkirja, vastutusandmete, avaldamise või kehastuse muude aspektide kohta.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die een kaart is in een verzameling van kaarten die informatie bevat over de hoofdtitel, verantwoordelijkheidsvermelding, publicatie of ander aspect van de manifestatie.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine von mehreren Karten, die Informationen über den Haupttitel, die Verantwortlichkeitsangabe, die Veröffentlichung oder andere Eigenschaften der Manifestation enthält und als Informationsquelle einer Manifestation dient.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="no">En informasjonskilde i en manifestasjon som er et kort i et sett av kort som inneholder informasjon om hovedtittel, ansvarsangivelse, publisering eller andre aspekter ved manifestasjonen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que és una fitxa en un conjunt de fitxes que conté informació sobre el títol propi, la menció de responsabilitat, o un altre aspecte de la manifestació.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da una carta in un set di carte che contiene le informazioni sul titolo proprio, la formulazione di responsabilità, la pubblicazione o altri aspetti della manifestazione.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - kartīte kartīšu komplektā, kas ietver informāciju par pamatnosaukumu, atbildības ziņas, ziņas par publicēšanu vai citu manifestācijas aspektu.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="da">Kilde til oplysninger i en manifestation der er et kort i et set af kort der indeholder oplysninger om hovedtitel, ophav, udgivelse eller andre aspekter af manifestationen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä kortti korttikokoelmassa, joka sisältää tietoa päänimekkeestä, vastuullisuudesta, julkaisusta tai muusta manifestaatioon liittyvästä.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui consiste en une fiche appartenant à un jeu de fiches et contenant de l’information sur un titre propre, une mention de responsabilité, la publication ou tout autre aspect de la manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر للمعلومات في تجسيدة عبارة عن بطاقة في مجموعة بطاقات تتضمن معلومات عن العنوان الفعلي، أو عن بيان المسؤولية، أو عن بيانات النشر، أو عن أي جانب آخر من التجسيدة.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">包含关于正题名、责任说明、出版、或该载体表现其他方面之信息的、作为一套卡片之一张卡片的一种载体表现的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Titelkarte</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">carta del titolo</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="hu">címkártya</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">fiche de titre</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">fitxa de títol</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">nimiökortti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">tiitelkaart</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">titelkaart</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="da">titelkort</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">title card</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="no">tittelkort</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">titulkartīte</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">بطاقة العنوان</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">题名卡片</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">tiitelkaart</rdfs:label>
+        <skos:definition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy kártyalap egy kártyakötegen belül, amely információt tartalmaz a főcímről, a szerzőségi közlésről, a megjelenésről, vagy a megjelenési forma egyéb aspektusáról.</skos:definition>
+        <skos:definition xml:lang="en">A source of information in a manifestation that is a card in a set of cards that contains information about title proper, statement of responsibility, publication, or other aspect of the manifestation.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses on kaartide kogumi kaart, mis sisaldab infot põhipealkirja, vastutusandmete, avaldamise või kehastuse muude aspektide kohta.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die een kaart is in een verzameling van kaarten die informatie bevat over de hoofdtitel, verantwoordelijkheidsvermelding, publicatie of ander aspect van de manifestatie.</skos:definition>
+        <skos:definition xml:lang="de">Eine von mehreren Karten, die Informationen über den Haupttitel, die Verantwortlichkeitsangabe, die Veröffentlichung oder andere Eigenschaften der Manifestation enthält und als Informationsquelle einer Manifestation dient.</skos:definition>
+        <skos:definition xml:lang="no">En informasjonskilde i en manifestasjon som er et kort i et sett av kort som inneholder informasjon om hovedtittel, ansvarsangivelse, publisering eller andre aspekter ved manifestasjonen.</skos:definition>
+        <skos:definition xml:lang="ca">Font d&apos;informació en una manifestació que és una fitxa en un conjunt de fitxes que conté informació sobre el títol propi, la menció de responsabilitat, o un altre aspecte de la manifestació.</skos:definition>
+        <skos:definition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da una carta in un set di carte che contiene le informazioni sul titolo proprio, la formulazione di responsabilità, la pubblicazione o altri aspetti della manifestazione.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - kartīte kartīšu komplektā, kas ietver informāciju par pamatnosaukumu, atbildības ziņas, ziņas par publicēšanu vai citu manifestācijas aspektu.</skos:definition>
+        <skos:definition xml:lang="da">Kilde til oplysninger i en manifestation der er et kort i et set af kort der indeholder oplysninger om hovedtitel, ophav, udgivelse eller andre aspekter af manifestationen.</skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä kortti korttikokoelmassa, joka sisältää tietoa päänimekkeestä, vastuullisuudesta, julkaisusta tai muusta manifestaatioon liittyvästä.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui consiste en une fiche appartenant à un jeu de fiches et contenant de l’information sur un titre propre, une mention de responsabilité, la publication ou tout autre aspect de la manifestation.</skos:definition>
+        <skos:definition xml:lang="ar">مصدر للمعلومات في مظهر مادي عبارة عن بطاقة في مجموعة من البطاقات تحتوي على معلومات عن العنوان الفعلي أو بيان المسؤولية أو بيانات النشر أو أي جانب آخر من المظهر المادي.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">包含关于正题名、责任说明、出版、或该载体表现其他方面之信息的、作为一套卡片之一张卡片的一种载体表现的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1006</skos:notation>
+        <skos:prefLabel xml:lang="de">Titelkarte</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">carta del titolo</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">címkártya</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">fiche de titre</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">fitxa de títol</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">nimiökortti</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">titelkaart</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">titelkort</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">title card</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">tittelkort</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">titulkartīte</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">بطاقة العنوان</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">题名卡片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1007 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1007">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy emberi szemmel olvasható, a megjelenési formához permanens jelleggel rögzített címke.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that is a human-readable label that is permanently affixed to the manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses on inimloetav etikett, mis on püsivalt kinnitatud kehastuse külge.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die een voor de mens leesbaar label is dat permanent bevestigd is aan de manifestatie.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein von Menschen lesbares, dauerhaft an der Manifestation befestigtes Etikett, das als Informationsquelle in einer Manifestation dient.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="no">En informasjonskilde i en manifestasjon som er en menneskelig lesbar etikett som er permanent festet til manifestasjonen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que és una etiqueta llegible per humans enganxada permanentment a la manifestació.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da una etichetta leggibile dall&apos;occhio umano che è permanentemente apposta sulla manifestazione.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - lasāma etiķete, kas pastāvīgi piestiprināta manifestācijai.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="da">Kilde til oplysninger i en manifestation der er en læselig etiket, der er permanent fastgjort til manifestationen. </rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatioon sisältyvä tiedonlähde, joka on manifestaatioon pysyvästi kiinnitetty ihmisluettava etiketti.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui consiste en une étiquette lisible par une personne et apposée de façon permanente sur la manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر للمعلومات في تجسيدة عبارة عن وسم يمكن قراءته بالعين المجردة، مثبت دائما على التجسيدة.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">被永久粘贴在载体表现上的、作为一种人类可读标签的一种载体表现中的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Etikett</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">carrier label</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="hu">címke</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">dragerslabel</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">etichetta</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="da">etiket</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">etikett</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="no">etikett</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">etiqueta de suport físic</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">etiķete</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">tallenteen etiketti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">étiquette de support matériel</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">وسم الحامل</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">载体标签</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">etikett</rdfs:label>
+        <skos:altLabel xml:lang="fi">etiketti, tallenne</skos:altLabel>
+        <skos:altLabel xml:lang="en">label, carrier</skos:altLabel>
+        <skos:altLabel xml:lang="ar">وسم، حامل</skos:altLabel>
+        <skos:altLabel xml:lang="zh-hans-cn">标签（载体）</skos:altLabel>
+        <skos:definition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy emberi szemmel olvasható, a megjelenési formához permanens jelleggel rögzített címke.</skos:definition>
+        <skos:definition xml:lang="en">A source of information in a manifestation that is a human-readable label that is permanently affixed to the manifestation.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses on inimloetav etikett, mis on püsivalt kinnitatud kehastuse külge.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die een voor de mens leesbaar label is dat permanent bevestigd is aan de manifestatie.</skos:definition>
+        <skos:definition xml:lang="de">Ein von Menschen lesbares, dauerhaft an der Manifestation befestigtes Etikett, das als Informationsquelle in einer Manifestation dient.</skos:definition>
+        <skos:definition xml:lang="no">En informasjonskilde i en manifestasjon som er en menneskelig lesbar etikett som er permanent festet til manifestasjonen.</skos:definition>
+        <skos:definition xml:lang="ca">Font d&apos;informació en una manifestació que és una etiqueta llegible per humans enganxada permanentment a la manifestació.</skos:definition>
+        <skos:definition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da una etichetta leggibile dall&apos;occhio umano che è permanentemente apposta sulla manifestazione.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - lasāma etiķete, kas pastāvīgi piestiprināta manifestācijai.</skos:definition>
+        <skos:definition xml:lang="da">Kilde til oplysninger i en manifestation der er en læselig etiket, der er permanent fastgjort til manifestationen. </skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatioon sisältyvä tiedonlähde, joka on manifestaatioon pysyvästi kiinnitetty ihmisluettava etiketti.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui consiste en une étiquette lisible par une personne et apposée de façon permanente sur la manifestation.</skos:definition>
+        <skos:definition xml:lang="ar">مصدر للمعلومات في مظهر مادي عبارة عن أداة تعريفية يستطيع الانسان قراءتها، مثبتة بشكل دائم على المظهر المادي.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">被永久粘贴在载体表现上的、作为一种人类可读标签的一种载体表现中的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1007</skos:notation>
+        <skos:prefLabel xml:lang="de">Etikett</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">carrier label</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">címke</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">dragerslabel</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">etichetta</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">etiket</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">etikett</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">etiqueta de suport físic</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">etiķete</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">tallenteen etiketti</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">étiquette de support matériel</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">وسم الحامل</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">载体标签</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1008 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1008">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami a kötet megóvását célzó kötés.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that is a protective binding of a volume.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses on köidet kaitsev kaas.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die een beschermende bindwijze is van de band.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein schützender Einband eines Bands, der als Informationsquelle einer Manifestation dient.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="no">En informasjonskilde i en manifestasjon som er en beskyttende innbinding av et bind.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que és una enquadernació protectora d’un volum.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da una legatura protettiva di un volume.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - sējumu aizsargājošs iesējums, kas ir informācijas avots manifestācijai.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="da">Kilde til oplysninger i en manfiestation der er en beskyttende indbindning af en volumen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä niteen suojaava sidos.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui consiste en une reliure de protection d’un volume.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر للمعلومات في تجسيدة عبارة عن تجليد وقائي لمجلد.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">作为一卷的保护性装订的一种载体表现中的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Einbanddecke</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="hu">borító</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">coberta</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">copertina</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">couverture</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">cover</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">kaas</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">kansi</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="da">omslag</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">omslag</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="no">omslag</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">vāks</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">غلاف</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">封面</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">kaas</rdfs:label>
+        <skos:altLabel xml:lang="de">Cover</skos:altLabel>
+        <skos:altLabel xml:lang="no">bokomslag</skos:altLabel>
+        <skos:definition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami a kötet megóvását célzó kötés.</skos:definition>
+        <skos:definition xml:lang="en">A source of information in a manifestation that is a protective binding of a volume.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses on köidet kaitsev kaas.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die een beschermende bindwijze is van de band.</skos:definition>
+        <skos:definition xml:lang="de">Ein schützender Einband eines Bands, der als Informationsquelle einer Manifestation dient.</skos:definition>
+        <skos:definition xml:lang="no">En informasjonskilde i en manifestasjon som er en beskyttende innbinding av et bind.</skos:definition>
+        <skos:definition xml:lang="ca">Font d&apos;informació en una manifestació que és una enquadernació protectora d&apos;un volum.</skos:definition>
+        <skos:definition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da una legatura protettiva di un volume.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - sējumu aizsargājošs iesējums, kas ir informācijas avots manifestācijai.</skos:definition>
+        <skos:definition xml:lang="da">Kilde til oplysninger i en manfiestation der er en beskyttende indbindning af en volumen.</skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä niteen suojaava sidos.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui consiste en une reliure de protection d’un volume.</skos:definition>
+        <skos:definition xml:lang="ar">مصدر للمعلومات في مظهر مادي عبارة عن تجليد وقائي لمجلد.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">作为一卷的保护性装订的一种载体表现中的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1008</skos:notation>
+        <skos:prefLabel xml:lang="de">Einbanddecke</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">borító</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">coberta</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">copertina</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">couverture</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">cover</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">kansi</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">omslag</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">omslag</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">omslag</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">vāks</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">غلاف</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">封面</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1009 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1009">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami a kötet megóvását célzó, levehető borítás.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that is a detachable, protective wrapping of a volume.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses on eemaldatav kaitseümbris köite ümber.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die een afneembaar, beschermende wikkel is om een band.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine abnehmbare Schutzhülle eines Bandes, die als Informationsquelle einer Manifestation dient.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="no">En informasjonskilde i en manifestasjon som er et avtagbart, beskyttende omslag på et bind.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que és un embolcall separable i protector d’un volum.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da un involucro protettivo rimovibile di un volume.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - atdalāms, sējumu aizsargājošs materiāls, ko izdevējs u.tml. izdod kā resursa daļu. Zināms kā grāmatas apvāks vai grāmatas pretputekļu apvāks.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="da">Kilde til oplysninger i en manifestation der er en aftagelig, beskyttende indpakning af en volumen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä niteen irrotettava suojakääre.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui consiste en une chemise de protection amovible d’un volume.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر للمعلومات في تجسيدة عبارة عن غلاف واقي للمجلد يمكن فصله.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">作为一卷的可分离保护性包装材料的一种载体表现中的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Schutzumschlag</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">apvāks</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">irtopäällys</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">jacket</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">jaquette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">kaaneümbris</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="da">smudsomslag</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="no">smussomslag</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">sobrecoberta</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">sovracoperta</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">stofomslag</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="hu">védőborító</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">سترة</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">护封</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">kaaneümbris</rdfs:label>
+        <skos:altLabel xml:lang="en">book jacket</skos:altLabel>
+        <skos:altLabel xml:lang="fr">couvre-livre</skos:altLabel>
+        <skos:altLabel xml:lang="fi">kirjan irtopäällys</skos:altLabel>
+        <skos:altLabel xml:lang="hu">könyvborító</skos:altLabel>
+        <skos:altLabel xml:lang="no">løst omslag</skos:altLabel>
+        <skos:altLabel xml:lang="ca">sobrecoberta de llibre</skos:altLabel>
+        <skos:altLabel xml:lang="ar">سترة كتاب</skos:altLabel>
+        <skos:altLabel xml:lang="zh-hans-cn">护封</skos:altLabel>
+        <skos:definition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami a kötet megóvását célzó, levehető borítás.</skos:definition>
+        <skos:definition xml:lang="en">A source of information in a manifestation that is a detachable, protective wrapping of a volume.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses on eemaldatav kaitseümbris köite ümber.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die een afneembaar, beschermende wikkel is om een band.</skos:definition>
+        <skos:definition xml:lang="de">Eine abnehmbare Schutzhülle eines Bandes, die als Informationsquelle einer Manifestation dient.</skos:definition>
+        <skos:definition xml:lang="no">En informasjonskilde i en manifestasjon som er et avtagbart, beskyttende omslag på et bind.</skos:definition>
+        <skos:definition xml:lang="ca">Font d&apos;informació en una manifestació que és un embolcall separable i protector d&apos;un volum.</skos:definition>
+        <skos:definition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da un involucro protettivo rimovibile di un volume.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - atdalāms, sējumu aizsargājošs materiāls, ko izdevējs u.tml. izdod kā resursa daļu. Zināms kā grāmatas apvāks vai grāmatas pretputekļu apvāks.</skos:definition>
+        <skos:definition xml:lang="da">Kilde til oplysninger i en manifestation der er en aftagelig, beskyttende indpakning af en volumen.</skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä niteen irrotettava suojakääre.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui consiste en une chemise de protection amovible d’un volume.</skos:definition>
+        <skos:definition xml:lang="ar">مصدر للمعلومات في مظهر مادي عبارة عن غلاف واقي للمجلد قابل للفصل.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">作为一卷的可分离保护性包装材料的一种载体表现中的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1009</skos:notation>
+        <skos:prefLabel xml:lang="de">Schutzumschlag</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">apvāks</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">irtopäällys</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">jacket</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">jaquette</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">smudsomslag</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">smussomslag</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">sobrecoberta</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">sovracoperta</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">stofomslag</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">védőborító</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">سترة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">护封</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1010 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy szerkesztői oldal vagy első oldal része, ami egy nem meghatározott időtartamra tervezett diakronikus mű megjelenési formájának minden egyes számában (füzetében) megtalálható, és ami információt tartalmaz a főcímről, a szerzőségi közlésről, a megjelenésről, vagy a megjelenési forma egyéb aspektusáról.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that appears on a first page, editorial page, or list of contents page in the manifestation of each issue of a serial work.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses, mis paikneb jadateose iga numbri kehastuse esileheküljel, toimetuse leheküljel või sisukorra leheküljel.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die op de eerste pagina verschijnt, op de redactiepagina of inhoudsopgave in de manifestatie van elk nummer van een serieel werk.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein Teil einer ersten Seite, eines Editorials oder einer Seite mit einem Inhaltsverzeichnis, der in jeder Ausgabe einer fortlaufenden Ressource erscheint und als Informationsquelle einer Manifestation dient.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="no">En informasjonskilde i en manifestasjon som er en del av en redaksjonell side eller forside som går igjen på hvert hefte av en manifestasjon av et uavsluttet diakront verk, som inneholder informasjon om hovedtittel, ansvarsangivelse, publisering eller andre aspekter ved manifestasjonen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que apareix en una primera plana, una pagina editorial o una llista de la pàgina de continguts en la manifestació de cada número d’una obra en sèrie.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da una parte di una pagina editoriale o prima pagina, che appare in ciascun fascicolo della manifestazione di un&apos;opera diacronica indeterminata, che contiene informazioni sul titolo proprio, la formulazione di responsabilità, la pubblicazione o altri aspetti della manifestazione.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - parādās katra seriālizdevuma manifestācijas pirmajā lapā, redakcijas lapā vai satura lapā.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="da">Kilde til oplysninger i en manifestation der er en del af en redaktionel side eller første side, der optræder i enhvert udgave af en manifestation af et ubestæmt diakronisk værk, der indeholder oplysninger om hovedtitel, ophav, udgivelse eller andre aspekter af manifestationen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatiossa oleva tiedonlähde, joka on sarjamaisen teoksen jokaisen numeron manifestaation ensimmäisellä sivulla, pääkirjoitussivulla tai sisällysluettelosivulla.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui figure sur une première page, une page éditoriale ou une page de table des matières dans la manifestation de chaque livraison d’une œuvre en série.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر معلومات في تجسيدة يظهر في الصفحة الأولى أو الافتتاحية، أو في صفحة المحتويات في تجسيدة كل إصدارة من عمل تسلسلي.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">一种连续出版物作品的每期的载体表现中第一页、编者说明页、或目次页上出现的一种载体表现中的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Impressum</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">bloc générique</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">capçalera</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="no">hode</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="hu">impresszum</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">masthead</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">päismik</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">testata</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">titelblok</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="da">titelhoved</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">toimitustietolaatikko</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">turpinājumizdevuma pasīte</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">الترويسة (الصفحة الأولى)</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">刊头</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">päismik</rdfs:label>
+        <skos:altLabel xml:lang="fr">ours</skos:altLabel>
+        <skos:definition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy szerkesztői oldal vagy első oldal része, ami egy nem meghatározott időtartamra tervezett diakronikus mű megjelenési formájának minden egyes számában (füzetében) megtalálható, és ami információt tartalmaz a főcímről, a szerzőségi közlésről, a megjelenésről, vagy a megjelenési forma egyéb aspektusáról.</skos:definition>
+        <skos:definition xml:lang="en">A source of information in a manifestation that appears on a first page, editorial page, or list of contents page in the manifestation of each issue of a serial work.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses, mis paikneb jadateose iga numbri kehastuse esileheküljel, toimetuse leheküljel või sisukorra leheküljel.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die op de eerste pagina verschijnt, op de redactiepagina of inhoudsopgave in de manifestatie van elk nummer van een serieel werk.</skos:definition>
+        <skos:definition xml:lang="de">Ein Teil einer ersten Seite, eines Editorials oder einer Seite mit einem Inhaltsverzeichnis, der in jeder Ausgabe einer fortlaufenden Ressource erscheint und als Informationsquelle einer Manifestation dient.</skos:definition>
+        <skos:definition xml:lang="no">En informasjonskilde i en manifestasjon som er en del av en redaksjonell side eller forside som går igjen på hvert hefte av en manifestasjon av et uavsluttet diakront verk, som inneholder informasjon om hovedtittel, ansvarsangivelse, publisering eller andre aspekter ved manifestasjonen.</skos:definition>
+        <skos:definition xml:lang="ca">Font d&apos;informació en una manifestació que és una part d&apos;una pagina editorial o primera plana, que apareix a cada número d&apos;una manifestació d&apos;una obra diacrònica indeterminada, que conté informació sobre el títol propi, la menció de responsabilitat, o un altre aspecte de la manifestació.</skos:definition>
+        <skos:definition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da una parte di una pagina editoriale o prima pagina, che appare in ciascun fascicolo della manifestazione di un&apos;opera diacronica indeterminata, che contiene informazioni sul titolo proprio, la formulazione di responsabilità, la pubblicazione o altri aspetti della manifestazione.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - parādās katra seriālizdevuma manifestācijas pirmajā lapā, redakcijas lapā vai satura lapā.</skos:definition>
+        <skos:definition xml:lang="da">Kilde til oplysninger i en manifestation der er en del af en redaktionel side eller første side, der optræder i enhvert udgave af en manifestation af et ubestæmt diakronisk værk, der indeholder oplysninger om hovedtitel, ophav, udgivelse eller andre aspekter af manifestationen.</skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatiossa oleva tiedonlähde, joka on sarjamaisen teoksen jokaisen numeron manifestaation ensimmäisellä sivulla, pääkirjoitussivulla tai sisällysluettelosivulla.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui figure sur une première page, une page éditoriale ou une page de table des matières dans la manifestation de chaque livraison d’une œuvre en série.</skos:definition>
+        <skos:definition xml:lang="ar">مصدر للمعلومات في مظهر مادي عبارة عن جزء من صفحة افتتاحية أو صفحة أولى، يظهر في كل إصدار للمظهر المادي لعمل متعاقب غير محدد، والذي يحتوي على معلومات عن العنوان الفعلي أو بيان المسؤولية أو بيانات النشر أو أي جانب آخر من المظهر المادي.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">一种连续出版物作品的每期的载体表现中第一页、编者说明页、或目次页上出现的一种载体表现中的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1010</skos:notation>
+        <skos:prefLabel xml:lang="de">Impressum</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">bloc générique</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">capçalera</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">hode</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">impresszum</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">masthead</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">testata</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">titelblok</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">titelhoved</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">toimitustietolaatikko</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">turpinājumizdevuma pasīte</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">الترويسة (الصفحة الأولى)</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">刊头</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">A masthead usually contains statements about a title proper, statement of responsibility, publication information, or other common aspects of the embodiment of each issue.</skos:scopeNote>
+        <skos:scopeNote xml:lang="de">Darunter fallen Angaben zum Haupttitel, zur Verantwortlichkeitsangabe, zur Veröffentlichung oder zu anderen allgemeinen Eigenschaften jeder Ausgabe.</skos:scopeNote>
+        <skos:scopeNote xml:lang="nl">Een titelblok bevat meestal vermeldingen over een hoofdtitel, verantwoordelijkheidsvermelding, publicatiegegevens of andere algehele aspecten van elke aflevering verwezenlijkt.</skos:scopeNote>
+        <skos:scopeNote xml:lang="et">Päismik sisaldab tavaliselt infot põhipealkirja, vastutusandmete, avaldamise ja kõigi numbrite muude ühiste aspektide kohta.</skos:scopeNote>
+        <skos:scopeNote xml:lang="fi">Toimitustietolaatikko sisältää yleensä merkintöjä päänimekkeestä, vastuullisuusmerkinnön, julkaisutietoja tai muita numerokohtaisia ominaispiirteitä.</skos:scopeNote>
+        <skos:scopeNote xml:lang="lv">Turpinājumizdevuma pasīte parasti satur ziņas par pamatnosaukumu, atbildības ziņas, publicēšanas ziņas vai citus kopējus izdevuma aspektus.</skos:scopeNote>
+        <skos:scopeNote xml:lang="fr">Un bloc générique contient généralement des mentions sur un titre propre, une mention de responsabilité, de l’information sur la publication ou tout autre aspect commun de la matérialisation de chaque livraison.</skos:scopeNote>
+        <skos:scopeNote xml:lang="ca">Una capçalera normalment conté mencions sobre un títol propi, una menció de responsabilitat, informació de publicació o altres aspectes comuns de la materialització de cada número.</skos:scopeNote>
+        <skos:scopeNote xml:lang="ar">صفحة أولى تتضمن في الغالب بيانات عن العنوان الفعلي، أو عن بيان المسؤولية، أو عن معلومات النشر، أو عن جوانب أخرى مشتركة لتجسيدة كل إصدارة.</skos:scopeNote>
+        <skos:scopeNote xml:lang="zh-hans-cn">刊头通常包含正题名、责任说明、出版信息或其他每期的具体化的共同方面的说明。</skos:scopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1011 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1011">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy állóképhez tartozó szöveges kiegészítés, ami a címről vagy a megjelenési forma egyéb aspektusáról szóló információt, valamint rövid leírást tartalmaz.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that is a textual augmentation of a still image that contains information about title, brief description, or other aspect of the manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses on liikumatu pildi tekstiline laiendus, mis sisaldab lühikirjeldust ning infot pealkirja või kehastuse muude aspektide kohta.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die een tekstuele toevoeging is aan een stilstaand beeld die informatie bevat over de titel, korte beschrijving of ander aspect van de manifestatie.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine textliche Erweiterung eines unbewegten Bilds, die Informationen über den Titel, eine Kurzbeschreibung oder andere Eigenschaften der Manifestation enthält und als Informationsquelle einer Manifestation dient.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="no">En informasjonskilde i en manifestasjon som er en tekstlig utvidelse av et stillbilde som inneholder informasjon om tittel, en kort beskrivelse eller andre aspekter ved manifestasjonen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que és una augmentació textual d’una imatge fixa que conté informació sobre el títol, una breu descripció o un altre aspecte de la manifestació.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da un arricchimento testuale di una immagine fissa e che contiene informazioni sul titolo, una breve descrizione o altri aspetti della manifestazione.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - attēlu papildinājums ar tekstuālu informāciju - nosaukumu, īsu aprakstu vai citu manifestācijas aspektu.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="da">Kilde til oplysninger i en manifestation der er en tekstuel udvidelse af et fast billede der indholder oplysninger om titel, en kort beskrivelse eller et andet aspekt af manifestationen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä stillkuvan tekstilisä, joka sisältää tietoa nimekkeestä, lyhyen kuvauksen tai muuta tietoa manifestaatiosta.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui consiste en une augmentation textuelle d’une image fixe contenant une brève description ou de l’information sur un titre propre ou tout autre aspect de la manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر معلومات في تجسيدة عبارة عن زيادة حجم نص صورة ثابتة تتضمن معلومات عن العنوان، أو وصفا موجزا، أو جانبا آخر من التجسيدة.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">包含关于载体表现的题名、简要描述或其他方面信息的、作为一种静态图像的文字附增部分的一种载体表现的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Beschriftung</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">bijschrift</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="no">bildetekst</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">caption</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">didascalia</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="hu">képszöveg</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">llegenda</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">légende</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="da">overskrift</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">pildiallkiri</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">seliteteksti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">uzraksts</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">عرض نصي لحوار مرئي</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">文字说明</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">pildiallkiri</rdfs:label>
+        <skos:altLabel xml:lang="ar">بيانات ادارية للصحيفة</skos:altLabel>
+        <skos:definition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy állóképhez tartozó szöveges kiegészítés, ami a címről vagy a megjelenési forma egyéb aspektusáról szóló információt, valamint rövid leírást tartalmaz.</skos:definition>
+        <skos:definition xml:lang="en">A source of information in a manifestation that is a textual augmentation of a still image that contains information about title, brief description, or other aspect of the manifestation.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses on liikumatu pildi tekstiline laiendus, mis sisaldab lühikirjeldust ning infot pealkirja või kehastuse muude aspektide kohta.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die een tekstuele toevoeging is aan een stilstaand beeld die informatie bevat over de titel, korte beschrijving of ander aspect van de manifestatie.</skos:definition>
+        <skos:definition xml:lang="de">Eine textliche Erweiterung eines unbewegten Bilds, die Informationen über den Titel, eine Kurzbeschreibung oder andere Eigenschaften der Manifestation enthält und als Informationsquelle einer Manifestation dient.</skos:definition>
+        <skos:definition xml:lang="no">En informasjonskilde i en manifestasjon som er en tekstlig utvidelse av et stillbilde som inneholder informasjon om tittel, en kort beskrivelse eller andre aspekter ved manifestasjonen.</skos:definition>
+        <skos:definition xml:lang="ca">Font d&apos;informació en una manifestació que és una augmentació d&apos;una imatge fixa que conté informació sobre el títol, una breu descripció, o un altre aspecte de la manifestació.</skos:definition>
+        <skos:definition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da un arricchimento testuale di una immagine fissa e che contiene informazioni sul titolo, una breve descrizione o altri aspetti della manifestazione.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - attēlu papildinājums ar tekstuālu informāciju - nosaukumu, īsu aprakstu vai citu manifestācijas aspektu.</skos:definition>
+        <skos:definition xml:lang="da">Kilde til oplysninger i en manifestation der er en tekstuel udvidelse af et fast billede der indholder oplysninger om titel, en kort beskrivelse eller et andet aspekt af manifestationen.</skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä stillkuvan tekstilisä, joka sisältää tietoa nimekkeestä, lyhyen kuvauksen tai muuta tietoa manifestaatiosta.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui consiste en une augmentation textuelle d’une image fixe contenant une brève description ou de l’information sur un titre propre ou tout autre aspect de la manifestation.</skos:definition>
+        <skos:definition xml:lang="ar">مصدر للمعلومات في مظهر مادي عبارة عن إضافة نصية لصورة ثابتة تحتوي على معلومات عن العنوان أو وصف موجز أو أي جانب آخر من المظهر المادي.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">包含关于载体表现的题名、简要描述或其他方面信息的、作为一种静态图像的文字附增部分的一种载体表现的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1011</skos:notation>
+        <skos:prefLabel xml:lang="de">Beschriftung</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">bijschrift</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">bildetekst</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">caption</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">didascalia</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">képszöveg</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">llegenda</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">légende</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">overskrift</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">seliteteksti</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">uzraksts</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">عرض نصي لحوار مرئي</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">文字说明</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1012 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1012">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy távoli elérésű (online) megjelenési formába beágyazott metaadat.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that is metadata embedded in an online manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses on võrgukehastusele manustatud metaandmed.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die metadata is ingesloten in een online manifestatie.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="no">En informasjonskilde i en manifestasjon som er metadata som er integrert i en online manifestasjon.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que són metadades integrades en una manifestació en línia.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da metadati incorporati in una manifestazione online.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - metadati, kas ir iegulti (glabājas resursa datnē) tiešsaistes manifestācijā.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="da">Kilde til oplysninger i en manifestation der er metadata indlejret i en online manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä verkkomanifestaatioon upotettuja metatietoja.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Metadaten, die in eine Online-Manifestation eingebettet sind und als Informationsquelle einer Manifestation dienen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui consiste en métadonnées intégrées dans une manifestation en ligne.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر للمعلومات في تجسيدة عبارة عن ميتاداتا متضمنة في تجسيدة إلكترونية.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">作为被嵌入一种联机载体表现中的元数据的一种载体表现的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="hu">beágyazott metaadat</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="de">eingebettete Metadaten</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">embedded metadata</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">iegultie metadati</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="da">indlejrede metadata</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">ingesloten metadata</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="no">integrerte metadata</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">manusmetaandmed</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">metadades integrades</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">metadati incorporati</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">métadonnées intégrées</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">upotetut metatiedot</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">ميتاداتا متضمنة</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">嵌入元数据</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">manusmetaandmed</rdfs:label>
+        <skos:altLabel xml:lang="ar">الميتاداتا المضمنة</skos:altLabel>
+        <skos:definition xml:lang="hu">A megjelenési formához tartozó adatforrás, ami egy távoli elérésű (online) megjelenési formába beágyazott metaadat.</skos:definition>
+        <skos:definition xml:lang="en">A source of information in a manifestation that is metadata embedded in an online manifestation.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses on võrgukehastusele manustatud metaandmed.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die metadata is ingesloten in een online manifestatie.</skos:definition>
+        <skos:definition xml:lang="no">En informasjonskilde i en manifestasjon som er metadata som er integrert i en online manifestasjon.</skos:definition>
+        <skos:definition xml:lang="ca">Font d&apos;informació en una manifestació que són metadades integrades en una manifestació en línia.</skos:definition>
+        <skos:definition xml:lang="it">Fonte d&apos;informazione in una manifestazione costituita da metadati incorporati in una manifestazione online.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - metadati, kas ir iegulti (glabājas resursa datnē) tiešsaistes manifestācijā.</skos:definition>
+        <skos:definition xml:lang="da">Kilde til oplysninger i en manifestation der er metadata indlejret i en online manifestation.</skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä verkkomanifestaatioon upotettuja metatietoja.</skos:definition>
+        <skos:definition xml:lang="de">Metadaten, die in eine Online-Manifestation eingebettet sind und als Informationsquelle einer Manifestation dienen.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui consiste en métadonnées intégrées dans une manifestation en ligne.</skos:definition>
+        <skos:definition xml:lang="ar">مصدر للمعلومات في مظهر مادي عبارة عن بيانات وصفية مضمنة في مظهر مادي متاح على الخط المباشر.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">作为被嵌入一种联机载体表现中的元数据的一种载体表现的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1012</skos:notation>
+        <skos:prefLabel xml:lang="hu">beágyazott metaadat</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">eingebettete Metadaten</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">embedded metadata</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">iegultie metadati</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">indlejrede metadata</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">ingesloten metadata</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">integrerte metadata</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">metadades integrades</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">metadati incorporati</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">métadonnées intégrées</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">upotetut metatiedot</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">ميتاداتا متضمنة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">嵌入元数据</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDARecordingSources/1013 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDARecordingSources/1013">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdakit:toolkitDefinition xml:lang="en">A source of information in a manifestation that is an additional title page bearing a title proper of series and other information about a successive work, and information relating to an issue of the work that is embodied by the manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="et">Andmeallikas kehastuses on lisatiitelleht, millel on seeria põhipealkiri ja muu info järgteose kohta ning info teose selle numbri kohta, mis on teostatud kehastuses.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een bron van informatie in een manifestatie die een extra titelpagina is waarop de hoofdtitel van de reeks staat en ander informatie over een successief werk en informatie gerelateerd aan een aflevering van een werk dat is verwezenlijkt door de manifestatie.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine zusätzliche Titelseite mit dem Haupttitel der Reihe und anderen Informationen über ein sukzessives Werk oder Informationen zu einer Ausgabe eines Werks, das in einer Manifestation verkörpert ist, und als Informationsquelle einer Manifestation dient.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ca">Font d’informació en una manifestació que és una portada addicional que porta un títol propi de col·lecció i altra informació sobre una obra successiva i informació relativa a un número de l’obra que es materialitza en una manifestació.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="lv">Informācijas avots manifestācijā - papildu titullapa, kur minēts sērijas pamatnosaukums un parasti, bet ne vienmēr, arī citas sērijas ziņas (piem., atbildības ziņas, numerācijas apzīmējums, izdošanas ziņas, sērijas vienības nosaukums).</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fi">Manifestaatioon sisältyvänä tiedonlähteenä täydentävä nimiösivu, joka sisältää sarjan päänimekkeen ja muita tietoja perättäisesti ilmestyvästä teoksesta sekä manifestaatioon sisältyvän teoksen numeroon liittyviä tietoja.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Source d’information dans une manifestation qui consiste en une page de titre supplémentaire portant un titre propre de collection et d’autres informations sur une œuvre successive, ainsi que des informations relatives à une livraison de l’œuvre matérialisée par la manifestation.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="ar">مصدر معلومات في تجسيدة وهو عبارة عن صفحة عنوان إضافية تتضمن عنوانًا فعليا لسلسلة، ومعلومات أخرى عن عمل متتالي، ومعلومات عن موضوع العمل المتضمن في هذه التجسيدة.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh-hans-cn">载有丛编正题名和关于相继作品的其他信息以及与被载体表现具体化的作品的一期有关的信息、作为一个附加题名页的一种载体表现的一个信息源</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Titelseite einer Reihe</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">page de titre de collection</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ca">portada de col·lecció</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">reekstitelpagina</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">sarjan nimiösivu</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="et">seeria tiitelleht</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">series title page</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="lv">sērijas titullapa</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="ar">صفحة عنوان سلسلة</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh-hans-cn">丛编题名页</rdakit:toolkitLabel>
+        <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label xml:lang="et">seeria tiitelleht</rdfs:label>
+        <skos:definition xml:lang="en">A source of information in a manifestation that is an additional title page bearing a title proper of series and other information about a successive work, and information relating to an issue of the work that is embodied by the manifestation.</skos:definition>
+        <skos:definition xml:lang="et">Andmeallikas kehastuses on lisatiitelleht, millel on seeria põhipealkiri ja muu info järgteose kohta ning info teose selle numbri kohta, mis on teostatud kehastuses.</skos:definition>
+        <skos:definition xml:lang="nl">Een bron van informatie in een manifestatie die een extra titelpagina is waarop de hoofdtitel van de reeks staat en ander informatie over een successief werk en informatie gerelateerd aan een aflevering van een werk dat is verwezenlijkt door de manifestatie.</skos:definition>
+        <skos:definition xml:lang="de">Eine zusätzliche Titelseite mit dem Haupttitel der Reihe und anderen Informationen über ein sukzessives Werk oder Informationen zu einer Ausgabe eines Werks, das in einer Manifestation verkörpert ist, und als Informationsquelle einer Manifestation dient.</skos:definition>
+        <skos:definition xml:lang="lv">Informācijas avots manifestācijā - papildu titullapa, kur minēts sērijas pamatnosaukums un parasti, bet ne vienmēr, arī citas sērijas ziņas (piem., atbildības ziņas, numerācijas apzīmējums, izdošanas ziņas, sērijas vienības nosaukums).</skos:definition>
+        <skos:definition xml:lang="fi">Manifestaatioon sisältyvä tiedonlähde, joka on täydentävä nimiösivu, joka sisältää sarjan päänimekkeen ja muita tietoja perättäisesti ilmestyvästä teoksesta sekä manifestaatioon sisältyvän teoksen numeroon liittyviä tietoja.</skos:definition>
+        <skos:definition xml:lang="fr">Source d’information dans une manifestation qui consiste en une page de titre supplémentaire portant un titre propre de collection et d’autres informations sur une œuvre successive, ainsi que des informations relatives à une livraison de l’œuvre matérialisée par la manifestation.</skos:definition>
+        <skos:definition xml:lang="zh-hans-cn">载有丛编正题名和关于相继作品的其他信息以及与被载体表现具体化的作品的一期有关的信息、作为一个附加题名页的一种载体表现的一个信息源</skos:definition>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDARecordingSources"/>
+        <skos:notation xml:lang="en">1013</skos:notation>
+        <skos:prefLabel xml:lang="de">Titelseite einer Reihe</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">page de titre de collection</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">portada de col·lecció</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">reekstitelpagina</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">sarjan nimiösivu</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">series title page</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">sērijas titullapa</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">صفحة عنوان سلسلة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh-hans-cn">丛编题名页</skos:prefLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
