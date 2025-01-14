@@ -3,9 +3,13 @@
 Linked Open Data (LOD) for Galleries, Libraries, Archives and Museums.
 Machine-readable literary criticism in the age of semantic libraries.
 
+Un progetto che sfrutta le potenzialità del web semantico per tradurre in Linked Open Data i principali contributi di critica letteraria su un'opera letteraria, descritta
+
 ## State-of-the-art
 
 ## Workflow
+
+Il punto di partenza della modellazione è lo studio e la descrizione del dominio. Per noi, ciò è stato rappresentato da un'indagine bibliograifca sui contributi 
 
 <style>
   [data-md-color-scheme="default"] {
@@ -31,10 +35,10 @@ flowchart TB
     Mapping[Mapping]
     Interpretation[Data interpretation]
     Ontology[Ontology design]
-    Map([Conceptual map])
+    Conceptual([Conceptual map])
     ER([E/R model])
     Theoretical([Theoretical model])
-    Conceptual{{Conceptual model}}
+    Formal{{Formal model}}
   end
 
   subgraph Knowledge Representation
@@ -47,11 +51,11 @@ flowchart TB
   Domain --> Items
   Domain --> Ideation
   Ideation ---> Formalization
-  Formalization --> Map
+  Formalization --> Conceptual
   Formalization --> ER
   Formalization ---> Interpretation
   Items --> Mining
-  Items --> Map
+  Items --> Conceptual
   Mining --> Analysis
   Mining --> Records
   Analysis --> Mapping
@@ -59,10 +63,10 @@ flowchart TB
   Interpretation --> Ontology
   Interpretation --> Theoretical
   Interpretation -.->|enrichment| ER
-  Ontology --> Conceptual
+  Ontology --> Formal
 
   Records ----> Description
-  Conceptual --> Description
+  Formal --> Description
   Description --> Reconciliation
   Reconciliation --> RDF
   RDF --> Graph
@@ -71,11 +75,16 @@ flowchart TB
 
 ## Goals
 
-### Scalable modeling
+### Focus on competency questions
 
-### Lean and expressive ontology design
+### Zero overhead
+Lean and expressive ontology design
+
+### Integrazione dello spoglio analitico delle risorse nella metadatazione
 
 ## Challanges
+
+### Trovare fonti affidabili per opere contemporanee
 
 ### Automating data collection
 

@@ -97,12 +97,13 @@ A collage by Richard Hamilton
 
 A comic book series created by Joe Simon and Jack Kirby
 
-## 13. Go for your money
-<div class="grid cards grid-right" markdown>
-- ![Go for your money, Magdalo Mussio](../assets/images/content/go-for-your-money.jpg)
+## 13. Go for your money in Marcatrè
+<div class="grid cards" markdown>
+- ![Marcatrè 19-20-21-22](../assets/images/content/marcatre.jpg)
+- ![An excerpt from Go for your money, Magdalo Mussio](../assets/images/content/go-for-your-money.jpg)
 </div>
 
-An animated film by Magdalo Mussio
+An animated film by Magdalo Mussio inside the periodical Marcatrè
 
 ## 14. The Lady from Shanghai
 <div class="grid cards" markdown>

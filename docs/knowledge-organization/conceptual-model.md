@@ -1,3 +1,0 @@
-# Ontology design
-
-## Conceptual model

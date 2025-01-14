@@ -10,7 +10,7 @@ Having access to metadata in its raw form, typically a JSON file, can offer grea
 
 Some collection management software offers compatibility with the [Open Archives Initiative Protocol for Metadata Harvesting](https://www.openarchives.org/pmh/) (OAI-PMH), a protocol that enables repositories to expose their metadata in a standardized way for aggregation purposes. It relies on Dublin Core as a lingua franca of exchange, with the drawback that the simplification of structured records can lead to the conflation of distinct fields, where the original context of the data can no longer be traced.
 
-```xml title="<a href='https://jcb.lunaimaging.com/luna/servlet/oai?verb=GetRecord&identifier=JCB~1~1~207~230331&metadataPrefix=oai_dc' style='color: inherit;'>OAI record for the Vak-Vak tree</a>"
+```xml title="<a href='https://jcb.lunaimaging.com/luna/servlet/oai?verb=GetRecord&identifier=JCB~1~1~207~230331&metadataPrefix=oai_dc' target='_blank' style='color: inherit;'>OAI record for the Vak-Vak tree</a>"
 <oai_dc:dc>
   <dc:identifier>https://jcb.lunaimaging.com/luna/servlet/detail/JCB~1~1~207~230331</dc:identifier>
   <dc:date>[1730]</dc:date>
@@ -33,6 +33,8 @@ In Italy it is mainly used UNIMARC, in the US MARC21. If there is field 040 it i
 Style sheets are [available](https://www.loc.gov/standards/mods/mods-conversions.html) for MARC21 for automatic conversion to semantic formats such as MODS, but caution is needed because there may be local fields used by the library that are not converted and information is lost. A useful tool for converting MARC binary or text files to MARC-XML or other format using style sheets is [MARC Report](https://www.marcofquality.com/w/).
 
 ## Identifying cataloging standards
+
+Just as in poetry the meter is not the genre, so in metadata the format is not the standard, although they are not entirely unrelated to one another.
 
 ### In libraries
 
@@ -80,8 +82,8 @@ Italy:
 
 <div class="grid-right" markdown>
   <p style="margin-top: 0px !important;" markdown>
-    ![Overview of the Digital Pompidou data model](../data/diagrams/centre-pompidou-data-model-light.png#only-light)
-    ![Overview of the Digital Pompidou data model](../data/diagrams/centre-pompidou-data-model-dark.png#only-dark)
+    ![Overview of the Digital Pompidou data model](../data/references/centre-pompidou-data-model-light.png#only-light)
+    ![Overview of the Digital Pompidou data model](../data/references/centre-pompidou-data-model-dark.png#only-dark)
   </p>
 </div>
 
@@ -104,6 +106,10 @@ Objects), developed by ICOM to make available for publication a variety of infor
 
 The way they treat the descriptive layers of comics magazines is essentially aligned with LRM.
 
+#### Capti
+
+Capti is a web portal developed within the Italian national project _Spreading visual culture: contemporary art through periodicals, archives and illustrations_ (2013-2016), coordianted by Giorgio Bacci of Scuola Normale Superiore of Pisa. It involved meritorious work on the detailed description of periodical instalments down to single illustrations, flyers, and advertisements. For these metadata we identified the International Standard Bibliographic Description for Serials and Other Continuing Resources (ISBD(CR)) as providing a sufficiently granular descriptive framework, which is the same standard [used](https://cultura.comune.fi.it/system/files/2018-12/PERIODICI_xSola_letturax_0.pdf) by the Gabinetto scientifico-letterario G. P. Vieusseux in Florence, an institution that among its activities similarly deals with digitization of modern periodicals. This project is noteworthy for the innovative approach at the time: through collaboration with source libraries, it enhanced standard bibliographic descriptions of periodicals—traditionally excluding content—by integrating analytically described digitizations.
+
 ## Overview
 
 {{ read_csv('../data/tables/scouting.csv', keep_default_na=False) }}
@@ -111,3 +117,6 @@ The way they treat the descriptive layers of comics magazines is essentially ali
 \bibliography
 
 [^*]: Presumed standard not provided by the institution.
+[^artsupp]: Also [archived](https://web.archive.org/web/20250107144743/https%3A%2F%2Fartsupp.com%2Fen%2Fartisti%2Fgianfranco-baruchello%2Fgioco-dell-oca) on Janunary 7<sup>th</sup> 2025.
+[^bfi]: Also [archived](https://web.archive.org/web/20250107143541/https%3A%2F%2Fcollections-search.bfi.org.uk%2Fweb%2FDetails%2FChoiceFilmWorks%2F150047864) on Janunary 7<sup>th</sup> 2025.
+[^capti]: Also [archived](https://web.archive.org/web/20250107170449/http://www.capti.it/index.php?ParamCatID=10&IDFascicolo=799&artgal=38&key=8559&lang=EN) on Janunary 7<sup>th</sup> 2025.

@@ -15,7 +15,7 @@ nav:
     - Metadata mining and analysis: knowledge-organization/metadata-analysis.md
     - Mapping: knowledge-organization/mapping.md
     - Data interpretation: knowledge-organization/theoretical-model.md
-    - Ontology design: knowledge-organization/conceptual-model.md
+    - Ontology design: knowledge-organization/formal-model.md
   - Knowledge Representation:
     - knowledge-representation/knowledge-representation.md
   - Ontology:
@@ -78,7 +78,10 @@ plugins:
         layout: elk
         elk:
           mergeEdges: true
-          nodePlacementStrategy: BRANDES_KOEPF
+          nodePlacementStrategy: NETWORK_SIMPLEX
+  - social:
+      cards_layout_options:
+        background_color: #DB1F74
 
 extra_css:
   - assets/css/extra.css
@@ -88,6 +91,7 @@ extra_javascript:
 
 markdown_extensions:
   - tables
+  - admonition
   - footnotes
   - attr_list
   - md_in_html
@@ -104,3 +108,4 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
