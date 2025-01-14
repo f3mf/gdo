@@ -1,0 +1,1434 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A Knowledge Organization project on the ekphrastic relations of Edoardo Sanguineti's «Il Giuoco dell'Oca»">
+      
+      
+        <meta name="author" content="Maria Francesca Bocchi, Enrica Bruno, Francesca Massarenti">
+      
+      
+        <link rel="canonical" href="https://f3mf.github.io/gdo/knowledge-organization/formal-model/">
+      
+      
+        <link rel="prev" href="../theoretical-model/">
+      
+      
+        <link rel="next" href="../../knowledge-representation/knowledge-representation/">
+      
+      
+      <link rel="icon" href="../../assets/images/logos/goose-color.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Ontology design - The Game of the Goose</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Ontology design - The Game of the Goose" >
+      
+        <meta  property="og:description"  content="A Knowledge Organization project on the ekphrastic relations of Edoardo Sanguineti's «Il Giuoco dell'Oca»" >
+      
+        <meta  property="og:image"  content="https://f3mf.github.io/gdo/assets/images/social/knowledge-organization/formal-model.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://f3mf.github.io/gdo/knowledge-organization/formal-model/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Ontology design - The Game of the Goose" >
+      
+        <meta  name="twitter:description"  content="A Knowledge Organization project on the ekphrastic relations of Edoardo Sanguineti's «Il Giuoco dell'Oca»" >
+      
+        <meta  name="twitter:image"  content="https://f3mf.github.io/gdo/assets/images/social/knowledge-organization/formal-model.png" >
+      
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ontology-design" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="The Game of the Goose" class="md-header__button md-logo" aria-label="The Game of the Goose" data-md-component="logo">
+      
+  <img src="../../assets/images/logos/goose-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Game of the Goose
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ontology design
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/f3mf/gdo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    f3mf/gdo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="The Game of the Goose" class="md-nav__button md-logo" aria-label="The Game of the Goose" data-md-component="logo">
+      
+  <img src="../../assets/images/logos/goose-white.svg" alt="logo">
+
+    </a>
+    The Game of the Goose
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/f3mf/gdo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    f3mf/gdo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Domain
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Domain
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../domain/context/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Context
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../domain/items/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Items
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Knowledge Organization
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Knowledge Organization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ER-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata-analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metadata mining and analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mapping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theoretical-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data interpretation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Ontology design
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Ontology design
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reuse-of-bibliographic-ontologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reuse of bibliographic ontologies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reuse of bibliographic ontologies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelling-of-serials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelling of Serials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lrmoo-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      LRMoo in action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rda-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      RDA in action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-between-lrmoo-and-rda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparison between LRMoo and RDA
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reuse-of-referencing-ontologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reuse of referencing ontologies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formal-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formal model
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Knowledge Representation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Knowledge Representation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../knowledge-representation/knowledge-representation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Knowledge Representation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Ontology
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Ontology
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ontology/ontology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ontology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reuse-of-bibliographic-ontologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reuse of bibliographic ontologies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reuse of bibliographic ontologies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelling-of-serials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelling of Serials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lrmoo-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      LRMoo in action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rda-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      RDA in action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-between-lrmoo-and-rda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparison between LRMoo and RDA
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reuse-of-referencing-ontologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reuse of referencing ontologies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formal-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formal model
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="ontology-design">Ontology design</h1>
+<p>In this section we will elaborate on the rationale supporting the selection of ontologies we chose to reuse for our model, with a focus on the economy of description, query optimization, and the inference potential of mereological and content type relations. Finally, we will present the final output of the knowledge organization process, a formal model meant to guide the preparation of the dataset.</p>
+<h2 id="reuse-of-bibliographic-ontologies">Reuse of bibliographic ontologies</h2>
+<p>After establishing the need for WEMI levels to represent the different kinds of relationships between objects in our domain, the question arose as to which LRM implementation to base our model on. As of January 2025, the main frameworks that have integrated the LRM into Linked Open Data are Bibliographic Framework Initiative (BIBFRAME), Resource Description and Access (RDA) and Library Reference Model object-oriented (LRMoo).</p>
+<ul>
+<li>
+<p><strong><a href="https://www.loc.gov/bibframe/">BIBFRAME</a></strong> was developed in 2012 by the U.S. Library of Congress as a linked data alternative to MARC for the creation of bibliographic data. Expressed in RDF, it is based on three core categories of abstraction (work, instance, item), where <em>work</em> collapses LRM's <em>work</em> and <em>expression</em> entities. While we can see the reasons for this simplification, since bibliographic data describe works in terms of publication (manifestation) and edition (expression), we required the distinction between work as an artistic endeavor and expression as the result of an edition. For example, the contribution of editor Valerio Riva, as distinct from that of author Edoardo Sanguineti, to the first edition of <em>Il Giuoco dell'Oca</em> would be flattened not considering the two levels as separate. Similarly, it could not be clearly represented how Magdalo Mussio's article in Marcatrè is a “sketched” version of his animated film <em>Go for your money</em>. For this reason, we could not integrate BIBFRAME into our model.</p>
+</li>
+<li>
+<p><strong>RDA</strong> was released in 2010 as the new standard for descriptive cataloging in the U.S., a successor to the second edition of the Anglo-American Cataloguing Rules, and is jointly managed by a committee of Anglophone library associations, despite being the reference in an increasing number of other countries. In 2014, the vocabularies that represent RDA entities and controlled terminologies were published as RDF element sets in <a href="https://www.rdaregistry.info/">RDA Registry</a>. The RDA data model adopts LRM as its theoretical underpinning and faithfully reproduces its structure with domain and range constraints. Its RDF representation provides rich detail relationship designators through a hierarchy of subproperties from general to specific and ensures interoperability with other Semantic Web initiatives by mapping its properties as subproperties of both <a href="http://www.rdaregistry.info/ttl/Maps/mapRDA2LRM.ttl">LRMer properties</a> and <a href="http://www.rdaregistry.info/ttl/Maps/mapRDA2DCT.ttl">Dublin Core Terms</a>. In addition to LRM properties, RDA includes several elements to accommodate additional information needed or currently part of the cataloging practice. For the sake of flexibility, its properties are further declared as both datatype and object properties, and can therefore be used with literals and other entities alike.</p>
+</li>
+<li>
+<p><strong><a href="https://cidoc-crm.org/lrmoo">LRMoo</a></strong> succeds the 2010 FRBRoo model, its first official release was approved in 2024 and has been appointed by IFLA as a preferred implementation of the LRM. It translates the LRM entities and relationships into the formal ontology of CIDOC CRM by ICOM, enabling alignment with cultural heritage data standards and facilitating integration between museum and bibliographic datasets. CIDOC CRM is the most widely used ontology in cultural heritage modeling, and is particularly well suited for representing complex cultural object production events with nuanced designations of temporal relationships, part-whole inferences and roles of the agents involved, the latter thanks to the extension of properties with types (reification). Being an object-oriented, event-centered framework, to describe a cultural object a strict application must forcibly pass through production events and entities representing appellations, time-spans, and the like. In LRMoo, these are multiplied because the cultural object itself is already conceptually separated into multiple levels, each requiring its own related event.</p>
+</li>
+</ul>
+<p>We identified RDA and LRMoo as the two main ontologies that we could reuse in our model. To test the potential and critical aspects of each, we modeled the metadata of the most complex item in our domain—a comics magazine—as precisely as possible, applying the two ontologies separately.</p>
+<h3 id="modelling-of-serials">Modelling of Serials</h3>
+<p>Modelling a comics magazine is challenging because it is a periodical that in specialized sources is described analytically, as each story within it has different subjects and authors, often masked behind pseudonyms.</p>
+<p>In the Library Reference Model, serials—publications issued in parts, regardless of regularity or frequency, of which periodicals as a subset—are complex constructs that combine whole/part relationships and aggregation relationships. A serial work has a whole/part relationship with the individual issues published over time, while each issue expression is an aggregate of articles.</p>
+<p>The whole/part relationship is hierarchical and structural: it describes a situation where a whole entity is composed of discrete parts that contribute to its existence, are integral to its identity, and cannot typically exist independently in the same context, such as chapters in a book. In contrast, the aggregation relationship is associative, grouping together expressions that remain independent, can exist separately, and each realize their own work, as short stories within an anthology. In the case of serials, the serial work provides the overarching issuing plan, which informs the aggregation of each individual issue.</p>
+<p>According to IFLA LRM, a work is defined as having a certain commonality of content among its expressions. For serials, this commonality “resides in both
+the publisher’s and the editor’s intention to convey the feeling to end-users that all individual issues do belong to an identifiable whole, and in the collection of editorial concepts (a title, an overall topic, a recognizable layout, a regular frequency, etc.) that will help to convey that feeling.”<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> This inherent characterization of serial works by their publication features—such as title, language, and publisher—means that any variation in these features results in the identification of a new serial work.</p>
+<p>Reflecting this intrinsic link between the serial work and its defining publication features, LRM enforces the “WEM lock”: a cardinality restriction specifying that a serial work is realized by one and only one expression, which is embodied by one and only one manifestation. For this reason, an article is not considered a part of a periodical but is the expression of its own work. This expression is aggregated within the expression of an issue, whose work is part of the serial work.</p>
+<p>In this model test, we limited ourselves to the description of the cover of issue 26 of <em>Young Romance</em>, the piece that Richard Hamilton chose to include in the iconic collage that started pop art. For the diagrams we used <a href="https://gitlab.com/infai/rdf-diagram-framework">RDF Diagram</a>, a Draw.io plugin (written in Rust!) that allows for real-time syntax validation and conversion in Turtle. We thank the Institute for Applied Informatics (InfAI) of Leipzig for sharing such a useful tool.</p>
+<h3 id="lrmoo-in-action">LRMoo in action</h3>
+<p>Modelling periodicals in LRMoo is currently limited by the fact that PRESSoo, the extension dedicated specifically to this, has not yet been updated to LRM and is only available in an <a href="https://gitlab.isl.ics.forth.gr/cidoc-crm/compatible-models/pressoo/-/tree/v1.3_prepareation/1.3">earlier version</a> based on FRBR and incompatible with the most recent version (7.1.3) of CIDOC CRM, so we chose not to use it. PRESSoo would offer the possibility of describing the planning aspects of a serial work (thanks to the extension of the “forsees use of” properties), although in our case, in which the periodical is not only described as a whole but the perusal of single articles is carried out, this information can be included in the issue description. However, inclusion of the issue in the magazine is possible only through a very generic property, <code class="language-turtle highlight"><span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R10_is_member_of</span></code>, via the serial creation event<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<p>At first glance, the description is structured around creation events corresponding to the various WEMI levels, with actors participating through typed properties that define their roles. For the sake of this example, all concepts were drawn from Getty's Art &amp; Architecture Thesaurus, as it is a widely used resource in the cultural heritage domain. For brevity, some entities connected to objects are nested, and their details can be expanded by clicking the plus sign. This includes a class for dimensions, which enables a detailed description of size, separating numerical values from their units of measurement.</p>
+<iframe frameborder="0" src="https://viewer.diagrams.net/?tags=%7B%7D&target=blank&highlight=0000ff&edit=https%3A%2F%2Finfai.gitlab.io%2Frdf-diagram-framework%2F%3Ftest%3D1%26splash%3D0&layers=1&nav=1&auto-crop=true&auto-fit=true&center=true&border=0&zoom=1&tooltips=true&title=test-cidoc#
+R7V1bd6M4uv01WWfmAS904faYSirdM101VdNVpy%2FnhYVt7FDlGDfgStK%2F%2FkjcYssYhI2wwJo1qytRbITxlrS%2F2%2F5u0N3Ty0%2BRt3n8GM791Q3U5y836P4GQmgCRP6hI6%2FFiAWykWUUzLOxnYEvwd9%2BPqjno9tg7sd7L0zCcJUEm%2F3BWbhe%2B7Nkb8yLovB5%2F2WLcLU%2F68Zb%2BgcDX2be6nD092CePGajpqO%2Fjf%2FsB8vHfGbHzv8w9Wbfl1G4XefTrcO1n%2F3lySuukr80fvTm4fPOEHp%2Fg%2B6iMEyyn55e7vwVfazFA8ve93Dkr%2BUdR%2F46qXjD%2F8Z%2B9Gn6jT4sqK%2B8KfnG0hfdoNupv9bCuZddoLje%2BpcfXz%2F4q8eX578%2B%2F%2Fxh8f3uq36vgfI%2By%2Fnj5LV4aPFz8LTyyAdG754fg8T%2FsvFm9E%2FPBCRkbBauVt4mDqbp6wEdeQxW8w%2Fea7ildxwn5OEVv70rLvYQrFZ34SqMyCvm%2FsLbruhfIz8mmPlcfFhQDn3wYjqgM6%2F56L3ko09etAzW78IkCZ%2FoO9%2FGvoab%2FYFf8y94Z%2BiDvyhHYvLxgvUyHzLeRor30aFFuE6%2B5I8ofVPiRUmOd0QHNmGwTlK0Gu9ujHsy8pg8rfLPVGKE%2FrLxo%2BDJT%2FzoSzYNvcLBbeze2d79e6tV%2BHxbLI30gYWJl3jT8taqvrP09rO7BZjeWxgFf5Mxr7jDt4Ev9OvLL5Xi6125ForvL10NdGIy5s%2Fz1y52vuAbiBaLGflf%2BqSi8Lu%2F8xdkIgeRd707RHoO%2Fh9%2BlPgvO0M5VH%2FyQ%2FLgolfykuKvCBnZe17LAScbeH5b71DP1%2BrjzloHxR7l5XvMsrz622ojP%2BQrpPh1Z%2F3VrkeP7moRgebtewjcz34Uh2uOlQlrV%2BawQNYGPYdYOL5xtQKIvgcPrB%2BAA9gV4EBCsRHNF%2BS6t9kI3d7Nv7b0uHj3zicY0T%2FRPbwY2sdMuHz96Tft7sO%2Fvv1m3L5f%2FPbT%2FwWGZivMiMSMJQVm3s53be5TDsJxypvqmFfHvNhj%2FgHe3z1YHR3z1A5IQefvkuHj69S091cqwPjw8AdGy7Waz%2FcrWYLeekme99uEFmTYBnYONwdYtTkAzMzorQg01l7iv6OPNz7YJMqP2x0PMR33nnfrsNSZUnummN0TEWj2fqhkwPiM3UcvdhPyRWnkW6AUhIwCx8YaABq0eWhrvUWp8HIuXipIyOXwYrlJGH53NyvyGF2Pvma5JuOG7limBXngoswcsXABukx4IXcTuPPAn7sBlw1s1KJjBwv%2BfOkXdM1fTcPn928DzJMPo%2BQxXIZrb%2FUhzJgjGfzmJ8lr%2Fl162ySkl1zPU0SQkekqpBSJDlFaW8y5LvycOxyyJKhQZyHKCZc3skzfcDh6lEXF4Taa%2BXVgyl5HmOzS5wEdfag8kNP0iW6B%2FHSI%2FJWXBD%2F23a417OozXeI78DUw68exnf2LZJ8zf9%2BuA5W9lGk4DZfKHsXBpcj37r3uvCzfho7ftKkzqw45mFk42TWZ979WPqVwsYj95IZdeF0RwR0DchpEXCwQKgNSGZBXZUBCS6wBeTAhgkMyIC33He%2FWoQzIWoYHr8GABIYGoFYszXq8KCe2WLwMwoBEDgQA88DFUXARChe5DEjHDtxnssNMw4gxICsDYvXOKGU%2F7jGmzuxHeIL9CPWcb51rP9qA9czjU%2B1HBzoNl5LEftR6MCBr11m9F0%2BZh%2B3MwyFbh7vG4P6%2BWX%2B4Hd2VzkkBMiqigNUpQKxNJSxkv2Y4cOVyquc0ajkpb0sXC%2Bz4Tt6BQ4UlkQfrsHXmTI0z5bTJgHlBR8oqegoJS7x9AND9D7ksF5vVa%2FeFYUFcAHadM02dqpzAi1k6MPOkvG4o0D1iGqNbpOvQNJFt8mBlTHF4CbFSlQtYhRWxxKLYRX5FKIVLnET0K2qVSTpdLhx3fR%2B9fHh4edaS%2F3ifv3zV6uM9Cj1nogdUnVH9w2eXl0IOVABl5yliOipi2kUZADcx5Z1MZmJavS8gdVwkjfvmuJkp1rFpAx6wYAUWoWAZGDX9xft7S550eAJLBfX5gQpK50JJQp6KeHCh0tUUTx0VT%2B2i9JCbp%2FJONjyeOqZcNBHnhYBcNBl5qsHFU8eUiCYjWIbFU9vQ0jHlpMmIHAlpKebAxY4qkKKlipaOgJZWJYeKDOyPlZiOqmpawIlR1MaMnpjyROFgfRROgeVcsAyGmLb1l0IVpxGLHFmIKTRTmpeXYL19xQVW3lQttVn2pG7J66Ll9B%2FQMG4gmUvf%2FeGf6SN8A5q5pP%2Fmu5lpBW4Qu5G%2F8KPIn7tJ6E5fizsgN53dRPaWfYxWEpVrLPnPUdpDvUYdN2ws1%2Bi8NAMVRbbnl2YcXOpIaUbXlfT%2BPEgIBjSug7s%2B8qnsP2X%2Ftbf%2FmCr62cw3Foubi1TRGxazvnWnoogedWYesvPZVaXQVpV9CC9oH%2BbH5h3A7syLIiqGQ5ZsemY27yAq4F1P4HD3diJsq%2FrQnVoSngA3WLvJo%2B9G4cp3w8WuwUiZGTR5UKP80WJRU1VSX4Ua4e7ob6GvxcETKzBd%2BalRvRtBsRHFRgai%2FW7aQqTfa4gHI95Tpd1Tcoy6Y%2BMC0j1HNOirt4gx%2BYvOE9eo2ULHq0L%2F75CC%2Fkt2oLTwM6IxpfjKiBs5lOhzmqpn8YyIbJI%2BDzjqk7AG7uFL75P8Qr%2FaYEZPVqE6LbV8dtfxV4tDXqEWfYIxzu%2FiTGegZbBaDfqJvkDbdBqu1JFKi8XSDJjTjAaRlv5kPYM43vpa7pLkWYr1KW7KBFAmwNkOyU5lPY%2FuTIhRDS43hT2T3Dg8Ie2TDAB2OrPSb1Qx3SUNgDIxBdru%2B5cNWU5xEK7du8gnGzmfPaAcSfW8zu7eHoCIA0Y9h493YsYJoX1x8WCOB4l1kHLEefjkUeV3juBw5QPG9RmUV8Mdzw8Yn0kc7XbEUdMnBmKiNZrRCZFE1v4SMk%2BNKWMb11%2BoIxpZnhVllIyPRhZv33uzsX%2BLIoX%2FqhekaiCqlP8urvx34ACWSPivDMkcSP9VLygVlVEmmfgagZrNXIn%2FSVkigMcUixEBXhGxGMlKBKrU%2F6ofxpgCMDKCZTAlAqeG8LDKNBOLIFlKBfYYKuRBhhJXUQx1XAy1VxVAMFp5FazkVerReyXyKlwygFjJq4gFy2Ao6s%2BvT8GJJFXFI8ViSEqSyqMAaCipFUVSx0VSe5UARGisJNVQUiu16C3qlsZOUrk0AI36aJwCy9VIraR%2B1BbU1FDhGrHIkZKa8qgAGkoFQlHTcVHTfmUAsTNabqqCbvWHhgB5Bym5KU8czlA92sSCZTDctL3j1FCRGrHYkYSd1kv0NcOkPkYz8HKL3utyi3LbxvKKgqaJVuSzTDZvupDVay3IBw2mChcb5v6lehLke7PG5r5Hll4zys16U10ZZMogO1sIp9Mq2NbGGmSWOa4ojwBtZc7q7DV2QlBhssFKk409Dy%2BgkGM67j3v1jGmPFsBQicm6t5ggxcz2HBmsJEvSstLY8ko1AHQAMzbWjbhZUwGvox4qVLiuxheLEK0w%2B%2FuZkUeo%2BvR1yzXZNwA0Da4cqTMMZn4MsKlynF5ObyQuwncORWEDXi8heaohZTktc4K1Im2zmyHpW0In2id6cBkLsUaer1bZ9Mg4qNYSqNIWWdXZZ1Bq2frTK%2BQL5XXOrPcd7xbx5jSg0XQJxFyRXJZZ8ABSAO6BnjotlWfNKzwci5ehmGdIaxzFVlbY8oklREucllnjh24z2SHmYYRj3VmQWWdXcQ645Umk8c6gzZrndmXbWbF1R69IYdAGWbKMBt0NyuI%2B%2B1mxc43%2Fm5WoCG%2FZFirQUAaUr7Hqn5W7GMZk2EvJW7k6WhFHoX2PYj4NhRTlf0qTjKKnlZISEur85fkiZ2kgKmcJfVbduHXGG0vKbr4oP5LtpW3yFUHZr0nRUHnbOgMuZ0UaEjfHbijTYZ%2BUiWdbHS%2BlVBs0VHKLlKhzm0vr3fVUQqCnjpKAfaU5%2BwoVXRQYJ6R4AZT1a08OBZofZLs1SxQQU07%2BFdn264dZHHCohKqgFzhazpzsWomU3pinVp5opV2aX4lx4ZCFiti9xfOvh0X680BGrKNlTXczhoesjF8weYc7BnH35vD6s%2B5xNecAzQkZKsVpfxLwrQ7QHFiqvYcEkp3gIZs%2FGGhXAh8r0D9mLtBB2hIa1dwORsug5HvOMMzquKggkEkiY4Hw1UhDzgaspkVV1VcdXBctddGHbyTDY%2BrjipzXQR8C%2B4wZq7K3akDNKSyK7icDZchcdVwSsnqNkr%2BnvrRsh1htZQqsmAkyUlYeVp2AEsJIyvCOjLC2mvTjtE2lgPWmHSThJwb16KMzEdYx6SbJCVchkRYv7fkqCqQIxg8cnJUHv0%2BYCk1IsVRR8ZR%2B%2B3ewT3bAFmqCsc1nBwCBIekZKlcATp7THJDUsJlMCz1hNi%2FrWI4gtEjEU0N19qjv44CDmA01MYrhqoY6vAYKm834m4Y6mh7HzfIIwwL5iLaPjnXwU%2BLo7EeLIpgiAXLYNjpv6nEg%2F5zRkBacNRRFe7LiCBJGOqZXeaAXY%2BTgRcI91%2BuXyCAo1w%2F52uixTIB6KrRnFmU4l%2B0z9xpDTuAU3%2BkKqALA7pt9QP0A9HIk1VhkSlLy463GBlvzw7g1O%2FoygmhnBCDbtqBrH57dpS2Qj5fqYI%2Bso4dwBlTgrAIrS8HnmkzDKJnh6XptgZ5vBTAUS04BSNmGF07eHsqAmdMuaRSAmbQfTuAU588qoy0PdrUpZFWAG84RpqJJOncsfHXs2CVOm4bEZ7LGyrrTFlnI%2BvcUSgAmmIadRR8qMLrPq7GHBCqQHEtRyoVYq%2BiMQfGyCl0QBtwo2LGgnEjSWMOaKbnd260v33FRXR4lj2eW8r7Im8dF0%2Fm3W4A2VymL62S%2FTZz1vmQzZC9kguBo44lXlxsuARwh1LgZ%2Bt%2Bs%2BlbxomxRYeNrnOGFsXKfndtKsxCgh5tFvnkoXP17iCHkLIXlL0g1l7oNJpz%2FDC1mMCNXWEqlIrFu%2Bep3c5UKDsJ7G8pGqjKEMQcvO8iqaXQcn8Po%2B%2FuXZvNYkz%2BeBEUECIBpgOogGw%2F3VpadoMgbFURNLEeV36OVmKRtyOEpk9s7OSm4LktIKC9vxefnBNWCNodv1JXxM1klqJjX7wFxD65C9bfOZ3AUEnZK1I3Ridw0Z%2FdYIOSYts3s%2FONv30z%2BTiK6tUfrwIk7%2BX2EhtcuFHa94Jxo7zEDQisj4BfjREiyktcALi5JR1vykfZkg4hx%2B7E%2FrBYgoBYdy%2Bv%2FWHZB82akRD7w4HMLXP2i5S7QWR%2BeqnVKNAlwL0gT3EJOKiwv88N5UDGI2Aw64h3RQLErBQTC%2FIIYCi5R4CY4OulFpHFuJ75GjS1LP7zzLUw68P5ykegfARn%2BwgWi9mMWOaiAz8IMZEY0wSHHNmpss%2FFtqHc1%2FJI4y1cS7M%2Bz2FYKBNhQ6H2GGm2vav8N5dsN2cYkEvLA46q6EFKuFSZ3FVwEWtyR%2FMFue5tNrKr4fG7%2Fz8%2FKHaWIX0HYb5Q%2F%2B77G%2FIPoVT0GmH6Z7obxf4sopyEzKt%2FpDRpMpnsGORY59Iagg01wApyZ0OuSv6jEnOGUMyVCjLAzCpt0twif87pRUb13sCBW3%2F9m3oFrISYepaZexzONfUc1vtiMQYat6l3EHgBgkw920H7E1mSmXoLsuy2ka9tttNVMEszdmKuFajqgZSZd75aQ4VhN5sJN%2BwAY9iZVRl9lXYd6NGuA%2B5dGG3CiJyL7rtwznUw4jEV4XREmUSU3fRv1B1l6Q%2FZDk7GPu%2Ft4a3JNx5TIY4k2OG18MRip8ql63NBot4eU6e8OuXPz%2BJ%2FeG%2BId%2BaaTMxFw4DTlwt79OVC9%2F3LhsA45kycx2OSPhLhL8FwFId%2FhUe3ERxIV9m6avM%2B30TrbanxcqVaI%2Bx4sm1HzKy3TNsyYGNiZPMEbJA%2BptzaTkCZ74GDz6bdAQOyuPqZIn1MCbOSgIE3RbYfVbuMDZBTd7n1lnsxXmRbNoQ8KAGKQAo%2B1couMJK6j%2F6kjgEy8mvmGiA%2F0bw%2FGsd9PyePfN7ekYSAKucVDKryd1miuNYpUVxcjxMVxd1BBk8Ut4BVcwZ9TidbBHENp6MUes2y7AmTs4sxcxneQC6xBSaMOkOp6Nq5AMv%2BEkTQqb01ADF7aygPs0sT%2FA3ieLsX%2BuVatfVpYcqtoNwK8mq5IEavydZ5I79ic%2FD2vMBIdz9662DhE5zQVdlKSwXXe%2F2GhbSO6NaxDpODdAJX6t%2BHsySc%2BhFVKte5UKK8A52jRI5Yb5PmPdDNQumkASL1GV4KIidApFLl%2FmIYOUnAAdc7mcdptImqeS4A1Zx3W2Si8Bc964VRVfgM9E7sNwCZ3FnNcE603gAyccOlujLe2GZI0uXhrgjY%2FYhTh8mAygRTJth4dZgAsthzU6wQ08GEV6DEZKjQTz3bM8710ssRO%2BZTYtKhUTbcbcCNiu4Ixo0cSkyV6kkc8FBarVxxHgKi6PUP%2Bvkm2LGLgT%2FJgEa4uw6KkfuCMGW%2Fve7%2B9rlYQTfHurVxWyIFaHctkfUvP75%2B8FePL89%2Fff75w%2BL73Vf9XgPt7ZBuqv%2BItXDQQPXEFlwAs%2Fr%2F0GAu1ZnWC6vbD6SyPE6VXzJG3fBOCvmlqhXZnSKzbaFOVqWFGc5jnegMcBgGbhaRmc71mJlArnTqS%2BQvgbdq1W3DrOdkyiGgHALSxmQdZj2Wtfh77TWqTG%2FBObc3Z3a1MMekn9ONaVT4e7vtYyFVJDb2N4n%2FlMVisaV926592h8YcSFGJfB3jpgqY7oKMWIzJasqcLnkFM36QL062dXJLq2A4kHNLb9%2BYp86G9z6iabKiKjengafWtWyOqJtRQRW6VbdI0eOdKuDg31DNmfCB7kOd0tpJavDfaCHO2TM9rLFW6OeRo%2BZ1MB2v6TeNN4zHjektw0LXd3s1FZrbEh5xterIusIWBbXng0VQLoGiBxHeZEokUe8kyBZcemsWMpEV6d4fzorZ6827iT00%2FpXM7OZp%2B7%2BfSXSHTB47oUP648CtfDVwu9w4SPrmMXcNru2%2ByxF7t2Ad7KD2F7%2FabXvkeF%2B5d4KxpRM2w1cIRRgNrRN%2Be6OFTp6ygrj16dpuApm7ow8ND%2FNDKnxFraWThlVzxVJcFRlXVThSGwEsIWL%2BR%2BfqQ8xE%2BGhQWTyD%2FVi%2BPE%2FT3A9A6Xq3D2D5tV0krqJilV%2FZg08h7P%2FhM0CVs0Jm0VSA38SNTaMbrKoLZOJyeZHTvuETcNkt1lBCZs63k%2BhLro1SJKw2X3D6opyrpO7VlvXqLElqly7WLfdl2tr%2BgSBfZhrBUc5t25Cx3BiWsy1kXXaqq%2B8mmEyd3Xhsu0X5gkW%2BlvMaXyxRrpchVS26rCkvEuj6L1w2EgXYd5EsD5zvFs2X8judySWlYhCWHvknZfu6GZORtJK6m4yxaAzJkeilKDiDTb3ZLtbhhusZ0WjN67ei86oiy8l1s0twddI68%2Fk7KbNOJxO7XRqFVlZxy50hKl3SoRLrOPADWLXf5qGc2rc8pUaO%2FU8WKFdGNodqx%2B0Q6Ya%2F0Ss57rzxy7TB9JzB45ppUCP%2FIUfRQToScjnklUe2U6hjniRbrT01ugTbOk52M7tac14fYDDtqLmLqBnrgR1U%2BdaAW29MiZT8g8MzOWVKYw%2F5hkJ9sKUhw%2FKlqS3CmLeswc5qs98tw5Um%2FfsKU4p0WePzZw9b30h268%2F3HClXrnWSXBXVKtTuCPuiGBfhgXAtj4pmFEJVNZ9z6%2BjVHE1aFtcsG8vpcQYRYSg1vTT6NqV%2F40AR%2FseRNNXbe57ySPHegJ2fTGJcuErFz6Pa2x%2FPxUp0tIykxQxDW4ALrTedmVau0smPZgPOBXOPLsqjsAWnV0gn9R03HvuneN6Cob30X2I1bqttePYgtl7bKFOSQY4DtZ0qBVtKxsQcz3iBBdCTFXg4GKIOdbfA%2BsE2Tw6vmBU4UspAVNZaNU%2FYt7SRHVqEz6l6lSp%2FHMjSLBenz2sLMI98tSlA6RtjqimTyxYlDCfaSUi1ilimnD%2FGtxJooyv0MLOBOz%2Bb%2F%2ByXXkoWTH%2FhlaNzLpFwGZW3oUVQffTyOYzPnkRchTULl5lfirzczDyImXgWqaMsfbyIvqY0ns6SejJd6nxZolV1Hfd3xXFXVQX9IziLl2VC3YOJ8nyw0CQ1Z1uZzM%2FjskT4YAFGHUPDokru0r0iY7jOEwsBBUpDO3rOZgMsYMrHeHkl%2BDB%2FjxIwlQcf0NrsHlSajCqP3EVCVYk%2BBQS7CwsujMKLpxgQ564igVXxjsc4Sw4j2pAGtWIg%2BXaDSP3cxTO%2FPk24ilwwmhMjcS6IS8ICeDCF%2FNRm7a7CMmO5vuxu419TpcjVl4LtWH3pqp0%2FpLjDQuJ1jQvOzkCDBCPlCXGyhlRvfl0vAHj3jfgEgwIEELPEz%2FGWJ3GnYOhamvoHwxvroSsy18Qx1vy2N1oy6VtlncwVN6Em969CahlYz99ohexq7MTRS1GesFwTvQwQL1ILy2vxNdrk8fD0F5MhgltGnkPUfE5pOUyhHhfrSl5JMhb8qSFYawqPztdikWFG0c9gtFuKdImvrA4ec%2BuEdrHLDzZ2QeZGgWI%2BZx9rZeZzbT%2BsZFUmk0VyixPHOsvx4uyTZVt2qUzcTb3p%2FZUtDPxoBsXpwQL7rEXF3I%2Feutg4ROQ8HbZbCjRGxa6upHIcETkRkvWsAMBUIiBNZkv15Pn2htA5GrYQbNagzn5zMEi4FU%2FRQ219uooV0d5l7JFZy857q4dtX7mfLZmof5Ssq1tW4Ae23b8CFca1tahBnmIgqX0FNWC77Fbx7G4kurWIaS6EgP3drMhF%2BG2HGxFDKv3yKvq2fHbpw8TMoCzjNz%2FfKK%2FwMmuNjcHkurdsgpJJyBJjq4dBEaUX%2FBEUKGhnIOKYAyeYFStO2EEA%2FDONkyGYSjfZPUmeVUMI%2BcUZjtOYaq%2BTZ1jRw5O8Sb9nIFnTr6eNafoPDLr07QUyVAkQyq3Zfl7o9uSVWg6jVDAE%2BlLj25Lgr%2F13Ivm2jJczf215i19bcsl%2FG7VZ%2BKpxa8Wf5cWRiFBchUuTFYs%2BQIGhoHd%2BxZcAFrK7VS9Q47FvHCyhO3tOkiT48rcB8spo4ENCKl3SSmEnIAQXiOijs90h5DMhPjhrbb%2BntFpTegHJR8B6kCfGO1sT0v5LTqHDagiwv3jhmoEQm1DOCcP40SwPkamGKdinANgnL36tLld2qyXSX7GiaBySlbvkCNnnMDBkE7TjJArEq7uDSEyM06DCxVXpDXcGyq4CaXYjYMKlevajAcFoH5vUGRSkckBkMnKRGxxGRK8s8lAJx3L%2FUi%2BI4LRV%2Ff2iUybcG0L19O5gBe6RRH%2FqEklBrTDBRd9UGZH5wiRmVTqE8AFC6hg0TUsJGGVLdSUaWIVTd3%2BNEvCqR9Rh7dj6CeIKUN1DnWe%2FoGMCjj1pKZc%2F22b9ZuHMkbaGSNDtkV2TY%2FDldFetdVilBZAqZ3UpLUA2SyE7m11ByCNGOyA54TFhiqSVhY7j8XOeaDgoo9Q5zY53ynTkUnON5kMNQsGdL%2FSroJf0q6CHAt%2BTCqQvKA0RKgut%2FUIdWZL2dD1EjcmV04bSrrPQfIYrPdI9Nsh8FUnD%2FO2%2BM8bZzbek%2F%2B%2FxAQrt3MCWIohLviMqR9Jb%2FDhjRgLL3UkuDA0ADXIRw7q0w8VOVDkQApy0IWa1Vn5xqMhB2PKJuXe3c3rIwf5IdA1ORhTakhv8JGJHFiabmvQ5vqyldqSIgcDIAddKBmelRo6FnJgjinFi3t3F6GXJDk5yA%2BBjsnBqOQOeoOPNOQg9jeJ%2FzT1Iw042NK%2Bbde%2BlnW3bf7qLSVpoKjCAKgCtwKruMS%2FSrJgD48sNAgZDAu9vLC0juWjDpQseO7UJ5uXGy7c5NHPfmHIAjkKdEfTu%2FYkjKrwvTf4yEEWSvhMXX89L8BDfmSgYyJNNzWkf4WI1qw62X%2FOhs6oRF97gw63rI5wohlmWX5aluPHsVUoUU5FLodALqv09sWRS97ZhuiJGpV6BfcWL0JXU25PlKHTHJbuyeWY0sB7g48c5DINU9lYA4AzTGUqRT1FD4ZAD8xe6QHvbEOkB%2BY1Og9MEbp4ctOD4hjoOlB1jUlQZ8NHInrgYE2Hms7T0gObSrFC0YMh0AOnV3rAO9sg6cE1mn%2BmCL0JuelBcQx07T24xvjC2fCRhh5AnXBGADXAo0uCrfqkJUUPFD2Qgh7AqvCdMHrAPdsQ6YEFr3B%2Ft9prIAybHrwdA13Tg3pBBQUfmekB1qdenMvse0%2F0iaRn72OSbKhYEZ0CPizQ02KyJJDaTidBSAaWc%2FrfxI8TbRbMw9kNROX7lymWoE77zabXmkbkp2wU65vIXwRUwT%2B9eO%2Bz5hpMlTOXEz8%2FP0%2Be0SSMluQXqNM18qCTL%2FeBvFuLZ4%2F%2Bk3fC1NnCajcznfSPjx%2B%2BnDrnfNY45WYbrfIJyavhg7%2Fyn3y6YOEDoJJlD23nzHak5s%2BZfoUaeXU%2Be%2Fn7CXMW7efqZw0WK69oVBVPgvWCwmlNP%2BkqnTW7SvvZM%2FW%2F%2Brl%2FhDNvOln6SfI68edbMkLf1X6u5bp54cTPMZkpXHtPfpw%2F3Kppdnf29X%2BDh8f47ufnr1%2BXd8s%2FjS%2BzT39pMpYv6Cfu6%2FXaYelYSkOrmW3rzd7c3%2Bw1p7jEznaPQcV2D3Wx%2B%2F0ebFhUNCJCVTUo2%2FA027A9XTIxxxpCVTaYYMqdHqpJkFBzseDO9348i4JpkOo4fiZfVDgPZt4qTu%2BW3CzUP%2Fz6kR4uNQqOlStu3EUFxzeZbg0z1L9hlqJknsJik%2FXW3jG16AlOeSz5J1zQnx8pBS9f%2FYP%2BNvM23jRYBUlA2xrtvu7uX%2Fef7rS7Xz%2BSn%2F1ZGL%2FGif%2BUCYYm3vcMgx59T%2BoTyOh9nGznr%2BUVCBq2sbcqLutlQzlo8yulL3wK05uchU%2BblU%2F5x2Y7XZEX5Z8oCdPXzFNB09LmJFCf1CJ98cvX%2BI9Yf%2Fndxh%2F%2Fu10ZszvrN23cVqQQpFfYkJVId8QjfRb5XkIO6V2UP0RUzjaeUXh99OI4fRzBsbZtlaCQkYJKDoqqRKeL7X9est%2FCD%2BrQ0HSg6U4rGIzbQSkGBhUBbYEwoN6RMEx2Xv4T%2BfiPH9OzAb3%2Ffw%3D%3D"></iframe>
+
+<details class="turtle">
+<summary>See RDF triples</summary>
+<div class="language-turtle highlight"><span class="filename">Describing Periodicals with LRMoo</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">:</span><span class="w"> </span><span class="nv">&lt;https://f3mf.github.io/gdo/test-cidoc#&gt;</span><span class="p">.</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="p">.</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="p">.</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">dc:</span><span class="w"> </span><span class="nv">&lt;http://purl.org/dc/elements/1.1/&gt;</span><span class="p">.</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">crm:</span><span class="w"> </span><span class="nv">&lt;http://www.cidoc-crm.org/cidoc-crm/&gt;</span><span class="p">.</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">lrmoo:</span><span class="w"> </span><span class="nv">&lt;http://iflastandards.info/ns/lrm/lrmoo/&gt;</span><span class="p">.</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">aat:</span><span class="w"> </span><span class="nv">&lt;http://vocab.getty.edu/aat/&gt;</span><span class="p">.</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">gn:</span><span class="w"> </span><span class="nv">&lt;https://sws.geonames.org/&gt;</span><span class="p">.</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nv">&lt;https://f3mf.github.io/gdo/test-cidoc#&gt;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="nn">dc</span><span class="p">:</span><span class="nt">creator</span> <span class="s">&quot;Francesca Massarenti&quot;</span><span class="p">;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="nn">dc</span><span class="p">:</span><span class="nt">date</span> <span class="s">&quot;2025-01-09&quot;</span><span class="p">;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="nn">dc</span><span class="p">:</span><span class="nt">description</span> <span class="s">&quot;A test of the descriptive capabilities of the CIDOC-CRM ecosystem, taking as a case study the perusal of a periodical, the most complex publication to model within LRM.&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">;</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="nn">dc</span><span class="p">:</span><span class="nt">title</span> <span class="s">&quot;Describing Periodicals with LRMoo&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">:</span><span class="nt">10-c</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E97_Monetary_Amount</span><span class="p">;</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P90_has_value</span> <span class="mf">0.1</span><span class="p">;</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P91_has_unit</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300411994</span><span class="p">.</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="p">:</span><span class="nt">1913-10-11</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E52_Time-Span</span><span class="p">;</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P82_at_some_time_within</span> <span class="s">&quot;1913-10-11T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">.</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="p">:</span><span class="nt">1915-12-21</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E52_Time-Span</span><span class="p">;</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P82_at_some_time_within</span> <span class="s">&quot;1915-12-21T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">.</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="p">:</span><span class="nt">1917-08-28</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E52_Time-Span</span><span class="p">;</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P82_at_some_time_within</span> <span class="s">&quot;1917-08-28T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">.</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="p">:</span><span class="nt">1984-11-28</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E52_Time-Span</span><span class="p">;</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P82_at_some_time_within</span> <span class="s">&quot;1984-11-28T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">.</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="p">:</span><span class="nt">1994-02-06</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E52_Time-Span</span><span class="p">;</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P82_at_some_time_within</span> <span class="s">&quot;1994-02-06T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">.</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="p">:</span><span class="nt">2011-12-14</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E52_Time-Span</span><span class="p">;</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P82_at_some_time_within</span> <span class="s">&quot;2011-12-14T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">.</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="p">:</span><span class="nt">52-pages</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E54_Dimension</span><span class="p">;</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P90_has_value</span> <span class="mi">52</span><span class="p">;</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P91_has_unit</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300194222</span><span class="p">.</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="p">:</span><span class="nt">ben-oda</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E21_Person</span><span class="p">;</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P100i_died_in</span> <span class="p">:</span><span class="nt">ben-oda-death</span><span class="p">;</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P67i_is_referred_to_by</span> <span class="p">:</span><span class="nt">ben-oda-n1</span><span class="p">,</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>        <span class="p">:</span><span class="nt">ben-oda-n2</span><span class="p">,</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>        <span class="p">:</span><span class="nt">ben-oda-n3</span><span class="p">,</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>        <span class="p">:</span><span class="nt">ben-oda-n4</span><span class="p">;</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P98i_was_born</span> <span class="p">:</span><span class="nt">ben-oda-birth</span><span class="p">;</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Ben Oda&quot;</span><span class="p">.</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="p">:</span><span class="nt">ben-oda-birth</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E67_Birth</span><span class="p">;</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P4_has_time-span</span> <span class="p">:</span><span class="nt">1915-12-21</span><span class="p">;</span>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P7_took_place_at</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5392114</span><span class="p">.</span>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="p">:</span><span class="nt">ben-oda-death</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E69_Death</span><span class="p">;</span>
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P4_has_time-span</span> <span class="p">:</span><span class="nt">1984-11-28</span><span class="p">;</span>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P7_took_place_at</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5097672</span><span class="p">.</span>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="p">:</span><span class="nt">ben-oda-n1</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Ben Oda&quot;</span><span class="p">;</span>
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300266386</span><span class="p">.</span>
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a><span class="p">:</span><span class="nt">ben-oda-n2</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Ben Kazuhito Oda&quot;</span><span class="p">;</span>
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300404681</span><span class="p">.</span>
+</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>
+</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a><span class="p">:</span><span class="nt">ben-oda-n3</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Ben&quot;</span><span class="p">;</span>
+</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300404651</span><span class="p">.</span>
+</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a>
+</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a><span class="p">:</span><span class="nt">ben-oda-n4</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Oda&quot;</span><span class="p">;</span>
+</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300404652</span><span class="p">.</span>
+</span><span id="__span-0-74"><a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a>
+</span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a><span class="p">:</span><span class="nt">cover-creation</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F27_Work_Creation</span><span class="p">.</span>
+</span><span id="__span-0-76"><a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a>
+</span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a><span class="p">:</span><span class="nt">editing-1</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">PC14_carried_out_by</span><span class="p">;</span>
+</span><span id="__span-0-78"><a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P01_has_domain</span> <span class="p">:</span><span class="nt">issue-editing</span><span class="p">;</span>
+</span><span id="__span-0-79"><a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P02_has_range</span> <span class="p">:</span><span class="nt">jack-kirby</span><span class="p">;</span>
+</span><span id="__span-0-80"><a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P14.1_in_the_role_of</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300025526</span><span class="p">.</span>
+</span><span id="__span-0-81"><a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a>
+</span><span id="__span-0-82"><a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a><span class="p">:</span><span class="nt">editing-2</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">PC14_carried_out_by</span><span class="p">;</span>
+</span><span id="__span-0-83"><a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P01_has_domain</span> <span class="p">:</span><span class="nt">issue-editing</span><span class="p">;</span>
+</span><span id="__span-0-84"><a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P02_has_range</span> <span class="p">:</span><span class="nt">joe-simon</span><span class="p">;</span>
+</span><span id="__span-0-85"><a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P14.1_in_the_role_of</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300025526</span><span class="p">.</span>
+</span><span id="__span-0-86"><a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a>
+</span><span id="__span-0-87"><a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a><span class="p">:</span><span class="nt">editorial-policy</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E29_Design_or_Procedure</span><span class="p">;</span>
+</span><span id="__span-0-88"><a id="__codelineno-0-88" name="__codelineno-0-88" href="#__codelineno-0-88"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P68_foresees_use_of</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300014137</span><span class="p">,</span>
+</span><span id="__span-0-89"><a id="__codelineno-0-89" name="__codelineno-0-89" href="#__codelineno-0-89"></a>        <span class="nn">aat</span><span class="p">:</span><span class="nt">300312356</span><span class="p">.</span>
+</span><span id="__span-0-90"><a id="__codelineno-0-90" name="__codelineno-0-90" href="#__codelineno-0-90"></a>
+</span><span id="__span-0-91"><a id="__codelineno-0-91" name="__codelineno-0-91" href="#__codelineno-0-91"></a><span class="p">:</span><span class="nt">feature-publications</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F11_Corporate_Body</span><span class="p">;</span>
+</span><span id="__span-0-92"><a id="__codelineno-0-92" name="__codelineno-0-92" href="#__codelineno-0-92"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Feature Publications&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-0-93"><a id="__codelineno-0-93" name="__codelineno-0-93" href="#__codelineno-0-93"></a>
+</span><span id="__span-0-94"><a id="__codelineno-0-94" name="__codelineno-0-94" href="#__codelineno-0-94"></a><span class="p">:</span><span class="nt">inking</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">PC14_carried_out_by</span><span class="p">;</span>
+</span><span id="__span-0-95"><a id="__codelineno-0-95" name="__codelineno-0-95" href="#__codelineno-0-95"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P01_has_domain</span> <span class="p">:</span><span class="nt">cover-creation</span><span class="p">;</span>
+</span><span id="__span-0-96"><a id="__codelineno-0-96" name="__codelineno-0-96" href="#__codelineno-0-96"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P02_has_range</span> <span class="p">:</span><span class="nt">joe-simon</span><span class="p">;</span>
+</span><span id="__span-0-97"><a id="__codelineno-0-97" name="__codelineno-0-97" href="#__codelineno-0-97"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P14.1_in_the_role_of</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300443955</span><span class="p">.</span>
+</span><span id="__span-0-98"><a id="__codelineno-0-98" name="__codelineno-0-98" href="#__codelineno-0-98"></a>
+</span><span id="__span-0-99"><a id="__codelineno-0-99" name="__codelineno-0-99" href="#__codelineno-0-99"></a><span class="p">:</span><span class="nt">issue-editing</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F28_Expression_Creation</span><span class="p">.</span>
+</span><span id="__span-0-100"><a id="__codelineno-0-100" name="__codelineno-0-100" href="#__codelineno-0-100"></a>
+</span><span id="__span-0-101"><a id="__codelineno-0-101" name="__codelineno-0-101" href="#__codelineno-0-101"></a><span class="p">:</span><span class="nt">issue-publication</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F30_Manifestation_Creation</span><span class="p">;</span>
+</span><span id="__span-0-102"><a id="__codelineno-0-102" name="__codelineno-0-102" href="#__codelineno-0-102"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P14_carried_out_by</span> <span class="p">:</span><span class="nt">feature-publications</span><span class="p">;</span>
+</span><span id="__span-0-103"><a id="__codelineno-0-103" name="__codelineno-0-103" href="#__codelineno-0-103"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P4_has_time-span</span> <span class="p">:</span><span class="nt">october-1950</span><span class="p">;</span>
+</span><span id="__span-0-104"><a id="__codelineno-0-104" name="__codelineno-0-104" href="#__codelineno-0-104"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P7_took_place_at</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5110629</span><span class="p">.</span>
+</span><span id="__span-0-105"><a id="__codelineno-0-105" name="__codelineno-0-105" href="#__codelineno-0-105"></a>
+</span><span id="__span-0-106"><a id="__codelineno-0-106" name="__codelineno-0-106" href="#__codelineno-0-106"></a><span class="p">:</span><span class="nt">jack-kirby</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E21_Person</span><span class="p">;</span>
+</span><span id="__span-0-107"><a id="__codelineno-0-107" name="__codelineno-0-107" href="#__codelineno-0-107"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P100i_died_in</span> <span class="p">:</span><span class="nt">jack-kirby-death</span><span class="p">;</span>
+</span><span id="__span-0-108"><a id="__codelineno-0-108" name="__codelineno-0-108" href="#__codelineno-0-108"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P67i_is_referred_to_by</span> <span class="p">:</span><span class="nt">jack-kirby-n1</span><span class="p">,</span>
+</span><span id="__span-0-109"><a id="__codelineno-0-109" name="__codelineno-0-109" href="#__codelineno-0-109"></a>        <span class="p">:</span><span class="nt">jack-kirby-n2</span><span class="p">,</span>
+</span><span id="__span-0-110"><a id="__codelineno-0-110" name="__codelineno-0-110" href="#__codelineno-0-110"></a>        <span class="p">:</span><span class="nt">jack-kirby-n3</span><span class="p">,</span>
+</span><span id="__span-0-111"><a id="__codelineno-0-111" name="__codelineno-0-111" href="#__codelineno-0-111"></a>        <span class="p">:</span><span class="nt">jack-kirby-n4</span><span class="p">,</span>
+</span><span id="__span-0-112"><a id="__codelineno-0-112" name="__codelineno-0-112" href="#__codelineno-0-112"></a>        <span class="p">:</span><span class="nt">jon-henri</span><span class="p">;</span>
+</span><span id="__span-0-113"><a id="__codelineno-0-113" name="__codelineno-0-113" href="#__codelineno-0-113"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P98i_was_born</span> <span class="p">:</span><span class="nt">jack-kirby-birth</span><span class="p">;</span>
+</span><span id="__span-0-114"><a id="__codelineno-0-114" name="__codelineno-0-114" href="#__codelineno-0-114"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Jack Kirby&quot;</span><span class="p">.</span>
+</span><span id="__span-0-115"><a id="__codelineno-0-115" name="__codelineno-0-115" href="#__codelineno-0-115"></a>
+</span><span id="__span-0-116"><a id="__codelineno-0-116" name="__codelineno-0-116" href="#__codelineno-0-116"></a><span class="p">:</span><span class="nt">jack-kirby-birth</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E67_Birth</span><span class="p">;</span>
+</span><span id="__span-0-117"><a id="__codelineno-0-117" name="__codelineno-0-117" href="#__codelineno-0-117"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P4_has_time-span</span> <span class="p">:</span><span class="nt">1917-08-28</span><span class="p">;</span>
+</span><span id="__span-0-118"><a id="__codelineno-0-118" name="__codelineno-0-118" href="#__codelineno-0-118"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P7_took_place_at</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5128581</span><span class="p">.</span>
+</span><span id="__span-0-119"><a id="__codelineno-0-119" name="__codelineno-0-119" href="#__codelineno-0-119"></a>
+</span><span id="__span-0-120"><a id="__codelineno-0-120" name="__codelineno-0-120" href="#__codelineno-0-120"></a><span class="p">:</span><span class="nt">jack-kirby-death</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E69_Death</span><span class="p">;</span>
+</span><span id="__span-0-121"><a id="__codelineno-0-121" name="__codelineno-0-121" href="#__codelineno-0-121"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P4_has_time-span</span> <span class="p">:</span><span class="nt">1994-02-06</span><span class="p">;</span>
+</span><span id="__span-0-122"><a id="__codelineno-0-122" name="__codelineno-0-122" href="#__codelineno-0-122"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P7_took_place_at</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5402405</span><span class="p">.</span>
+</span><span id="__span-0-123"><a id="__codelineno-0-123" name="__codelineno-0-123" href="#__codelineno-0-123"></a>
+</span><span id="__span-0-124"><a id="__codelineno-0-124" name="__codelineno-0-124" href="#__codelineno-0-124"></a><span class="p">:</span><span class="nt">jack-kirby-n1</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-125"><a id="__codelineno-0-125" name="__codelineno-0-125" href="#__codelineno-0-125"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Jack Kirby&quot;</span><span class="p">;</span>
+</span><span id="__span-0-126"><a id="__codelineno-0-126" name="__codelineno-0-126" href="#__codelineno-0-126"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300266386</span><span class="p">.</span>
+</span><span id="__span-0-127"><a id="__codelineno-0-127" name="__codelineno-0-127" href="#__codelineno-0-127"></a>
+</span><span id="__span-0-128"><a id="__codelineno-0-128" name="__codelineno-0-128" href="#__codelineno-0-128"></a><span class="p">:</span><span class="nt">jack-kirby-n2</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-129"><a id="__codelineno-0-129" name="__codelineno-0-129" href="#__codelineno-0-129"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Jacob Kurtzberg&quot;</span><span class="p">;</span>
+</span><span id="__span-0-130"><a id="__codelineno-0-130" name="__codelineno-0-130" href="#__codelineno-0-130"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300404681</span><span class="p">.</span>
+</span><span id="__span-0-131"><a id="__codelineno-0-131" name="__codelineno-0-131" href="#__codelineno-0-131"></a>
+</span><span id="__span-0-132"><a id="__codelineno-0-132" name="__codelineno-0-132" href="#__codelineno-0-132"></a><span class="p">:</span><span class="nt">jack-kirby-n3</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-133"><a id="__codelineno-0-133" name="__codelineno-0-133" href="#__codelineno-0-133"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Jack&quot;</span><span class="p">;</span>
+</span><span id="__span-0-134"><a id="__codelineno-0-134" name="__codelineno-0-134" href="#__codelineno-0-134"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300404651</span><span class="p">.</span>
+</span><span id="__span-0-135"><a id="__codelineno-0-135" name="__codelineno-0-135" href="#__codelineno-0-135"></a>
+</span><span id="__span-0-136"><a id="__codelineno-0-136" name="__codelineno-0-136" href="#__codelineno-0-136"></a><span class="p">:</span><span class="nt">jack-kirby-n4</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-137"><a id="__codelineno-0-137" name="__codelineno-0-137" href="#__codelineno-0-137"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Kirby&quot;</span><span class="p">;</span>
+</span><span id="__span-0-138"><a id="__codelineno-0-138" name="__codelineno-0-138" href="#__codelineno-0-138"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300404652</span><span class="p">.</span>
+</span><span id="__span-0-139"><a id="__codelineno-0-139" name="__codelineno-0-139" href="#__codelineno-0-139"></a>
+</span><span id="__span-0-140"><a id="__codelineno-0-140" name="__codelineno-0-140" href="#__codelineno-0-140"></a><span class="p">:</span><span class="nt">joe-simon</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E21_Person</span><span class="p">;</span>
+</span><span id="__span-0-141"><a id="__codelineno-0-141" name="__codelineno-0-141" href="#__codelineno-0-141"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P100i_died_in</span> <span class="p">:</span><span class="nt">joe-simon-death</span><span class="p">;</span>
+</span><span id="__span-0-142"><a id="__codelineno-0-142" name="__codelineno-0-142" href="#__codelineno-0-142"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P67i_is_referred_to_by</span> <span class="p">:</span><span class="nt">joe-simon-n1</span><span class="p">,</span>
+</span><span id="__span-0-143"><a id="__codelineno-0-143" name="__codelineno-0-143" href="#__codelineno-0-143"></a>        <span class="p">:</span><span class="nt">joe-simon-n2</span><span class="p">,</span>
+</span><span id="__span-0-144"><a id="__codelineno-0-144" name="__codelineno-0-144" href="#__codelineno-0-144"></a>        <span class="p">:</span><span class="nt">joe-simon-n3</span><span class="p">,</span>
+</span><span id="__span-0-145"><a id="__codelineno-0-145" name="__codelineno-0-145" href="#__codelineno-0-145"></a>        <span class="p">:</span><span class="nt">joe-simon-n4</span><span class="p">,</span>
+</span><span id="__span-0-146"><a id="__codelineno-0-146" name="__codelineno-0-146" href="#__codelineno-0-146"></a>        <span class="p">:</span><span class="nt">jon-henri</span><span class="p">;</span>
+</span><span id="__span-0-147"><a id="__codelineno-0-147" name="__codelineno-0-147" href="#__codelineno-0-147"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P98i_was_born</span> <span class="p">:</span><span class="nt">joe-simon-birth</span><span class="p">;</span>
+</span><span id="__span-0-148"><a id="__codelineno-0-148" name="__codelineno-0-148" href="#__codelineno-0-148"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Joe Simon&quot;</span><span class="p">.</span>
+</span><span id="__span-0-149"><a id="__codelineno-0-149" name="__codelineno-0-149" href="#__codelineno-0-149"></a>
+</span><span id="__span-0-150"><a id="__codelineno-0-150" name="__codelineno-0-150" href="#__codelineno-0-150"></a><span class="p">:</span><span class="nt">joe-simon-birth</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E67_Birth</span><span class="p">;</span>
+</span><span id="__span-0-151"><a id="__codelineno-0-151" name="__codelineno-0-151" href="#__codelineno-0-151"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P4_has_time-span</span> <span class="p">:</span><span class="nt">1913-10-11</span><span class="p">;</span>
+</span><span id="__span-0-152"><a id="__codelineno-0-152" name="__codelineno-0-152" href="#__codelineno-0-152"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P7_took_place_at</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5134086</span><span class="p">.</span>
+</span><span id="__span-0-153"><a id="__codelineno-0-153" name="__codelineno-0-153" href="#__codelineno-0-153"></a>
+</span><span id="__span-0-154"><a id="__codelineno-0-154" name="__codelineno-0-154" href="#__codelineno-0-154"></a><span class="p">:</span><span class="nt">joe-simon-death</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E69_Death</span><span class="p">;</span>
+</span><span id="__span-0-155"><a id="__codelineno-0-155" name="__codelineno-0-155" href="#__codelineno-0-155"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P4_has_time-span</span> <span class="p">:</span><span class="nt">2011-12-14</span><span class="p">;</span>
+</span><span id="__span-0-156"><a id="__codelineno-0-156" name="__codelineno-0-156" href="#__codelineno-0-156"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P7_took_place_at</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5128581</span><span class="p">.</span>
+</span><span id="__span-0-157"><a id="__codelineno-0-157" name="__codelineno-0-157" href="#__codelineno-0-157"></a>
+</span><span id="__span-0-158"><a id="__codelineno-0-158" name="__codelineno-0-158" href="#__codelineno-0-158"></a><span class="p">:</span><span class="nt">joe-simon-n1</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-159"><a id="__codelineno-0-159" name="__codelineno-0-159" href="#__codelineno-0-159"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Joe Simon&quot;</span><span class="p">;</span>
+</span><span id="__span-0-160"><a id="__codelineno-0-160" name="__codelineno-0-160" href="#__codelineno-0-160"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300266386</span><span class="p">.</span>
+</span><span id="__span-0-161"><a id="__codelineno-0-161" name="__codelineno-0-161" href="#__codelineno-0-161"></a>
+</span><span id="__span-0-162"><a id="__codelineno-0-162" name="__codelineno-0-162" href="#__codelineno-0-162"></a><span class="p">:</span><span class="nt">joe-simon-n2</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-163"><a id="__codelineno-0-163" name="__codelineno-0-163" href="#__codelineno-0-163"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Hymie Simon&quot;</span><span class="p">;</span>
+</span><span id="__span-0-164"><a id="__codelineno-0-164" name="__codelineno-0-164" href="#__codelineno-0-164"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300404681</span><span class="p">.</span>
+</span><span id="__span-0-165"><a id="__codelineno-0-165" name="__codelineno-0-165" href="#__codelineno-0-165"></a>
+</span><span id="__span-0-166"><a id="__codelineno-0-166" name="__codelineno-0-166" href="#__codelineno-0-166"></a><span class="p">:</span><span class="nt">joe-simon-n3</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-167"><a id="__codelineno-0-167" name="__codelineno-0-167" href="#__codelineno-0-167"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Joe&quot;</span><span class="p">;</span>
+</span><span id="__span-0-168"><a id="__codelineno-0-168" name="__codelineno-0-168" href="#__codelineno-0-168"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300404651</span><span class="p">.</span>
+</span><span id="__span-0-169"><a id="__codelineno-0-169" name="__codelineno-0-169" href="#__codelineno-0-169"></a>
+</span><span id="__span-0-170"><a id="__codelineno-0-170" name="__codelineno-0-170" href="#__codelineno-0-170"></a><span class="p">:</span><span class="nt">joe-simon-n4</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-171"><a id="__codelineno-0-171" name="__codelineno-0-171" href="#__codelineno-0-171"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Simon&quot;</span><span class="p">;</span>
+</span><span id="__span-0-172"><a id="__codelineno-0-172" name="__codelineno-0-172" href="#__codelineno-0-172"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300404652</span><span class="p">.</span>
+</span><span id="__span-0-173"><a id="__codelineno-0-173" name="__codelineno-0-173" href="#__codelineno-0-173"></a>
+</span><span id="__span-0-174"><a id="__codelineno-0-174" name="__codelineno-0-174" href="#__codelineno-0-174"></a><span class="p">:</span><span class="nt">jon-henri</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F12_Nomen</span><span class="p">;</span>
+</span><span id="__span-0-175"><a id="__codelineno-0-175" name="__codelineno-0-175" href="#__codelineno-0-175"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R33_has_string</span> <span class="s">&quot;Jon Henri&quot;</span><span class="p">;</span>
+</span><span id="__span-0-176"><a id="__codelineno-0-176" name="__codelineno-0-176" href="#__codelineno-0-176"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300404678</span><span class="p">.</span>
+</span><span id="__span-0-177"><a id="__codelineno-0-177" name="__codelineno-0-177" href="#__codelineno-0-177"></a>
+</span><span id="__span-0-178"><a id="__codelineno-0-178" name="__codelineno-0-178" href="#__codelineno-0-178"></a><span class="p">:</span><span class="nt">lettering</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">PC14_carried_out_by</span><span class="p">;</span>
+</span><span id="__span-0-179"><a id="__codelineno-0-179" name="__codelineno-0-179" href="#__codelineno-0-179"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P01_has_domain</span> <span class="p">:</span><span class="nt">cover-creation</span><span class="p">;</span>
+</span><span id="__span-0-180"><a id="__codelineno-0-180" name="__codelineno-0-180" href="#__codelineno-0-180"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P02_has_range</span> <span class="p">:</span><span class="nt">ben-oda</span><span class="p">;</span>
+</span><span id="__span-0-181"><a id="__codelineno-0-181" name="__codelineno-0-181" href="#__codelineno-0-181"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P14.1_in_the_role_of</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300025115</span><span class="p">.</span>
+</span><span id="__span-0-182"><a id="__codelineno-0-182" name="__codelineno-0-182" href="#__codelineno-0-182"></a>
+</span><span id="__span-0-183"><a id="__codelineno-0-183" name="__codelineno-0-183" href="#__codelineno-0-183"></a><span class="p">:</span><span class="nt">no-26</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E41_Appellation</span><span class="p">;</span>
+</span><span id="__span-0-184"><a id="__codelineno-0-184" name="__codelineno-0-184" href="#__codelineno-0-184"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P190_has_symbolic_content</span> <span class="s">&quot;NO. 26&quot;</span><span class="p">.</span>
+</span><span id="__span-0-185"><a id="__codelineno-0-185" name="__codelineno-0-185" href="#__codelineno-0-185"></a>
+</span><span id="__span-0-186"><a id="__codelineno-0-186" name="__codelineno-0-186" href="#__codelineno-0-186"></a><span class="p">:</span><span class="nt">october-1950</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E52_Time-Span</span><span class="p">;</span>
+</span><span id="__span-0-187"><a id="__codelineno-0-187" name="__codelineno-0-187" href="#__codelineno-0-187"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P82_at_some_time_within</span> <span class="s">&quot;1950-10-01T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">.</span>
+</span><span id="__span-0-188"><a id="__codelineno-0-188" name="__codelineno-0-188" href="#__codelineno-0-188"></a>
+</span><span id="__span-0-189"><a id="__codelineno-0-189" name="__codelineno-0-189" href="#__codelineno-0-189"></a><span class="p">:</span><span class="nt">penciling</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">PC14_carried_out_by</span><span class="p">;</span>
+</span><span id="__span-0-190"><a id="__codelineno-0-190" name="__codelineno-0-190" href="#__codelineno-0-190"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P01_has_domain</span> <span class="p">:</span><span class="nt">cover-creation</span><span class="p">;</span>
+</span><span id="__span-0-191"><a id="__codelineno-0-191" name="__codelineno-0-191" href="#__codelineno-0-191"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P02_has_range</span> <span class="p">:</span><span class="nt">jack-kirby</span><span class="p">;</span>
+</span><span id="__span-0-192"><a id="__codelineno-0-192" name="__codelineno-0-192" href="#__codelineno-0-192"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P14.1_in_the_role_of</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300443954</span><span class="p">.</span>
+</span><span id="__span-0-193"><a id="__codelineno-0-193" name="__codelineno-0-193" href="#__codelineno-0-193"></a>
+</span><span id="__span-0-194"><a id="__codelineno-0-194" name="__codelineno-0-194" href="#__codelineno-0-194"></a><span class="p">:</span><span class="nt">september-1947-june-1963</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E52_Time-Span</span><span class="p">;</span>
+</span><span id="__span-0-195"><a id="__codelineno-0-195" name="__codelineno-0-195" href="#__codelineno-0-195"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P82a_begin_of_the_begin</span> <span class="s">&quot;1947-09-01T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">;</span>
+</span><span id="__span-0-196"><a id="__codelineno-0-196" name="__codelineno-0-196" href="#__codelineno-0-196"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P82b_end_of_the_end</span> <span class="s">&quot;1963-06-30T23:59:59&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">.</span>
+</span><span id="__span-0-197"><a id="__codelineno-0-197" name="__codelineno-0-197" href="#__codelineno-0-197"></a>
+</span><span id="__span-0-198"><a id="__codelineno-0-198" name="__codelineno-0-198" href="#__codelineno-0-198"></a><span class="p">:</span><span class="nt">serial-creation</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F27_Work_Creation</span><span class="p">;</span>
+</span><span id="__span-0-199"><a id="__codelineno-0-199" name="__codelineno-0-199" href="#__codelineno-0-199"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P14_carried_out_by</span> <span class="p">:</span><span class="nt">feature-publications</span><span class="p">;</span>
+</span><span id="__span-0-200"><a id="__codelineno-0-200" name="__codelineno-0-200" href="#__codelineno-0-200"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P4_has_time-span</span> <span class="p">:</span><span class="nt">september-1947-june-1963</span><span class="p">.</span>
+</span><span id="__span-0-201"><a id="__codelineno-0-201" name="__codelineno-0-201" href="#__codelineno-0-201"></a>
+</span><span id="__span-0-202"><a id="__codelineno-0-202" name="__codelineno-0-202" href="#__codelineno-0-202"></a><span class="p">:</span><span class="nt">standard-golden-age-us</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E54_Dimension</span><span class="p">;</span>
+</span><span id="__span-0-203"><a id="__codelineno-0-203" name="__codelineno-0-203" href="#__codelineno-0-203"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P90_has_value</span> <span class="s">&quot;7.75 x 10.5&quot;</span><span class="p">;</span>
+</span><span id="__span-0-204"><a id="__codelineno-0-204" name="__codelineno-0-204" href="#__codelineno-0-204"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P91_has_unit</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300379100</span><span class="p">.</span>
+</span><span id="__span-0-205"><a id="__codelineno-0-205" name="__codelineno-0-205" href="#__codelineno-0-205"></a>
+</span><span id="__span-0-206"><a id="__codelineno-0-206" name="__codelineno-0-206" href="#__codelineno-0-206"></a><span class="p">:</span><span class="nt">vol-4-no-2</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E41_Appellation</span><span class="p">;</span>
+</span><span id="__span-0-207"><a id="__codelineno-0-207" name="__codelineno-0-207" href="#__codelineno-0-207"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P190_has_symbolic_content</span> <span class="s">&quot;VOL. 4, NO. 2.&quot;</span><span class="p">.</span>
+</span><span id="__span-0-208"><a id="__codelineno-0-208" name="__codelineno-0-208" href="#__codelineno-0-208"></a>
+</span><span id="__span-0-209"><a id="__codelineno-0-209" name="__codelineno-0-209" href="#__codelineno-0-209"></a><span class="p">:</span><span class="nt">young-romance-26-cover-e</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F2_Expression</span><span class="p">;</span>
+</span><span id="__span-0-210"><a id="__codelineno-0-210" name="__codelineno-0-210" href="#__codelineno-0-210"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Cover of Young Romance 26&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-0-211"><a id="__codelineno-0-211" name="__codelineno-0-211" href="#__codelineno-0-211"></a>
+</span><span id="__span-0-212"><a id="__codelineno-0-212" name="__codelineno-0-212" href="#__codelineno-0-212"></a><span class="p">:</span><span class="nt">young-romance-26-cover-w</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F1_Work</span><span class="p">;</span>
+</span><span id="__span-0-213"><a id="__codelineno-0-213" name="__codelineno-0-213" href="#__codelineno-0-213"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R16i_was_created_by</span> <span class="p">:</span><span class="nt">cover-creation</span><span class="p">;</span>
+</span><span id="__span-0-214"><a id="__codelineno-0-214" name="__codelineno-0-214" href="#__codelineno-0-214"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R3_is_realised_in</span> <span class="p">:</span><span class="nt">young-romance-26-cover-e</span><span class="p">;</span>
+</span><span id="__span-0-215"><a id="__codelineno-0-215" name="__codelineno-0-215" href="#__codelineno-0-215"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300255278</span><span class="p">;</span>
+</span><span id="__span-0-216"><a id="__codelineno-0-216" name="__codelineno-0-216" href="#__codelineno-0-216"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;We&#39;ve got to keep our love a secret, Marge...&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-0-217"><a id="__codelineno-0-217" name="__codelineno-0-217" href="#__codelineno-0-217"></a>
+</span><span id="__span-0-218"><a id="__codelineno-0-218" name="__codelineno-0-218" href="#__codelineno-0-218"></a><span class="p">:</span><span class="nt">young-romance-26-e</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F2_Expression</span><span class="p">;</span>
+</span><span id="__span-0-219"><a id="__codelineno-0-219" name="__codelineno-0-219" href="#__codelineno-0-219"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R17i_was_created_by</span> <span class="p">:</span><span class="nt">issue-editing</span><span class="p">;</span>
+</span><span id="__span-0-220"><a id="__codelineno-0-220" name="__codelineno-0-220" href="#__codelineno-0-220"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R4i_is_embodied_in</span> <span class="p">:</span><span class="nt">young-romance-26-m</span><span class="p">;</span>
+</span><span id="__span-0-221"><a id="__codelineno-0-221" name="__codelineno-0-221" href="#__codelineno-0-221"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R75_incorporates</span> <span class="p">:</span><span class="nt">young-romance-26-cover-e</span><span class="p">;</span>
+</span><span id="__span-0-222"><a id="__codelineno-0-222" name="__codelineno-0-222" href="#__codelineno-0-222"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300263751</span><span class="p">,</span>
+</span><span id="__span-0-223"><a id="__codelineno-0-223" name="__codelineno-0-223" href="#__codelineno-0-223"></a>        <span class="nn">aat</span><span class="p">:</span><span class="nt">300264388</span><span class="p">;</span>
+</span><span id="__span-0-224"><a id="__codelineno-0-224" name="__codelineno-0-224" href="#__codelineno-0-224"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P72_has_language</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300387822</span><span class="p">;</span>
+</span><span id="__span-0-225"><a id="__codelineno-0-225" name="__codelineno-0-225" href="#__codelineno-0-225"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Young Romance 26, Edited&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-0-226"><a id="__codelineno-0-226" name="__codelineno-0-226" href="#__codelineno-0-226"></a>
+</span><span id="__span-0-227"><a id="__codelineno-0-227" name="__codelineno-0-227" href="#__codelineno-0-227"></a><span class="p">:</span><span class="nt">young-romance-26-m</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F3_Manifestation</span><span class="p">;</span>
+</span><span id="__span-0-228"><a id="__codelineno-0-228" name="__codelineno-0-228" href="#__codelineno-0-228"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R24i_was_created_through</span> <span class="p">:</span><span class="nt">issue-publication</span><span class="p">;</span>
+</span><span id="__span-0-229"><a id="__codelineno-0-229" name="__codelineno-0-229" href="#__codelineno-0-229"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R70_has_dimension</span> <span class="p">:</span><span class="nt">10-c</span><span class="p">,</span>
+</span><span id="__span-0-230"><a id="__codelineno-0-230" name="__codelineno-0-230" href="#__codelineno-0-230"></a>        <span class="p">:</span><span class="nt">52-pages</span><span class="p">,</span>
+</span><span id="__span-0-231"><a id="__codelineno-0-231" name="__codelineno-0-231" href="#__codelineno-0-231"></a>        <span class="p">:</span><span class="nt">standard-golden-age-us</span><span class="p">;</span>
+</span><span id="__span-0-232"><a id="__codelineno-0-232" name="__codelineno-0-232" href="#__codelineno-0-232"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P1_is_identified_by</span> <span class="p">:</span><span class="nt">no-26</span><span class="p">,</span>
+</span><span id="__span-0-233"><a id="__codelineno-0-233" name="__codelineno-0-233" href="#__codelineno-0-233"></a>        <span class="p">:</span><span class="nt">vol-4-no-2</span><span class="p">;</span>
+</span><span id="__span-0-234"><a id="__codelineno-0-234" name="__codelineno-0-234" href="#__codelineno-0-234"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300311879</span><span class="p">;</span>
+</span><span id="__span-0-235"><a id="__codelineno-0-235" name="__codelineno-0-235" href="#__codelineno-0-235"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Young Romance 26, October 1950&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-0-236"><a id="__codelineno-0-236" name="__codelineno-0-236" href="#__codelineno-0-236"></a>
+</span><span id="__span-0-237"><a id="__codelineno-0-237" name="__codelineno-0-237" href="#__codelineno-0-237"></a><span class="p">:</span><span class="nt">young-romance-26-w</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F1_Work</span><span class="p">;</span>
+</span><span id="__span-0-238"><a id="__codelineno-0-238" name="__codelineno-0-238" href="#__codelineno-0-238"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R10_is_member_of</span> <span class="p">:</span><span class="nt">serial-creation</span><span class="p">;</span>
+</span><span id="__span-0-239"><a id="__codelineno-0-239" name="__codelineno-0-239" href="#__codelineno-0-239"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R3_is_realised_in</span> <span class="p">:</span><span class="nt">young-romance-26-e</span><span class="p">;</span>
+</span><span id="__span-0-240"><a id="__codelineno-0-240" name="__codelineno-0-240" href="#__codelineno-0-240"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Young Romance 26&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-0-241"><a id="__codelineno-0-241" name="__codelineno-0-241" href="#__codelineno-0-241"></a>
+</span><span id="__span-0-242"><a id="__codelineno-0-242" name="__codelineno-0-242" href="#__codelineno-0-242"></a><span class="p">:</span><span class="nt">young-romance-dc-sw</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F18_Serial_Work</span><span class="p">;</span>
+</span><span id="__span-0-243"><a id="__codelineno-0-243" name="__codelineno-0-243" href="#__codelineno-0-243"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Young Romance (DC, 1963 Series)&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-0-244"><a id="__codelineno-0-244" name="__codelineno-0-244" href="#__codelineno-0-244"></a>
+</span><span id="__span-0-245"><a id="__codelineno-0-245" name="__codelineno-0-245" href="#__codelineno-0-245"></a><span class="p">:</span><span class="nt">young-romance-prize-sw</span> <span class="kt">a</span> <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">F18_Serial_Work</span><span class="p">;</span>
+</span><span id="__span-0-246"><a id="__codelineno-0-246" name="__codelineno-0-246" href="#__codelineno-0-246"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R11_has_issuing_rule</span> <span class="p">:</span><span class="nt">editorial-policy</span><span class="p">;</span>
+</span><span id="__span-0-247"><a id="__codelineno-0-247" name="__codelineno-0-247" href="#__codelineno-0-247"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R16i_was_created_by</span> <span class="p">:</span><span class="nt">serial-creation</span><span class="p">;</span>
+</span><span id="__span-0-248"><a id="__codelineno-0-248" name="__codelineno-0-248" href="#__codelineno-0-248"></a>    <span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R1i_has_successor</span> <span class="p">:</span><span class="nt">young-romance-dc-sw</span><span class="p">;</span>
+</span><span id="__span-0-249"><a id="__codelineno-0-249" name="__codelineno-0-249" href="#__codelineno-0-249"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P102_has_title</span> <span class="p">:</span><span class="nt">young-romance-title</span><span class="p">;</span>
+</span><span id="__span-0-250"><a id="__codelineno-0-250" name="__codelineno-0-250" href="#__codelineno-0-250"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P2_has_type</span> <span class="nn">aat</span><span class="p">:</span><span class="nt">300203177</span><span class="p">;</span>
+</span><span id="__span-0-251"><a id="__codelineno-0-251" name="__codelineno-0-251" href="#__codelineno-0-251"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Young Romance (Prize, 1947 Series)&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-0-252"><a id="__codelineno-0-252" name="__codelineno-0-252" href="#__codelineno-0-252"></a>
+</span><span id="__span-0-253"><a id="__codelineno-0-253" name="__codelineno-0-253" href="#__codelineno-0-253"></a><span class="p">:</span><span class="nt">young-romance-title</span> <span class="kt">a</span> <span class="nn">crm</span><span class="p">:</span><span class="nt">E35_Title</span><span class="p">;</span>
+</span><span id="__span-0-254"><a id="__codelineno-0-254" name="__codelineno-0-254" href="#__codelineno-0-254"></a>    <span class="nn">crm</span><span class="p">:</span><span class="nt">P190_has_symbolic_content</span> <span class="s">&quot;Young Romance&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span></code></pre></div>
+</details>
+<h3 id="rda-in-action">RDA in action</h3>
+<p>Modelling in RDA is more concise and takes advantage of the coupling of properties with controlled vocabularies to assign the correct type designation to each WEMI level: category/genre for work, content type (i.e., the medium it is intended for) for expression, physical description of material and extent for manifestation. Serial work does not have a dedicated class but is defined by the properties “has extension plan” and “has frequency,” plus the designation of the issue number with “has numbering within sequence.” The issue is traced back to the magazine by the specific property “has issue,” which establishes a partitive relation.</p>
+<p>The flexibility to choose between datatype and object properties as needed allows allows not to create entities for individual name variants when not relevant, but also to do so in cases such as the shared pseudonym “Jon Henri.” However, it should be noted that making this distinction explicit in the ontology would require specifying, case by case, which type of property is being employed. This is achieved by using distinct namespaces—such as <code class="language-turtle highlight"><span class="nn">rdamo</span><span class="p">:</span></code> for object properties and <code class="language-turtle highlight"><span class="nn">rdamd</span><span class="p">:</span></code> for datatype properties—both of which have the manifestation class as their domain. Moreover, a downside of the model's lack of typed properties is that, to express more artist-specific roles such as penciler and inker, it would need to be extended.</p>
+<iframe frameborder="0" src="https://viewer.diagrams.net/?tags=%7B%7D&target=blank&highlight=0000ff&edit=https%3A%2F%2Finfai.gitlab.io%2Frdf-diagram-framework%2F%3Ftest%3D1%26splash%3D0&layers=1&nav=1&auto-crop=true&auto-fit=true&center=true&border=0&zoom=1&tooltips=true&title=test-rda#
+R7V1bd6M4tv41WWfOA16SuJnHJJVUT3fqdFYl3T1nXmbJINt0YXADjpP%2B9SMJsA0WGHOxgZBVKxXLIIG0v6191418v3r%2F6uP18ptnEecGAev9Rv5ygxDSoEz%2FYy0fUYvKPrGGhW9bURPcN7zYf5O4EcStG9siQerC0POc0F6nG03PdYkZptqw73vb9GVzz0mPusYLctTwYmLnuPUP2wqXcaumKvsvfiL2YpkMDTUj%2BmaGzR8L39u48YCu55LomxVO%2BolfMlhiy9seNMkPN%2FK973lh9Nfq%2FZ44bF6TKYvue8z5dvfMPnFDwQ2%2FBcT%2FdfYnmy4EHDyjS8YvupFvZ8SVPAtHHST9ub%2B8vT4RZ%2Fm%2B%2Fev5p6f5j%2FtX8EWCu%2BfcjR%2BEH8m0BVt75WD6wvLddmmH5GWNTfbVllIJbTM9x8HrwJ7x6yFrWdqO9YQ%2FvA174iCkk5d8uks6e7Qd595zPJ9eYZE53jjsW58ElGqek5eFu6YnHLAGkLnmG36PW1fYX9junReG3orduW979dbphu%2FxCh80PZH5riWgr2e7i7hJ3bck97GmueeGL%2FEU8ZtC7IcxxcusYe3ZbsjpVb27Ub%2FQlmW4cuJ32tEI%2B7Amvr0iIfFfomFYD0ePcfhkqefHjuNtbxNw8AnzQhzi2e7RRGvGHz96WqiwZ%2FN8%2B2%2FahpMn3De8sOWLu%2BL0dbfDQrJ%2BHA1sYNpGrPja%2BcEC3yB5PjfpD58p3%2FtBDr6RNdmQ6V13x5QeE%2F8b8UPyftAUk%2BpX4tGJ8z%2FoJcm3QNGje2IWhWQ95lHbPeJlPcbq8gDsihw34pjLLHa979FG%2F4gRknw8wF8hHikMgW9hOgO39xAAQFkOHU%2FjVE%2FX1U1BTvtrw9gFgxabpVvGKH3sBsnc3O0voX8tov%2FlpDv6VFGPyTdRM1tzzlyTmd93IRv857hXSpuB5x50HHWSdHySsaBCxtIvjJxD%2FMeknM93z6PvFHUr4Ji2VQFtt0valKwxJdJnFUBosG3epZ9U2aD7p5KQzszPkmN3iX5Jp4kunsOoAQFvzvZ%2F26cTXAYG83vw%2FPMfvz184Nt%2F%2FWL%2B%2FDe8g%2F%2BU1BEGbcJALwkD5WIwmO5gAAxdY1vQIGBgEVwHBvIIgzZhAGHXcMCeH%2BwpCxpQlSCSEHwFdF5uk1970lMf6L%2F3gE7crYVD8kqXub%2FQYW%2FQ0AYCwQidVqGjdg46IAOdqSJBKKHpp4NOzU0HFhs3RujUhY7RNehAPQWdO8JI%2FVdmCDsgtp4CY%2B2TOfF9usgIuHgP8fNxoY2waBMWO527O7BQBbD4Bf%2B9oRPsDQch843jEJ%2F94fmrZA%2BpBxV9hEqrUOma%2Fo4MdAyV%2FiNjYb9xzNcDw3QEQ5tgkLumxCMjrcQPZJsINn49HBgjDlrFQVc08jnt9zZqOalVHBKNt%2Fj4%2Brt0%2F%2FTPP39Xbx%2Fmv3%2F9t62OzLNloimri7brELtRwAwHJKIXvGKTx5nMMgxZpMstG4LyG3k1nyzscLmZTWwqgD8uLPY7JEEo%2BYyu5N3dMU8CEwG%2FVbhOaL%2Bz0ThXvcCYhU9hmXnPsXuM9cZ3Jp6%2FoH%2FSq9EjcciKMNJHj3AC%2BTXnvXkM0%2BJRt9vtZCvH4yLArGePgI1G75YCc0lWVSY9MrmdNzIb9F%2Ffnl7OGvPEBPD9uvgx6EU%2BWdgBJfSJ7c7Zyj%2FsZx5Xmnd8erWLhzWrDUtqDkuqDWvXHNauNuyq5rCrasO6NYd1qw27rTnstuywJ2m7EnHTbXn1RFvon9%2B%2F3LJ9cePf082T7X3VIOY18Rj8AV4%2F1hUpn6zrP8TDO32GwPbcZwdXpI25X%2FMx5j75a0Nc86Pa%2BOGs%2FjSwRfh1fme7FhPdqjEEHNZ%2Fjm%2BYfrax0whcHDNYnnwk25o4njlZeG9sw9mELMwwtAkDbbDhklRw7mQ45mJ%2Bei4KBl4Q1yePnr8KKizFIpdF7oWuYBtMqIDJ1M0glgFEw5wMputi%2BARraVt5wI7NpvmLSfkX8W9E2sT5igNEadUBwulxoKgKRAqn0a7yIN9%2B0NdfSL63wq5JJKRJpkffTNqmaWS2mBv%2Fcb%2F470%2BP71sp%2FD%2F8%2FPIqIXmM5R5jucvEcqcxVoxHQSy3Ydy0HssN0rHcUBdAVBGp97BdiGZjuWMDacftnlvP%2F5G%2FqVdwBCgd3I%2BqguYcNBzTdhErbja8e5elcNHwbqaQPVNKn05TNtA%2FyP%2B8MSvXwmO3cCfyD0L1BASoxsM68fjXDC4BMX1Cr6IDg2%2BUTZPJZHJAogogbj5tdhdTkS8htEOnjidhSMF9nQSSwMEsBFLrPrUYSEjV9hpTsDSYSVAFPU6WiJW3G5YP6UpbJrmyPZI4OKTafrBkGZ5l8CFef2NI%2BROdBIgodPwqCMnxtjW905SgOTTSXMs0J%2FDwXkG8ofQ2Jzjc%2BERab2aObUYsq5SuXRwDMOrao65dUbtuP1Na0zJBeKp8rFzvgpEO4Yi0iyrXai%2BUa9Pz154fZS3MPOujhrSjDEkdaGivMZrXpJFxDU06DqoDSjqo7jHagWjbc2oPGoiC3FzWAuyiE6Tn4BBox0JwXCrilKrHveD5EW2%2FYd%2FG%2FOZ6lK0UK7mjMDkKk3mxlC3xBZFRQMgYdhe2pKHtkMew%2FuyzKUttlIXqvRhsQ8p%2BOyaIAgbTsBAlqqTUsr6%2BW%2ByEEr7S3XNdgQaGlNZ1KRoQyQqXp4FcO2FJObqEEvZ5ssYvtp%2FsSiReVwsTBdiUCq3RirM3RgltlNA6G0yDNDUt203RsblPyMlbFu7GWBoeSzN6OIs3n4j3Niy8XqNUYo7g8v9sR6It36M9if6FtPPFFkX5PAmGF6Mckch7hZzCrNSyZtqPFJSSXPQxKHiUXPoquWStUrLIUTkVAXI6Si7tSy5DqoPQhuSit1HkWbuC5JIXBXwkugzEaVkzqpfXwh4MMjqCBVGlKBEWLhXIG9XxT1IQF3MEoEIld5XVWusr3Zs4JAuPL4K%2F00ZMb2Wb5WJ4c9AwOu4bR4Ow4PM14SAzK9MuWZzCQ%2B4vDEiSq37Di6Cz%2FyiJkoWPQ561TT9ZjAxXtsvDvqqXdh5dDc0jQ1Q96rrImPZCPYhraO5rJFRn%2BMUu9tHmMNocOqVmCetYi1hGoUMkHu07ZQXYXTD9oWFHOnboorId545NVnDEp3bvWZ918VIrTN%2FrBeda0XuWzo5jNWHb4Oe4fNqtuYitN2zOUK5hzkjIW%2B8Fec%2FsVgh8SDFQHSFwkY3iKgSeJBvvT6PSkBpVH%2ByrUpY6jYpKE1TKqkP9Q%2FK6d0SMkkFHNK%2FSjvZ%2FxHGkLGEYGiwqFLzQ9STB%2FxY64HOUeTQgkuqkO0Tuhj8kv0wXSdOJeBpOuM1G7XjUjmuX6Xp8fFAvUaYr8ccnYb7A0I8Qqogq6e2sdJdx0Gu9EPTJ%2B5rCLTI8V5L0c%2BpZDCmruI2NadpCjrE4LKVtuZ8wuR%2FtCT4mMOJKv70c0NvBgYF0d1hs8KLHBwZm36BCFa4hOSg7CRCRYiwCyJU0g3smvSW6ZTPxuGgkqraJSugDvybblVncT%2F%2FYKF4sfLLAIQnyn76K2FHsBTwgd2ItSCLeE2fmbR%2F2DRnS8%2Fxw6S08FztPXqRp0MY%2FSRh%2BxOSKN6HHdzyLEz1tmTkeE6lZE1ODkjFdK77jQOfYKTQIZFFY0uayV67YDcetuVJ34G18kxRtUvGFIStsVgpYbFoLYRUV6XsjqQcpcG09M56VEv%2FlNCCnEKU7id4qvm8PtqOuDKikFQkZZXqKXvuop6YdX4kApfYSyZFARLcte06ojhw2rkkUmy5GSLcF6UStbhvSmq5MpkhWkaFAqGuKkcG3oU7AwY9aDe1UzkujHarXQXsSyqlP%2B4v2Y6PB%2BcCWjWJv9wjsXGAXZ54dIruQBbQNbD0rO%2Btyxa36BIvQkTFC%2BapQHvfo41b%2BerSF6Zq2yezuddAtd08UV3QwQRkoatOKEIdISR%2B%2FgWCWW%2BSgmi4%2B%2Fji4LLZytIX7I0%2BcZZZLi1VOOGtHJ9zohOtsWqwmZ%2FZyVXA4jjwW9Ci59zaeFjukAnMtGH5j3tuwu63TBT3%2B8eU%2BCTLSKAmXCjLKmbsxbq1xchI5p65BTokOA41ehmnaPIOU3mi7G17uecamvAZ3FS%2F3icjNz6nf1FBm9LLKzA5obSszipKVb4yKioyqKid6ytFj9j0lF3rzeUBK6jrih5lmjx1VYx%2FHnnVEXV5AT0KatCoBttjuPKpJo5rUpJpkWmQ2nbWtJh3VIFUS7%2BSpeIHd2b%2BXUZP6kYUk9CpW8SF%2B5sS6Yu9e%2F%2BsErZgEK8d1gnjekQoh0FCPvempvKN1qvJ8VRFWHlJAbkcg0JnyQAkEYPqYH2ioQIJAAvCV7i7ybfJLGJRr4ZC82qseB%2BVa0XlYlUCTk7E3gqZx0HSnilCMGpkX1WKfcchTtFGPq2nRd6Ckhh2%2BlmsWYFy9UNCQgom7QvydKRS0I34jIv5wtitP0FfaDz%2FWO%2F4%2Fs10rqpsVYMvihVGC0A7NZR1AKCMgGgdE2TI4lwKEws9KZ6qy2fuacuwWfl41s5AT3svacz7Mpe%2FVOhRxdAg1D4SdntwVIEDNSCkTQYhdC%2FvMyfLVcyzmOgS3LAMO%2FDahv16OTz3vK2wsSpO8FGOtAqRjmcXmMdI1hRuyIJgDjKjRRCzIcM7S5XVJwzpAKI56G4FQAQhy13RowHKpeuBQiGja3axmlJi4erC1w6XNnzaqQVpg%2F6oQGK0X69CjL3P0ZTaZ3lyfsZS1TzRTlVQWCL2lDju6VFnSPQd58xwm5ipRTJ3rsQ%2FokMGUUJuGVP2wJEnGHLD3BTz3Kx0vvXbm2g%2FJA32xte9KbcuzTtFj%2FOFXM%2FRmvLwH88EdKQOn3bVoPM2l%2BYgFreTm1nopvz89V1oS17dLkII6lu4bRciWS%2FfNjbnO7mw3OC6bDyxDQXDcDrQpaRNVkjb1bNKSqJgnLFO951LyZiZMD6JeaNUuffkasUnakKIsWkheUlsoFbjzu100VI8F5z1PAdDSR%2Fr9zE89%2BinaEA%2BIq6cm0xgO9AEjG1NlXAzJhdBFXAjUCyEuWreiYoYLFSiox4UkdlskJ2v6BHZY4zwnZdAVJZLSEIeSXb6EdbKmU0LHJ9OpEsSczKaK8SKBCUiU%2BJoJVhKEysQ4%2BNEz5R4MPf195TpPGRlT1dMdnV1FIiezKivMojjNS5hZVSa3q%2BnqNCNTyeJELRY0e85UqvOPhC00xz%2FqZmNO0%2BBCxrQR5qBPpxnuYGSerTHuoKYHAloBd2ga%2BSQuDTvtcTCnQxFEfG5CpeJrUCeMXy2OQOg57JstMzUVsAL3l7fXJ%2BIs37d%2FPf%2F0NP9x%2Fwq%2BSBeqIWfAtJhAAYuqYR%2BCpIRWblcNgR%2FKGbsTUpVLoZ8bl4kUsOPbykBjNC6PxuX68Qlp1igoUMWCqds%2BFyZbP84QpV6LKlQp7dq9sqnX%2FYiUqrvpDsqoew71H9Nyoczd%2B4JUiZ4J2UEESf61rABWkqyvwmcq%2F3pmU1GvBhCGZMXtIhDKltK6lBUXwoNCBGiqTntZWUsABIvgWkAoVsNGILRyNs1VkYCy9QigzOoRwM9Xj6DuJvJ5crGvhB1R4PN1sQNS2EF0X5EgkqDy6bBTd9%2F5PGnbV8KOKIf7uhKYfpOOL2G09BLZxPofX7L2yZz4Pq936uI6mdza50nkvg40hFndV4UGq2dwAI2fPlb2oMDxhn0b85trQmNIFdU7CY2u6e08gCO7a%2FQfEAv7jUcj1oTDkHLXuggHYUr3deGQVt4Hs0MEG78mFoaUy9dJLHRFGc%2FJ%2B8vRJ04TzudJ6rsS4ZTVRNvP8KMTI%2F2w%2FdlHCbrQi32lYxTGGIXRkyiMI0ACJAjCEGXcjUEYLQRh6KPvuXDDSVTQ%2FhfBFwVhDMn3XNN%2Fpo%2B%2B53aB0JnKfIIgDAUgfobdIIBQ0xl2oiDZCIS6QOhOefv8IAxdAlMJTT%2BdI7nuJjI6klvGTmeq4%2BcEYUDDUCSAJKB9OuzU3XdGT3PL2OlMIf28IAxmxkDgl8gm1n83QnNRGProam4XG92prZ8ThUGx4c0YODZ%2B%2BPeM%2BIshAKSpSAx9dD23DI%2BuKe9HkRh86%2Bg%2FIpoJxdBH93O7eOhOdf2cUIzByFC1QzH00aPeMha6opLnhWLkaBUnKWc65ie3TDllFdLWC7c3xgopR94yjgyBogoda3JctcoP7YCftpby3wpPFEkz1NNkW2y%2F73ktm3PLQpYua5OUfjksa1NI9m3XtYGaloYLVFWU7qR0YRuoaml5fprtqqnCNmqmLpesxDU2LlLY5oOV25f8qNi%2BhDSJlACMURwCMcZWjbFVtcunPz4%2BqFTIbTu2Ssmo7UlNudQOiwQ7LCoqn958bJV204fYKvK%2BpmgL7BP785kKiTGkQJN6NZsL2HHDEVfgGhFXJCqyCADsBbknJwInBwFHh2VXPtgOFPssxm113Fa7xDVEFm4R12jmWDvBaEhUeO5ap4ywzdrjp5sn8Q0dZ1500cOKu3QO%2B%2Fo8PqVjiBVx9GZ3ZlTmbJ3Gd%2BaYtntyJG0Q2pz87BVeNHv47KDOHOwIkYtY%2BzWI%2FOwTCR8sOsfWAfkdn0Qo3nqHFPTYRYVmd%2F5YVzQaWa5yYER1dnmonxBKpXQR6td8N4p5X8%2Ft5Oxzhlxd7yleTFiBtMueFGGUtaNf6qQIBOUUmhDQq5rRkZzuSlZAO2b048MtLmVErwvyqwtLTXOJQZ8ydQGYX8pdJme9ZYpSEebZntDOe9YyyvWLucooylcM5TJQ9gpQ%2F1C%2B3swcO1jyI2BMz197fpSOMPOsGmdAwROWy8%2BA%2BeLztU%2BeAkUXriTqYyiACZB1Iw3gGB113egIZKXpyufDwMz%2Bj7TkPVs%2BOg4pRQLANY6Oi6NcoNLj9HE7CDY1IgshLFZ8e84nchSEvVvlUMXYt9ZgL7pAphBfqU0vJlRMYOZMKE3PdHOGXHHUmZLVRXIYyMUhTnGAV8xAEi9q%2FKk0NtAYVDN6%2F8p4%2F3L5RXlzmZZI%2BrsE%2B3i3PHmuU8sWM4sFvIR26ByUCf1CAtO3Z%2FzYb%2FBM18mz2Jl8AX9alj8Lvn%2B5Pd8ICxEqBFy%2FaOeYKIq4TO%2BPSOJ0YnHCWIc83OjAYM%2BlJMKDhXmadbhkKs7u6jf2ycRrPLMdO7RJkL6OExMgphd8BCFZRZb%2BEP%2BI6C%2BKReYdBIQTzIZpTvG9lBI2AXaSDnHUFBNs3BO%2FcOUFkQi2Wjt0GWLFzMTxu1B5hV1jcU8EI3KbtT59%2FzapQudDKk9yMTovW0nZaJ%2FOTZ%2FgyDa3X%2F1Hn%2FmiApOR2DccBHxC7LOyNSAakhvqYoQBtQ5xwMh6s192BJAqAXaoyZmkMKRSEpcjhW6URj2ZQtMP48I5GT5nGh6mxaJez%2B0OuQpBgzk8l%2FI9Qi1zzjNEiWpytvFRiza4g3SgbFet5fBApGewXdcxQZt8zwsPe6Dcb%2FmNC4nyw38B"></iframe>
+
+<details class="turtle">
+<summary>See RDF triples</summary>
+<div class="language-turtle highlight"><span class="filename">Describing Periodicals with RDA</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">:</span><span class="w"> </span><span class="nv">&lt;https://f3mf.github.io/gdo/test-rda#&gt;</span><span class="p">.</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">dc:</span><span class="w"> </span><span class="nv">&lt;http://purl.org/dc/elements/1.1/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="p">.</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="p">.</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdaa:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/Elements/a/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdac:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/Elements/c/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdae:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/Elements/e/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdai:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/Elements/i/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdam:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/Elements/m/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdan:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/Elements/n/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdaw:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/Elements/w/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdacc:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/termList/RDAColourContent/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdaco:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/termList/RDAContentType/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdaep:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/termList/RDAExtensionPlan/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdafr:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/termList/frequency/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdatb:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/termList/RDATypeOfBinding/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">rdamat:</span><span class="w"> </span><span class="nv">&lt;http://rdaregistry.info/termList/RDAMaterial/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">lcsh:</span><span class="w"> </span><span class="nv">&lt;http://id.loc.gov/authorities/subjects&gt;</span><span class="p">.</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">lcgft:</span><span class="w"> </span><span class="nv">&lt;http://id.loc.gov/authorities/genreForms/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="k">@prefix</span><span class="w"> </span><span class="nn">gn:</span><span class="w"> </span><span class="nv">&lt;https://sws.geonames.org/&gt;</span><span class="p">.</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="nv">&lt;https://f3mf.github.io/gdo/test-rda#&gt;</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>    <span class="nn">dc</span><span class="p">:</span><span class="nt">creator</span> <span class="s">&quot;Francesca Massarenti&quot;</span><span class="p">;</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>    <span class="nn">dc</span><span class="p">:</span><span class="nt">date</span> <span class="s">&quot;2025-01-12&quot;</span><span class="p">;</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>    <span class="nn">dc</span><span class="p">:</span><span class="nt">description</span> <span class="s">&quot;A test of the descriptive capabilities of the RDA ecosystem, taking as a case study the perusal of a periodical, the most complex publication to model within LRM.&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">;</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>    <span class="nn">dc</span><span class="p">:</span><span class="nt">title</span> <span class="s">&quot;Describing Periodicals with RDA&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="p">:</span><span class="nt">ben-oda</span> <span class="kt">a</span> <span class="nn">rdac</span><span class="p">:</span><span class="nt">C10004</span><span class="p">;</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50115</span> <span class="s">&quot;Ben Kazuhito Oda&quot;</span><span class="p">;</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50117</span> <span class="s">&quot;Ben Oda&quot;</span><span class="p">;</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50118</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5097672</span><span class="p">;</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50119</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5392114</span><span class="p">;</span>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50120</span> <span class="s">&quot;1984-11-28T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">;</span>
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50121</span> <span class="s">&quot;1915-12-21T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">;</span>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50291</span> <span class="s">&quot;Oda&quot;</span><span class="p">;</span>
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50292</span> <span class="s">&quot;Ben&quot;</span><span class="p">;</span>
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Ben Oda&quot;</span><span class="p">.</span>
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="p">:</span><span class="nt">feature-publications</span> <span class="kt">a</span> <span class="nn">rdac</span><span class="p">:</span><span class="nt">C10005</span><span class="p">;</span>
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50025</span> <span class="s">&quot;A Prize Publication&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">,</span>
+</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>        <span class="s">&quot;Prize Group&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">;</span>
+</span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50041</span> <span class="s">&quot;Feature Publications&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">;</span>
+</span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Feature Publications&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-1-48"><a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a>
+</span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a><span class="p">:</span><span class="nt">jack-kirby</span> <span class="kt">a</span> <span class="nn">rdac</span><span class="p">:</span><span class="nt">C10004</span><span class="p">;</span>
+</span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50103</span> <span class="s">&quot;Jacob Kurtzberg&quot;</span><span class="p">;</span>
+</span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50117</span> <span class="s">&quot;Jack Kirby&quot;</span><span class="p">;</span>
+</span><span id="__span-1-52"><a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50118</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5402405</span><span class="p">;</span>
+</span><span id="__span-1-53"><a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50119</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5128581</span><span class="p">;</span>
+</span><span id="__span-1-54"><a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50120</span> <span class="s">&quot;1994-02-06T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">;</span>
+</span><span id="__span-1-55"><a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50121</span> <span class="s">&quot;1917-08-28T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">;</span>
+</span><span id="__span-1-56"><a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50291</span> <span class="s">&quot;Kirby&quot;</span><span class="p">;</span>
+</span><span id="__span-1-57"><a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50292</span> <span class="s">&quot;Jack&quot;</span><span class="p">;</span>
+</span><span id="__span-1-58"><a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50428</span> <span class="p">:</span><span class="nt">jon-henri</span><span class="p">;</span>
+</span><span id="__span-1-59"><a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Jack Kirby&quot;</span><span class="p">.</span>
+</span><span id="__span-1-60"><a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a>
+</span><span id="__span-1-61"><a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a><span class="p">:</span><span class="nt">joe-simon</span> <span class="kt">a</span> <span class="nn">rdac</span><span class="p">:</span><span class="nt">C10004</span><span class="p">;</span>
+</span><span id="__span-1-62"><a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50103</span> <span class="s">&quot;Hymie Simon&quot;</span><span class="p">;</span>
+</span><span id="__span-1-63"><a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50117</span> <span class="s">&quot;Joe Simon&quot;</span><span class="p">;</span>
+</span><span id="__span-1-64"><a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50118</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5128581</span><span class="p">;</span>
+</span><span id="__span-1-65"><a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50119</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5134086</span><span class="p">;</span>
+</span><span id="__span-1-66"><a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50120</span> <span class="s">&quot;2011-12-14T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">;</span>
+</span><span id="__span-1-67"><a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50121</span> <span class="s">&quot;1913-10-11T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">;</span>
+</span><span id="__span-1-68"><a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50291</span> <span class="s">&quot;Simon&quot;</span><span class="p">;</span>
+</span><span id="__span-1-69"><a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50292</span> <span class="s">&quot;Joe&quot;</span><span class="p">;</span>
+</span><span id="__span-1-70"><a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a>    <span class="nn">rdaa</span><span class="p">:</span><span class="nt">P50428</span> <span class="p">:</span><span class="nt">jon-henri</span><span class="p">;</span>
+</span><span id="__span-1-71"><a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Joe Simon&quot;</span><span class="p">.</span>
+</span><span id="__span-1-72"><a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a>
+</span><span id="__span-1-73"><a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a><span class="p">:</span><span class="nt">jon-henri</span> <span class="kt">a</span> <span class="nn">rdac</span><span class="p">:</span><span class="nt">C10012</span><span class="p">;</span>
+</span><span id="__span-1-74"><a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a>    <span class="nn">rdan</span><span class="p">:</span><span class="nt">P80068</span> <span class="s">&quot;Jon Henri&quot;</span><span class="p">.</span>
+</span><span id="__span-1-75"><a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a>
+</span><span id="__span-1-76"><a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a><span class="p">:</span><span class="nt">young-romance-26-cover-e</span> <span class="kt">a</span> <span class="nn">rdac</span><span class="p">:</span><span class="nt">C10006</span><span class="p">;</span>
+</span><span id="__span-1-77"><a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a>    <span class="nn">rdae</span><span class="p">:</span><span class="nt">P20006</span> <span class="s">&quot;en-US&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">language</span><span class="p">;</span>
+</span><span id="__span-1-78"><a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a>    <span class="nn">rdae</span><span class="p">:</span><span class="nt">P20387</span> <span class="p">:</span><span class="nt">ben-oda</span><span class="p">;</span>
+</span><span id="__span-1-79"><a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Cover of Young Romance 26&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-1-80"><a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a>
+</span><span id="__span-1-81"><a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a><span class="p">:</span><span class="nt">young-romance-26-cover-w</span> <span class="kt">a</span> <span class="nn">rdac</span><span class="p">:</span><span class="nt">C10001</span><span class="p">;</span>
+</span><span id="__span-1-82"><a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a>    <span class="nn">rdaw</span><span class="p">:</span><span class="nt">P10078</span> <span class="p">:</span><span class="nt">young-romance-26-cover-e</span><span class="p">;</span>
+</span><span id="__span-1-83"><a id="__codelineno-1-83" name="__codelineno-1-83" href="#__codelineno-1-83"></a>    <span class="nn">rdaw</span><span class="p">:</span><span class="nt">P10088</span> <span class="s">&quot;We&#39;ve got to keep our love a secret, Marge...&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">;</span>
+</span><span id="__span-1-84"><a id="__codelineno-1-84" name="__codelineno-1-84" href="#__codelineno-1-84"></a>    <span class="nn">rdaw</span><span class="p">:</span><span class="nt">P10256</span> <span class="nn">lcsh</span><span class="p">:</span><span class="nt">sh92001504</span><span class="p">;</span>
+</span><span id="__span-1-85"><a id="__codelineno-1-85" name="__codelineno-1-85" href="#__codelineno-1-85"></a>    <span class="nn">rdaw</span><span class="p">:</span><span class="nt">P10451</span> <span class="p">:</span><span class="nt">jack-kirby</span><span class="p">,</span>
+</span><span id="__span-1-86"><a id="__codelineno-1-86" name="__codelineno-1-86" href="#__codelineno-1-86"></a>        <span class="p">:</span><span class="nt">joe-simon</span><span class="p">;</span>
+</span><span id="__span-1-87"><a id="__codelineno-1-87" name="__codelineno-1-87" href="#__codelineno-1-87"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;We&#39;ve got to keep our love a secret, Marge...&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-1-88"><a id="__codelineno-1-88" name="__codelineno-1-88" href="#__codelineno-1-88"></a>
+</span><span id="__span-1-89"><a id="__codelineno-1-89" name="__codelineno-1-89" href="#__codelineno-1-89"></a><span class="p">:</span><span class="nt">young-romance-26-e</span> <span class="kt">a</span> <span class="nn">rdac</span><span class="p">:</span><span class="nt">C10006</span><span class="p">;</span>
+</span><span id="__span-1-90"><a id="__codelineno-1-90" name="__codelineno-1-90" href="#__codelineno-1-90"></a>    <span class="nn">rdae</span><span class="p">:</span><span class="nt">P20001</span> <span class="nn">rdaco</span><span class="p">:</span><span class="nt">1014</span><span class="p">,</span>
+</span><span id="__span-1-91"><a id="__codelineno-1-91" name="__codelineno-1-91" href="#__codelineno-1-91"></a>        <span class="nn">rdaco</span><span class="p">:</span><span class="nt">1020</span><span class="p">;</span>
+</span><span id="__span-1-92"><a id="__codelineno-1-92" name="__codelineno-1-92" href="#__codelineno-1-92"></a>    <span class="nn">rdae</span><span class="p">:</span><span class="nt">P20059</span> <span class="p">:</span><span class="nt">young-romance-26-m</span><span class="p">;</span>
+</span><span id="__span-1-93"><a id="__codelineno-1-93" name="__codelineno-1-93" href="#__codelineno-1-93"></a>    <span class="nn">rdae</span><span class="p">:</span><span class="nt">P20319</span> <span class="p">:</span><span class="nt">young-romance-26-cover-e</span><span class="p">;</span>
+</span><span id="__span-1-94"><a id="__codelineno-1-94" name="__codelineno-1-94" href="#__codelineno-1-94"></a>    <span class="nn">rdae</span><span class="p">:</span><span class="nt">P20338</span> <span class="p">:</span><span class="nt">jack-kirby</span><span class="p">,</span>
+</span><span id="__span-1-95"><a id="__codelineno-1-95" name="__codelineno-1-95" href="#__codelineno-1-95"></a>        <span class="p">:</span><span class="nt">joe-simon</span><span class="p">;</span>
+</span><span id="__span-1-96"><a id="__codelineno-1-96" name="__codelineno-1-96" href="#__codelineno-1-96"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Young Romance 26, Edited&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-1-97"><a id="__codelineno-1-97" name="__codelineno-1-97" href="#__codelineno-1-97"></a>
+</span><span id="__span-1-98"><a id="__codelineno-1-98" name="__codelineno-1-98" href="#__codelineno-1-98"></a><span class="p">:</span><span class="nt">young-romance-26-m</span> <span class="kt">a</span> <span class="nn">rdac</span><span class="p">:</span><span class="nt">C10007</span><span class="p">;</span>
+</span><span id="__span-1-99"><a id="__codelineno-1-99" name="__codelineno-1-99" href="#__codelineno-1-99"></a>    <span class="nn">rdam</span><span class="p">:</span><span class="nt">P30011</span> <span class="s">&quot;1950-10-01T00:00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span><span class="p">;</span>
+</span><span id="__span-1-100"><a id="__codelineno-1-100" name="__codelineno-1-100" href="#__codelineno-1-100"></a>    <span class="nn">rdam</span><span class="p">:</span><span class="nt">P30014</span> <span class="s">&quot;no. 26&quot;</span><span class="p">,</span>
+</span><span id="__span-1-101"><a id="__codelineno-1-101" name="__codelineno-1-101" href="#__codelineno-1-101"></a>        <span class="s">&quot;vol. 4, no. 2&quot;</span><span class="p">;</span>
+</span><span id="__span-1-102"><a id="__codelineno-1-102" name="__codelineno-1-102" href="#__codelineno-1-102"></a>    <span class="nn">rdam</span><span class="p">:</span><span class="nt">P30088</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">5110629</span><span class="p">;</span>
+</span><span id="__span-1-103"><a id="__codelineno-1-103" name="__codelineno-1-103" href="#__codelineno-1-103"></a>    <span class="nn">rdam</span><span class="p">:</span><span class="nt">P30169</span> <span class="s">&quot;standard Golden Age U. S.&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">;</span>
+</span><span id="__span-1-104"><a id="__codelineno-1-104" name="__codelineno-1-104" href="#__codelineno-1-104"></a>    <span class="nn">rdam</span><span class="p">:</span><span class="nt">P30182</span> <span class="s">&quot;52 pages&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">;</span>
+</span><span id="__span-1-105"><a id="__codelineno-1-105" name="__codelineno-1-105" href="#__codelineno-1-105"></a>    <span class="nn">rdam</span><span class="p">:</span><span class="nt">P30304</span> <span class="nn">rdamat</span><span class="p">:</span><span class="nt">1025</span><span class="p">;</span>
+</span><span id="__span-1-106"><a id="__codelineno-1-106" name="__codelineno-1-106" href="#__codelineno-1-106"></a>    <span class="nn">rdam</span><span class="p">:</span><span class="nt">P30309</span> <span class="nn">rdatb</span><span class="p">:</span><span class="nt">1007</span><span class="p">;</span>
+</span><span id="__span-1-107"><a id="__codelineno-1-107" name="__codelineno-1-107" href="#__codelineno-1-107"></a>    <span class="nn">rdam</span><span class="p">:</span><span class="nt">P30420</span> <span class="p">:</span><span class="nt">feature-publications</span><span class="p">;</span>
+</span><span id="__span-1-108"><a id="__codelineno-1-108" name="__codelineno-1-108" href="#__codelineno-1-108"></a>    <span class="nn">rdam</span><span class="p">:</span><span class="nt">P30456</span> <span class="nn">rdacc</span><span class="p">:</span><span class="nt">1003</span><span class="p">;</span>
+</span><span id="__span-1-109"><a id="__codelineno-1-109" name="__codelineno-1-109" href="#__codelineno-1-109"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Young Romance 26, October 1950&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-1-110"><a id="__codelineno-1-110" name="__codelineno-1-110" href="#__codelineno-1-110"></a>
+</span><span id="__span-1-111"><a id="__codelineno-1-111" name="__codelineno-1-111" href="#__codelineno-1-111"></a><span class="p">:</span><span class="nt">young-romance-26-w</span> <span class="kt">a</span> <span class="nn">rdac</span><span class="p">:</span><span class="nt">C10001</span><span class="p">;</span>
+</span><span id="__span-1-112"><a id="__codelineno-1-112" name="__codelineno-1-112" href="#__codelineno-1-112"></a>    <span class="nn">rdaw</span><span class="p">:</span><span class="nt">P10078</span> <span class="p">:</span><span class="nt">young-romance-26-e</span><span class="p">;</span>
+</span><span id="__span-1-113"><a id="__codelineno-1-113" name="__codelineno-1-113" href="#__codelineno-1-113"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Young Romance 26&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-1-114"><a id="__codelineno-1-114" name="__codelineno-1-114" href="#__codelineno-1-114"></a>
+</span><span id="__span-1-115"><a id="__codelineno-1-115" name="__codelineno-1-115" href="#__codelineno-1-115"></a><span class="p">:</span><span class="nt">young-romance-dc-sw</span> <span class="kt">a</span> <span class="nn">rdac</span><span class="p">:</span><span class="nt">C10001</span><span class="p">;</span>
+</span><span id="__span-1-116"><a id="__codelineno-1-116" name="__codelineno-1-116" href="#__codelineno-1-116"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Young Romance (DC, 1963 Series)&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span><span id="__span-1-117"><a id="__codelineno-1-117" name="__codelineno-1-117" href="#__codelineno-1-117"></a>
+</span><span id="__span-1-118"><a id="__codelineno-1-118" name="__codelineno-1-118" href="#__codelineno-1-118"></a><span class="p">:</span><span class="nt">young-romance-prize-sw</span> <span class="kt">a</span> <span class="nn">rdac</span><span class="p">:</span><span class="nt">C10001</span><span class="p">;</span>
+</span><span id="__span-1-119"><a id="__codelineno-1-119" name="__codelineno-1-119" href="#__codelineno-1-119"></a>    <span class="nn">rdaw</span><span class="p">:</span><span class="nt">P10004</span> <span class="nn">lcgft</span><span class="p">:</span><span class="nt">gf2014026515</span><span class="p">;</span>
+</span><span id="__span-1-120"><a id="__codelineno-1-120" name="__codelineno-1-120" href="#__codelineno-1-120"></a>    <span class="nn">rdaw</span><span class="p">:</span><span class="nt">P10088</span> <span class="s">&quot;Young Romance&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">;</span>
+</span><span id="__span-1-121"><a id="__codelineno-1-121" name="__codelineno-1-121" href="#__codelineno-1-121"></a>    <span class="nn">rdaw</span><span class="p">:</span><span class="nt">P10141</span> <span class="p">:</span><span class="nt">young-romance-26-w</span><span class="p">;</span>
+</span><span id="__span-1-122"><a id="__codelineno-1-122" name="__codelineno-1-122" href="#__codelineno-1-122"></a>    <span class="nn">rdaw</span><span class="p">:</span><span class="nt">P10191</span> <span class="p">:</span><span class="nt">young-romance-dc-sw</span><span class="p">;</span>
+</span><span id="__span-1-123"><a id="__codelineno-1-123" name="__codelineno-1-123" href="#__codelineno-1-123"></a>    <span class="nn">rdaw</span><span class="p">:</span><span class="nt">P10218</span> <span class="nn">gn</span><span class="p">:</span><span class="nt">6252001</span><span class="p">;</span>
+</span><span id="__span-1-124"><a id="__codelineno-1-124" name="__codelineno-1-124" href="#__codelineno-1-124"></a>    <span class="nn">rdaw</span><span class="p">:</span><span class="nt">P10365</span> <span class="nn">rdaep</span><span class="p">:</span><span class="nt">1003</span><span class="p">;</span>
+</span><span id="__span-1-125"><a id="__codelineno-1-125" name="__codelineno-1-125" href="#__codelineno-1-125"></a>    <span class="nn">rdaw</span><span class="p">:</span><span class="nt">P10368</span> <span class="nn">rdafr</span><span class="p">:</span><span class="nt">1007</span><span class="p">,</span>
+</span><span id="__span-1-126"><a id="__codelineno-1-126" name="__codelineno-1-126" href="#__codelineno-1-126"></a>        <span class="nn">rdafr</span><span class="p">:</span><span class="nt">1008</span><span class="p">;</span>
+</span><span id="__span-1-127"><a id="__codelineno-1-127" name="__codelineno-1-127" href="#__codelineno-1-127"></a>    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Young Romance (Prize, 1947 Series)&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">.</span>
+</span></code></pre></div>
+</details>
+<h3 id="comparison-between-lrmoo-and-rda">Comparison between LRMoo and RDA</h3>
+<h2 id="reuse-of-referencing-ontologies">Reuse of referencing ontologies</h2>
+<h2 id="formal-model">Formal model</h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Riva, P., Le Boeuf, P., &amp; Žumer, M. (2018). <span class="nocase">IFLA Library Reference Model: A Conceptual Model for Bibliographic Information</span>. <em>International Federation of Library Associations and Institutions (IFLA)</em>. <a href="https://repository.ifla.org/handle/20.500.14598/40">https://repository.ifla.org/handle/20.500.14598/40</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Oury, C., Boulet, V., Dunsire, G., Howlett, L., &amp; Reynolds, R. (2017). <span class="nocase">Definition of PRESSoo: A conceptual model for Bibliographic Information Pertaining to Serials and Other Continuing Resources (Version 1.3)</span>. <em>International Federation of Library Associations and Institutions (IFLA)</em>. <a href="https://repository.ifla.org/handle/20.500.14598/1173">https://repository.ifla.org/handle/20.500.14598/1173</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.path", "navigation.indexes", "content.code.annotate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../../assets/js/target_blank.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": true, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

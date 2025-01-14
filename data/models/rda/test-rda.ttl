@@ -1,0 +1,616 @@
+@prefix : <https://f3mf.github.io/gdo/gdo-rda/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdaa: <http://rdaregistry.info/Elements/a/> .
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix rdai: <http://rdaregistry.info/Elements/i/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdap: <http://rdaregistry.info/Elements/p/> .
+@prefix rdat: <http://rdaregistry.info/Elements/t/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdax: <http://rdaregistry.info/Elements/x/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix rdaad: <http://rdaregistry.info/Elements/a/datatype/> .
+@prefix rdaao: <http://rdaregistry.info/Elements/a/object/> .
+@prefix rdacc: <http://rdaregistry.info/termList/RDAColourContent/> .
+@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> .
+@prefix rdaed: <http://rdaregistry.info/Elements/e/datatype/> .
+@prefix rdaeo: <http://rdaregistry.info/Elements/e/object/> .
+@prefix rdaep: <http://rdaregistry.info/termList/RDAExtensionPlan/> .
+@prefix rdafr: <http://rdaregistry.info/termList/frequency/> .
+@prefix rdaid: <http://rdaregistry.info/Elements/i/datatype/> .
+@prefix rdaio: <http://rdaregistry.info/Elements/i/object/> .
+@prefix rdamd: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdami: <http://rdaregistry.info/termList/ModeIssue/> .
+@prefix rdamo: <http://rdaregistry.info/Elements/m/object/> .
+@prefix rdand: <http://rdaregistry.info/Elements/n/datatype/> .
+@prefix rdano: <http://rdaregistry.info/Elements/n/object/> .
+@prefix rdapd: <http://rdaregistry.info/Elements/p/datatype/> .
+@prefix rdapm: <http://rdaregistry.info/termList/RDAproductionMethod/> .
+@prefix rdapo: <http://rdaregistry.info/Elements/p/object/> .
+@prefix rdatb: <http://rdaregistry.info/termList/RDATypeOfBinding/> .
+@prefix rdatd: <http://rdaregistry.info/Elements/t/datatype/> .
+@prefix rdato: <http://rdaregistry.info/Elements/t/object/> .
+@prefix rdatr: <http://rdaregistry.info/termList/typeRec/> .
+@prefix rdawd: <http://rdaregistry.info/Elements/w/datatype/> .
+@prefix rdawo: <http://rdaregistry.info/Elements/w/object/> .
+@prefix rdaxd: <http://rdaregistry.info/Elements/x/datatype/> .
+@prefix rdaxo: <http://rdaregistry.info/Elements/x/object/> .
+@prefix regap: <http://metadataregistry.org/uri/profile/regap/> .
+@prefix rdafmn: <http://rdaregistry.info/termList/MusNotation/> .
+@prefix rdafnm: <http://rdaregistry.info/termList/formatNoteMus/> .
+@prefix rdagen: <http://rdaregistry.info/termList/RDAGeneration/> .
+@prefix rdaill: <http://rdaregistry.info/termList/IllusContent/> .
+@prefix rdakit: <http://metadataregistry.org/uri/profile/rdakit/> .
+@prefix rdamat: <http://rdaregistry.info/termList/RDAMaterial/> .
+@prefix rdacarx: <http://rdaregistry.info/termList/RDACarrierEU/> .
+@prefix rdasource: <http://rdaregistry.info/termList/RDARecordingSources/> .
+@base <https://f3mf.github.io/gdo/gdo-rda/> .
+
+<https://f3mf.github.io/gdo/gdo-rda> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://rdaregistry.info/Elements/a/object/P50096
+rdaao:P50096 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/a/object/P50118
+rdaao:P50118 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/a/object/P50119
+rdaao:P50119 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/a/object/P50428
+rdaao:P50428 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/a/object/P51104
+rdaao:P51104 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/e/object/P20059
+rdaeo:P20059 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/e/object/P20319
+rdaeo:P20319 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/e/object/P20338
+rdaeo:P20338 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/e/object/P20387
+rdaeo:P20387 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/m/object/P30001
+rdamo:P30001 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/m/object/P30003
+rdamo:P30003 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/m/object/P30088
+rdamo:P30088 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/m/object/P30304
+rdamo:P30304 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/m/object/P30309
+rdamo:P30309 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/m/object/P30420
+rdamo:P30420 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/m/object/P30456
+rdamo:P30456 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/w/object/P10004
+rdawo:P10004 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/w/object/P10072
+rdawo:P10072 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/w/object/P10141
+rdawo:P10141 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/w/object/P10191
+rdawo:P10191 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/w/object/P10218
+rdawo:P10218 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/w/object/P10256
+rdawo:P10256 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/w/object/P10346
+rdawo:P10346 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/w/object/P10365
+rdawo:P10365 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/w/object/P10368
+rdawo:P10368 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/w/object/P10451
+rdawo:P10451 rdf:type owl:ObjectProperty .
+
+
+###  http://rdaregistry.info/Elements/w/object/P10511
+rdawo:P10511 rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+skos:broader rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://rdaregistry.info/Elements/a/datatype/P50025
+rdaad:P50025 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/a/datatype/P50032
+rdaad:P50032 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/a/datatype/P50037
+rdaad:P50037 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/a/datatype/P50038
+rdaad:P50038 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/a/datatype/P50041
+rdaad:P50041 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/a/datatype/P50103
+rdaad:P50103 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/a/datatype/P50115
+rdaad:P50115 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/a/datatype/P50117
+rdaad:P50117 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/a/datatype/P50120
+rdaad:P50120 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/a/datatype/P50121
+rdaad:P50121 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/a/datatype/P50291
+rdaad:P50291 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/a/datatype/P50292
+rdaad:P50292 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/a/datatype/P50428
+rdaad:P50428 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/e/datatype/P20006
+rdaed:P20006 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/m/datatype/P30004
+rdamd:P30004 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/m/datatype/P30011
+rdamd:P30011 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/m/datatype/P30014
+rdamd:P30014 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/m/datatype/P30105
+rdamd:P30105 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/m/datatype/P30156
+rdamd:P30156 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/m/datatype/P30169
+rdamd:P30169 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/m/datatype/P30182
+rdamd:P30182 rdf:type owl:DatatypeProperty .
+
+
+###  http://rdaregistry.info/Elements/w/datatype/P10088
+rdawd:P10088 rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://rdaregistry.info/Elements/c/C10001
+rdac:C10001 rdf:type owl:Class .
+
+
+###  http://rdaregistry.info/Elements/c/C10004
+rdac:C10004 rdf:type owl:Class .
+
+
+###  http://rdaregistry.info/Elements/c/C10005
+rdac:C10005 rdf:type owl:Class .
+
+
+###  http://rdaregistry.info/Elements/c/C10006
+rdac:C10006 rdf:type owl:Class .
+
+
+###  http://rdaregistry.info/Elements/c/C10007
+rdac:C10007 rdf:type owl:Class .
+
+
+###  http://rdaregistry.info/Elements/c/C10009
+rdac:C10009 rdf:type owl:Class .
+
+
+###  http://rdaregistry.info/Elements/c/C10012
+rdac:C10012 rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://id.loc.gov/authorities/genreForms/gf2014026266
+<http://id.loc.gov/authorities/genreForms/gf2014026266> rdf:type owl:NamedIndividual ,
+                                                                 skos:Concept ;
+                                                        rdfs:label "Comics (Graphic works)"@en ;
+                                                        skos:prefLabel "Comics (Graphic works)"@en .
+
+
+###  http://id.loc.gov/authorities/genreForms/gf2014026515
+<http://id.loc.gov/authorities/genreForms/gf2014026515> rdf:type owl:NamedIndividual ,
+                                                                 skos:Concept ;
+                                                        skos:broader <http://id.loc.gov/authorities/genreForms/gf2014026266> ;
+                                                        rdfs:label "Romance comics"@en ;
+                                                        skos:prefLabel "Romance comics"@en .
+
+
+###  http://id.loc.gov/authorities/sh92001504#concept
+<http://id.loc.gov/authorities/sh92001504#concept> rdf:type owl:NamedIndividual ,
+                                                            skos:Concept ;
+                                                   rdfs:label "Man-woman relationships"@en ;
+                                                   skos:prefLabel "Man-woman relationships"@en .
+
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/ben-oda
+:ben-oda rdf:type owl:NamedIndividual ,
+                  rdac:C10004 ;
+         rdaao:P50096 :simon-kirby-studio ;
+         rdaao:P50118 <https://www.geonames.org/5097672/> ;
+         rdaao:P50119 <https://www.geonames.org/5392114/> ;
+         rdaad:P50115 "Ben Kazuhito Oda" ;
+         rdaad:P50117 "Ben Oda" ;
+         rdaad:P50120 "1984-11-28T00:00:00"^^xsd:dateTime ;
+         rdaad:P50121 "1915-12-21T00:00:00"^^xsd:dateTime ;
+         rdaad:P50291 "Oda" ;
+         rdaad:P50292 "Ben" ;
+         rdaad:P50428 "Ed Stuart" ;
+         dc:creator "Francesca Massarenti" ;
+         dc:date "2024-12-12T04:55:26Z"^^xsd:dateTime ;
+         rdfs:label "Ben Oda"@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/feature-publications
+:feature-publications rdf:type owl:NamedIndividual ,
+                               rdac:C10005 ;
+                      rdaad:P50025 "A Prize Publication" ,
+                                   "Prize Group" ;
+                      rdaad:P50041 "Feature Publications Inc." ;
+                      dc:creator "Francesca Massarenti" ;
+                      dc:date "2024-12-12T04:55:12Z"^^xsd:dateTime ;
+                      rdfs:label "Feature Publications Inc."@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/glossy-paper
+:glossy-paper rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:broader <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+              dc:creator "Francesca Massarenti" ;
+              dc:date "2024-12-12T15:22:33Z"^^xsd:dateTime ;
+              skos:prefLabel "glossy paper"@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/jack-kirby
+:jack-kirby rdf:type owl:NamedIndividual ,
+                     rdac:C10004 ;
+            rdaao:P50118 <https://sws.geonames.org/5402405/> ;
+            rdaao:P50119 <https://sws.geonames.org/5128581/> ;
+            rdaao:P50428 :jon-henri ;
+            rdaao:P51104 :simon-kirby-studio ;
+            rdaad:P50103 "J. Kirby" ,
+                         "Jacob Kurtzberg" ,
+                         "Kirby" ;
+            rdaad:P50117 "Jack Kirby" ;
+            rdaad:P50120 "1994-02-06T00:00:00"^^xsd:dateTime ;
+            rdaad:P50121 "1917-08-28T00:00:00"^^xsd:dateTime ;
+            rdaad:P50291 "Kirby" ;
+            rdaad:P50292 "Jack" ;
+            rdaad:P50428 "Bob Brown" ,
+                         "Charles Nicholas" ,
+                         "Curt Davis" ,
+                         "Floyd Kelly" ,
+                         "Fred Sande" ,
+                         "Jack Cortez" ,
+                         "Jack Curtiss" ,
+                         "Jolly Jack" ,
+                         "Lance Kirby" ,
+                         "Michael Griffith" ,
+                         "Richard Lee" ,
+                         "Ted Grey" ,
+                         "Teddy" ;
+            dc:creator "Francesca Massarenti" ;
+            dc:date "2024-12-12T04:55:02Z"^^xsd:dateTime ;
+            rdfs:label "Jack Kirby"@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/joe-simon
+:joe-simon rdf:type owl:NamedIndividual ,
+                    rdac:C10004 ;
+           rdaao:P50118 <https://sws.geonames.org/5128581/> ;
+           rdaao:P50119 <https://sws.geonames.org/5134086/> ;
+           rdaao:P50428 :jon-henri ;
+           rdaao:P51104 :simon-kirby-studio ;
+           rdaad:P50103 "Hymie Simon" ;
+           rdaad:P50115 "Joseph Henry Simon" ;
+           rdaad:P50117 "Joe Simon" ;
+           rdaad:P50120 "2011-12-14T00:00:00"^^xsd:dateTime ;
+           rdaad:P50121 "1913-10-11T00:00:00"^^xsd:dateTime ;
+           rdaad:P50291 "Simon" ;
+           rdaad:P50292 "Joe" ;
+           rdaad:P50428 "Chester Gould" ,
+                        "Floyd Kelly" ,
+                        "Gregory Sykes" ,
+                        "Jon Henery" ;
+           dc:creator "Francesca Massarenti" ;
+           dc:date "2024-12-12T04:54:52Z"^^xsd:dateTime ;
+           rdfs:label "Joe Simon"@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/jon-henri
+:jon-henri rdf:type owl:NamedIndividual ,
+                    rdac:C10012 ;
+           dc:creator "Francesca Massarenti" ;
+           dc:date "2024-12-12T16:35:30Z"^^xsd:dateTime ;
+           rdfs:label "Jon Henri" .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/newspaper
+:newspaper rdf:type owl:NamedIndividual ,
+                    skos:Concept ;
+           skos:broader <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+           dc:creator "Francesca Massarenti" ;
+           dc:date "2024-12-12T15:23:57Z"^^xsd:dateTime ;
+           skos:prefLabel "newsprint"@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/simon-kirby-studio
+:simon-kirby-studio rdf:type owl:NamedIndividual ,
+                             rdac:C10005 ;
+                    rdaad:P50032 "Simon and Kirby Studio" ;
+                    rdaad:P50037 "1941" ;
+                    rdaad:P50038 "1956" ;
+                    dc:creator "Francesca Massarenti" ;
+                    dc:date "2024-12-12T14:26:54Z"^^xsd:dateTime ;
+                    rdfs:label "Simon and Kirby Studio"@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/young-romance-26-cover-e
+:young-romance-26-cover-e rdf:type owl:NamedIndividual ,
+                                   rdac:C10006 ;
+                          rdaeo:P20059 :young-romance-26-cover-m ;
+                          rdaeo:P20387 :ben-oda ;
+                          rdaed:P20006 "en-US"^^xsd:language ;
+                          dc:creator "Francesca Massarenti" ;
+                          dc:date "2024-12-12T12:26:14Z"^^xsd:dateTime ;
+                          rdfs:label "Cover of Young Romance vol. 4, no. 2 (26)"@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/young-romance-26-cover-m
+:young-romance-26-cover-m rdf:type owl:NamedIndividual ,
+                                   rdac:C10007 ;
+                          rdamd:P30105 "Title taken from the first line of text or dialogue in the story."@en ;
+                          rdamd:P30156 "We've got to keep our love a secret, Marge..."@en ;
+                          rdamd:P30182 "1 page"@en ;
+                          dc:creator "Francesca Massarenti" ;
+                          dc:date "2024-12-12T13:01:24Z"^^xsd:dateTime ;
+                          rdfs:label "Cover of Young Romance vol. 4, no. 2 (26), October 1950"@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/young-romance-26-cover-w
+:young-romance-26-cover-w rdf:type owl:NamedIndividual ,
+                                   rdac:C10001 ;
+                          rdawo:P10072 :young-romance-26-cover-m ;
+                          rdawo:P10256 <http://id.loc.gov/authorities/sh92001504#concept> ;
+                          rdawo:P10346 :young-romance-26-cover-e ;
+                          rdawo:P10451 :jack-kirby ,
+                                       :joe-simon ;
+                          rdawd:P10088 "We've got to keep our love a secret, Marge..."@en ;
+                          dc:creator "Francesca Massarenti" ;
+                          dc:date "2024-12-12T12:26:04Z"^^xsd:dateTime ;
+                          rdfs:label "We've got to keep our love a secret, Marge..."@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/young-romance-26-e
+:young-romance-26-e rdf:type owl:NamedIndividual ,
+                             rdac:C10006 ;
+                    rdaeo:P20059 :young-romance-26-m ;
+                    rdaeo:P20319 :young-romance-26-cover-e ;
+                    rdaeo:P20338 :jack-kirby ,
+                                 :joe-simon ;
+                    dc:creator "Francesca Massarenti" ;
+                    dc:date "2024-12-12T04:54:05Z"^^xsd:dateTime ;
+                    rdfs:label "Young Romance vol. 4, no. 2 (26), Edited"@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/young-romance-26-m
+:young-romance-26-m rdf:type owl:NamedIndividual ,
+                             rdac:C10007 ;
+                    rdamo:P30001 <http://rdaregistry.info/termList/RDACarrierType/1049> ;
+                    rdamo:P30003 <http://rdaregistry.info/termList/ModeIssue/1005> ;
+                    rdamo:P30088 <https://www.geonames.org/5110629/> ;
+                    rdamo:P30304 :glossy-paper ,
+                                 :newspaper ;
+                    rdamo:P30309 <http://rdaregistry.info/termList/RDATypeOfBinding/1007> ;
+                    rdamo:P30420 :feature-publications ;
+                    rdamo:P30456 <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+                    rdamd:P30004 26 ;
+                    rdamd:P30011 "October 1950"@en ;
+                    rdamd:P30014 "vol. 4, no. 2" ;
+                    rdamd:P30169 "standard Golden Age U. S." ;
+                    rdamd:P30182 "52 pages"@en ;
+                    dc:creator "Francesca Massarenti" ;
+                    dc:date "2024-12-12T04:53:55Z"^^xsd:dateTime ;
+                    rdfs:label "Young Romance vol. 4, no. 2 (26), October 1950"@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/young-romance-26-w
+:young-romance-26-w rdf:type owl:NamedIndividual ,
+                             rdac:C10001 ;
+                    rdawo:P10072 :young-romance-26-m ;
+                    rdawo:P10346 :young-romance-26-e ;
+                    dc:creator "Francesca Massarenti" ;
+                    dc:date "2024-12-12T22:11:35Z"^^xsd:dateTime ;
+                    rdfs:label "Young Romance vol. 4 no. 2 (26)"@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/young-romance-dc-sw
+:young-romance-dc-sw rdf:type owl:NamedIndividual ,
+                              rdac:C10001 ;
+                     dc:creator "Francesca Massarenti" ;
+                     dc:date "2024-12-12T04:53:36Z"^^xsd:dateTime ;
+                     rdfs:label "Young Romance (DC, 1963 Series)"@en .
+
+
+###  https://f3mf.github.io/gdo/gdo-rda/young-romance-prize-sw
+:young-romance-prize-sw rdf:type owl:NamedIndividual ,
+                                 rdac:C10001 ;
+                        rdawo:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026515> ;
+                        rdawo:P10141 :young-romance-26-w ;
+                        rdawo:P10191 :young-romance-dc-sw ;
+                        rdawo:P10218 <https://www.geonames.org/6252001/> ;
+                        rdawo:P10365 <http://rdaregistry.info/termList/RDAExtensionPlan/1003> ;
+                        rdawo:P10368 <http://rdaregistry.info/termList/frequency/1007> ,
+                                     <http://rdaregistry.info/termList/frequency/1008> ;
+                        rdawo:P10511 :simon-kirby-studio ;
+                        rdawd:P10088 "Young Romance" ;
+                        dc:creator "Francesca Massarenti" ;
+                        dc:date "2024-12-12T04:52:47Z"^^xsd:dateTime ;
+                        rdfs:label "Young Romance (Prize, 1947 Series)"@en .
+
+
+###  https://sws.geonames.org/5128581/
+<https://sws.geonames.org/5128581/> rdf:type owl:NamedIndividual ,
+                                             rdac:C10009 ;
+                                    rdfs:label "New York City, New York, United States" .
+
+
+###  https://sws.geonames.org/5134086/
+<https://sws.geonames.org/5134086/> rdf:type owl:NamedIndividual ,
+                                             rdac:C10009 ;
+                                    rdfs:label "Rochester, New York, United States" .
+
+
+###  https://sws.geonames.org/5402405/
+<https://sws.geonames.org/5402405/> rdf:type owl:NamedIndividual ,
+                                             rdac:C10009 ;
+                                    rdfs:label "Thousand Oaks, California, United States" .
+
+
+###  https://www.geonames.org/5097672/
+<https://www.geonames.org/5097672/> rdf:type owl:NamedIndividual ,
+                                             rdac:C10009 ;
+                                    rdfs:label "Englewood, New Jersey, United States" .
+
+
+###  https://www.geonames.org/5110629/
+<https://www.geonames.org/5110629/> rdf:type owl:NamedIndividual ,
+                                             rdac:C10009 ;
+                                    rdfs:label "Buffalo, New York, United States" .
+
+
+###  https://www.geonames.org/5392114/
+<https://www.geonames.org/5392114/> rdf:type owl:NamedIndividual ,
+                                             rdac:C10009 ;
+                                    rdfs:label "San Joaquin, California, United States" .
+
+
+###  https://www.geonames.org/6252001/
+<https://www.geonames.org/6252001/> rdf:type owl:NamedIndividual ,
+                                             rdac:C10009 ;
+                                    rdfs:label "United States"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

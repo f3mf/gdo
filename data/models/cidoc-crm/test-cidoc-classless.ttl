@@ -1,0 +1,1044 @@
+@prefix : <https://f3mf.github.io/gdo/test-cidoc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://f3mf.github.io/gdo/test-cidoc#> .
+
+<https://f3mf.github.io/gdo/test-cidoc> rdf:type owl:Ontology ;
+                                         <http://purl.org/dc/elements/1.1/creator> "Francesca Massarenti" ;
+                                         <http://purl.org/dc/elements/1.1/date> "2025-01-09" ;
+                                         <http://purl.org/dc/elements/1.1/description> "A test of the descriptive capabilities of the CIDOC-CRM ecosystem, taking as a case study the perusal of a periodical, the most complex publication to model within LRM."@en ;
+                                         <http://purl.org/dc/elements/1.1/title> "Describing Periodicals with CIDOC-CRM, LRMoo, and PRESSoo"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R10_is_member_of
+<http://iflastandards.info/ns/lrm/lrmoo/R10_is_member_of> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R10i_has_member
+<http://iflastandards.info/ns/lrm/lrmoo/R10i_has_member> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R11_has_issuing_rule
+<http://iflastandards.info/ns/lrm/lrmoo/R11_has_issuing_rule> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R11i_is_issuing_rule_of
+<http://iflastandards.info/ns/lrm/lrmoo/R11i_is_issuing_rule_of> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R16_created
+<http://iflastandards.info/ns/lrm/lrmoo/R16_created> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R16i_was_created_by
+<http://iflastandards.info/ns/lrm/lrmoo/R16i_was_created_by> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R17_created
+<http://iflastandards.info/ns/lrm/lrmoo/R17_created> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R17i_was_created_by
+<http://iflastandards.info/ns/lrm/lrmoo/R17i_was_created_by> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R24_created
+<http://iflastandards.info/ns/lrm/lrmoo/R24_created> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R24i_was_created_through
+<http://iflastandards.info/ns/lrm/lrmoo/R24i_was_created_through> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in
+<http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R3i_realises
+<http://iflastandards.info/ns/lrm/lrmoo/R3i_realises> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R4_embodies
+<http://iflastandards.info/ns/lrm/lrmoo/R4_embodies> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in
+<http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R70_has_dimension
+<http://iflastandards.info/ns/lrm/lrmoo/R70_has_dimension> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R70i_is_dimension_of
+<http://iflastandards.info/ns/lrm/lrmoo/R70i_is_dimension_of> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R75_incorporates
+<http://iflastandards.info/ns/lrm/lrmoo/R75_incorporates> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R75i_is_incorporated_in
+<http://iflastandards.info/ns/lrm/lrmoo/R75i_is_incorporated_in> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P01_has_domain
+<http://www.cidoc-crm.org/cidoc-crm/P01_has_domain> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of
+<http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P02_has_range
+<http://www.cidoc-crm.org/cidoc-crm/P02_has_range> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P02i_is_range_of
+<http://www.cidoc-crm.org/cidoc-crm/P02i_is_range_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of
+<http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P100i_died_in
+<http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P102_has_title
+<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of
+<http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of
+<http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by
+<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P14i_performed
+<http://www.cidoc-crm.org/cidoc-crm/P14i_performed> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by
+<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P1i_identifies
+<http://www.cidoc-crm.org/cidoc-crm/P1i_identifies> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P2_has_type
+<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of
+<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span
+<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of
+<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P67_refers_to
+<http://www.cidoc-crm.org/cidoc-crm/P67_refers_to> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by
+<http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P72_has_language
+<http://www.cidoc-crm.org/cidoc-crm/P72_has_language> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P72i_is_language_of
+<http://www.cidoc-crm.org/cidoc-crm/P72i_is_language_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at
+<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed
+<http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P91_has_unit
+<http://www.cidoc-crm.org/cidoc-crm/P91_has_unit> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P91i_is_unit_of
+<http://www.cidoc-crm.org/cidoc-crm/P91i_is_unit_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life
+<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P98i_was_born
+<http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y20_foresees_type
+<http://www.iflastandards.info/fr/pressoo/Y20_foresees_type> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y20i_is_type_foreseen_in
+<http://www.iflastandards.info/fr/pressoo/Y20i_is_type_foreseen_in> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y21_foresees_use_of_language
+<http://www.iflastandards.info/fr/pressoo/Y21_foresees_use_of_language> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y21i_is_language_foreseen_in
+<http://www.iflastandards.info/fr/pressoo/Y21i_is_language_foreseen_in> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y22_foresees_sequencing_pattern
+<http://www.iflastandards.info/fr/pressoo/Y22_foresees_sequencing_pattern> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y22i_is_sequencing_pattern_foreseen_in
+<http://www.iflastandards.info/fr/pressoo/Y22i_is_sequencing_pattern_foreseen_in> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y23_foresees_dimension
+<http://www.iflastandards.info/fr/pressoo/Y23_foresees_dimension> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y23i_is_dimension_foreseen_in
+<http://www.iflastandards.info/fr/pressoo/Y23i_is_dimension_foreseen_in> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y24_foresees_use_of_title
+<http://www.iflastandards.info/fr/pressoo/Y24_foresees_use_of_title> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y24i_is_title_foreseen_in
+<http://www.iflastandards.info/fr/pressoo/Y24i_is_title_foreseen_in> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y29_evolved_into
+<http://www.iflastandards.info/fr/pressoo/Y29_evolved_into> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y29i_continues
+<http://www.iflastandards.info/fr/pressoo/Y29i_continues> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y42_has_current_area_of_publication
+<http://www.iflastandards.info/fr/pressoo/Y42_has_current_area_of_publication> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y42i_is_current_area_of_publication_of
+<http://www.iflastandards.info/fr/pressoo/Y42i_is_current_area_of_publication_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y43_is_indicative_of
+<http://www.iflastandards.info/fr/pressoo/Y43_is_indicative_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Y43i_is_exemplified_by
+<http://www.iflastandards.info/fr/pressoo/Y43i_is_exemplified_by> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://iflastandards.info/ns/lrm/lrmoo/R33_has_string
+<http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content
+<http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within
+<http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin
+<http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end
+<http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P90_has_value
+<http://www.cidoc-crm.org/cidoc-crm/P90_has_value> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://iflastandards.info/ns/lrm/lrmoo/F11_Corporate_Body
+<http://iflastandards.info/ns/lrm/lrmoo/F11_Corporate_Body> rdf:type owl:Class .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/F12_Nomen
+<http://iflastandards.info/ns/lrm/lrmoo/F12_Nomen> rdf:type owl:Class .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work
+<http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work> rdf:type owl:Class .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/F1_Work
+<http://iflastandards.info/ns/lrm/lrmoo/F1_Work> rdf:type owl:Class .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation
+<http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation> rdf:type owl:Class .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation
+<http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation> rdf:type owl:Class .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/F2_Expression
+<http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> rdf:type owl:Class .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/F30_Manifestation_Creation
+<http://iflastandards.info/ns/lrm/lrmoo/F30_Manifestation_Creation> rdf:type owl:Class .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation
+<http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation> rdf:type owl:Class .
+
+
+###  http://iflastandards.info/ns/lrm/lrmoo/F55_Collective_Agent
+<http://iflastandards.info/ns/lrm/lrmoo/F55_Collective_Agent> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E21_Person
+<http://www.cidoc-crm.org/cidoc-crm/E21_Person> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E41_Appellation
+<http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span
+<http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E53_Place
+<http://www.cidoc-crm.org/cidoc-crm/E53_Place> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E54_Dimension
+<http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E55_Type
+<http://www.cidoc-crm.org/cidoc-crm/E55_Type> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E56_Language
+<http://www.cidoc-crm.org/cidoc-crm/E56_Language> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit
+<http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E67_Birth
+<http://www.cidoc-crm.org/cidoc-crm/E67_Birth> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E69_Death
+<http://www.cidoc-crm.org/cidoc-crm/E69_Death> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount
+<http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/PC107_has_current_or_former_member
+<http://www.cidoc-crm.org/cidoc-crm/PC107_has_current_or_former_member> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/PC14_carried_out_by
+<http://www.cidoc-crm.org/cidoc-crm/PC14_carried_out_by> rdf:type owl:Class .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Z10_Sequencing_Pattern
+<http://www.iflastandards.info/fr/pressoo/Z10_Sequencing_Pattern> rdf:type owl:Class .
+
+
+###  http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule
+<http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://id.loc.gov/authorities/genreForms/gf2014026266
+<http://id.loc.gov/authorities/genreForms/gf2014026266> rdf:type owl:NamedIndividual ;
+                                                        rdfs:label "Comics (Graphic works)"@en .
+
+
+###  http://id.loc.gov/authorities/genreForms/gf2014026515
+<http://id.loc.gov/authorities/genreForms/gf2014026515> rdf:type owl:NamedIndividual ;
+                                                        <http://www.w3.org/2004/02/skos/core#broader> <http://id.loc.gov/authorities/genreForms/gf2014026266> ;
+                                                        rdfs:label "Romance comics"@en .
+
+
+###  http://id.loc.gov/authorities/subjects/sh92001504
+<http://id.loc.gov/authorities/subjects/sh92001504> rdf:type owl:NamedIndividual ;
+                                                    rdfs:label "Man-woman relationships"@en .
+
+
+###  http://id.loc.gov/vocabulary/contentTypes/sti
+<http://id.loc.gov/vocabulary/contentTypes/sti> rdf:type owl:NamedIndividual ;
+                                                rdfs:label "still image"@en .
+
+
+###  http://id.loc.gov/vocabulary/contentTypes/txt
+<http://id.loc.gov/vocabulary/contentTypes/txt> rdf:type owl:NamedIndividual ;
+                                                rdfs:label "text"@en .
+
+
+###  http://id.loc.gov/vocabulary/frequencies/bmn
+<http://id.loc.gov/vocabulary/frequencies/bmn> rdf:type owl:NamedIndividual ;
+                                               rdfs:label "bimonthly"@en .
+
+
+###  http://id.loc.gov/vocabulary/frequencies/mon
+<http://id.loc.gov/vocabulary/frequencies/mon> rdf:type owl:NamedIndividual ;
+                                               rdfs:label "monthly"@en .
+
+
+###  http://id.loc.gov/vocabulary/languages/eng
+<http://id.loc.gov/vocabulary/languages/eng> rdf:type owl:NamedIndividual .
+
+
+###  http://id.loc.gov/vocabulary/mmaterial/pap
+<http://id.loc.gov/vocabulary/mmaterial/pap> rdf:type owl:NamedIndividual ;
+                                             rdfs:label "paper"@en .
+
+
+###  http://id.loc.gov/vocabulary/mserialpubtype/mag
+<http://id.loc.gov/vocabulary/mserialpubtype/mag> rdf:type owl:NamedIndividual ;
+                                                  rdfs:label "magazine"@en .
+
+
+###  http://id.loc.gov/vocabulary/relators/art
+<http://id.loc.gov/vocabulary/relators/art> rdf:type owl:NamedIndividual ;
+                                            rdfs:label "artist"@en .
+
+
+###  http://id.loc.gov/vocabulary/relators/edt
+<http://id.loc.gov/vocabulary/relators/edt> rdf:type owl:NamedIndividual ;
+                                            rdfs:label "editor"@en .
+
+
+###  http://id.loc.gov/vocabulary/relators/ltr
+<http://id.loc.gov/vocabulary/relators/ltr> rdf:type owl:NamedIndividual ;
+                                            rdfs:label "letterer"@en .
+
+
+###  http://qudt.org/vocab/currency/USD
+<http://qudt.org/vocab/currency/USD> rdf:type owl:NamedIndividual .
+
+
+###  http://qudt.org/vocab/unit/IN
+<http://qudt.org/vocab/unit/IN> rdf:type owl:NamedIndividual .
+
+
+###  http://vocab.getty.edu/aat/300266386
+<http://vocab.getty.edu/aat/300266386> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "personal name"@en .
+
+
+###  http://vocab.getty.edu/aat/300404651
+<http://vocab.getty.edu/aat/300404651> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "first name"@en .
+
+
+###  http://vocab.getty.edu/aat/300404652
+<http://vocab.getty.edu/aat/300404652> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "last name"@en .
+
+
+###  http://vocab.getty.edu/aat/300404678
+<http://vocab.getty.edu/aat/300404678> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "pen name"@en .
+
+
+###  http://vocab.getty.edu/aat/300404681
+<http://vocab.getty.edu/aat/300404681> rdf:type owl:NamedIndividual ;
+                                       <http://www.w3.org/2004/02/skos/core#broader> <http://vocab.getty.edu/aat/300266386> ;
+                                       rdfs:label "birth name"@en .
+
+
+###  http://vocab.getty.edu/aat/300417378
+<http://vocab.getty.edu/aat/300417378> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "co-owner"@en .
+
+
+###  http://vocab.getty.edu/aat/300443954
+<http://vocab.getty.edu/aat/300443954> rdf:type owl:NamedIndividual ;
+                                       <http://www.w3.org/2004/02/skos/core#broader> <http://id.loc.gov/vocabulary/relators/art> ;
+                                       rdfs:label "penciler"@en .
+
+
+###  http://vocab.getty.edu/aat/300443974
+<http://vocab.getty.edu/aat/300443974> rdf:type owl:NamedIndividual ;
+                                       rdfs:label "employee"@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/ben-oda
+<https://f3mf.github.io/gdo/test-cidoc/ben-oda> rdf:type owl:NamedIndividual ;
+                                                <http://www.cidoc-crm.org/cidoc-crm/P02i_is_range_of> <https://f3mf.github.io/gdo/test-cidoc/has-employee> ;
+                                                <http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> <https://f3mf.github.io/gdo/test-cidoc/ben-oda-death> ;
+                                                <http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by> <https://f3mf.github.io/gdo/test-cidoc/ben-oda-n1> ,
+                                                                                                            <https://f3mf.github.io/gdo/test-cidoc/ben-oda-n2> ,
+                                                                                                            <https://f3mf.github.io/gdo/test-cidoc/ben-oda-n3> ,
+                                                                                                            <https://f3mf.github.io/gdo/test-cidoc/ben-oda-n4> ;
+                                                <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://f3mf.github.io/gdo/test-cidoc/ben-oda-birth> ;
+                                                rdfs:label "Ben Oda" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/ben-oda-birth
+<https://f3mf.github.io/gdo/test-cidoc/ben-oda-birth> rdf:type owl:NamedIndividual ;
+                                                      <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://f3mf.github.io/gdo/test-cidoc/1915-12-21> ;
+                                                      <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sws.geonames.org/5392114> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/ben-oda-death
+<https://f3mf.github.io/gdo/test-cidoc/ben-oda-death> rdf:type owl:NamedIndividual ;
+                                                      <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://f3mf.github.io/gdo/test-cidoc/1984-11-28> ;
+                                                      <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sws.geonames.org/5097672> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/ben-oda-n1
+<https://f3mf.github.io/gdo/test-cidoc/ben-oda-n1> rdf:type owl:NamedIndividual ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300266386> ;
+                                                   <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Ben Oda" ;
+                                                   rdfs:label "\"Ben Oda\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/ben-oda-n2
+<https://f3mf.github.io/gdo/test-cidoc/ben-oda-n2> rdf:type owl:NamedIndividual ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404681> ;
+                                                   <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Ben Kazuhito Oda" ;
+                                                   rdfs:label "\"Ben Kazuhito Oda\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/ben-oda-n3
+<https://f3mf.github.io/gdo/test-cidoc/ben-oda-n3> rdf:type owl:NamedIndividual ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404651> ;
+                                                   <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Ben" ;
+                                                   rdfs:label "\"Ben\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/ben-oda-n4
+<https://f3mf.github.io/gdo/test-cidoc/ben-oda-n4> rdf:type owl:NamedIndividual ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404652> ;
+                                                   <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Oda" ;
+                                                   rdfs:label "\"Oda\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/by-editor-1
+<https://f3mf.github.io/gdo/test-cidoc/by-editor-1> rdf:type owl:NamedIndividual ;
+                                                    <http://www.cidoc-crm.org/cidoc-crm/P02_has_range> <https://f3mf.github.io/gdo/test-cidoc/jack-kirby> ;
+                                                    <http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of> <http://id.loc.gov/vocabulary/relators/edt> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/by-editor-2
+<https://f3mf.github.io/gdo/test-cidoc/by-editor-2> rdf:type owl:NamedIndividual ;
+                                                    <http://www.cidoc-crm.org/cidoc-crm/P02_has_range> <https://f3mf.github.io/gdo/test-cidoc/joe-simon> ;
+                                                    <http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of> <http://id.loc.gov/vocabulary/relators/edt> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/by-inker
+<https://f3mf.github.io/gdo/test-cidoc/by-inker> rdf:type owl:NamedIndividual ;
+                                                 <http://www.cidoc-crm.org/cidoc-crm/P02_has_range> <https://f3mf.github.io/gdo/test-cidoc/joe-simon> ;
+                                                 <http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of> <https://f3mf.github.io/gdo/test-cidoc/inker> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/by-letterer
+<https://f3mf.github.io/gdo/test-cidoc/by-letterer> rdf:type owl:NamedIndividual ;
+                                                    <http://www.cidoc-crm.org/cidoc-crm/P02_has_range> <https://f3mf.github.io/gdo/test-cidoc/ben-oda> ;
+                                                    <http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of> <http://id.loc.gov/vocabulary/relators/ltr> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/by-penciler
+<https://f3mf.github.io/gdo/test-cidoc/by-penciler> rdf:type owl:NamedIndividual ;
+                                                    <http://www.cidoc-crm.org/cidoc-crm/P02_has_range> <https://f3mf.github.io/gdo/test-cidoc/jack-kirby> ;
+                                                    <http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of> <http://vocab.getty.edu/aat/300443954> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/cover-creation
+<https://f3mf.github.io/gdo/test-cidoc/cover-creation> rdf:type owl:NamedIndividual ,
+                                                                <http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation> ;
+                                                       <http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of> <https://f3mf.github.io/gdo/test-cidoc/by-inker> ,
+                                                                                                              <https://f3mf.github.io/gdo/test-cidoc/by-letterer> ,
+                                                                                                              <https://f3mf.github.io/gdo/test-cidoc/by-penciler> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/editorial-policy
+<https://f3mf.github.io/gdo/test-cidoc/editorial-policy> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule> ;
+                                                         <http://www.iflastandards.info/fr/pressoo/Y20_foresees_type> <http://id.loc.gov/vocabulary/frequencies/bmn> ,
+                                                                                                                      <http://id.loc.gov/vocabulary/frequencies/mon> ,
+                                                                                                                      <https://f3mf.github.io/gdo/test-cidoc/glossy-paper> ,
+                                                                                                                      <https://f3mf.github.io/gdo/test-cidoc/newsprint> ,
+                                                                                                                      <https://f3mf.github.io/gdo/test-cidoc/saddle-stitch-binding> ;
+                                                         <http://www.iflastandards.info/fr/pressoo/Y21_foresees_use_of_language> <http://id.loc.gov/vocabulary/languages/eng> ;
+                                                         <http://www.iflastandards.info/fr/pressoo/Y22_foresees_sequencing_pattern> <https://f3mf.github.io/gdo/test-cidoc/issue-sequence> ,
+                                                                                                                                    <https://f3mf.github.io/gdo/test-cidoc/volume-issue-sequence> ;
+                                                         <http://www.iflastandards.info/fr/pressoo/Y23_foresees_dimension> <https://f3mf.github.io/gdo/test-cidoc/standard-golden-age-us> ;
+                                                         <http://www.iflastandards.info/fr/pressoo/Y24_foresees_use_of_title> <https://f3mf.github.io/gdo/test-cidoc/young-romance-title> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/feature-publications
+<https://f3mf.github.io/gdo/test-cidoc/feature-publications> rdf:type owl:NamedIndividual ;
+                                                             rdfs:label "Feature Publications"@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/glossy-paper
+<https://f3mf.github.io/gdo/test-cidoc/glossy-paper> rdf:type owl:NamedIndividual ;
+                                                     <http://www.w3.org/2004/02/skos/core#broader> <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+                                                     rdfs:label "glossy paper"@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/has-co-owner-1
+<https://f3mf.github.io/gdo/test-cidoc/has-co-owner-1> rdf:type owl:NamedIndividual ;
+                                                       <http://www.cidoc-crm.org/cidoc-crm/P01_has_domain> <https://f3mf.github.io/gdo/test-cidoc/simon-kirby-studio> ;
+                                                       <http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of> <http://vocab.getty.edu/aat/300417378> ;
+                                                       <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://f3mf.github.io/gdo/test-cidoc/1941-1956> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/has-co-owner-2
+<https://f3mf.github.io/gdo/test-cidoc/has-co-owner-2> rdf:type owl:NamedIndividual ;
+                                                       <http://www.cidoc-crm.org/cidoc-crm/P01_has_domain> <https://f3mf.github.io/gdo/test-cidoc/simon-kirby-studio> ;
+                                                       <http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of> <http://vocab.getty.edu/aat/300417378> ;
+                                                       <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://f3mf.github.io/gdo/test-cidoc/1941-1956> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/has-employee
+<https://f3mf.github.io/gdo/test-cidoc/has-employee> rdf:type owl:NamedIndividual ;
+                                                     <http://www.cidoc-crm.org/cidoc-crm/P01_has_domain> <https://f3mf.github.io/gdo/test-cidoc/simon-kirby-studio> ;
+                                                     <http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of> <http://vocab.getty.edu/aat/300443974> ;
+                                                     <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://f3mf.github.io/gdo/test-cidoc/1949-1956> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/inker
+<https://f3mf.github.io/gdo/test-cidoc/inker> rdf:type owl:NamedIndividual ;
+                                              <http://www.w3.org/2004/02/skos/core#broader> <http://id.loc.gov/vocabulary/relators/art> ;
+                                              rdfs:label "inker"@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/issue-editing
+<https://f3mf.github.io/gdo/test-cidoc/issue-editing> rdf:type owl:NamedIndividual ,
+                                                               <http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation> ;
+                                                      <http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of> <https://f3mf.github.io/gdo/test-cidoc/by-editor-1> ,
+                                                                                                             <https://f3mf.github.io/gdo/test-cidoc/by-editor-2> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/issue-publication
+<https://f3mf.github.io/gdo/test-cidoc/issue-publication> rdf:type owl:NamedIndividual ,
+                                                                   <http://iflastandards.info/ns/lrm/lrmoo/F30_Manifestation_Creation> ;
+                                                          <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://f3mf.github.io/gdo/test-cidoc/feature-publications> ;
+                                                          <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://f3mf.github.io/gdo/test-cidoc/october-1950> ;
+                                                          <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sws.geonames.org/5110629> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/issue-sequence
+<https://f3mf.github.io/gdo/test-cidoc/issue-sequence> rdf:type owl:NamedIndividual ,
+                                                                <http://www.iflastandards.info/fr/pressoo/Z10_Sequencing_Pattern> ;
+                                                       <http://www.iflastandards.info/fr/pressoo/Y43i_is_exemplified_by> <https://f3mf.github.io/gdo/test-cidoc/no-26> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/jack-kirby
+<https://f3mf.github.io/gdo/test-cidoc/jack-kirby> rdf:type owl:NamedIndividual ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P02i_is_range_of> <https://f3mf.github.io/gdo/test-cidoc/has-co-owner-1> ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> <https://f3mf.github.io/gdo/test-cidoc/jack-kirby-death> ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by> <https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n1> ,
+                                                                                                               <https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n2> ,
+                                                                                                               <https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n3> ,
+                                                                                                               <https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n4> ,
+                                                                                                               <https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n5> ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://f3mf.github.io/gdo/test-cidoc/jack-kirby-birth> ;
+                                                   rdfs:label "Jack Kirby" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/jack-kirby-birth
+<https://f3mf.github.io/gdo/test-cidoc/jack-kirby-birth> rdf:type owl:NamedIndividual ;
+                                                         <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://f3mf.github.io/gdo/test-cidoc/1917-08-28> ;
+                                                         <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sws.geonames.org/5128581> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/jack-kirby-death
+<https://f3mf.github.io/gdo/test-cidoc/jack-kirby-death> rdf:type owl:NamedIndividual ;
+                                                         <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://f3mf.github.io/gdo/test-cidoc/1994-02-06> ;
+                                                         <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sws.geonames.org/5402405> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n1
+<https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n1> rdf:type owl:NamedIndividual ;
+                                                      <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300266386> ;
+                                                      <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Jack Kirby" ;
+                                                      rdfs:label "\"Jack Kirby\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n2
+<https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n2> rdf:type owl:NamedIndividual ;
+                                                      <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404681> ;
+                                                      <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Jacob Kurtzberg" ;
+                                                      rdfs:label "\"Jacob Kurtzberg\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n3
+<https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n3> rdf:type owl:NamedIndividual ;
+                                                      <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404678> ;
+                                                      <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Jon Henri" ;
+                                                      rdfs:label "\"Jon Henri\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n4
+<https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n4> rdf:type owl:NamedIndividual ;
+                                                      <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404651> ;
+                                                      <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Jack" ;
+                                                      rdfs:label "\"Jack\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n5
+<https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n5> rdf:type owl:NamedIndividual ;
+                                                      <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404652> ;
+                                                      <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Kirby" ;
+                                                      rdfs:label "\"Kirby\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/joe-simon
+<https://f3mf.github.io/gdo/test-cidoc/joe-simon> rdf:type owl:NamedIndividual ;
+                                                  <http://www.cidoc-crm.org/cidoc-crm/P02i_is_range_of> <https://f3mf.github.io/gdo/test-cidoc/has-co-owner-2> ;
+                                                  <http://www.cidoc-crm.org/cidoc-crm/P100i_died_in> <https://f3mf.github.io/gdo/test-cidoc/joe-simon-death> ;
+                                                  <http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by> <https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n3> ,
+                                                                                                              <https://f3mf.github.io/gdo/test-cidoc/joe-simon-n1> ,
+                                                                                                              <https://f3mf.github.io/gdo/test-cidoc/joe-simon-n2> ,
+                                                                                                              <https://f3mf.github.io/gdo/test-cidoc/joe-simon-n3> ,
+                                                                                                              <https://f3mf.github.io/gdo/test-cidoc/joe-simon-n4> ;
+                                                  <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> <https://f3mf.github.io/gdo/test-cidoc/joe-simon-birth> ;
+                                                  rdfs:label "Joe Simon" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/joe-simon-birth
+<https://f3mf.github.io/gdo/test-cidoc/joe-simon-birth> rdf:type owl:NamedIndividual ;
+                                                        <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://f3mf.github.io/gdo/test-cidoc/1913-10-11> ;
+                                                        <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sws.geonames.org/5134086> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/joe-simon-death
+<https://f3mf.github.io/gdo/test-cidoc/joe-simon-death> rdf:type owl:NamedIndividual ;
+                                                        <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://f3mf.github.io/gdo/test-cidoc/2011-12-14> ;
+                                                        <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> <https://sws.geonames.org/5128581> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/joe-simon-n1
+<https://f3mf.github.io/gdo/test-cidoc/joe-simon-n1> rdf:type owl:NamedIndividual ;
+                                                     <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300266386> ;
+                                                     <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Joe Simon" ;
+                                                     rdfs:label "\"Joe Simon\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/joe-simon-n2
+<https://f3mf.github.io/gdo/test-cidoc/joe-simon-n2> rdf:type owl:NamedIndividual ;
+                                                     <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404681> ;
+                                                     <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Hymie Simon" ;
+                                                     rdfs:label "\"Hymie Simon\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/joe-simon-n3
+<https://f3mf.github.io/gdo/test-cidoc/joe-simon-n3> rdf:type owl:NamedIndividual ;
+                                                     <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404651> ;
+                                                     <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Joe" ;
+                                                     rdfs:label "\"Joe\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/joe-simon-n4
+<https://f3mf.github.io/gdo/test-cidoc/joe-simon-n4> rdf:type owl:NamedIndividual ;
+                                                     <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404652> ;
+                                                     <http://iflastandards.info/ns/lrm/lrmoo/R33_has_string> "Simon" ;
+                                                     rdfs:label "\"Simon\"" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/newsprint
+<https://f3mf.github.io/gdo/test-cidoc/newsprint> rdf:type owl:NamedIndividual ;
+                                                  <http://www.w3.org/2004/02/skos/core#broader> <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+                                                  rdfs:label "newsprint"@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/no-26
+<https://f3mf.github.io/gdo/test-cidoc/no-26> rdf:type owl:NamedIndividual ;
+                                              <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "NO. 26" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/october-1950
+<https://f3mf.github.io/gdo/test-cidoc/october-1950> rdf:type owl:NamedIndividual ;
+                                                     <http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1950-10-01T00:00:00"^^xsd:dateTime ;
+                                                     <http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1950-10-31T23:59:59"^^xsd:dateTime .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/page
+<https://f3mf.github.io/gdo/test-cidoc/page> rdf:type owl:NamedIndividual .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/saddle-stitch-binding
+<https://f3mf.github.io/gdo/test-cidoc/saddle-stitch-binding> rdf:type owl:NamedIndividual ;
+                                                              rdfs:label "saddle-stitch binding"@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/september-1947-june-1963
+<https://f3mf.github.io/gdo/test-cidoc/september-1947-june-1963> rdf:type owl:NamedIndividual ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1947-09-01T00:00:00"^^xsd:dateTime ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1963-06-30T23:59:59"^^xsd:dateTime .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/serial-creation
+<https://f3mf.github.io/gdo/test-cidoc/serial-creation> rdf:type owl:NamedIndividual ,
+                                                                 <http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation> ;
+                                                        <http://iflastandards.info/ns/lrm/lrmoo/R10i_has_member> <https://f3mf.github.io/gdo/test-cidoc/young-romance-26-w> ;
+                                                        <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://f3mf.github.io/gdo/test-cidoc/feature-publications> ;
+                                                        <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <https://f3mf.github.io/gdo/test-cidoc/september-1947-june-1963> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/simon-kirby-studio
+<https://f3mf.github.io/gdo/test-cidoc/simon-kirby-studio> rdf:type owl:NamedIndividual ;
+                                                           rdfs:label "Simon and Kirby Studio" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/standard-golden-age-us
+<https://f3mf.github.io/gdo/test-cidoc/standard-golden-age-us> rdf:type owl:NamedIndividual ;
+                                                               <http://www.cidoc-crm.org/cidoc-crm/P91_has_unit> <http://qudt.org/vocab/unit/IN> ;
+                                                               <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> "7.75 x 10.5" .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/vol-4-no-2
+<https://f3mf.github.io/gdo/test-cidoc/vol-4-no-2> rdf:type owl:NamedIndividual ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "VOL. 4, NO. 2." .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/volume-issue-sequence
+<https://f3mf.github.io/gdo/test-cidoc/volume-issue-sequence> rdf:type owl:NamedIndividual ,
+                                                                       <http://www.iflastandards.info/fr/pressoo/Z10_Sequencing_Pattern> ;
+                                                              <http://www.iflastandards.info/fr/pressoo/Y43i_is_exemplified_by> <https://f3mf.github.io/gdo/test-cidoc/vol-4-no-2> .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/young-romance-26-cover-e
+<https://f3mf.github.io/gdo/test-cidoc/young-romance-26-cover-e> rdf:type owl:NamedIndividual ,
+                                                                          <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> ;
+                                                                 <http://iflastandards.info/ns/lrm/lrmoo/R3i_realises> <https://f3mf.github.io/gdo/test-cidoc/young-romance-26-cover-w> ;
+                                                                 rdfs:label "Cover of Young Romance 26"@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/young-romance-26-cover-w
+<https://f3mf.github.io/gdo/test-cidoc/young-romance-26-cover-w> rdf:type owl:NamedIndividual ,
+                                                                          <http://iflastandards.info/ns/lrm/lrmoo/F1_Work> ;
+                                                                 <http://iflastandards.info/ns/lrm/lrmoo/R16i_was_created_by> <https://f3mf.github.io/gdo/test-cidoc/cover-creation> ;
+                                                                 <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://id.loc.gov/authorities/subjects/sh92001504> ;
+                                                                 rdfs:label "We've got to keep our love a secret, Marge..."@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/young-romance-26-e
+<https://f3mf.github.io/gdo/test-cidoc/young-romance-26-e> rdf:type owl:NamedIndividual ,
+                                                                    <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> ;
+                                                           <http://iflastandards.info/ns/lrm/lrmoo/R17i_was_created_by> <https://f3mf.github.io/gdo/test-cidoc/issue-editing> ;
+                                                           <http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in> <https://f3mf.github.io/gdo/test-cidoc/young-romance-26-m> ;
+                                                           <http://iflastandards.info/ns/lrm/lrmoo/R75_incorporates> <https://f3mf.github.io/gdo/test-cidoc/young-romance-26-cover-e> ;
+                                                           <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://id.loc.gov/vocabulary/contentTypes/sti> ,
+                                                                                                            <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+                                                           <http://www.cidoc-crm.org/cidoc-crm/P72_has_language> <http://id.loc.gov/vocabulary/languages/eng> ;
+                                                           rdfs:label "Young Romance 26, Edited"@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/young-romance-26-m
+<https://f3mf.github.io/gdo/test-cidoc/young-romance-26-m> rdf:type owl:NamedIndividual ,
+                                                                    <http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation> ;
+                                                           <http://iflastandards.info/ns/lrm/lrmoo/R24i_was_created_through> <https://f3mf.github.io/gdo/test-cidoc/issue-publication> ;
+                                                           <http://iflastandards.info/ns/lrm/lrmoo/R70_has_dimension> <https://f3mf.github.io/gdo/test-cidoc/10-c> ,
+                                                                                                                      <https://f3mf.github.io/gdo/test-cidoc/52-pages> ;
+                                                           <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <https://f3mf.github.io/gdo/test-cidoc/young-romance-title> ;
+                                                           <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> <https://f3mf.github.io/gdo/test-cidoc/no-26> ,
+                                                                                                                    <https://f3mf.github.io/gdo/test-cidoc/vol-4-no-2> ;
+                                                           <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://id.loc.gov/vocabulary/frequencies/mon> ;
+                                                           rdfs:label "Young Romance 26, October 1950"@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/young-romance-26-w
+<https://f3mf.github.io/gdo/test-cidoc/young-romance-26-w> rdf:type owl:NamedIndividual ,
+                                                                    <http://iflastandards.info/ns/lrm/lrmoo/F1_Work> ;
+                                                           <http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in> <https://f3mf.github.io/gdo/test-cidoc/young-romance-26-e> ;
+                                                           rdfs:label "Young Romance 26"@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/young-romance-dc-sw
+<https://f3mf.github.io/gdo/test-cidoc/young-romance-dc-sw> rdf:type owl:NamedIndividual ,
+                                                                     <http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work> ;
+                                                            rdfs:label "Young Romance (DC, 1963 Series)"@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/young-romance-prize-sw
+<https://f3mf.github.io/gdo/test-cidoc/young-romance-prize-sw> rdf:type owl:NamedIndividual ,
+                                                                        <http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work> ;
+                                                               <http://iflastandards.info/ns/lrm/lrmoo/R11_has_issuing_rule> <https://f3mf.github.io/gdo/test-cidoc/editorial-policy> ;
+                                                               <http://iflastandards.info/ns/lrm/lrmoo/R16i_was_created_by> <https://f3mf.github.io/gdo/test-cidoc/serial-creation> ;
+                                                               <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://id.loc.gov/authorities/genreForms/gf2014026515> ,
+                                                                                                                <http://id.loc.gov/vocabulary/mserialpubtype/mag> ;
+                                                               <http://www.iflastandards.info/fr/pressoo/Y29_evolved_into> <https://f3mf.github.io/gdo/test-cidoc/young-romance-dc-sw> ;
+                                                               <http://www.iflastandards.info/fr/pressoo/Y42_has_current_area_of_publication> <https://sws.geonames.org/6252001> ;
+                                                               rdfs:label "Young Romance (Prize, 1947 Series)"@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/young-romance-title
+<https://f3mf.github.io/gdo/test-cidoc/young-romance-title> rdf:type owl:NamedIndividual ;
+                                                            <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Young Romance"@en ;
+                                                            rdfs:label "\"Young Romance\""@en .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/10-c
+<https://f3mf.github.io/gdo/test-cidoc/10-c> rdf:type owl:NamedIndividual ;
+                                             <http://www.cidoc-crm.org/cidoc-crm/P91_has_unit> <http://qudt.org/vocab/currency/USD> ;
+                                             <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> 0.1 .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/1913-10-11
+<https://f3mf.github.io/gdo/test-cidoc/1913-10-11> rdf:type owl:NamedIndividual ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "1913-10-11T00:00:00"^^xsd:dateTime .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/1915-12-21
+<https://f3mf.github.io/gdo/test-cidoc/1915-12-21> rdf:type owl:NamedIndividual ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "1915-12-21T00:00:00"^^xsd:dateTime .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/1917-08-28
+<https://f3mf.github.io/gdo/test-cidoc/1917-08-28> rdf:type owl:NamedIndividual ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "1917-08-28T00:00:00"^^xsd:dateTime .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/1941-1956
+<https://f3mf.github.io/gdo/test-cidoc/1941-1956> rdf:type owl:NamedIndividual ;
+                                                  <http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1941-01-01T00:00:00"^^xsd:dateTime ;
+                                                  <http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1956-12-31T23:59:59"^^xsd:dateTime .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/1949-1956
+<https://f3mf.github.io/gdo/test-cidoc/1949-1956> rdf:type owl:NamedIndividual ;
+                                                  <http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "1949-01-01T00:00:00"^^xsd:dateTime ;
+                                                  <http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end> "1956-12-31T23:59:59"^^xsd:dateTime .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/1984-11-28
+<https://f3mf.github.io/gdo/test-cidoc/1984-11-28> rdf:type owl:NamedIndividual ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "1984-11-28T00:00:00"^^xsd:dateTime .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/1994-02-06
+<https://f3mf.github.io/gdo/test-cidoc/1994-02-06> rdf:type owl:NamedIndividual ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "1994-02-06T00:00:00"^^xsd:dateTime .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/2011-12-14
+<https://f3mf.github.io/gdo/test-cidoc/2011-12-14> rdf:type owl:NamedIndividual ;
+                                                   <http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within> "2011-12-14T00:00:00"^^xsd:dateTime .
+
+
+###  https://f3mf.github.io/gdo/test-cidoc/52-pages
+<https://f3mf.github.io/gdo/test-cidoc/52-pages> rdf:type owl:NamedIndividual ;
+                                                 <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> 52 .
+
+
+###  https://sws.geonames.org/5097672
+<https://sws.geonames.org/5097672> rdf:type owl:NamedIndividual ;
+                                   rdfs:label "Englewood, New Jersey, United States"@en .
+
+
+###  https://sws.geonames.org/5110629
+<https://sws.geonames.org/5110629> rdf:type owl:NamedIndividual ;
+                                   rdfs:label "Buffalo, New York, United States"@en .
+
+
+###  https://sws.geonames.org/5128581
+<https://sws.geonames.org/5128581> rdf:type owl:NamedIndividual ;
+                                   rdfs:label "New York City, New York, United States"@en .
+
+
+###  https://sws.geonames.org/5134086
+<https://sws.geonames.org/5134086> rdf:type owl:NamedIndividual ;
+                                   rdfs:label "Rochester, New York, United States"@en .
+
+
+###  https://sws.geonames.org/5392114
+<https://sws.geonames.org/5392114> rdf:type owl:NamedIndividual ;
+                                   rdfs:label "San Joaquin, California, United States"@en .
+
+
+###  https://sws.geonames.org/5402405
+<https://sws.geonames.org/5402405> rdf:type owl:NamedIndividual ;
+                                   rdfs:label "Thousand Oaks, California, United States"@en .
+
+
+###  https://sws.geonames.org/6252001
+<https://sws.geonames.org/6252001> rdf:type owl:NamedIndividual ;
+                                   rdfs:label "United States"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,2133 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.iflastandards.info/fr/pressoo", "http://www.w3.org/2000/01/rdf-schema", "http://iflastandards.info/ns/lrm/lrmoo", "http://www.w3.org/2001/XMLSchema", "http://www.cidoc-crm.org/cidoc-crm", "http://www.w3.org/2004/02/skos/core" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "https://f3mf.github.io/gdo/test-cidoc#",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "title" : {
+      "en" : "Describing Periodicals with CIDOC-CRM, LRMoo, and PRESSoo"
+    },
+    "iri" : "https://f3mf.github.io/gdo/test-cidoc",
+    "author" : [ "Francesca Massarenti" ],
+    "description" : {
+      "en" : "A test of the descriptive capabilities of the CIDOC-CRM ecosystem, taking as a case study the perusal of a periodical, the most complex publication to model within LRM."
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2025-01-09",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Francesca Massarenti",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Describing Periodicals with CIDOC-CRM, LRMoo, and PRESSoo",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "individuals" : [ {
+      "iri" : "http://vocab.getty.edu/aat/300417378",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300417378",
+        "en" : "co-owner"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/relators/edt",
+      "baseIri" : "http://id.loc.gov/vocabulary/relators",
+      "labels" : {
+        "IRI-based" : "edt",
+        "en" : "editor"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/contentTypes/txt",
+      "baseIri" : "http://id.loc.gov/vocabulary/contentTypes",
+      "labels" : {
+        "IRI-based" : "txt",
+        "en" : "text"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300443974",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300443974",
+        "en" : "employee"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/inker",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "inker",
+        "en" : "inker"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/authorities/genreForms/gf2014026266",
+      "baseIri" : "http://id.loc.gov/authorities/genreForms",
+      "labels" : {
+        "IRI-based" : "gf2014026266",
+        "en" : "Comics (Graphic works)"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/newsprint",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "newsprint",
+        "en" : "newsprint"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300443954",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300443954",
+        "en" : "penciler"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/authorities/genreForms/gf2014026515",
+      "baseIri" : "http://id.loc.gov/authorities/genreForms",
+      "labels" : {
+        "IRI-based" : "gf2014026515",
+        "en" : "Romance comics"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300404681",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300404681",
+        "en" : "birth name"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/glossy-paper",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "glossy-paper",
+        "en" : "glossy paper"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300404652",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300404652",
+        "en" : "last name"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/relators/art",
+      "baseIri" : "http://id.loc.gov/vocabulary/relators",
+      "labels" : {
+        "IRI-based" : "art",
+        "en" : "artist"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/authorities/subjects/sh92001504",
+      "baseIri" : "http://id.loc.gov/authorities/subjects",
+      "labels" : {
+        "IRI-based" : "sh92001504",
+        "en" : "Man-woman relationships"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300404651",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300404651",
+        "en" : "first name"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300404678",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300404678",
+        "en" : "pen name"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/mmaterial/pap",
+      "baseIri" : "http://id.loc.gov/vocabulary/mmaterial",
+      "labels" : {
+        "IRI-based" : "pap",
+        "en" : "paper"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/frequencies/mon",
+      "baseIri" : "http://id.loc.gov/vocabulary/frequencies",
+      "labels" : {
+        "IRI-based" : "mon",
+        "en" : "monthly"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/mserialpubtype/mag",
+      "baseIri" : "http://id.loc.gov/vocabulary/mserialpubtype",
+      "labels" : {
+        "IRI-based" : "mag",
+        "en" : "magazine"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/relators/ltr",
+      "baseIri" : "http://id.loc.gov/vocabulary/relators",
+      "labels" : {
+        "IRI-based" : "ltr",
+        "en" : "letterer"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300266386",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300266386",
+        "en" : "personal name"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/contentTypes/sti",
+      "baseIri" : "http://id.loc.gov/vocabulary/contentTypes",
+      "labels" : {
+        "IRI-based" : "sti",
+        "en" : "still image"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/saddle-stitch-binding",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "saddle-stitch-binding",
+        "en" : "saddle-stitch binding"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/frequencies/bmn",
+      "baseIri" : "http://id.loc.gov/vocabulary/frequencies",
+      "labels" : {
+        "IRI-based" : "bmn",
+        "en" : "bimonthly"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/PC107_has_current_or_former_member",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PC107_has_current_or_former_member"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/has-employee",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "has-employee"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/has-co-owner-2",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "has-co-owner-2"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/has-co-owner-1",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "has-co-owner-1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Z10_Sequencing_Pattern",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Z10_Sequencing_Pattern"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/volume-issue-sequence",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "volume-issue-sequence"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/issue-sequence",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "issue-sequence"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/F18_Serial_Work",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F18_Serial_Work"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/young-romance-dc-sw",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "young-romance-dc-sw",
+        "en" : "Young Romance (DC, 1963 Series)"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/young-romance-prize-sw",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "young-romance-prize-sw",
+        "en" : "Young Romance (Prize, 1947 Series)"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E56_Language",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E56_Language"
+    },
+    "individuals" : [ {
+      "iri" : "http://id.loc.gov/vocabulary/languages/eng",
+      "baseIri" : "http://id.loc.gov/vocabulary/languages",
+      "labels" : {
+        "IRI-based" : "eng"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F2_Expression"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/young-romance-26-cover-e",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "young-romance-26-cover-e",
+        "en" : "Cover of Young Romance 26"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/young-romance-26-e",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "young-romance-26-e",
+        "en" : "Young Romance 26, Edited"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F3_Manifestation"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/young-romance-26-m",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "young-romance-26-m",
+        "en" : "Young Romance 26, October 1950"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E55_Type"
+    },
+    "individuals" : [ {
+      "iri" : "http://vocab.getty.edu/aat/300417378",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300417378",
+        "en" : "co-owner"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/relators/edt",
+      "baseIri" : "http://id.loc.gov/vocabulary/relators",
+      "labels" : {
+        "IRI-based" : "edt",
+        "en" : "editor"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300443974",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300443974",
+        "en" : "employee"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/contentTypes/txt",
+      "baseIri" : "http://id.loc.gov/vocabulary/contentTypes",
+      "labels" : {
+        "IRI-based" : "txt",
+        "en" : "text"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/inker",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "inker",
+        "en" : "inker"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/newsprint",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "newsprint",
+        "en" : "newsprint"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300443954",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300443954",
+        "en" : "penciler"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/authorities/genreForms/gf2014026515",
+      "baseIri" : "http://id.loc.gov/authorities/genreForms",
+      "labels" : {
+        "IRI-based" : "gf2014026515",
+        "en" : "Romance comics"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300404681",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300404681",
+        "en" : "birth name"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/glossy-paper",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "glossy-paper",
+        "en" : "glossy paper"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300404652",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300404652",
+        "en" : "last name"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300404651",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300404651",
+        "en" : "first name"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/authorities/subjects/sh92001504",
+      "baseIri" : "http://id.loc.gov/authorities/subjects",
+      "labels" : {
+        "IRI-based" : "sh92001504",
+        "en" : "Man-woman relationships"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300404678",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300404678",
+        "en" : "pen name"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/mmaterial/pap",
+      "baseIri" : "http://id.loc.gov/vocabulary/mmaterial",
+      "labels" : {
+        "IRI-based" : "pap",
+        "en" : "paper"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/frequencies/mon",
+      "baseIri" : "http://id.loc.gov/vocabulary/frequencies",
+      "labels" : {
+        "IRI-based" : "mon",
+        "en" : "monthly"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/mserialpubtype/mag",
+      "baseIri" : "http://id.loc.gov/vocabulary/mserialpubtype",
+      "labels" : {
+        "IRI-based" : "mag",
+        "en" : "magazine"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/relators/ltr",
+      "baseIri" : "http://id.loc.gov/vocabulary/relators",
+      "labels" : {
+        "IRI-based" : "ltr",
+        "en" : "letterer"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/saddle-stitch-binding",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "saddle-stitch-binding",
+        "en" : "saddle-stitch binding"
+      }
+    }, {
+      "iri" : "http://vocab.getty.edu/aat/300266386",
+      "baseIri" : "http://vocab.getty.edu/aat",
+      "labels" : {
+        "IRI-based" : "300266386",
+        "en" : "personal name"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/contentTypes/sti",
+      "baseIri" : "http://id.loc.gov/vocabulary/contentTypes",
+      "labels" : {
+        "IRI-based" : "sti",
+        "en" : "still image"
+      }
+    }, {
+      "iri" : "http://id.loc.gov/vocabulary/frequencies/bmn",
+      "baseIri" : "http://id.loc.gov/vocabulary/frequencies",
+      "labels" : {
+        "IRI-based" : "bmn",
+        "en" : "bimonthly"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/F55_Collective_Agent",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F55_Collective_Agent"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/simon-kirby-studio",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "simon-kirby-studio",
+        "undefined" : "Simon and Kirby Studio"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/PC14_carried_out_by",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PC14_carried_out_by"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/by-letterer",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "by-letterer"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/by-editor-2",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "by-editor-2"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/by-penciler",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "by-penciler"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/by-inker",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "by-inker"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/by-editor-1",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "by-editor-1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F27_Work_Creation"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/serial-creation",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "serial-creation"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/cover-creation",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "cover-creation"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E52_Time-Span"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/1941-1956",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "1941-1956"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/1949-1956",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "1949-1956"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/1984-11-28",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "1984-11-28"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/2011-12-14",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "2011-12-14"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/october-1950",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "october-1950"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/1915-12-21",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "1915-12-21"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/1994-02-06",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "1994-02-06"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/september-1947-june-1963",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "september-1947-june-1963"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/1917-08-28",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "1917-08-28"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/1913-10-11",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "1913-10-11"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F28_Expression_Creation"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/issue-editing",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "issue-editing"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E53_Place"
+    },
+    "individuals" : [ {
+      "iri" : "https://sws.geonames.org/5134086",
+      "baseIri" : "https://sws.geonames.org",
+      "labels" : {
+        "IRI-based" : "5134086",
+        "en" : "Rochester, New York, United States"
+      }
+    }, {
+      "iri" : "https://sws.geonames.org/5110629",
+      "baseIri" : "https://sws.geonames.org",
+      "labels" : {
+        "IRI-based" : "5110629",
+        "en" : "Buffalo, New York, United States"
+      }
+    }, {
+      "iri" : "https://sws.geonames.org/5128581",
+      "baseIri" : "https://sws.geonames.org",
+      "labels" : {
+        "IRI-based" : "5128581",
+        "en" : "New York City, New York, United States"
+      }
+    }, {
+      "iri" : "https://sws.geonames.org/5402405",
+      "baseIri" : "https://sws.geonames.org",
+      "labels" : {
+        "IRI-based" : "5402405",
+        "en" : "Thousand Oaks, California, United States"
+      }
+    }, {
+      "iri" : "https://sws.geonames.org/6252001",
+      "baseIri" : "https://sws.geonames.org",
+      "labels" : {
+        "IRI-based" : "6252001",
+        "en" : "United States"
+      }
+    }, {
+      "iri" : "https://sws.geonames.org/5097672",
+      "baseIri" : "https://sws.geonames.org",
+      "labels" : {
+        "IRI-based" : "5097672",
+        "en" : "Englewood, New Jersey, United States"
+      }
+    }, {
+      "iri" : "https://sws.geonames.org/5392114",
+      "baseIri" : "https://sws.geonames.org",
+      "labels" : {
+        "IRI-based" : "5392114",
+        "en" : "San Joaquin, California, United States"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F1_Work"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/young-romance-26-cover-w",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "young-romance-26-cover-w",
+        "en" : "We've got to keep our love a secret, Marge..."
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/young-romance-26-w",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "young-romance-26-w",
+        "en" : "Young Romance 26"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E21_Person"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/ben-oda",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "ben-oda",
+        "undefined" : "Ben Oda"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/joe-simon",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "joe-simon",
+        "undefined" : "Joe Simon"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/jack-kirby",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "jack-kirby",
+        "undefined" : "Jack Kirby"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E58_Measurement_Unit"
+    },
+    "individuals" : [ {
+      "iri" : "http://qudt.org/vocab/currency/USD",
+      "baseIri" : "http://qudt.org/vocab/currency",
+      "labels" : {
+        "IRI-based" : "USD"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/page",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "page"
+      }
+    }, {
+      "iri" : "http://qudt.org/vocab/unit/IN",
+      "baseIri" : "http://qudt.org/vocab/unit",
+      "labels" : {
+        "IRI-based" : "IN"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/F30_Manifestation_Creation",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F30_Manifestation_Creation"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/issue-publication",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "issue-publication"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/F11_Corporate_Body",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F11_Corporate_Body"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/feature-publications",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "feature-publications",
+        "en" : "Feature Publications"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/F12_Nomen",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F12_Nomen"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/ben-oda-n1",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "ben-oda-n1",
+        "undefined" : "\"Ben Oda\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/ben-oda-n2",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "ben-oda-n2",
+        "undefined" : "\"Ben Kazuhito Oda\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/ben-oda-n3",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "ben-oda-n3",
+        "undefined" : "\"Ben\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/ben-oda-n4",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "ben-oda-n4",
+        "undefined" : "\"Oda\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n1",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "jack-kirby-n1",
+        "undefined" : "\"Jack Kirby\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/joe-simon-n4",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "joe-simon-n4",
+        "undefined" : "\"Simon\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/joe-simon-n3",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "joe-simon-n3",
+        "undefined" : "\"Joe\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/joe-simon-n2",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "joe-simon-n2",
+        "undefined" : "\"Hymie Simon\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n4",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "jack-kirby-n4",
+        "undefined" : "\"Jack\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/joe-simon-n1",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "joe-simon-n1",
+        "undefined" : "\"Joe Simon\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n5",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "jack-kirby-n5",
+        "undefined" : "\"Kirby\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n2",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "jack-kirby-n2",
+        "undefined" : "\"Jacob Kurtzberg\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/jack-kirby-n3",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "jack-kirby-n3",
+        "undefined" : "\"Jon Henri\""
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E41_Appellation"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/young-romance-title",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "young-romance-title",
+        "en" : "\"Young Romance\""
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/vol-4-no-2",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "vol-4-no-2"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/no-26",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "no-26"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E67_Birth",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E67_Birth"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/ben-oda-birth",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "ben-oda-birth"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/joe-simon-birth",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "joe-simon-birth"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/jack-kirby-birth",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "jack-kirby-birth"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E69_Death",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E69_Death"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/joe-simon-death",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "joe-simon-death"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/ben-oda-death",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "ben-oda-death"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/jack-kirby-death",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "jack-kirby-death"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E97_Monetary_Amount"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/10-c",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "10-c"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Z12_Issuing_Rule",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Z12_Issuing_Rule"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/editorial-policy",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "editorial-policy"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E54_Dimension"
+    },
+    "individuals" : [ {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/standard-golden-age-us",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "standard-golden-age-us"
+      }
+    }, {
+      "iri" : "https://f3mf.github.io/gdo/test-cidoc/52-pages",
+      "baseIri" : "https://f3mf.github.io/gdo/test-cidoc",
+      "labels" : {
+        "IRI-based" : "52-pages"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "100"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R70i_is_dimension_of",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R70i_is_dimension_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P14.1_in_the_role_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P91i_is_unit_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P91i_is_unit_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P7_took_place_at"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y29i_continues",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y29i_continues"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P01i_is_domain_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R11_has_issuing_rule",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R11_has_issuing_rule"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R16i_was_created_by",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R16i_was_created_by"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P2i_is_type_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y24_foresees_use_of_title",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y24_foresees_use_of_title"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P4_has_time-span"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "P82b_end_of_the_end"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R70_has_dimension",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R70_has_dimension"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R75i_is_incorporated_in",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R75i_is_incorporated_in"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y22_foresees_sequencing_pattern",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y22_foresees_sequencing_pattern"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P72_has_language",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P72_has_language"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P98_brought_into_life"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P4i_is_time-span_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y21_foresees_use_of_language",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y21_foresees_use_of_language"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P102_has_title",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P102_has_title"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R17i_was_created_by",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R17i_was_created_by"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R33_has_string",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "R33_has_string"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R24_created",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R24_created"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y43i_is_exemplified_by",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y43i_is_exemplified_by"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "P82_at_some_time_within"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y42_has_current_area_of_publication",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y42_has_current_area_of_publication"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P02_has_range",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P02_has_range"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y20i_is_type_foreseen_in",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y20i_is_type_foreseen_in"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R16_created",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R16_created"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P72i_is_language_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P72i_is_language_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P100_was_death_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P102i_is_title_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R10_is_member_of",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R10_is_member_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R75_incorporates",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R75_incorporates"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y42i_is_current_area_of_publication_of",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y42i_is_current_area_of_publication_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y22i_is_sequencing_pattern_foreseen_in",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y22i_is_sequencing_pattern_foreseen_in"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "P190_has_symbolic_content"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y29_evolved_into",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y29_evolved_into"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y24i_is_title_foreseen_in",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y24i_is_title_foreseen_in"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R17_created",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R17_created"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P91_has_unit"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P01_has_domain",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P01_has_domain"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y23i_is_dimension_foreseen_in",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y23i_is_dimension_foreseen_in"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R10i_has_member",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R10i_has_member"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "P82a_begin_of_the_begin"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#broader",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "broader"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R4i_is_embodied_in"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P1_is_identified_by"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P2_has_type"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y43_is_indicative_of",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y43_is_indicative_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P02i_is_range_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P02i_is_range_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P100i_died_in",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P100i_died_in"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P7i_witnessed"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P90_has_value",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "P90_has_value"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y23_foresees_dimension",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y23_foresees_dimension"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P67i_is_referred_to_by"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P98i_was_born",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P98i_was_born"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R11i_is_issuing_rule_of",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R11i_is_issuing_rule_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R4_embodies",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R4_embodies"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R3_is_realised_in"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P1i_identifies",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P1i_identifies"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P67_refers_to"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R24i_was_created_through",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R24i_was_created_through"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P14_carried_out_by"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P14i_performed",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P14i_performed"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y21i_is_language_foreseen_in",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y21i_is_language_foreseen_in"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.iflastandards.info/fr/pressoo/Y20_foresees_type",
+    "baseIri" : "http://www.iflastandards.info/fr/pressoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "Y20_foresees_type"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://iflastandards.info/ns/lrm/lrmoo/R3i_realises",
+    "baseIri" : "http://iflastandards.info/ns/lrm/lrmoo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R3i_realises"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "99"
+  } ]
+}

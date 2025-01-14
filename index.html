@@ -19,6 +19,18 @@
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
 <link href="assets/css/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<meta content="website" property="og:type"/>
+<meta content="The Game of the Goose" property="og:title"/>
+<meta content="A Knowledge Organization project on the ekphrastic relations of Edoardo Sanguineti's «Il Giuoco dell'Oca»" property="og:description"/>
+<meta content="https://f3mf.github.io/gdo/assets/images/social/index.png" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="https://f3mf.github.io/gdo/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="The Game of the Goose" name="twitter:title"/>
+<meta content="A Knowledge Organization project on the ekphrastic relations of Edoardo Sanguineti's «Il Giuoco dell'Oca»" name="twitter:description"/>
+<meta content="https://f3mf.github.io/gdo/assets/images/social/index.png" name="twitter:image"/>
 <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
@@ -183,16 +195,23 @@
 <nav aria-label="Goals" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#scalable-modeling">
+<a class="md-nav__link" href="#focus-on-competency-questions">
 <span class="md-ellipsis">
-      Scalable modeling
+      Focus on competency questions
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#lean-and-expressive-ontology-design">
+<a class="md-nav__link" href="#zero-overhead">
 <span class="md-ellipsis">
-      Lean and expressive ontology design
+      Zero overhead
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#integrazione-dello-spoglio-analitico-delle-risorse-nella-metadatazione">
+<span class="md-ellipsis">
+      Integrazione dello spoglio analitico delle risorse nella metadatazione
     </span>
 </a>
 </li>
@@ -207,6 +226,13 @@
 </a>
 <nav aria-label="Challanges" class="md-nav">
 <ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#trovare-fonti-affidabili-per-opere-contemporanee">
+<span class="md-ellipsis">
+      Trovare fonti affidabili per opere contemporanee
+    </span>
+</a>
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#automating-data-collection">
 <span class="md-ellipsis">
@@ -315,7 +341,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="knowledge-organization/conceptual-model/">
+<a class="md-nav__link" href="knowledge-organization/formal-model/">
 <span class="md-ellipsis">
     Ontology design
   </span>
@@ -409,16 +435,23 @@
 <nav aria-label="Goals" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#scalable-modeling">
+<a class="md-nav__link" href="#focus-on-competency-questions">
 <span class="md-ellipsis">
-      Scalable modeling
+      Focus on competency questions
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#lean-and-expressive-ontology-design">
+<a class="md-nav__link" href="#zero-overhead">
 <span class="md-ellipsis">
-      Lean and expressive ontology design
+      Zero overhead
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#integrazione-dello-spoglio-analitico-delle-risorse-nella-metadatazione">
+<span class="md-ellipsis">
+      Integrazione dello spoglio analitico delle risorse nella metadatazione
     </span>
 </a>
 </li>
@@ -433,6 +466,13 @@
 </a>
 <nav aria-label="Challanges" class="md-nav">
 <ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#trovare-fonti-affidabili-per-opere-contemporanee">
+<span class="md-ellipsis">
+      Trovare fonti affidabili per opere contemporanee
+    </span>
+</a>
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#automating-data-collection">
 <span class="md-ellipsis">
@@ -474,8 +514,10 @@
 <h1 id="introduction">Introduction</h1>
 <p>Linked Open Data (LOD) for Galleries, Libraries, Archives and Museums.
 Machine-readable literary criticism in the age of semantic libraries.</p>
+<p>Un progetto che sfrutta le potenzialità del web semantico per tradurre in Linked Open Data i principali contributi di critica letteraria su un'opera letteraria, descritta</p>
 <h2 id="state-of-the-art">State-of-the-art</h2>
 <h2 id="workflow">Workflow</h2>
+<p>Il punto di partenza della modellazione è lo studio e la descrizione del dominio. Per noi, ciò è stato rappresentato da un'indagine bibliograifca sui contributi </p>
 <style>
   [data-md-color-scheme="default"] {
     --md-mermaid-label-bg-color: #EDEDED;
@@ -498,10 +540,10 @@ Machine-readable literary criticism in the age of semantic libraries.</p>
     Mapping[Mapping]
     Interpretation[Data interpretation]
     Ontology[Ontology design]
-    Map([Conceptual map])
+    Conceptual([Conceptual map])
     ER([E/R model])
     Theoretical([Theoretical model])
-    Conceptual{{Conceptual model}}
+    Formal{{Formal model}}
   end
 
   subgraph Knowledge Representation
@@ -514,11 +556,11 @@ Machine-readable literary criticism in the age of semantic libraries.</p>
   Domain --&gt; Items
   Domain --&gt; Ideation
   Ideation ---&gt; Formalization
-  Formalization --&gt; Map
+  Formalization --&gt; Conceptual
   Formalization --&gt; ER
   Formalization ---&gt; Interpretation
   Items --&gt; Mining
-  Items --&gt; Map
+  Items --&gt; Conceptual
   Mining --&gt; Analysis
   Mining --&gt; Records
   Analysis --&gt; Mapping
@@ -526,18 +568,21 @@ Machine-readable literary criticism in the age of semantic libraries.</p>
   Interpretation --&gt; Ontology
   Interpretation --&gt; Theoretical
   Interpretation -.-&gt;|enrichment| ER
-  Ontology --&gt; Conceptual
+  Ontology --&gt; Formal
 
   Records ----&gt; Description
-  Conceptual --&gt; Description
+  Formal --&gt; Description
   Description --&gt; Reconciliation
   Reconciliation --&gt; RDF
   RDF --&gt; Graph
 </code></pre>
 <h2 id="goals">Goals</h2>
-<h3 id="scalable-modeling">Scalable modeling</h3>
-<h3 id="lean-and-expressive-ontology-design">Lean and expressive ontology design</h3>
+<h3 id="focus-on-competency-questions">Focus on competency questions</h3>
+<h3 id="zero-overhead">Zero overhead</h3>
+<p>Lean and expressive ontology design</p>
+<h3 id="integrazione-dello-spoglio-analitico-delle-risorse-nella-metadatazione">Integrazione dello spoglio analitico delle risorse nella metadatazione</h3>
 <h2 id="challanges">Challanges</h2>
+<h3 id="trovare-fonti-affidabili-per-opere-contemporanee">Trovare fonti affidabili per opere contemporanee</h3>
 <h3 id="automating-data-collection">Automating data collection</h3>
 <h3 id="integrating-metadata-standards">Integrating metadata standards</h3>
 <h3 id="aligning-event-centered-and-resource-centered-ontologies">Aligning event-centered and resource-centered ontologies</h3>

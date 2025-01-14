@@ -1,0 +1,127 @@
+@prefix : <https://f3mf.github.io/gdo/test-rda#>.
+
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+@prefix rdaa: <http://rdaregistry.info/Elements/a/>.
+@prefix rdac: <http://rdaregistry.info/Elements/c/>.
+@prefix rdae: <http://rdaregistry.info/Elements/e/>.
+@prefix rdai: <http://rdaregistry.info/Elements/i/>.
+@prefix rdam: <http://rdaregistry.info/Elements/m/>.
+@prefix rdan: <http://rdaregistry.info/Elements/n/>.
+@prefix rdaw: <http://rdaregistry.info/Elements/w/>.
+
+@prefix rdacc: <http://rdaregistry.info/termList/RDAColourContent/>.
+@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/>.
+@prefix rdaep: <http://rdaregistry.info/termList/RDAExtensionPlan/>.
+@prefix rdafr: <http://rdaregistry.info/termList/frequency/>.
+@prefix rdatb: <http://rdaregistry.info/termList/RDATypeOfBinding/>.
+@prefix rdamat: <http://rdaregistry.info/termList/RDAMaterial/>.
+
+@prefix lcsh: <http://id.loc.gov/authorities/subjects>.
+@prefix lcgft: <http://id.loc.gov/authorities/genreForms/>.
+@prefix gn: <https://sws.geonames.org/>.
+
+<https://f3mf.github.io/gdo/test-rda#>
+    dc:creator "Francesca Massarenti";
+    dc:date "2025-01-12";
+    dc:description "A test of the descriptive capabilities of the RDA ecosystem, taking as a case study the perusal of a periodical, the most complex publication to model within LRM."@en;
+    dc:title "Describing Periodicals with RDA"@en.
+
+:ben-oda a rdac:C10004;
+    rdaa:P50115 "Ben Kazuhito Oda";
+    rdaa:P50117 "Ben Oda";
+    rdaa:P50118 gn:5097672;
+    rdaa:P50119 gn:5392114;
+    rdaa:P50120 "1984-11-28T00:00:00"^^xsd:dateTime;
+    rdaa:P50121 "1915-12-21T00:00:00"^^xsd:dateTime;
+    rdaa:P50291 "Oda";
+    rdaa:P50292 "Ben";
+    rdfs:label "Ben Oda".
+
+:feature-publications a rdac:C10005;
+    rdaa:P50025 "A Prize Publication"@en,
+        "Prize Group"@en;
+    rdaa:P50041 "Feature Publications"@en;
+    rdfs:label "Feature Publications"@en.
+
+:jack-kirby a rdac:C10004;
+    rdaa:P50103 "Jacob Kurtzberg";
+    rdaa:P50117 "Jack Kirby";
+    rdaa:P50118 gn:5402405;
+    rdaa:P50119 gn:5128581;
+    rdaa:P50120 "1994-02-06T00:00:00"^^xsd:dateTime;
+    rdaa:P50121 "1917-08-28T00:00:00"^^xsd:dateTime;
+    rdaa:P50291 "Kirby";
+    rdaa:P50292 "Jack";
+    rdaa:P50428 :jon-henri;
+    rdfs:label "Jack Kirby".
+
+:joe-simon a rdac:C10004;
+    rdaa:P50103 "Hymie Simon";
+    rdaa:P50117 "Joe Simon";
+    rdaa:P50118 gn:5128581;
+    rdaa:P50119 gn:5134086;
+    rdaa:P50120 "2011-12-14T00:00:00"^^xsd:dateTime;
+    rdaa:P50121 "1913-10-11T00:00:00"^^xsd:dateTime;
+    rdaa:P50291 "Simon";
+    rdaa:P50292 "Joe";
+    rdaa:P50428 :jon-henri;
+    rdfs:label "Joe Simon".
+
+:jon-henri a rdac:C10012;
+    rdan:P80068 "Jon Henri".
+
+:young-romance-26-cover-e a rdac:C10006;
+    rdae:P20006 "en-US"^^xsd:language;
+    rdae:P20387 :ben-oda;
+    rdfs:label "Cover of Young Romance 26"@en.
+
+:young-romance-26-cover-w a rdac:C10001;
+    rdaw:P10078 :young-romance-26-cover-e;
+    rdaw:P10088 "We've got to keep our love a secret, Marge..."@en;
+    rdaw:P10256 lcsh:sh92001504;
+    rdaw:P10451 :jack-kirby,
+        :joe-simon;
+    rdfs:label "We've got to keep our love a secret, Marge..."@en.
+
+:young-romance-26-e a rdac:C10006;
+    rdae:P20001 rdaco:1014,
+        rdaco:1020;
+    rdae:P20059 :young-romance-26-m;
+    rdae:P20319 :young-romance-26-cover-e;
+    rdae:P20338 :jack-kirby,
+        :joe-simon;
+    rdfs:label "Young Romance 26, Edited"@en.
+
+:young-romance-26-m a rdac:C10007;
+    rdam:P30011 "1950-10-01T00:00:00"^^xsd:dateTime;
+    rdam:P30014 "no. 26",
+        "vol. 4, no. 2";
+    rdam:P30088 gn:5110629;
+    rdam:P30169 "standard Golden Age U. S."@en;
+    rdam:P30182 "52 pages"@en;
+    rdam:P30304 rdamat:1025;
+    rdam:P30309 rdatb:1007;
+    rdam:P30420 :feature-publications;
+    rdam:P30456 rdacc:1003;
+    rdfs:label "Young Romance 26, October 1950"@en.
+
+:young-romance-26-w a rdac:C10001;
+    rdaw:P10078 :young-romance-26-e;
+    rdfs:label "Young Romance 26"@en.
+
+:young-romance-dc-sw a rdac:C10001;
+    rdfs:label "Young Romance (DC, 1963 Series)"@en.
+
+:young-romance-prize-sw a rdac:C10001;
+    rdaw:P10004 lcgft:gf2014026515;
+    rdaw:P10088 "Young Romance"@en;
+    rdaw:P10141 :young-romance-26-w;
+    rdaw:P10191 :young-romance-dc-sw;
+    rdaw:P10218 gn:6252001;
+    rdaw:P10365 rdaep:1003;
+    rdaw:P10368 rdafr:1007,
+        rdafr:1008;
+    rdfs:label "Young Romance (Prize, 1947 Series)"@en.

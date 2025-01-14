@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.cidoc-crm.org/cidoc-crm/" uri="imports/CIDOC_CRM_v7.1.3_PC.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.cidoc-crm.org/cidoc-crm/" uri="imports/CIDOC_CRM_v7.1.3_PC.owl"/>
+    <uri id="Imports Wizard Entry" name="https://f3mf.github.io/gdo/test-cidoc" uri="test-cidoc-inverse.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://f3mf.github.io/gdo/test-cidoc" uri="test-cidoc-inverse.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://f3mf.github.io/gdotest-cidoc" uri="test-cidoc-inverse.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/dc/elements/1.1/" uri="http://protege.stanford.edu/plugins/owl/dc/dublincore.owl"/>
+    <uri name="http://iflastandards.info/ns/lrm/lrmoo/" uri="imports/LRMoo_v1.0.owl"/>
+    <uri name="http://www.cidoc-crm.org/cidoc-crm/" uri="imports/CIDOC_CRM_v7.1.3_PC.owl"/>
+    <uri name="http://www.iflastandards.info/fr/pressoo/" uri="imports/PRESSoo_v1.3.owl"/>
+    <uri name="https://f3mf.github.io/gdo/gdo-cidoc/" uri="gdo-cidoc.rdf"/>
+</catalog>
