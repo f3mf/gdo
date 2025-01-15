@@ -18,8 +18,6 @@ nav:
     - Ontology design: knowledge-organization/formal-model.md
   - Knowledge Representation:
     - knowledge-representation/index.md
-  - Ontology:
-    - ontology/index.md
 theme:
   name: material
   features:

@@ -12,13 +12,13 @@ After establishing the need for WEMI levels to represent the different kinds of 
 
 - **[LRMoo](https://cidoc-crm.org/lrmoo)** succeds the 2010 FRBRoo model, its first official release was approved in 2024 and has been appointed by IFLA as a preferred implementation of the LRM. It translates the LRM entities and relationships into the formal ontology of ICOM's CIDOC Conceptual Reference Model (CRM), enabling alignment with cultural heritage data standards and facilitating integration between museum and bibliographic datasets. The CIDOC CRM is the most widely used ontology in cultural heritage modeling, and is particularly well suited for representing complex cultural object production events with nuanced designations of temporal relationships, part-whole inferences and roles of the agents involved, the latter thanks to the extension of properties with types (reification). Being an object-oriented, event-centered framework, to describe a cultural object a strict application must forcibly pass through production events and entities representing appellations, time-spans, and the like. In LRMoo, these are multiplied because the cultural object itself is already conceptually separated into multiple levels, each requiring its own related event.
 
-We identified RDA and LRMoo as the two main ontologies that we could reuse in our model. To test the potential and critical aspects of each, we modeled the metadata of the most complex item in our domain—a comics magazine—as precisely as possible, applying the two ontologies separately.
+**We identified RDA and LRMoo as the two main ontologies that we could reuse in our model.** To test the potential and critical aspects of each, we modeled the metadata of the most complex item in our domain—a comics magazine—as precisely as possible, applying the two ontologies separately.
 
 ### Modelling of Serials
 
-Modelling a comics magazine is challenging because it is a periodical that in specialized sources is described analytically, as each story within it has different subjects and authors, often masked behind pseudonyms.
+Modelling a comics magazine is challenging because it is a periodical that in [specialized sources](https://www.comics.org/issue/225736/) is described analytically, as each story within it has different subjects and authors, often masked behind pseudonyms.
 
-In the Library Reference Model, serials—publications issued in parts, regardless of regularity or frequency, of which periodicals as a subset—are complex constructs that combine whole/part relationships and aggregation relationships. A serial work has a whole/part relationship with the individual issues published over time, while each issue expression is an aggregate of articles.
+In the Library Reference Model, serials—publications issued in parts, regardless of regularity or frequency, of which periodicals as a subset—are complex constructs that combine whole/part relationships and aggregation relationships. **A serial work has a whole/part relationship with the individual issues published over time, while each issue expression is an aggregate of articles.**
 
 The whole/part relationship is hierarchical and structural: it describes a situation where a whole entity is composed of discrete parts that contribute to its existence, are integral to its identity, and cannot typically exist independently in the same context, such as chapters in a book. In contrast, the aggregation relationship is associative, grouping together expressions that remain independent, can exist separately, and each realize their own work, as short stories within an anthology. In the case of serials, the serial work provides the overarching issuing plan, which informs the aggregation of each individual issue.
 
@@ -66,7 +66,7 @@ R7V1bd6M4tv41WWfOA16SuJnHJJVUT3fqdFYl3T1nXmbJINt0YXADjpP%2B9SMJsA0WGHOxgZBVKxXLI
 
 {{ read_csv('../data/tables/lrmoo-rda-comparison.csv', keep_default_na=False) }}
 
-In comparing the two ontologies, a need emerged to balance the accuracy of item descriptions and the convenience of information retrieval with the expressiveness required to situate them within a complex scenario to reason on. Using the LRM classes as a central pivot, we therefore integrated RDA for metadata representation and LRMoo to model interactions between entities at the WEMI levels. This approach enables us to streamline the creation of entities and maintain a concise model without compromising the formal representation of conceptual interactions across the layers of the works, which is the most critical aspect of our domain.
+In comparing the two ontologies, a need emerged to balance the accuracy of item descriptions and the convenience of information retrieval with the expressiveness required to situate them within a complex scenario to reason on. **Using the LRM classes as a central pivot, we therefore integrated RDA for metadata representation and LRMoo to model interactions between entities at the WEMI levels.** This approach enables us to streamline the creation of entities and maintain a concise model without compromising the formal representation of conceptual interactions across the layers of the works, which is the most critical aspect of our domain.
 
 We believe this practice is justified not only by the specific requirements of our case but also by the emerging necessity to integrate library data into cultural heritage Linked Open Data in a practical manner, while preserving the descriptive richness of cataloguing records. The criterion we have established ensures a clear separation of concerns and we think it could be applied to contexts beyond our own.
 
@@ -75,6 +75,11 @@ We believe this practice is justified not only by the specific requirements of o
 
 ## Formal model
 
+CiTO
+
+HiCO
+
+PROV-O
 
 
 \bibliography
