@@ -73,7 +73,7 @@ We believe this practice is justified not only by the specific requirements of o
 ## Reuse of referencing ontologies
 
 
-## Formal model
+## Formal model UPDATE
 
 CiTO
 
