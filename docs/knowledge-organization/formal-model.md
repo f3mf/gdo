@@ -72,6 +72,11 @@ We believe this practice is justified not only by the specific requirements of o
 
 ## Reuse of referencing ontologies
 
+CiTO
+
+HiCO
+
+PROV-O
 
 ## Formal model
 
@@ -84,13 +89,6 @@ prova prova formal model PROVA
 ### Formal model for the intermedial relations connecting text and items
 
 <iframe frameborder="0" style="width:100%;height:1024px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&page-id=35Y5kPkmdY_ys3Sy56cA#G1Noc7iu9yR81oWBeEbMsjj4U8-9nnb8Ow"></iframe>
-
-
-CiTO
-
-HiCO
-
-PROV-O
 
 
 \bibliography
