@@ -75,7 +75,7 @@ We believe this practice is justified not only by the specific requirements of o
 
 ## Formal model
 
-prova prova formal model
+prova prova formal model PROVA
 
 ### Formal model for <em>Il Giuoco dell'Oca</em> and the related items, according to LRMOO and RDA ontologies 
 
