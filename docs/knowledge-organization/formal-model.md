@@ -88,6 +88,8 @@ PROV-O
 
 ![](../data/diagrams/formal-model-relations.svg)
 
+![](../data/diagrams/example-just-what.svg)
+
 
 \bibliography
 
