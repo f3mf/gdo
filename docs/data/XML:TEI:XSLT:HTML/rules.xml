@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="rules.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title >A digital edition of Edoardo Sanguineti's "Il Giuoco dell'Oca"</title>
+        <respStmt xml:id="f3mf">
+          <resp>TEI encoding</resp>
+          <name>Enrica Bruno, Maria Francesca Bocchi, Francesca Massarenti</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p>CC BY 4.0</p>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull xml:id="giuoco">
+          <titleStmt>
+            <title>Il Giuoco dell'Oca</title>
+            <author>Edoardo Sanguineti</author>
+          </titleStmt>
+          <editionStmt>
+            <edition>3d edition</edition>
+          </editionStmt>
+          <extent>190 pp.</extent>
+          <publicationStmt>
+            <publisher>Feltrinelli</publisher>
+            <pubPlace>Milano</pubPlace>
+            <date>2023</date>
+            <idno type="ISBN">9788807897344</idno>
+          </publicationStmt>
+        </biblFull>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy xml:id="rethoricFigures">
+          <category xml:id="anaphor">
+            <desc>The repetition of a word or phrase at the beginning of successive clauses or lines.</desc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="PP">
+            <persName>
+              <forename>Paola</forename>
+              <surname>Gargaloni</surname> 
+              <addName type="pseudonymous">Pitagora</addName>
+            </persName>
+            <idno type="VIAF">87232962</idno>
+            <sex>F</sex>
+            <birth>1941</birth>
+            <note>https://it.wikipedia.org/wiki/Paola_Pitagora</note>
+          </person>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+  </teiHeader>
+ <text>
+   <front >
+     <div type="rules">
+         <l enjamb="weak">Questo <title ref="#giuoco">Giuoco</title> è composto di <num sameAs="#chap.CXI">111</num> numeri, e può anche servire</l> 
+         <l enjamb="strong">a giocare fino a <num sameAs="#chap.LXXIX">79</num>. Ciò deve convenirsi prima di cominciare la</l>
+         <l enjamb="strong">lettura. Per giocare ci si serve di due <term>dadi</term></l> 
+         <l>numerati dall’<num>1</num> al <num>6</num>, e si tira chi debba giocare per primo,</l> 
+         <l>e si conviene la posta al giuoco.</l>
+         <l enjamb="strong"><interp ana="#anaphor" type="word">Colui</interp> che fa <num sameAs="#chap.XII">12</num> va al <num sameAs="#chap.CX">110</num> e ci trova <hi rend="uppercase">SUPERGIRL</hi>, e può tirare una</l> 
+         <l enjamb="strong">volta sola con un solo <term>dado</term>; se per caso l’<num sameAs="#chap.I">1</num> venisse, egli ha finito</l> 
+         <l enjamb="weak">il romanzo. Se un altro tira il <num sameAs="#chap.XII">12</num>, e tirata sú con la rete la ragazza</l>
+         <l>va fino al <num sameAs="#chap.CX">110</num>, allora il primo resta al frontespizio.</l>
+         <l enjamb="strong"><interp ana="#anaphor" type="word">Colui</interp> che va al <num sameAs="#chap.LV">55</num>, e dietro la macchina da presa vede l’occhio dello</l> 
+         <l enjamb="strong">scheletro, retrocede dov’era prima, senza pagare; se per caso</l>
+         <l>tirando di nuovo tornasse al <num sameAs="#chap.LV">55</num>, ritornerà un’altra volta al suo posto.</l>
+         <l enjamb="strong"><interp ana="#anaphor" type="word">Colui</interp> che va al <num sameAs="#chap.L">50</num>, che è l’ultima cella, paga e vi resta fermo finché</l>
+         <l>un altro lo leva e si ferma al suo posto, pagando il convenuto.</l>
+         <l enjamb="strong"><interp ana="#anaphor" type="word">Colui</interp> che oltrepassa il <num sameAs="#chap.CXI">111</num>, tornerà indietro e incontrando</l>
+         <l enjamb="weak">un’<term>oca</term> retrocederà di nuovo. Colui che arriva al <num sameAs="#chap.CXI">111</num> ha vinto tutto,</l> 
+         <l>e può passare ad un altro libro.</l>
+         <l enjamb="strong">Quando si fa <num sameAs="#chap.IX">9</num> (dove c’è <persName ref="#PP">Paola Pitagora</persName>), se è con <num sameAs="#chap.VI">6</num> e <num sameAs="#chap.III">3</num>, si va al <num sameAs="#chap.XCVI">96</num> e si ascolta</l>
+         <l enjamb="strong">una sfuriata pienamente giustificata e densa di significato; e se esce</l>
+         <l enjamb="strong"><num sameAs="#chap.V">5</num> e <num sameAs="#chap.IV">4</num>, si va al <num sameAs="#LIX">59</num>, coi due malviventi pronti a chiudere gli sportelli</l>
+         <l enjamb="weak">del sarcofago ed ogni volta che si incontra un’<term>oca</term>, si va avanti</l>
+         <l enjamb="strong">ricontando il numero fatto. Si paga il convenuto quando si va alle interpuenti</l>
+         <l enjamb="weak">poste: <num sameAs="#chap.VII">7</num>, <num sameAs="#XI">11</num>, <num sameAs="#LXXXIII">83</num>; e tu lettore riscontrerai la fronzuta verità</l>
+         <l>di questa cabala. Chi va al <num sameAs="#XLVIII">48</num> torna al <num sameAs="#XXI">21</num> e vi legge parole oscure.</l>
+         <l><interp ana="#anaphor" type="word">Chi</interp> arriva al <num sameAs="#chap.XLV">45</num>, sulle ali della ragazza vola al <num sameAs="#chap.CXI">111</num>, putre et factus.</l>
+         <l>La morte sta all’<num sameAs="#chap.LXXXII">82</num>: chi vi giunge <hi rend="bold">IS DEAD</hi> e paga.</l>
+         <l><interp ana="#anaphor" type="word">Chi</interp> arriva al <num sameAs="#chap.LI">51</num> si ritira dal giuoco; chi arriva al <num sameAs="#XXVIII">28</num> torna all’<num>1</num>;</l>
+         <l enjamb="strong"><interp ana="#anaphor" type="word">chi</interp> arriva al <num sameAs="#LXIV">64</num> va avanti di tanti punti quanti quelli dell’ultima</l>
+         <l>giocata; chi, essendosi una volta fermato al 4, capita nel <num>34</num>, va fino all’<num sameAs="#LXXXIII">83</num>: e capirà perché.</l>
+         <l enjamb="weak"><interp ana="#anaphor" type="word">Chi</interp> arriva al <num sameAs="#chap.LXII">62</num> o vuoi al <num sameAs="#chap.LXV">65</num>, prointerpue al <num sameAs="#LXXIII">73</num>; e chi arriva al <num sameAs="#XXIV">24</num>,</l>
+         <l>tira i dadi un’altra volta. Ma chi arriva al <num>44</num>, se è accorto si ferma per due giri: perché la sosta è importante.</l>
+         <l enjamb="strong">E chi avrà fatto tutte queste fermate e avanzate e ritorni e pene e</l>
+         <l enjamb="strong">pagamenti, innante e indietro quante fiate correndo come un matto con i suoi</l>
+         <l enjamb="strong">dadi e gli occhiali, e il naso puntato e il mento proteso, sì che giunga</l>
+         <l enjamb="weak">primo o postremo alla conclusione del giuoco, ne avrà tratto il giovamento</l>
+         <l enjamb="strong">che pare trarne l’autore, al lume di quella candela, con la testa</l>
+         <l enjamb="stron">tutta piegata sopra il tavolo, lì sopra i suoi fogli, sopra i suoi libri</l>
+         <l>con le figure, sopra il suo teschio giallo.</l>
+      </div>  
+   </front>
+   <body>
+     <div xml:id="chap.I" type="chapter"></div>
+     <div xml:id="chap.II" type="chapter"></div>
+     <div xml:id="chap.III" type="chapter"></div>
+     <div xml:id="chap.IV" type="chapter"></div>
+     <div xml:id="chap.V" type="chapter"></div>
+     <div xml:id="chap.VI" type="chapter"></div>
+     <div xml:id="chap.VII" type="chapter"></div>
+     <div xml:id="chap.VIII" type="chapter"></div>
+     <div xml:id="chap.IX" type="chapter"></div>
+     <div xml:id="chap.X" type="chapter"></div>
+   </body>
+ </text>
+</TEI>
+  
+    
