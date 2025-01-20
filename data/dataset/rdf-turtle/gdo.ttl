@@ -1,0 +1,861 @@
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix hico: <http://purl.org/emmedi/hico> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix miro: <https://w3id.org/miro/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> .
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/miro/EkphrasticRelation/ekph_rel_1> a miro:EkphrasticRelation ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_1_ek> ;
+    miro:hasFeature "artistic technique and artwork description"^^xsd:string,
+        "typographic element"^^xsd:string ;
+    miro:hasMediumA <https://w3id.org/miro/expression/chapter-LXXXVIII> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/just-what-e> .
+
+<https://w3id.org/miro/EkphrasticRelation/ekph_rel_10> a miro:EkphrasticRelation ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_10_ek> ;
+    miro:hasFeature "citation of cinematographic and graphic techniques"^^xsd:string,
+        "mimetic description"^^xsd:string,
+        "spatial details"^^xsd:string,
+        "spatial indicators"^^xsd:string ;
+    miro:hasMediumA <https://w3id.org/miro/expression/chapter-CII> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/go-for-your-money-e> .
+
+<https://w3id.org/miro/EkphrasticRelation/ekph_rel_11> a miro:EkphrasticRelation ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_11_ek> ;
+    miro:hasFeature "citation of cinematographic and graphic techniques"^^xsd:string,
+        "mimetic description"^^xsd:string,
+        "spatial details"^^xsd:string,
+        "spatial indicators"^^xsd:string ;
+    miro:hasMediumA <https://w3id.org/miro/expression/chapter-CV> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/go-for-your-money-e> .
+
+<https://w3id.org/miro/EkphrasticRelation/ekph_rel_12> a miro:EkphrasticRelation ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_12_ek> ;
+    miro:hasFeature "citation of cinematographic and graphic techniques"^^xsd:string,
+        "mimetic description"^^xsd:string,
+        "spatial details"^^xsd:string,
+        "spatial indicators"^^xsd:string ;
+    miro:hasMediumA <https://w3id.org/miro/expression/chapter-CIX> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/go-for-your-money-e> .
+
+<https://w3id.org/miro/EkphrasticRelation/ekph_rel_2> a miro:EkphrasticRelation ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_2_ek> ;
+    miro:hasFeature "deictic expressions"^^xsd:string,
+        "list of elements"^^xsd:string,
+        "semantic density"^^xsd:string ;
+    miro:hasMediumA <https://w3id.org/miro/expression/chapter-VII> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/vak-vak-e> .
+
+<https://w3id.org/miro/EkphrasticRelation/ekph_rel_3> a miro:EkphrasticRelation ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_3_ek> ;
+    miro:hasFeature "citation of textual fragments and music"^^xsd:string ;
+    miro:hasMediumA <https://w3id.org/miro/expression/chapter-LXXXIII> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/marilyn-photo-e> .
+
+<https://w3id.org/miro/EkphrasticRelation/ekph_rel_4> a miro:EkphrasticRelation ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_15_ek>,
+        <https://w3id.org/miro/interpretationAct/interpretationAct_16_ek>,
+        <https://w3id.org/miro/interpretationAct/interpretationAct_4_ek> ;
+    miro:hasFeature "artistic technique and artwork description (internal)"^^xsd:string ;
+    miro:hasMediumA <https://w3id.org/miro/expression/chapter-I> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/cassa-sistina-e> .
+
+<https://w3id.org/miro/EkphrasticRelation/ekph_rel_5> a miro:EkphrasticRelation ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_5_ek> ;
+    miro:hasFeature "artistic technique and artwork description (external)"^^xsd:string,
+        "typographic element"^^xsd:string ;
+    miro:hasMediumA <https://w3id.org/miro/expression/chapter-V> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/cassa-sistina-e> .
+
+<https://w3id.org/miro/EkphrasticRelation/ekph_rel_6> a miro:EkphrasticRelation ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_6_ek> ;
+    miro:hasFeature "artistic technique and artwork description (environmental)"^^xsd:string ;
+    miro:hasMediumA <https://w3id.org/miro/expression/chapter-IX> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/cassa-sistina-e> .
+
+<https://w3id.org/miro/EkphrasticRelation/ekph_rel_7> a miro:EkphrasticRelation ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_17_ek>,
+        <https://w3id.org/miro/interpretationAct/interpretationAct_7_ek> ;
+    miro:hasFeature "intermedial reference to cinema"^^xsd:string,
+        "narratological element"^^xsd:string ;
+    miro:hasMediumA <https://w3id.org/miro/expression/chapter-XXXIX> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/vampyr-e> .
+
+<https://w3id.org/miro/EkphrasticRelation/ekph_rel_8> a miro:EkphrasticRelation ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_18_ek>,
+        <https://w3id.org/miro/interpretationAct/interpretationAct_8_ek> ;
+    miro:hasFeature "mimetic description"^^xsd:string ;
+    miro:hasMediumA <https://w3id.org/miro/expression/chapter-LXXXIV> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/occhio-degli-occhi-e> .
+
+<https://w3id.org/miro/EkphrasticRelation/ekph_rel_9> a miro:EkphrasticRelation ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_9_ek> ;
+    miro:hasFeature "recall of same elements and gestures"^^xsd:string ;
+    miro:hasMediumA <https://w3id.org/miro/expression/chapter-CIX> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/lady-from-shanghai-e> .
+
+<https://w3id.org/miro/MediaCombination/media_comb_1> a miro:MediaCombination ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_1_mc> ;
+    miro:hasMediumA <https://w3id.org/miro/expression/just-what-e> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/young-romance-e> .
+
+<https://w3id.org/miro/MediaCombination/media_comb_2> a miro:MediaCombination ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_18_mc>,
+        <https://w3id.org/miro/interpretationAct/interpretationAct_8_mc> ;
+    miro:hasMediumA <https://w3id.org/miro/expression/occhio-degli-occhi-e> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/chapter-LXXXIV> .
+
+<https://w3id.org/miro/MediaReference/media_ref_1> a miro:MediaReference ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_2_mr> ;
+    miro:hasMediumA <https://w3id.org/miro/expression/vak-vak-e> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/symbols-transformation-e> .
+
+<https://w3id.org/miro/MediaReference/media_ref_2> a miro:MediaReference ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_3_mr> ;
+    miro:hasMediumA <https://w3id.org/miro/expression/marilyn-photo-e> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/marilyn-song-e> .
+
+<https://w3id.org/miro/MediaReference/media_ref_3> a miro:MediaReference ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_17_mr>,
+        <https://w3id.org/miro/interpretationAct/interpretationAct_7_mr> ;
+    miro:hasMediumA <https://w3id.org/miro/expression/cassa-sistina-w> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/vampyr-w> .
+
+<https://w3id.org/miro/MediaReference/media_ref_4> a miro:MediaReference ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_21_mr> ;
+    miro:hasMediumA <https://w3id.org/miro/expression/giuoco-baruchello-e> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/gdo-e> .
+
+<https://w3id.org/miro/MediaTrasposition/media_trasp_1> a miro:MediaTrasposition ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_13_mt>,
+        <https://w3id.org/miro/interpretationAct/interpretationAct_19_mt> ;
+    miro:hasMediumA <https://w3id.org/miro/expression/giuoco-marca-stella-w> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/gdo-w> .
+
+<https://w3id.org/miro/MediaTrasposition/media_trasp_2> a miro:MediaTrasposition ;
+    prov:wasGeneratedBy <https://w3id.org/miro/interpretationAct/interpretationAct_14_mt>,
+        <https://w3id.org/miro/interpretationAct/interpretationAct_20_mt> ;
+    miro:hasMediumA <https://w3id.org/miro/expression/giuoco-baruchello-w> ;
+    miro:hasMediumB <https://w3id.org/miro/expression/gdo-w> .
+
+<https://w3id.org/miro/agent/chiara-portesine> a crm:E39 ;
+    rdfs:label "Portesine, Chiara"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/759149196342974790203"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/elisa-sotgiu> a crm:E39 ;
+    rdfs:label "Sotgiu, Elisa"^^xsd:string ;
+    owl:sameAs "http://id.sbn.it/bid/SBNV092464"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/erminio-risso> a crm:E39 ;
+    rdfs:label "Risso, Erminio"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/56790953/"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/ibrahim-muteferrika> a crm:E39 ;
+    rdfs:label "Muteferrika, Ibrahim"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/22382427/"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/paolo-boringhieri> a crm:E39 ;
+    rdfs:label "Boringhieri, Paolo"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/123931135/"^^xsd:anyURI .
+
+<https://w3id.org/miro/manifestation/symbols-transformation-m> a lrmoo:F3 ;
+    rdam:P30011 "1970"^^xsd:dateTime ;
+    rdam:P30088 <https://w3id.org/miro/place/turin> ;
+    rdam:P30362 <https://w3id.org/miro/agent/boringhieri-paolo> .
+
+<https://w3id.org/miro/place/constantinople> a crm:E53 ;
+    rdfs:label "Costantinople"^^xsd:string ;
+    owl:sameAs "https://www.wikidata.org/entity/Q16869"^^xsd:anyURI .
+
+<https://w3id.org/miro/publication/pub-portesine-m> a lrmoo:F3 ;
+    rdam:P30011 "2021"^^xsd:dateTime ;
+    rdam:P30083 <https://w3id.org/miro/agent/fabrizio-serra-editore> ;
+    rdam:P30088 <https://w3id.org/miro/place/pisa>,
+        <https://w3id.org/miro/place/rome> .
+
+<https://w3id.org/miro/publication/pub-portesine-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/publication-e> ;
+    rdaw:P10004 "https://vocab.getty.edu/aat/300026291"^^xsd:anyURI ;
+    rdaw:P10065 <https://w3id.org/miro/agent/portesine-chiara> ;
+    rdaw:P10088 "Una specie di Biennale allargata: il giuoco dell'ecfrasi nel secondo romanzo di Edoardo Sanguineti"^^xsd:string .
+
+<https://w3id.org/miro/publication/pub-risso-m> a lrmoo:F3 ;
+    lrmoo:R5i "Il Giuoco dell'Oca"^^xsd:string ;
+    rdam:P30011 "2023"^^xsd:dateTime ;
+    rdam:P30083 <https://w3id.org/miro/agent/giangiacomo-feltrinelli-editore> ;
+    rdam:P30088 <https://w3id.org/miro/place/milan> .
+
+<https://w3id.org/miro/publication/pub-risso-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/publication-e> ;
+    rdaw:P10004 "https://vocab.getty.edu/aat/300055032"^^xsd:anyURI ;
+    rdaw:P10065 <https://w3id.org/miro/agent/risso-erminio> ;
+    rdaw:P10088 "La regola del giuoco"^^xsd:string .
+
+<https://w3id.org/miro/publication/pub-sotgiu-m> a lrmoo:F3 ;
+    lrmoo:R5i "Italianistica: Rivista Di Letteratura Italiana"^^xsd:string ;
+    rdam:P30011 "2016"^^xsd:dateTime ;
+    rdam:P30083 <https://w3id.org/miro/agent/fabrizio-serra-editore> ;
+    rdam:P30088 <https://w3id.org/miro/place/pisa>,
+        <https://w3id.org/miro/place/rome> .
+
+<https://w3id.org/miro/publication/pub-sotgiu-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/publication-e> ;
+    rdaw:P10004 "https://vocab.getty.edu/aat/300048715"^^xsd:anyURI ;
+    rdaw:P10065 <https://w3id.org/miro/agent/sotgiu-elisa> ;
+    rdaw:P10088 "Il Giuoco dell’Oca nella trilogia di Edoardo Sanguineti"^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-1-pub-portesine-e> a lrmoo:F2 ;
+    crm:P190 "Nel cap. VII l'incisione che raffigura l'Albero Uak- Uak con i frutti umani viene riassunta da un osservatore esterno alla scena, con un abuso di deittici che cadenzano la lista degli oggetti e, in particolare, delle loro qualità luministiche, in una suddivisione costantemente tematizzata tra la «parte in ombra» e la «parte illuminata dal sole»."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-1-pub-risso-e> a lrmoo:F2 ;
+    crm:P190 """[...] una sorta di cassa-(bara-nave) praticabile da parte del pubblico. Ma la casa I ci sorprende anche per quello sguardo del
+morto attraverso la bara – una soggettiva dall’interno –, che è un richiamo preciso alle sequenze del viaggio del morto nel film Vampyr di Carl Theodor Dreyer, del 1932, film che, seguendo quel principio della circolarità che si fa spirale, ritroveremo nella casa XXXIX. [...] Il riferimento alle inquadrature di Vampyr è il modo scoperto di comunicare al lettore che è necessario
+che acquisisca, per leggere questo mondo complesso, una grammatica dell’immagine in movimento sulla quale possa prendere forma una sintassi dello sguardo e che si faccia consapevole che il montaggio è sempre problematico, in quanto ogni montaggio d’immagini appare come una precisa scelta di pensiero."""^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-1-pub-sotgiu-e> a lrmoo:F2 ;
+    crm:P190 "Sul presupposto che la mimesi di Sanguineti non può essere che straniamento, vediamo quindi quali sono i modi in cui qui si attua [...] Per comodità possiamo partire dal capitolo LXXXVIII, che ho riportato sopra quasi integralmente. L’incipit, «io ti vedo, tu mi vedi», può sembrare inesatto per via della posa del culturista e della pin-up, e per questo il primo ‘effetto V’ è dato dal dover ricercare il dettaglio a cui il ‘tu’ si riferisce, cioè la donna che compare in televisione «con la testa innestata dentro il video, che mi telefoni lì nel televisore». Già nel periodo successivo l’io e il tu cambiano, adesso sono i due personaggi del fumetto che compare alla parete, Young Romance: lui afferra lei, e a fianco compare la scritta True Love. Terzo cambiamento: il tu è infine la pin-up sul divano, e l’io ridiventa il culturista nel momento in cui parla della scala alle sue spalle."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-2-pub-portesine-e> a lrmoo:F2 ;
+    crm:P190 "L'identificazione risulta qui facilitata dal fatto che Sanguineti cita alcuni frammenti dalla canzone Marilyn [...] in cui troviamo, rispettivamente, i tre sintagmi verbali spezzettati nel Giuoco: «that's no exaggeration that's my Marilyn», «an angel in lace» e «a fabulous face». Oltre al nudo testo, i riferimenti a «Gm7», «si bem», «F6» (oltre all'indicatore di tempo finale «Moderately with a strong beat»), nonché il monito ammiccante dell'incipit («ci arrivi soltanto se ci canti»), suggeriscono che ci troviamo al cospetto di uno spartito musicale. Spartito che interagisce direttamente con il corpo dell'attrice dal momento che, se osserviamo la fotografia, la disposizione del testo rispetto alla silhouette di Marilyn coincide perfettamente con la resa ecfrastica di Sanguineti. Seguendo l'andamento della partitura, infatti, possiamo verificare come, ad esempio, il «si bem. le baci la spalla destra» mentre un «Gm7 le baci la spalla sinistra»; analogamente, la strofa «an-gel in lace» si trova effettivamente «sotto F6» e arriva quasi a sfiorare «le ciocche dei suoi capelli», mentre «con F, tutto solo così, le scendi sopra la testa, dall'alto, tutto dritto». Esistono numerosi scatti di Marilyn in posa di fronte alle note ingigantite di Anthony, anche se le leggere variazioni non rendono altrettanto calzante il gioco ecfrastico [...] bastava che il fotografo si trovasse in una posizione leggermente più bassa o dislocata a destra o a sinistra per sfalsare la precisa rete di tangenze tra le note e le forme femminili: se confrontiamo l'ecfrasi sanguinetiana con altre istantanee scattate durante la stessa serata, vediamo che la prospettiva non consente più di «baciare» con il si bemolle la spalla sinistra [...]."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-2-pub-risso-e> a lrmoo:F2 ;
+    crm:P190 "Non mancano neppure altri aspetti filmici: [...] nella casa CIX, mi ostino a vedere nelle tre pistole e nei tre io un flash delle sequenze finali di The Lady from Shanghai di Orson Welles [...]."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-2-pub-sotgiu-e> a lrmoo:F2 ;
+    crm:P190 "[...] è essenziale riconoscere che il capitoletto è la descrizione puntuale di un quadro di Carol Rama, L’isola degli occhi (1967), sulla cui tela si trova anche, scritto e firmato da Sanguineti, l’ultimo paragrafo del testo. Il significato dei «cinque azzurri occhi ovali, così freddi, con l’azzurro occhio rotondo sotto, così freddo anche quello, con le rosse ciglia lunghissime sopra, così fredde anche quelle», che si contrappongono a «l’occhio bistrato di bianco, che fa sette, che tutti gli occhi può comprendere, che è l’occhio degli occhi, che è la colla, dunque, che è un segnale di fumo degli indiani sopra un cielo di rabbia», non è dunque la negatività del modo di vedere proteso verso l’esterno, ma è da ricercare nell’interpretazione che Sanguineti dà dei bricolage di Carol Rama in un articolo del ’64: la freddezza dell’oggetto neodada, che neutralizza, suo malgrado, il pathos di cui vuole essere portatore, viene contrastata nell’opera della pittrice dalla permanenza della macchia informale, che gli oggetti incollati razionalizzano."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-3-pub-portesine-e> a lrmoo:F2 ;
+    crm:P190 "Nel primo capitolo, l'io narrante descrive la Cassa dall'interno, identificandosi con il profilo ligneo effettivamente modulato da Ceroli sui connotati sanguinetiani. Il narratore, al buio e «chiuso» nella scultura, ascolta le voci dei visitatori spiandoli dalle fessure. Questa condizione catacombale del soggetto sembra mimare l'effetto claustrofobico degli ambienti ceroliani [...] Oltre alla dimensione tumulare della Cassa, Sanguineti ammicca anche al contesto allestitivo della Biennale nei cenni finali ai «padiglioni» e ai «giardini» esterni «con i viali alberati». L'autore annota fedelmente la fattura di questa casa-mausoleo, registrando che alcuni profili «ci sono soltanto con la testa, che è appesa lì, al soffitto» mentre altri «ci sono per intiero, grandi come sono davvero». Queste «ombre un po' spesse, di cm 5 circa» sono schierate «in fila», secondo un meccanismo di iterazione modulare tipico della produzione ceroliana coeva [...] Nello scrigno di legno, insomma, Sanguineti rinchiude le proprie comparse romanzesche, sostituendole ai profili intagliati da Ceroli e rendendo letteralmente la Cassa sistina una sineddoche dell'intero libro. Come le sagome ceroliane potevano essere smontate e manipolate da uno «spettatore angolato e staccato e variamente soprattutto pensante, coordinante, mentalmente provato ed attivo», così anche il lettore sanguinetiano deve staccare e riassemblare criticamente i capitoli del Giuoco, alla ricerca delle unità minime di significazione disseminate nel testo."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-3-pub-risso-e> a lrmoo:F2 ;
+    crm:P190 """Entriamo dunque nel testo, giocando a partire dalla casa (capitolo) I, dove c’è un “io”, che si presenta come defunto, dentro una bara, al buio. La “bara” è accuratamente descritta: è identificabile con la Cassa sistina di Mario Ceroli, scultura-installazione in legno che l’artista ha presentato alla Biennale di
+Venezia del ’66, una sorta di cassa-(bara-nave) praticabile da parte del pubblico."""^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-3-pub-sotgiu-e> a lrmoo:F2 ;
+    crm:P190 "All’interno della Cassa Sistina di Mario Ceroli (1966) esiste davvero il profilo di legno di Sanguineti, ed è questo lo spunto e il punto di avvio della narrazione. In tutta la prima parte sono frequenti le caselle in cui il personaggio che di volta in volta dice io si dichiara all’interno di una tomba, o ne rievoca l’ambiente [...]."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-4-pub-portesine-e> a lrmoo:F2 ;
+    crm:P190 "Nel cap. V assistiamo a una brusca variazione che investe tanto il soggetto dell'enunciazione quanto la prospettiva angolare dello sguardo. Stavolta una voce impersonale illustra meccanicamente le componenti esterne della «grossa cassa di legno grezzo», in un resoconto puntiglioso dei sintagmi scritti sulle assi [...] All'osservatore viene successivamente fornita la dislocazione spaziale delle iscrizioni disposte sui diversi lati [...], indugiando sulla posizione reciproca degli elementi [...] e sull'andamento grafico delle etichette [...]. La narrazione sembra dispensata da una guida museale, altamente informativa ma distaccata - percezionè confermata dall'impersonalità professionale della conclusione [...]. Dalla «porta socchiusa» il personaggio ligneo del primo capitolo pare spiare quello stesso visitatore di cui prima origliava la voce lontana e che adesso viene scortato alla soglia d'accesso - in uno strabismo ottico che restituisce una visione a 360° della scultura."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-4-pub-risso-e> a lrmoo:F2 ;
+    crm:P190 "[...] le case LXXXIV e XCV sono una precisa riproduzione, in forma di parole, rispettivamente di due tele, entrambe del ’67, di Carol Rama, L’occhio degli occhi e C’è un altro metodo, per finire, sulle quali a sua volta Sanguineti scrive di suo pugno le righe finali del testo delle case, a dimostrare non solo un rapporto (che è anche d’amicizia) ma anche uno sguardo prospettico e multifocale comune, che fa sì che i materiali passino dall’uno (Sanguineti) all’altra (Rama) e viceversa, in perfetta circolarità."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-5-pub-portesine-e> a lrmoo:F2 ;
+    crm:P190 "La doppia descrizione, interna ed esterna, della Cassa non soddisfa ancora il collezionismo visivo di Sanguineti se, nella casella IX, l'autore propone una terza visuale panoramica dell'opera. Questa volta l'angolazione è trasversale («l'apertura praticabile è in un fianco») e l'attenzione accordata alla «praticabilità» della scultura conferma la natura performativa di un'opera-environment da attraversare prima ancora che da osservare. [...] lo stile sembra inizialmente proseguire sul registro neutrale del tour guidato, in un censimento delle caratteristiche tecniche [...]. In questa lezione di didattica dell'immagine il nome di Paola Pitagora non viene introdotto ex abrupto per inserire un dettaglio cinematografico irrelato o per creare meccanicamente la figura di una deuteragonista diegetica. L'attrice, infatti, era stata la compagna del pittore Renato Mambor per oltre dodici anni, diventando musa e modella di numerosi artisti di Piazza del Popolo [...]. Sul rapporto con Ceroli, la stessa Pitagora ricorderà di aver «posato per lui per la silhouette di una lignea Eva in un complesso denominato \"Adamo ed Eva\"». Se confrontiamo il profilo di Eva-Pitagora con la figura femminile intagliata nella Cassa sistina possiamo riscontrare una piena corrispondenza fisiognomica (dalla postura al taglio di capelli). Sanguineti, pertanto, nomina Paola Pitagora perché se la trova letteralmente di fronte, sotto forma di busto ligneo. A metà del capitolo si registra una torsione enunciativa tale per cui la voce compassata della guida cede la parola al personaggio attraverso una doppia agnizione: l'io narrante, infatti, prima si riconosce nella sagoma installata di fronte a Paola Pitagora [...] e, subito dopo, informa il lettore del fatto che il suo corpo (e non più il suo simulacro ligneo) si trovi materialmente dinanzi alla cassa [...]. A motivare un simile sdoppiamento identitario potrebbe concorrere il fatto che la fonte esatta di questa casella si trovi, plausibilmente, in un'istantanea scattata al protagonista (Ceroli? un visitatore? Sanguineti stesso?) immortalato dal fotografo quasi in sovrimpressione rispetto alla silhouette maschile [...]."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-6-pub-portesine-e> a lrmoo:F2 ;
+    crm:P190 "Scorrendo le pellicole riprodotte su «Marcatrè» si riesce agevolmente a seguire lo sviluppo narrativo dei tre capitoli sanguinetiani, che mimano questa specie di strampalata caccia infernale ordita da una (letterale) freccia. [...] Sanguineti non fa altro che stenografare l'andamento lineare della progressione, in cui le frecce diventano a tutti gli effetti due e lo «sgorbio» (con cui si identifica il narratore) assume le sembianze di un'improbabile idra. L'enunciatore si eleva qui a bricoleur della narrazione, inscrivendo i riquadri giustapposti in un campo di tensioni reciproche. [...] All'interno di queste caselle, insomma, qualsiasi alterazione nella traiettoria del personaggio e del suo deuteragonista geometrico viene intercettata dallo sguardo ecfrastico attraverso un dispiegamento di indicatori spaziali [...] e di dettagli locali [...]. La difficile collocazione mediale dell'oggetto, un film-collage disegnato, viene tematizzata dallo stesso Sanguineti, che cita diligentemente le tre tecniche (l'«inquadratura» per il cinema, il «negativo» per la fotografia e il riferimento conclusivo alle sagome create «senza staccare la penna dal foglio» per il disegno)."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-7-pub-portesine-e> a lrmoo:F2 ;
+    crm:P190 "Scorrendo le pellicole riprodotte su «Marcatrè» si riesce agevolmente a seguire lo sviluppo narrativo dei tre capitoli sanguinetiani, che mimano questa specie di strampalata caccia infernale ordita da una (letterale) freccia. [...] Sanguineti non fa altro che stenografare l'andamento lineare della progressione, in cui le frecce diventano a tutti gli effetti due e lo «sgorbio» (con cui si identifica il narratore) assume le sembianze di un'improbabile idra. L'enunciatore si eleva qui a bricoleur della narrazione, inscrivendo i riquadri giustapposti in un campo di tensioni reciproche. [...] All'interno di queste caselle, insomma, qualsiasi alterazione nella traiettoria del personaggio e del suo deuteragonista geometrico viene intercettata dallo sguardo ecfrastico attraverso un dispiegamento di indicatori spaziali [...] e di dettagli locali [...]. La difficile collocazione mediale dell'oggetto, un film-collage disegnato, viene tematizzata dallo stesso Sanguineti, che cita diligentemente le tre tecniche (l'«inquadratura» per il cinema, il «negativo» per la fotografia e il riferimento conclusivo alle sagome create «senza staccare la penna dal foglio» per il disegno)."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-8-pub-portesine-e> a lrmoo:F2 ;
+    crm:P190 "Scorrendo le pellicole riprodotte su «Marcatrè» si riesce agevolmente a seguire lo sviluppo narrativo dei tre capitoli sanguinetiani, che mimano questa specie di strampalata caccia infernale ordita da una (letterale) freccia. [...] Sanguineti non fa altro che stenografare l'andamento lineare della progressione, in cui le frecce diventano a tutti gli effetti due e lo «sgorbio» (con cui si identifica il narratore) assume le sembianze di un'improbabile idra. L'enunciatore si eleva qui a bricoleur della narrazione, inscrivendo i riquadri giustapposti in un campo di tensioni reciproche. [...] All'interno di queste caselle, insomma, qualsiasi alterazione nella traiettoria del personaggio e del suo deuteragonista geometrico viene intercettata dallo sguardo ecfrastico attraverso un dispiegamento di indicatori spaziali [...] e di dettagli locali [...]. La difficile collocazione mediale dell'oggetto, un film-collage disegnato, viene tematizzata dallo stesso Sanguineti, che cita diligentemente le tre tecniche (l'«inquadratura» per il cinema, il «negativo» per la fotografia e il riferimento conclusivo alle sagome create «senza staccare la penna dal foglio» per il disegno)."^^xsd:string .
+
+<https://w3id.org/miro/reference/quot-9-pub-portesine-e> a lrmoo:F2 ;
+    crm:P190 "[...] vengano ospitate anche citazioni testuali [...] e cinematografiche - in particolare, da Vampyr di Carl Theodor Dreyer (XXXIX). [...] Impossibile prescindere da Intorno a Vampyr (10 maggio 2004), pubblicato in EDOARDO SANGUINETI, Un poeta al cinema, a cura di Franco Prono, Clara Allasia, Roma, Bonanno, 2017, pp. 83-93."^^xsd:string .
+
+<https://w3id.org/miro/work/cassa-sistina-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/cassa-sistina-e> ;
+    rdaw:P10004 "http://vocab.getty.edu/aat/300047090"^^xsd:anyURI ;
+    rdaw:P10088 "Cassa Sistina"^^xsd:string ;
+    rdaw:P10219 "1966"^^xsd:dateTime ;
+    rdaw:P10427 <https://w3id.org/miro/agent/mario-ceroli> ;
+    miro:evokes <https://w3id.org/miro/work/vampyr-w> .
+
+<https://w3id.org/miro/work/giuoco-baruchello-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/giuoco-baruchello-e> ;
+    lrmoo:R68 <https://w3id.org/miro/work/gdo-w> ;
+    rdaw:P10004 "https://vocab.getty.edu/aat/300033963"^^xsd:anyURI ;
+    rdaw:P10088 "Il Giuoco dell'Oca di Edoardo Sanguineti"^^xsd:string ;
+    rdaw:P10219 "1967"^^xsd:dateTime ;
+    rdaw:P10451 <https://w3id.org/miro/agent/gianfranco-baruchello> .
+
+<https://w3id.org/miro/work/giuoco-marca-stella-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/giuoco-marca-stella-e> ;
+    lrmoo:R68i <https://w3id.org/miro/work/gdo-w> ;
+    rdaw:P10004 "https://iconclass.org/43C531"^^xsd:anyURI ;
+    rdaw:P10088 "Il Gioco dell'Oca Marca Stella"^^xsd:string ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q1548611"^^xsd:anyURI .
+
+<https://w3id.org/miro/work/go-for-your-money-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/go-for-your-money-e> ;
+    rdaw:P10004 "http://id.loc.gov/authorities/genreForms/gf2011026049"^^xsd:anyURI ;
+    rdaw:P10088 "Go for your money"^^xsd:string ;
+    rdaw:P10451 <https://w3id.org/miro/agent/magdalo-mussio> .
+
+<https://w3id.org/miro/work/just-what-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/just-what-e> ;
+    rdaw:P10004 "https://vocab.getty.edu/aat/300033963"^^xsd:anyURI ;
+    rdaw:P10088 "Just what is it that makes today's homes so appealing?"^^xsd:string ;
+    rdaw:P10219 "1956"^^xsd:dateTime ;
+    rdaw:P10451 <https://w3id.org/miro/agent/richard-hamilton> ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q3190307"^^xsd:anyURI .
+
+<https://w3id.org/miro/work/lady-from-shanghai-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/lady-from-shanghai-e> ;
+    rdaw:P10004 "http://id.loc.gov/authorities/genreForms/gf2011026250"^^xsd:anyURI ;
+    rdaw:P10088 "The Lady From Shanghai"^^xsd:string ;
+    rdaw:P10218 <https://w3id.org/miro/place/united-states> ;
+    rdaw:P10418 <https://w3id.org/miro/agent/orson-welles> ;
+    rdaw:P10516 <https://w3id.org/miro/agent/columbia-pictures> ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q1214303"^^xsd:anyURI .
+
+<https://w3id.org/miro/work/marilyn-photo-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/marilyn-photo-e> ;
+    rdaw:P10004 "http://vocab.getty.edu/aat/300134989"^^xsd:anyURI ;
+    rdaw:P10088 "Rooney, Monroe and Anthony"^^xsd:string ;
+    rdaw:P10218 <https://w3id.org/miro/place/hollywood> ;
+    rdaw:P10219 "1952"^^xsd:dateTime ;
+    rdaw:P10539 <https://w3id.org/miro/agent/pictorial-parade> .
+
+<https://w3id.org/miro/work/marilyn-song-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/marilyn-song-e> ;
+    rdaw:P10004 "http://id.worldcat.org/fast/887553"^^xsd:anyURI ;
+    rdaw:P10088 "Marilyn"^^xsd:string ;
+    rdaw:P10218 <https://w3id.org/miro/place/united-states> ;
+    rdaw:P10442 <https://w3id.org/miro/agent/ray-anthony> .
+
+<https://w3id.org/miro/work/occhio-degli-occhi-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/occhio-degli-occhi-e> ;
+    rdaw:P10004 "http://vocab.getty.edu/aat/300404586"^^xsd:anyURI ;
+    rdaw:P10088 "L'occhio degli occhi"^^xsd:string ;
+    rdaw:P10219 "1967"^^xsd:dateTime ;
+    rdaw:P10451 <https://w3id.org/miro/agent/carol-rama> .
+
+<https://w3id.org/miro/work/symbols-transformation-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/simboli-trasformazione-e> ;
+    rdaw:P10004 "http://id.loc.gov/authorities/genreForms/gf2014026074"^^xsd:anyURI ;
+    rdaw:P10088 "Symbols of Transformation"^^xsd:string ;
+    rdaw:P10436 <https://w3id.org/miro/agent/carl-gustav-jung> ;
+    owl:sameAs "https://id.oclc.org/worldcat/entity/E39PCGgM4td7W4Tr3RX7C9PbBP"^^xsd:anyURI .
+
+<https://w3id.org/miro/work/vak-vak-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/vak-vak-e> ;
+    rdaw:P10004 "http://vocab.getty.edu/aat/300015578"^^xsd:anyURI ;
+    rdaw:P10088 "The Vak-Vak tree"^^xsd:string .
+
+<https://w3id.org/miro/work/young-romance-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/young-romance-e> ;
+    rdaw:P10004 "http://id.loc.gov/authorities/genreForms/gf2014026515"^^xsd:anyURI ;
+    rdaw:P10088 "Young Romance"^^xsd:string ;
+    rdaw:P10219 "1947"^^xsd:dateTime ;
+    rdaw:P10417 <https://w3id.org/miro/agent/jack-kirby>,
+        <https://w3id.org/miro/agent/joe-simon> ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q3572861"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/capitol-records> a crm:E39 ;
+    rdfs:label "Capitol Records"^^xsd:string ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q193023"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/carl-gustav-jung> a crm:E39 ;
+    rdfs:label "Jung, Carl Gustav"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/88819182/"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/carol-rama> a crm:E39 ;
+    rdfs:label "Rama, Carol"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/25403266"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/columbia-pictures> a crm:E39 ;
+    rdfs:label "Columbia Pictures"^^xsd:string ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q186941"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/edoardo-sanguineti> a crm:E39 ;
+    rdfs:label "Sanguineti, Edoardo"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/66478877/"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/feature-publications> a crm:E39 ;
+    rdfs:label "Feature Publications"^^xsd:string ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q3406094"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/gianfranco-baruchello> a crm:E39 ;
+    rdfs:label "Baruchello, Gianfranco"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/255659279/"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/jack-kirby> a crm:E39 ;
+    rdfs:label "Kirby, Jack"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/100267886/"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/joe-simon> a crm:E39 ;
+    rdfs:label "Simon, Joe"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/100271165/"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/magdalo-mussio> a crm:E39 ;
+    rdfs:label "Mussio, Magdalo"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/43126608"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/marca-stella> a crm:E39 ;
+    rdfs:label "Marca Stella"^^xsd:string ;
+    owl:sameAs "https://id.gs1.org/01/8000888000750"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/mario-ceroli> a crm:E39 ;
+    rdfs:label "Ceroli, Mario"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/114854641/"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/orson-welles> a crm:E39 ;
+    rdfs:label "Welles, Orson"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/110467783/"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/pictorial-parade> a crm:E39 ;
+    rdfs:label "Pictorial Parade"^^xsd:string .
+
+<https://w3id.org/miro/agent/ray-anthony> a crm:E39 ;
+    rdfs:label "Ray, Anthony"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/61730867/"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/renato-raho> a crm:E39 ;
+    rdfs:label "Raho, Renato"^^xsd:string .
+
+<https://w3id.org/miro/agent/richard-hamilton> a crm:E39 ;
+    rdfs:label "Hamilton, Richard"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/39397012/"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/valerio-riva> a crm:E39 ;
+    rdfs:label "Riva, Valerio"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/63861677/"^^xsd:anyURI .
+
+<https://w3id.org/miro/expression/chapter-CII> a lrmoo:F2 ;
+    miro:hasIntermedialReference <https://w3id.org/miro/expression/go-for-your-money-e> .
+
+<https://w3id.org/miro/expression/chapter-CV> a lrmoo:F2 ;
+    miro:hasIntermedialReference <https://w3id.org/miro/expression/go-for-your-money-e> .
+
+<https://w3id.org/miro/expression/chapter-I> a lrmoo:F2 ;
+    miro:hasIntermedialReference <https://w3id.org/miro/expression/cassa-sistina-e> .
+
+<https://w3id.org/miro/expression/chapter-IX> a lrmoo:F2 ;
+    miro:hasIntermedialReference <https://w3id.org/miro/expression/cassa-sistina-e> .
+
+<https://w3id.org/miro/expression/chapter-LXXXIII> a lrmoo:F2 ;
+    miro:hasIntermedialReference <https://w3id.org/miro/expression/marylin-photo-e> .
+
+<https://w3id.org/miro/expression/chapter-LXXXVIII> a lrmoo:F2 ;
+    miro:hasIntermedialReference <https://w3id.org/miro/expression/just-what-e> .
+
+<https://w3id.org/miro/expression/chapter-V> a lrmoo:F2 ;
+    miro:hasIntermedialReference <https://w3id.org/miro/expression/cassa-sistina-e> .
+
+<https://w3id.org/miro/expression/chapter-VII> a lrmoo:F2 ;
+    miro:hasIntermedialReference <https://w3id.org/miro/expression/vak-vak-e> .
+
+<https://w3id.org/miro/expression/chapter-XXXIX> a lrmoo:F2 ;
+    miro:hasIntermedialReference <https://w3id.org/miro/expression/vampyr-e> .
+
+<https://w3id.org/miro/expression/giuoco-marca-stella-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/giuoco-marca-stella-m> ;
+    rdae:P20001 rdaco:1014 ;
+    rdae:P20006 "it"^^xsd:language .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_10_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/archival-documentation> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-6-pub-portesine-e> ;
+    cito:disagreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_9> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_11_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/archival-documentation> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-7-pub-portesine-e> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_12_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/archival-documentation> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-8-pub-portesine-e> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_1_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/scholar-attribution> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-1-pub-sotgiu-e> ;
+    prov:startedAtTime "2016"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_1_mc> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/scholar-attribution> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/media-comb-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/pub-sotgiu-e> ;
+    prov:startedAtTime "2016"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_21_mr> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/bibliography> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/media-ref-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/pub-risso-e> ;
+    prov:startedAtTime "2023"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_2_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/scholar-attribution> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-1-pub-portesine-e> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_2_mr> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/scholar-attribution> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/media-ref-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/pub-portesine-e> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_3_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/scholar-attribution> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-2-pub-portesine-e> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_3_mr> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/scholar-attribution> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/media-ref-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/pub-portesine-e> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_5_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/author-declaration> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-4-pub-portesine-e> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_6_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/author-declaration> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-5-pub-portesine-e> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_9_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/scholar-attribution> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-2-pub-risso-e> ;
+    cito:disagreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_10> ;
+    prov:startedAtTime "2023"^^xsd:dateTime .
+
+<https://w3id.org/miro/manifestation/cassa-sistina-m> a lrmoo:F3 .
+
+<https://w3id.org/miro/manifestation/gdo-m> a lrmoo:F3 ;
+    rdam:P30011 1967 ;
+    rdam:P30088 <https://w3id.org/miro/place/milan> ;
+    rdam:P30420 <https://w3id.org/miro/agent/giangiacomo-feltrinelli-editore> .
+
+<https://w3id.org/miro/manifestation/giuoco-baruchello-m> a lrmoo:F3 .
+
+<https://w3id.org/miro/manifestation/giuoco-marca-stella-m> a lrmoo:F3 ;
+    rdam:P30011 "1949"^^xsd:dateTime ;
+    rdam:P30088 <https://w3id.org/miro/place/milan> ;
+    rdam:P30420 <https://w3id.org/miro/agent/marca-stella> .
+
+<https://w3id.org/miro/manifestation/go-for-your-money-m> a lrmoo:F3 ;
+    rdam:P30011 "1966"^^xsd:dateTime .
+
+<https://w3id.org/miro/manifestation/just-what-m> a lrmoo:F3 .
+
+<https://w3id.org/miro/manifestation/lady-from-shanghai-m> a lrmoo:F3 ;
+    rdam:P30011 "1948"^^xsd:dateTime .
+
+<https://w3id.org/miro/manifestation/marilyn-photo-m> a lrmoo:F3 .
+
+<https://w3id.org/miro/manifestation/marilyn-song-m> a lrmoo:F3 ;
+    rdam:P30011 "1952"^^xsd:dateTime ;
+    rdam:P30420 <https://w3id.org/miro/agent/capitol-records> .
+
+<https://w3id.org/miro/manifestation/occhio-degli-occhi-m> a lrmoo:F3 .
+
+<https://w3id.org/miro/manifestation/vak-vak-m> a lrmoo:F3 ;
+    rdam:P30011 "1730"^^xsd:dateTime ;
+    rdam:P30088 <https://w3id.org/miro/place/costantinople> ;
+    rdam:P30362 <https://w3id.org/miro/agent/muteferrika-ibrahim> .
+
+<https://w3id.org/miro/manifestation/vampyr-m> a lrmoo:F3 ;
+    rdam:P30011 "1932"^^xsd:dateTime .
+
+<https://w3id.org/miro/manifestation/young-romance-m> a lrmoo:F3 ;
+    rdam:P30420 <https://w3id.org/miro/agent/feature-publications> .
+
+<https://w3id.org/miro/place/france> a crm:E53 ;
+    rdfs:label "France"^^xsd:string ;
+    owl:sameAs "https://www.geonames.org/3017382"^^xsd:anyURI .
+
+<https://w3id.org/miro/place/germany> a crm:E53 ;
+    rdfs:label "Germany"^^xsd:string ;
+    owl:sameAs "https://www.geonames.org/2921044"^^xsd:anyURI .
+
+<https://w3id.org/miro/place/hollywood> a crm:E53 ;
+    rdfs:label "Hollywood, California, US"^^xsd:string ;
+    owl:sameAs "https://www.geonames.org/5357527"^^xsd:anyURI .
+
+<https://w3id.org/miro/place/turin> a crm:E53 ;
+    rdfs:label "Turin"^^xsd:string ;
+    owl:sameAs "https://www.geonames.org/3165524"^^xsd:anyURI .
+
+<https://w3id.org/miro/work/vampyr-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/vampyr-e> ;
+    rdaw:P10004 "http://id.loc.gov/authorities/genreForms/gf2011026321"^^xsd:anyURI ;
+    rdaw:P10088 "Vampyr"^^xsd:string ;
+    rdaw:P10218 <https://w3id.org/miro/place/france>,
+        <https://w3id.org/miro/place/germany> ;
+    rdaw:P10418 <https://w3id.org/miro/agent/carl-theodor-dreyer> ;
+    rdaw:P10422 <https://w3id.org/miro/agent/carl-theodor-dreyer> ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q304923"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/carl-theodor-dreyer> a crm:E39 ;
+    rdfs:label "Dreyer, Carl Theodor"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/51697917/"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/fabrizio-serra-editore> a crm:E39 ;
+    rdfs:label "Fabrizio Serra Editore"^^xsd:string ;
+    owl:sameAs "http://viaf.org/viaf/171553689"^^xsd:anyURI .
+
+<https://w3id.org/miro/agent/giangiacomo-feltrinelli-editore> a crm:E39 ;
+    rdfs:label "Giangiacomo Feltrinelli Editore"^^xsd:string ;
+    owl:sameAs "https://viaf.org/viaf/52497170/"^^xsd:anyURI .
+
+<https://w3id.org/miro/expression/chapter-CIX> a lrmoo:F2 ;
+    miro:hasIntermedialReference <https://w3id.org/miro/expression/go-for-your-money-e>,
+        <https://w3id.org/miro/expression/lady-from-shanghai-e> .
+
+<https://w3id.org/miro/expression/giuoco-baruchello-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/giuoco-baruchello-m> ;
+    rdae:P20001 rdaco:1014 ;
+    crm:P65i <https://w3id.org/miro/expression/gdo-e> .
+
+<https://w3id.org/miro/expression/marilyn-song-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/marilyn-song-m> ;
+    rdae:P20001 rdaco:1011 ;
+    rdae:P20006 "en-US"^^xsd:language ;
+    crm:P65i <https://w3id.org/miro/expression/marilyn-photo-e> .
+
+<https://w3id.org/miro/expression/symbols-transformation-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/simboli-trasformazione-m> ;
+    rdae:P20001 rdaco:1020 ;
+    rdae:P20006 "it"^^xsd:language ;
+    rdae:P20346 <https://w3id.org/miro/agent/renato-raho> .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_13_mt> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/archival-documentation> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/media-trasp-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/pub-risso-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_19_mt> ;
+    prov:startedAtTime "2023"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_14_mt> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/archival-documentation> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/media-trasp-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/pub-portesine-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_20_mt> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_17_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/author-declaration> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-9-pub-portesine-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_7_ek> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_17_mr> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/author-declaration> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/media-ref-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/pub-portesine-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_7_mr> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_18_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/scholar-attribution> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-4-pub-risso-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_8_ek> ;
+    prov:startedAtTime "2023"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_18_mc> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/author-declaration> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/media-comb-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/pub-risso-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_8_mc> ;
+    prov:startedAtTime "2023"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_19_mt> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/linguistic-comparison> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/media-trasp-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/pub-portesine-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_13_mt> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_20_mt> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/archival-documentation> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/media-trasp-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/pub-risso-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_14_mt> ;
+    prov:startedAtTime "2023"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_7_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/author-declaration> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-1-pub-risso-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_17_ek> ;
+    prov:startedAtTime "2023"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_7_mr> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/author-declaration> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/media-ref-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/pub-risso-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_17_mr> ;
+    prov:startedAtTime "2023"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_8_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/scholar-attribution> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-2-pub-sotgiu-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_18_ek> ;
+    prov:startedAtTime "2016"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_8_mc> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/author-declaration> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/media-comb-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/pub-sotgiu-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_18_mc> ;
+    prov:startedAtTime "2016"^^xsd:dateTime .
+
+<https://w3id.org/miro/place/pisa> a crm:E53 ;
+    rdfs:label "Pisa"^^xsd:string ;
+    owl:sameAs "https://www.geonames.org/3170647"^^xsd:anyURI .
+
+<https://w3id.org/miro/place/rome> a crm:E53 ;
+    rdfs:label "Rome"^^xsd:string ;
+    owl:sameAs "https://www.geonames.org/3169070/"^^xsd:anyURI .
+
+<https://w3id.org/miro/place/united-states> a crm:E53 ;
+    rdfs:label "United States"^^xsd:string ;
+    owl:sameAs "https://www.geonames.org/6252001"^^xsd:anyURI .
+
+<https://w3id.org/miro/publication/pub-sotgiu-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/pub-sotgiu-m> ;
+    rdae:P20001 rdaco:1020 ;
+    rdae:P20006 "it"^^xsd:language ;
+    rdae:P20312 "Il Giuoco dell’Oca nella trilogia di Edoardo Sanguineti"^^xsd:string ;
+    crm:P148 <https://w3id.org/miro/expression/quot-1-pub-sotgiu-e>,
+        <https://w3id.org/miro/expression/quot-2-pub-sotgiu-e> .
+
+<https://w3id.org/miro/work/gdo-w> a lrmoo:F1 ;
+    lrmoo:R3 <https://w3id.org/miro/expression/gdo-e> ;
+    rdaw:P10004 "http://id.loc.gov/authorities/genreForms/gf2015026020"^^xsd:anyURI ;
+    rdaw:P10065 <https://w3id.org/miro/agent/edoardo-sanguineti> ;
+    rdaw:P10088 "Il Giuoco dell'Oca"^^xsd:string .
+
+<https://w3id.org/miro/expression/chapter-LXXXIV> a lrmoo:F2 ;
+    miro:hasIntermedialReference <https://w3id.org/miro/expression/occhio-degli-occhi-e> .
+
+<https://w3id.org/miro/expression/gdo-e> a lrmoo:F2 ;
+    lrmoo:R4 <https://w3id.org/miro/manifestation/gdo-m> ;
+    lrmoo:R5 <https://w3id.org/miro/section/chapter-CII>,
+        <https://w3id.org/miro/section/chapter-CIX>,
+        <https://w3id.org/miro/section/chapter-CV>,
+        <https://w3id.org/miro/section/chapter-I>,
+        <https://w3id.org/miro/section/chapter-IX>,
+        <https://w3id.org/miro/section/chapter-LXXXIII>,
+        <https://w3id.org/miro/section/chapter-LXXXIV>,
+        <https://w3id.org/miro/section/chapter-LXXXVIII>,
+        <https://w3id.org/miro/section/chapter-V>,
+        <https://w3id.org/miro/section/chapter-VII>,
+        <https://w3id.org/miro/section/chapter-XXXIX>,
+        <https://w3id.org/miro/section/regole-gioco> ;
+    rdae:P20001 <http://rdaregistry.info/termList/RDAContentType/rdaco:1020> ;
+    rdae:P20006 "it"^^xsd:language ;
+    rdae:P20312 "Il Giuoco dell'Oca"^^xsd:string ;
+    rdae:P20338 <https://w3id.org/miro/agent/valerio-riva> .
+
+<https://w3id.org/miro/expression/lady-from-shanghai-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/lady-from-shanghai-m> ;
+    rdae:P20001 rdaco:1023 ;
+    rdae:P20006 "en-US"^^xsd:language .
+
+<https://w3id.org/miro/expression/vampyr-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/vampyr-m> ;
+    rdae:P20001 rdaco:1023 ;
+    rdae:P20006 "de"^^xsd:language .
+
+<https://w3id.org/miro/expression/young-romance-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/young-romance-m> ;
+    rdae:P20001 rdaco:1014,
+        rdaco:1020 ;
+    rdae:P20006 "en-US"^^xsd:language .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_15_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/author-declaration> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-3-pub-sotgiu-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_16_ek>,
+        <https://w3id.org/miro/interpretationAct/interpretationAct_4_ek> ;
+    prov:startedAtTime "2016"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_16_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/scholar-attribution> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-3-pub-risso-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_15_ek>,
+        <https://w3id.org/miro/interpretationAct/interpretationAct_4_ek> ;
+    prov:startedAtTime "2023"^^xsd:dateTime .
+
+<https://w3id.org/miro/interpretationAct/interpretationAct_4_ek> a hico:InterpretationAct ;
+    hico:hasInterpretationCriterion <https://w3id.org/miro/criterion/author-declaration> ;
+    hico:hasInterpretationType <https://w3id.org/miro/type/ekph-rel-attribution> ;
+    hico:isExtractedFrom <https://w3id.org/miro/publication/quot-3-pub-portesine-e> ;
+    cito:agreesWith <https://w3id.org/miro/interpretationAct/interpretationAct_15_ek>,
+        <https://w3id.org/miro/interpretationAct/interpretationAct_16_ek> ;
+    prov:startedAtTime "2021"^^xsd:dateTime .
+
+<https://w3id.org/miro/place/milan> a crm:E53 ;
+    rdfs:label "Milan"^^xsd:string ;
+    owl:sameAs "https://www.geonames.org/3173435"^^xsd:anyURI .
+
+<https://w3id.org/miro/expression/just-what-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/just-what-m> ;
+    lrmoo:R75 <https://w3id.org/miro/expression/young-romance-e> ;
+    rdae:P20001 rdaco:1014 .
+
+<https://w3id.org/miro/expression/marilyn-photo-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/marilyn-photo-m> ;
+    rdae:P20001 rdaco:1014 .
+
+<https://w3id.org/miro/expression/occhio-degli-occhi-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/occhio-degli-occhi-m> ;
+    lrmoo:R75 <https://w3id.org/miro/expression/chapter-LXXXIV> ;
+    rdae:P20001 rdaco:1014 .
+
+<https://w3id.org/miro/expression/vak-vak-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/vak-vak-m> ;
+    rdae:P20001 rdaco:1014 ;
+    crm:P65i <https://w3id.org/miro/expression/symbols-transformation-e> .
+
+<https://w3id.org/miro/publication/pub-portesine-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/pub-portesine-m> ;
+    rdae:P20001 rdaco:1020 ;
+    rdae:P20006 "it"^^xsd:language ;
+    rdae:P20312 "Una specie di Biennale allargata: il giuoco dell'ecfrasi nel secondo romanzo di Edoardo Sanguineti"^^xsd:string ;
+    crm:P148 <https://w3id.org/miro/expression/quot-1-pub-portesine-e>,
+        <https://w3id.org/miro/expression/quot-2-pub-portesine-e>,
+        <https://w3id.org/miro/expression/quot-3-pub-portesine-e>,
+        <https://w3id.org/miro/expression/quot-4-pub-portesine-e>,
+        <https://w3id.org/miro/expression/quot-5-pub-portesine-e>,
+        <https://w3id.org/miro/expression/quot-6-pub-portesine-e>,
+        <https://w3id.org/miro/expression/quot-7-pub-portesine-e>,
+        <https://w3id.org/miro/expression/quot-8-pub-portesine-e> .
+
+<https://w3id.org/miro/publication/pub-risso-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/pub-risso-m> ;
+    rdae:P20001 rdaco:1020 ;
+    rdae:P20006 "it"^^xsd:language ;
+    rdae:P20312 "La regola del giuoco"^^xsd:string ;
+    crm:P148 <https://w3id.org/miro/expression/quot-1-pub-risso-e>,
+        <https://w3id.org/miro/expression/quot-2-pub-risso-e> .
+
+<https://w3id.org/miro/expression/cassa-sistina-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/cassa-sistina-m> ;
+    rdae:P20001 rdaco:1021 .
+
+<https://w3id.org/miro/expression/go-for-your-money-e> a lrmoo:F2 ;
+    lrmoo:R4i <https://w3id.org/miro/manifestation/go-for-your-money-m> ;
+    rdae:P20001 rdaco:1014 .
+
