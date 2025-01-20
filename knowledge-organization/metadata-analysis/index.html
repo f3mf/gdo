@@ -784,7 +784,7 @@
     
       
         
-          
+      
         
       
     
@@ -802,19 +802,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../knowledge-representation/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
   
   <span class="md-ellipsis">
     Knowledge Representation
   </span>
   
 
-            </a>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
@@ -823,6 +820,46 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../knowledge-representation/rdf-production/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RDF production
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../knowledge-representation/tei-conversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TEI conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -1119,7 +1156,7 @@
     <a class="glightbox" href="../../data/references/centre-pompidou-data-model-dark.png#only-dark" data-type="image" data-width="100%" data-height="auto" data-title="Overview of the Digital Pompidou data model" data-desc-position="bottom"><img alt="Overview of the Digital Pompidou data model" src="../../data/references/centre-pompidou-data-model-dark.png#only-dark" /></a>
   </p>
 </div>
-<p>Centre Pompidou organizes internally its data in RDF as Linked Enterprise Data, but does not expose them<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. The data model appears clearly inspired by CIDOC-CRM event modeling, with some shortcuts to relate some data directly to resources and not events.</p>
+<p>Centre Pompidou organizes internally its data in RDF as Linked Enterprise Data, but does not expose them[@bermes2014]. The data model appears clearly inspired by CIDOC-CRM event modeling, with some shortcuts to relate some data directly to resources and not events.</p>
 <p>For this reason, we chose as a representative standard for metadata provided by Centre Pompidou the LIDO schema (Lightweight Information Describing
 Objects), developed by ICOM to make available for publication a variety of information related to both museum objects and their digital representation. LIDO extends CDWA Lite and is underpinned by CIDOC-CRM, inheriting its event-centered approach.</p>
 <h3 id="in-archives">In archives</h3>
@@ -1169,7 +1206,7 @@ Objects), developed by ICOM to make available for publication a variety of infor
 <td style="text-align: left;">Il Giuoco dell'Oca di Edoardo Sanguineti</td>
 <td style="text-align: left;">Collage</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><a href="https://artsupp.com/en/artisti/gianfranco-baruchello/gioco-dell-oca">Artsupp</a><sup id="fnref:artsupp"><a class="footnote-ref" href="#fn:artsupp">3</a></sup></td>
+<td style="text-align: left;"><a href="https://artsupp.com/en/artisti/gianfranco-baruchello/gioco-dell-oca">Artsupp</a><sup id="fnref:artsupp"><a class="footnote-ref" href="#fn:artsupp">2</a></sup></td>
 <td style="text-align: left;">✅</td>
 <td style="text-align: left;">Manual</td>
 <td style="text-align: left;"></td>
@@ -1203,7 +1240,7 @@ Objects), developed by ICOM to make available for publication a variety of infor
 <td style="text-align: left;">❌</td>
 <td style="text-align: left;">❌</td>
 <td style="text-align: left;">JSON</td>
-<td style="text-align: left;"><a href="https://www.getty.edu/publications/categories-description-works-art/">CDWA</a><sup id="fnref5:*"><a class="footnote-ref" href="#fn:*">2</a></sup></td>
+<td style="text-align: left;"><a href="https://www.getty.edu/publications/categories-description-works-art/">CDWA</a><sup id="fnref5:*"><a class="footnote-ref" href="#fn:*">1</a></sup></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
@@ -1217,7 +1254,7 @@ Objects), developed by ICOM to make available for publication a variety of infor
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;">CSV</td>
-<td style="text-align: left;"><a href="https://www.loc.gov/aba/pcc/conser/scctp/csr-materials.html">RDA-CONSER</a><sup id="fnref4:*"><a class="footnote-ref" href="#fn:*">2</a></sup></td>
+<td style="text-align: left;"><a href="https://www.loc.gov/aba/pcc/conser/scctp/csr-materials.html">RDA-CONSER</a><sup id="fnref4:*"><a class="footnote-ref" href="#fn:*">1</a></sup></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
@@ -1259,7 +1296,7 @@ Objects), developed by ICOM to make available for publication a variety of infor
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;">JSON</td>
-<td style="text-align: left;"><a href="https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata">IPTC</a><sup id="fnref3:*"><a class="footnote-ref" href="#fn:*">2</a></sup></td>
+<td style="text-align: left;"><a href="https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata">IPTC</a><sup id="fnref3:*"><a class="footnote-ref" href="#fn:*">1</a></sup></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
@@ -1287,7 +1324,7 @@ Objects), developed by ICOM to make available for publication a variety of infor
 <td style="text-align: left;">❌</td>
 <td style="text-align: left;">✅</td>
 <td style="text-align: left;">JSON</td>
-<td style="text-align: left;"><a href="https://cidoc.mini.icom.museum/working-groups/lido/lido-overview/about-lido/what-is-lido/">LIDO</a><sup id="fnref2:*"><a class="footnote-ref" href="#fn:*">2</a></sup></td>
+<td style="text-align: left;"><a href="https://cidoc.mini.icom.museum/working-groups/lido/lido-overview/about-lido/what-is-lido/">LIDO</a><sup id="fnref2:*"><a class="footnote-ref" href="#fn:*">1</a></sup></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
@@ -1295,7 +1332,7 @@ Objects), developed by ICOM to make available for publication a variety of infor
 <td style="text-align: left;">Vampyr</td>
 <td style="text-align: left;">Film</td>
 <td style="text-align: left;">British Film Institute National Archive</td>
-<td style="text-align: left;"><a href="https://web.archive.org/web/20250107143541/https://collections-search.bfi.org.uk/web/Details/ChoiceFilmWorks/150047864">British Film Institute National Archive</a><sup id="fnref:bfi"><a class="footnote-ref" href="#fn:bfi">4</a></sup></td>
+<td style="text-align: left;"><a href="https://web.archive.org/web/20250107143541/https://collections-search.bfi.org.uk/web/Details/ChoiceFilmWorks/150047864">British Film Institute National Archive</a><sup id="fnref:bfi"><a class="footnote-ref" href="#fn:bfi">3</a></sup></td>
 <td style="text-align: left;">❌</td>
 <td style="text-align: left;">Manual</td>
 <td style="text-align: left;"></td>
@@ -1337,13 +1374,13 @@ Objects), developed by ICOM to make available for publication a variety of infor
 <td style="text-align: left;">Go for your money</td>
 <td style="text-align: left;">Animated Film</td>
 <td style="text-align: left;">MART Archivio del '900</td>
-<td style="text-align: left;"><a href="http://www.capti.it/index.php?ParamCatID=10&amp;IDFascicolo=799&amp;artgal=38&amp;key=8559&amp;lang=EN">Capti</a><sup id="fnref:capti"><a class="footnote-ref" href="#fn:capti">5</a></sup></td>
+<td style="text-align: left;"><a href="http://www.capti.it/index.php?ParamCatID=10&amp;IDFascicolo=799&amp;artgal=38&amp;key=8559&amp;lang=EN">Capti</a><sup id="fnref:capti"><a class="footnote-ref" href="#fn:capti">4</a></sup></td>
 <td style="text-align: left;">✅</td>
 <td style="text-align: left;">Manual</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;">Text</td>
-<td style="text-align: left;"><a href="https://www.ifla.org/wp-content/uploads/2019/05/assets/cataloguing/isbd/isbd-cr_2002.pdf">ISBD(CR)</a><sup id="fnref:*"><a class="footnote-ref" href="#fn:*">2</a></sup></td>
+<td style="text-align: left;"><a href="https://www.ifla.org/wp-content/uploads/2019/05/assets/cataloguing/isbd/isbd-cr_2002.pdf">ISBD(CR)</a><sup id="fnref:*"><a class="footnote-ref" href="#fn:*">1</a></sup></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
@@ -1365,20 +1402,17 @@ Objects), developed by ICOM to make available for publication a variety of infor
 <div class="footnote">
 <hr />
 <ol>
-<li id="fn:1">
-<p>Bermès, E. (2014). Following the user’s flow in the digital pompidou. <em>ZfBB</em>, <em>61</em>(2), 68–75. <a href="https://doi.org/10.3196/186429501461221">https://doi.org/10.3196/186429501461221</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
 <li id="fn:*">
-<p>Presumed standard not provided by the institution.&#160;<a class="footnote-backref" href="#fnref:*" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:*" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:*" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:*" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:*" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Presumed standard not provided by the institution.&#160;<a class="footnote-backref" href="#fnref:*" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:*" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:*" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:*" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:*" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:artsupp">
-<p>Also <a href="https://web.archive.org/web/20250107144743/https%3A%2F%2Fartsupp.com%2Fen%2Fartisti%2Fgianfranco-baruchello%2Fgioco-dell-oca">archived</a> on Janunary 7<sup>th</sup> 2025.&#160;<a class="footnote-backref" href="#fnref:artsupp" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Also <a href="https://web.archive.org/web/20250107144743/https%3A%2F%2Fartsupp.com%2Fen%2Fartisti%2Fgianfranco-baruchello%2Fgioco-dell-oca">archived</a> on Janunary 7<sup>th</sup> 2025.&#160;<a class="footnote-backref" href="#fnref:artsupp" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:bfi">
-<p>Also <a href="https://web.archive.org/web/20250107143541/https%3A%2F%2Fcollections-search.bfi.org.uk%2Fweb%2FDetails%2FChoiceFilmWorks%2F150047864">archived</a> on Janunary 7<sup>th</sup> 2025.&#160;<a class="footnote-backref" href="#fnref:bfi" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>Also <a href="https://web.archive.org/web/20250107143541/https%3A%2F%2Fcollections-search.bfi.org.uk%2Fweb%2FDetails%2FChoiceFilmWorks%2F150047864">archived</a> on Janunary 7<sup>th</sup> 2025.&#160;<a class="footnote-backref" href="#fnref:bfi" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:capti">
-<p>Also <a href="https://web.archive.org/web/20250107170449/http://www.capti.it/index.php?ParamCatID=10&amp;IDFascicolo=799&amp;artgal=38&amp;key=8559&amp;lang=EN">archived</a> on Janunary 7<sup>th</sup> 2025.&#160;<a class="footnote-backref" href="#fnref:capti" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<p>Also <a href="https://web.archive.org/web/20250107170449/http://www.capti.it/index.php?ParamCatID=10&amp;IDFascicolo=799&amp;artgal=38&amp;key=8559&amp;lang=EN">archived</a> on Janunary 7<sup>th</sup> 2025.&#160;<a class="footnote-backref" href="#fnref:capti" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

@@ -18,7 +18,7 @@
         <link rel="prev" href="../theoretical-model/">
       
       
-        <link rel="next" href="../../knowledge-representation/">
+        <link rel="next" href="../../knowledge-representation/rdf-production/">
       
       
       <link rel="icon" href="../../assets/images/logos/goose-color.svg">
@@ -709,7 +709,7 @@
     
       
         
-          
+      
         
       
     
@@ -727,19 +727,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../knowledge-representation/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
   
   <span class="md-ellipsis">
     Knowledge Representation
   </span>
   
 
-            </a>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
@@ -748,6 +745,46 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../knowledge-representation/rdf-production/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RDF production
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../knowledge-representation/tei-conversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TEI conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -915,11 +952,11 @@
 <p>In the Library Reference Model, serials—publications issued in parts, regardless of regularity or frequency, of which periodicals as a subset—are complex constructs that combine whole/part relationships and aggregation relationships. <strong>A serial work has a whole/part relationship with the individual issues published over time, while each issue expression is an aggregate of articles.</strong></p>
 <p>The whole/part relationship is hierarchical and structural: it describes a situation where a whole entity is composed of discrete parts that contribute to its existence, are integral to its identity, and cannot typically exist independently in the same context, such as chapters in a book. In contrast, the aggregation relationship is associative, grouping together expressions that remain independent, can exist separately, and each realize their own work, as short stories within an anthology. In the case of serials, the serial work provides the overarching issuing plan, which informs the aggregation of each individual issue.</p>
 <p>According to IFLA LRM, a work is defined as having a certain commonality of content among its expressions. For serials, this commonality “resides in both
-the publisher’s and the editor’s intention to convey the feeling to end-users that all individual issues do belong to an identifiable whole, and in the collection of editorial concepts (a title, an overall topic, a recognizable layout, a regular frequency, etc.) that will help to convey that feeling.”<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> This inherent characterization of serial works by their publication features—such as title, language, and publisher—means that any variation in these features results in the identification of a new serial work.</p>
+the publisher’s and the editor’s intention to convey the feeling to end-users that all individual issues do belong to an identifiable whole, and in the collection of editorial concepts (a title, an overall topic, a recognizable layout, a regular frequency, etc.) that will help to convey that feeling.”[@lrm2018] This inherent characterization of serial works by their publication features—such as title, language, and publisher—means that any variation in these features results in the identification of a new serial work.</p>
 <p>Reflecting this intrinsic link between the serial work and its defining publication features, LRM enforces the “WEM lock”: a cardinality restriction specifying that a serial work is realized by one and only one expression, which is embodied by one and only one manifestation. For this reason, an article is not considered a part of a periodical but is the expression of its own work. This expression is aggregated within the expression of an issue, whose work is part of the serial work.</p>
 <p>In this model test, we limited ourselves to the description of the cover of issue 26 of <em>Young Romance</em>, the piece that Richard Hamilton chose to include in the iconic collage that started pop art. For the diagrams we used <a href="https://gitlab.com/infai/rdf-diagram-framework">RDF Diagram</a>, a Draw.io plugin (written in Rust!) that allows for real-time syntax validation and conversion in Turtle. We thank the Institute for Applied Informatics (InfAI) of Leipzig for sharing such a useful tool.</p>
 <h3 id="lrmoo-in-action">LRMoo in action</h3>
-<p>Modelling periodicals in LRMoo is currently limited by the fact that PRESSoo, the extension dedicated specifically to this, has not yet been updated to LRM and is only available in an <a href="https://gitlab.isl.ics.forth.gr/cidoc-crm/compatible-models/pressoo/-/tree/v1.3_prepareation/1.3">earlier version</a> based on FRBR and incompatible with the most recent version (7.1.3) of CIDOC CRM, so we chose not to use it. PRESSoo would offer the possibility of describing the planning aspects of a serial work (thanks to the extension of the “forsees use of” properties), although in our case, in which the periodical is not only described as a whole but the perusal of single articles is carried out, this information can be included in the issue description. However, inclusion of the issue in the magazine is possible only through a very generic property, <code class="language-turtle highlight"><span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R10_is_member_of</span></code>, via the serial creation event<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<p>Modelling periodicals in LRMoo is currently limited by the fact that PRESSoo, the extension dedicated specifically to this, has not yet been updated to LRM and is only available in an <a href="https://gitlab.isl.ics.forth.gr/cidoc-crm/compatible-models/pressoo/-/tree/v1.3_prepareation/1.3">earlier version</a> based on FRBR and incompatible with the most recent version (7.1.3) of CIDOC CRM, so we chose not to use it. PRESSoo would offer the possibility of describing the planning aspects of a serial work (thanks to the extension of the “forsees use of” properties), although in our case, in which the periodical is not only described as a whole but the perusal of single articles is carried out, this information can be included in the issue description. However, inclusion of the issue in the magazine is possible only through a very generic property, <code class="language-turtle highlight"><span class="nn">lrmoo</span><span class="p">:</span><span class="nt">R10_is_member_of</span></code>, via the serial creation event<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">1</a></sup>.</p>
 <p>At first glance, the description is structured around creation events corresponding to the various WEMI levels, with actors participating through typed properties that define their roles. For the sake of this example, all concepts were drawn from Getty's Art &amp; Architecture Thesaurus, as it is a widely used resource in the cultural heritage domain. For brevity, some entities connected to objects are nested, and their details can be expanded by clicking the plus sign. This includes a class for dimensions, which enables a detailed description of size, separating numerical values from their units of measurement.</p>
 <iframe frameborder="0" src="https://viewer.diagrams.net/?tags=%7B%7D&target=blank&highlight=0000ff&edit=https%3A%2F%2Finfai.gitlab.io%2Frdf-diagram-framework%2F%3Ftest%3D1%26splash%3D0&layers=1&nav=1&auto-crop=true&auto-fit=true&center=true&border=0&zoom=1&tooltips=true&title=test-cidoc#
 R7V1bd6M4uv01WWfmAS904faYSirdM101VdNVpy%2FnhYVt7FDlGDfgStK%2F%2FkjcYssYhI2wwJo1qytRbITxlrS%2F2%2F5u0N3Ty0%2BRt3n8GM791Q3U5y836P4GQmgCRP6hI6%2FFiAWykWUUzLOxnYEvwd9%2BPqjno9tg7sd7L0zCcJUEm%2F3BWbhe%2B7Nkb8yLovB5%2F2WLcLU%2F68Zb%2BgcDX2be6nD092CePGajpqO%2Fjf%2FsB8vHfGbHzv8w9Wbfl1G4XefTrcO1n%2F3lySuukr80fvTm4fPOEHp%2Fg%2B6iMEyyn55e7vwVfazFA8ve93Dkr%2BUdR%2F46qXjD%2F8Z%2B9Gn6jT4sqK%2B8KfnG0hfdoNupv9bCuZddoLje%2BpcfXz%2F4q8eX578%2B%2F%2Fxh8f3uq36vgfI%2By%2Fnj5LV4aPFz8LTyyAdG754fg8T%2FsvFm9E%2FPBCRkbBauVt4mDqbp6wEdeQxW8w%2Fea7ildxwn5OEVv70rLvYQrFZ34SqMyCvm%2FsLbruhfIz8mmPlcfFhQDn3wYjqgM6%2F56L3ko09etAzW78IkCZ%2FoO9%2FGvoab%2FYFf8y94Z%2BiDvyhHYvLxgvUyHzLeRor30aFFuE6%2B5I8ofVPiRUmOd0QHNmGwTlK0Gu9ujHsy8pg8rfLPVGKE%2FrLxo%2BDJT%2FzoSzYNvcLBbeze2d79e6tV%2BHxbLI30gYWJl3jT8taqvrP09rO7BZjeWxgFf5Mxr7jDt4Ev9OvLL5Xi6125ForvL10NdGIy5s%2Fz1y52vuAbiBaLGflf%2BqSi8Lu%2F8xdkIgeRd707RHoO%2Fh9%2BlPgvO0M5VH%2FyQ%2FLgolfykuKvCBnZe17LAScbeH5b71DP1%2BrjzloHxR7l5XvMsrz622ojP%2BQrpPh1Z%2F3VrkeP7moRgebtewjcz34Uh2uOlQlrV%2BawQNYGPYdYOL5xtQKIvgcPrB%2BAA9gV4EBCsRHNF%2BS6t9kI3d7Nv7b0uHj3zicY0T%2FRPbwY2sdMuHz96Tft7sO%2Fvv1m3L5f%2FPbT%2FwWGZivMiMSMJQVm3s53be5TDsJxypvqmFfHvNhj%2FgHe3z1YHR3z1A5IQefvkuHj69S091cqwPjw8AdGy7Waz%2FcrWYLeekme99uEFmTYBnYONwdYtTkAzMzorQg01l7iv6OPNz7YJMqP2x0PMR33nnfrsNSZUnummN0TEWj2fqhkwPiM3UcvdhPyRWnkW6AUhIwCx8YaABq0eWhrvUWp8HIuXipIyOXwYrlJGH53NyvyGF2Pvma5JuOG7limBXngoswcsXABukx4IXcTuPPAn7sBlw1s1KJjBwv%2BfOkXdM1fTcPn928DzJMPo%2BQxXIZrb%2FUhzJgjGfzmJ8lr%2Fl162ySkl1zPU0SQkekqpBSJDlFaW8y5LvycOxyyJKhQZyHKCZc3skzfcDh6lEXF4Taa%2BXVgyl5HmOzS5wEdfag8kNP0iW6B%2FHSI%2FJWXBD%2F23a417OozXeI78DUw68exnf2LZJ8zf9%2BuA5W9lGk4DZfKHsXBpcj37r3uvCzfho7ftKkzqw45mFk42TWZ979WPqVwsYj95IZdeF0RwR0DchpEXCwQKgNSGZBXZUBCS6wBeTAhgkMyIC33He%2FWoQzIWoYHr8GABIYGoFYszXq8KCe2WLwMwoBEDgQA88DFUXARChe5DEjHDtxnssNMw4gxICsDYvXOKGU%2F7jGmzuxHeIL9CPWcb51rP9qA9czjU%2B1HBzoNl5LEftR6MCBr11m9F0%2BZh%2B3MwyFbh7vG4P6%2BWX%2B4Hd2VzkkBMiqigNUpQKxNJSxkv2Y4cOVyquc0ajkpb0sXC%2Bz4Tt6BQ4UlkQfrsHXmTI0z5bTJgHlBR8oqegoJS7x9AND9D7ksF5vVa%2FeFYUFcAHadM02dqpzAi1k6MPOkvG4o0D1iGqNbpOvQNJFt8mBlTHF4CbFSlQtYhRWxxKLYRX5FKIVLnET0K2qVSTpdLhx3fR%2B9fHh4edaS%2F3ifv3zV6uM9Cj1nogdUnVH9w2eXl0IOVABl5yliOipi2kUZADcx5Z1MZmJavS8gdVwkjfvmuJkp1rFpAx6wYAUWoWAZGDX9xft7S550eAJLBfX5gQpK50JJQp6KeHCh0tUUTx0VT%2B2i9JCbp%2FJONjyeOqZcNBHnhYBcNBl5qsHFU8eUiCYjWIbFU9vQ0jHlpMmIHAlpKebAxY4qkKKlipaOgJZWJYeKDOyPlZiOqmpawIlR1MaMnpjyROFgfRROgeVcsAyGmLb1l0IVpxGLHFmIKTRTmpeXYL19xQVW3lQttVn2pG7J66Ll9B%2FQMG4gmUvf%2FeGf6SN8A5q5pP%2Fmu5lpBW4Qu5G%2F8KPIn7tJ6E5fizsgN53dRPaWfYxWEpVrLPnPUdpDvUYdN2ws1%2Bi8NAMVRbbnl2YcXOpIaUbXlfT%2BPEgIBjSug7s%2B8qnsP2X%2Ftbf%2FmCr62cw3Foubi1TRGxazvnWnoogedWYesvPZVaXQVpV9CC9oH%2BbH5h3A7syLIiqGQ5ZsemY27yAq4F1P4HD3diJsq%2FrQnVoSngA3WLvJo%2B9G4cp3w8WuwUiZGTR5UKP80WJRU1VSX4Ua4e7ob6GvxcETKzBd%2BalRvRtBsRHFRgai%2FW7aQqTfa4gHI95Tpd1Tcoy6Y%2BMC0j1HNOirt4gx%2BYvOE9eo2ULHq0L%2F75CC%2Fkt2oLTwM6IxpfjKiBs5lOhzmqpn8YyIbJI%2BDzjqk7AG7uFL75P8Qr%2FaYEZPVqE6LbV8dtfxV4tDXqEWfYIxzu%2FiTGegZbBaDfqJvkDbdBqu1JFKi8XSDJjTjAaRlv5kPYM43vpa7pLkWYr1KW7KBFAmwNkOyU5lPY%2FuTIhRDS43hT2T3Dg8Ie2TDAB2OrPSb1Qx3SUNgDIxBdru%2B5cNWU5xEK7du8gnGzmfPaAcSfW8zu7eHoCIA0Y9h493YsYJoX1x8WCOB4l1kHLEefjkUeV3juBw5QPG9RmUV8Mdzw8Yn0kc7XbEUdMnBmKiNZrRCZFE1v4SMk%2BNKWMb11%2BoIxpZnhVllIyPRhZv33uzsX%2BLIoX%2FqhekaiCqlP8urvx34ACWSPivDMkcSP9VLygVlVEmmfgagZrNXIn%2FSVkigMcUixEBXhGxGMlKBKrU%2F6ofxpgCMDKCZTAlAqeG8LDKNBOLIFlKBfYYKuRBhhJXUQx1XAy1VxVAMFp5FazkVerReyXyKlwygFjJq4gFy2Ao6s%2BvT8GJJFXFI8ViSEqSyqMAaCipFUVSx0VSe5UARGisJNVQUiu16C3qlsZOUrk0AI36aJwCy9VIraR%2B1BbU1FDhGrHIkZKa8qgAGkoFQlHTcVHTfmUAsTNabqqCbvWHhgB5Bym5KU8czlA92sSCZTDctL3j1FCRGrHYkYSd1kv0NcOkPkYz8HKL3utyi3LbxvKKgqaJVuSzTDZvupDVay3IBw2mChcb5v6lehLke7PG5r5Hll4zys16U10ZZMogO1sIp9Mq2NbGGmSWOa4ojwBtZc7q7DV2QlBhssFKk409Dy%2BgkGM67j3v1jGmPFsBQicm6t5ggxcz2HBmsJEvSstLY8ko1AHQAMzbWjbhZUwGvox4qVLiuxheLEK0w%2B%2FuZkUeo%2BvR1yzXZNwA0Da4cqTMMZn4MsKlynF5ObyQuwncORWEDXi8heaohZTktc4K1Im2zmyHpW0In2id6cBkLsUaer1bZ9Mg4qNYSqNIWWdXZZ1Bq2frTK%2BQL5XXOrPcd7xbx5jSg0XQJxFyRXJZZ8ABSAO6BnjotlWfNKzwci5ehmGdIaxzFVlbY8oklREucllnjh24z2SHmYYRj3VmQWWdXcQ645Umk8c6gzZrndmXbWbF1R69IYdAGWbKMBt0NyuI%2B%2B1mxc43%2Fm5WoCG%2FZFirQUAaUr7Hqn5W7GMZk2EvJW7k6WhFHoX2PYj4NhRTlf0qTjKKnlZISEur85fkiZ2kgKmcJfVbduHXGG0vKbr4oP5LtpW3yFUHZr0nRUHnbOgMuZ0UaEjfHbijTYZ%2BUiWdbHS%2BlVBs0VHKLlKhzm0vr3fVUQqCnjpKAfaU5%2BwoVXRQYJ6R4AZT1a08OBZofZLs1SxQQU07%2BFdn264dZHHCohKqgFzhazpzsWomU3pinVp5opV2aX4lx4ZCFiti9xfOvh0X680BGrKNlTXczhoesjF8weYc7BnH35vD6s%2B5xNecAzQkZKsVpfxLwrQ7QHFiqvYcEkp3gIZs%2FGGhXAh8r0D9mLtBB2hIa1dwORsug5HvOMMzquKggkEkiY4Hw1UhDzgaspkVV1VcdXBctddGHbyTDY%2BrjipzXQR8C%2B4wZq7K3akDNKSyK7icDZchcdVwSsnqNkr%2BnvrRsh1htZQqsmAkyUlYeVp2AEsJIyvCOjLC2mvTjtE2lgPWmHSThJwb16KMzEdYx6SbJCVchkRYv7fkqCqQIxg8cnJUHv0%2BYCk1IsVRR8ZR%2B%2B3ewT3bAFmqCsc1nBwCBIekZKlcATp7THJDUsJlMCz1hNi%2FrWI4gtEjEU0N19qjv44CDmA01MYrhqoY6vAYKm834m4Y6mh7HzfIIwwL5iLaPjnXwU%2BLo7EeLIpgiAXLYNjpv6nEg%2F5zRkBacNRRFe7LiCBJGOqZXeaAXY%2BTgRcI91%2BuXyCAo1w%2F52uixTIB6KrRnFmU4l%2B0z9xpDTuAU3%2BkKqALA7pt9QP0A9HIk1VhkSlLy463GBlvzw7g1O%2FoygmhnBCDbtqBrH57dpS2Qj5fqYI%2Bso4dwBlTgrAIrS8HnmkzDKJnh6XptgZ5vBTAUS04BSNmGF07eHsqAmdMuaRSAmbQfTuAU588qoy0PdrUpZFWAG84RpqJJOncsfHXs2CVOm4bEZ7LGyrrTFlnI%2BvcUSgAmmIadRR8qMLrPq7GHBCqQHEtRyoVYq%2BiMQfGyCl0QBtwo2LGgnEjSWMOaKbnd260v33FRXR4lj2eW8r7Im8dF0%2Fm3W4A2VymL62S%2FTZz1vmQzZC9kguBo44lXlxsuARwh1LgZ%2Bt%2Bs%2BlbxomxRYeNrnOGFsXKfndtKsxCgh5tFvnkoXP17iCHkLIXlL0g1l7oNJpz%2FDC1mMCNXWEqlIrFu%2Bep3c5UKDsJ7G8pGqjKEMQcvO8iqaXQcn8Po%2B%2FuXZvNYkz%2BeBEUECIBpgOogGw%2F3VpadoMgbFURNLEeV36OVmKRtyOEpk9s7OSm4LktIKC9vxefnBNWCNodv1JXxM1klqJjX7wFxD65C9bfOZ3AUEnZK1I3Ridw0Z%2FdYIOSYts3s%2FONv30z%2BTiK6tUfrwIk7%2BX2EhtcuFHa94Jxo7zEDQisj4BfjREiyktcALi5JR1vykfZkg4hx%2B7E%2FrBYgoBYdy%2Bv%2FWHZB82akRD7w4HMLXP2i5S7QWR%2BeqnVKNAlwL0gT3EJOKiwv88N5UDGI2Aw64h3RQLErBQTC%2FIIYCi5R4CY4OulFpHFuJ75GjS1LP7zzLUw68P5ykegfARn%2BwgWi9mMWOaiAz8IMZEY0wSHHNmpss%2FFtqHc1%2FJI4y1cS7M%2Bz2FYKBNhQ6H2GGm2vav8N5dsN2cYkEvLA46q6EFKuFSZ3FVwEWtyR%2FMFue5tNrKr4fG7%2Fz8%2FKHaWIX0HYb5Q%2F%2B77G%2FIPoVT0GmH6Z7obxf4sopyEzKt%2FpDRpMpnsGORY59Iagg01wApyZ0OuSv6jEnOGUMyVCjLAzCpt0twif87pRUb13sCBW3%2F9m3oFrISYepaZexzONfUc1vtiMQYat6l3EHgBgkw920H7E1mSmXoLsuy2ka9tttNVMEszdmKuFajqgZSZd75aQ4VhN5sJN%2BwAY9iZVRl9lXYd6NGuA%2B5dGG3CiJyL7rtwznUw4jEV4XREmUSU3fRv1B1l6Q%2FZDk7GPu%2Ft4a3JNx5TIY4k2OG18MRip8ql63NBot4eU6e8OuXPz%2BJ%2FeG%2BId%2BaaTMxFw4DTlwt79OVC9%2F3LhsA45kycx2OSPhLhL8FwFId%2FhUe3ERxIV9m6avM%2B30TrbanxcqVaI%2Bx4sm1HzKy3TNsyYGNiZPMEbJA%2BptzaTkCZ74GDz6bdAQOyuPqZIn1MCbOSgIE3RbYfVbuMDZBTd7n1lnsxXmRbNoQ8KAGKQAo%2B1couMJK6j%2F6kjgEy8mvmGiA%2F0bw%2FGsd9PyePfN7ekYSAKucVDKryd1miuNYpUVxcjxMVxd1BBk8Ut4BVcwZ9TidbBHENp6MUes2y7AmTs4sxcxneQC6xBSaMOkOp6Nq5AMv%2BEkTQqb01ADF7aygPs0sT%2FA3ieLsX%2BuVatfVpYcqtoNwK8mq5IEavydZ5I79ic%2FD2vMBIdz9662DhE5zQVdlKSwXXe%2F2GhbSO6NaxDpODdAJX6t%2BHsySc%2BhFVKte5UKK8A52jRI5Yb5PmPdDNQumkASL1GV4KIidApFLl%2FmIYOUnAAdc7mcdptImqeS4A1Zx3W2Si8Bc964VRVfgM9E7sNwCZ3FnNcE603gAyccOlujLe2GZI0uXhrgjY%2FYhTh8mAygRTJth4dZgAsthzU6wQ08GEV6DEZKjQTz3bM8710ssRO%2BZTYtKhUTbcbcCNiu4Ixo0cSkyV6kkc8FBarVxxHgKi6PUP%2Bvkm2LGLgT%2FJgEa4uw6KkfuCMGW%2Fve7%2B9rlYQTfHurVxWyIFaHctkfUvP75%2B8FePL89%2Fff75w%2BL73Vf9XgPt7ZBuqv%2BItXDQQPXEFlwAs%2Fr%2F0GAu1ZnWC6vbD6SyPE6VXzJG3fBOCvmlqhXZnSKzbaFOVqWFGc5jnegMcBgGbhaRmc71mJlArnTqS%2BQvgbdq1W3DrOdkyiGgHALSxmQdZj2Wtfh77TWqTG%2FBObc3Z3a1MMekn9ONaVT4e7vtYyFVJDb2N4n%2FlMVisaV926592h8YcSFGJfB3jpgqY7oKMWIzJasqcLnkFM36QL062dXJLq2A4kHNLb9%2BYp86G9z6iabKiKjengafWtWyOqJtRQRW6VbdI0eOdKuDg31DNmfCB7kOd0tpJavDfaCHO2TM9rLFW6OeRo%2BZ1MB2v6TeNN4zHjektw0LXd3s1FZrbEh5xterIusIWBbXng0VQLoGiBxHeZEokUe8kyBZcemsWMpEV6d4fzorZ6827iT00%2FpXM7OZp%2B7%2BfSXSHTB47oUP648CtfDVwu9w4SPrmMXcNru2%2ByxF7t2Ad7KD2F7%2FabXvkeF%2B5d4KxpRM2w1cIRRgNrRN%2Be6OFTp6ygrj16dpuApm7ow8ND%2FNDKnxFraWThlVzxVJcFRlXVThSGwEsIWL%2BR%2BfqQ8xE%2BGhQWTyD%2FVi%2BPE%2FT3A9A6Xq3D2D5tV0krqJilV%2FZg08h7P%2FhM0CVs0Jm0VSA38SNTaMbrKoLZOJyeZHTvuETcNkt1lBCZs63k%2BhLro1SJKw2X3D6opyrpO7VlvXqLElqly7WLfdl2tr%2BgSBfZhrBUc5t25Cx3BiWsy1kXXaqq%2B8mmEyd3Xhsu0X5gkW%2BlvMaXyxRrpchVS26rCkvEuj6L1w2EgXYd5EsD5zvFs2X8judySWlYhCWHvknZfu6GZORtJK6m4yxaAzJkeilKDiDTb3ZLtbhhusZ0WjN67ei86oiy8l1s0twddI68%2Fk7KbNOJxO7XRqFVlZxy50hKl3SoRLrOPADWLXf5qGc2rc8pUaO%2FU8WKFdGNodqx%2B0Q6Ya%2F0Ss57rzxy7TB9JzB45ppUCP%2FIUfRQToScjnklUe2U6hjniRbrT01ugTbOk52M7tac14fYDDtqLmLqBnrgR1U%2BdaAW29MiZT8g8MzOWVKYw%2F5hkJ9sKUhw%2FKlqS3CmLeswc5qs98tw5Um%2FfsKU4p0WePzZw9b30h268%2F3HClXrnWSXBXVKtTuCPuiGBfhgXAtj4pmFEJVNZ9z6%2BjVHE1aFtcsG8vpcQYRYSg1vTT6NqV%2F40AR%2FseRNNXbe57ySPHegJ2fTGJcuErFz6Pa2x%2FPxUp0tIykxQxDW4ALrTedmVau0smPZgPOBXOPLsqjsAWnV0gn9R03HvuneN6Cob30X2I1bqttePYgtl7bKFOSQY4DtZ0qBVtKxsQcz3iBBdCTFXg4GKIOdbfA%2BsE2Tw6vmBU4UspAVNZaNU%2FYt7SRHVqEz6l6lSp%2FHMjSLBenz2sLMI98tSlA6RtjqimTyxYlDCfaSUi1ilimnD%2FGtxJooyv0MLOBOz%2Bb%2F%2ByXXkoWTH%2FhlaNzLpFwGZW3oUVQffTyOYzPnkRchTULl5lfirzczDyImXgWqaMsfbyIvqY0ns6SejJd6nxZolV1Hfd3xXFXVQX9IziLl2VC3YOJ8nyw0CQ1Z1uZzM%2FjskT4YAFGHUPDokru0r0iY7jOEwsBBUpDO3rOZgMsYMrHeHkl%2BDB%2FjxIwlQcf0NrsHlSajCqP3EVCVYk%2BBQS7CwsujMKLpxgQ564igVXxjsc4Sw4j2pAGtWIg%2BXaDSP3cxTO%2FPk24ilwwmhMjcS6IS8ICeDCF%2FNRm7a7CMmO5vuxu419TpcjVl4LtWH3pqp0%2FpLjDQuJ1jQvOzkCDBCPlCXGyhlRvfl0vAHj3jfgEgwIEELPEz%2FGWJ3GnYOhamvoHwxvroSsy18Qx1vy2N1oy6VtlncwVN6Em969CahlYz99ohexq7MTRS1GesFwTvQwQL1ILy2vxNdrk8fD0F5MhgltGnkPUfE5pOUyhHhfrSl5JMhb8qSFYawqPztdikWFG0c9gtFuKdImvrA4ec%2BuEdrHLDzZ2QeZGgWI%2BZx9rZeZzbT%2BsZFUmk0VyixPHOsvx4uyTZVt2qUzcTb3p%2FZUtDPxoBsXpwQL7rEXF3I%2Feutg4ROQ8HbZbCjRGxa6upHIcETkRkvWsAMBUIiBNZkv15Pn2htA5GrYQbNagzn5zMEi4FU%2FRQ219uooV0d5l7JFZy857q4dtX7mfLZmof5Ssq1tW4Ae23b8CFca1tahBnmIgqX0FNWC77Fbx7G4kurWIaS6EgP3drMhF%2BG2HGxFDKv3yKvq2fHbpw8TMoCzjNz%2FfKK%2FwMmuNjcHkurdsgpJJyBJjq4dBEaUX%2FBEUKGhnIOKYAyeYFStO2EEA%2FDONkyGYSjfZPUmeVUMI%2BcUZjtOYaq%2BTZ1jRw5O8Sb9nIFnTr6eNafoPDLr07QUyVAkQyq3Zfl7o9uSVWg6jVDAE%2BlLj25Lgr%2F13Ivm2jJczf215i19bcsl%2FG7VZ%2BKpxa8Wf5cWRiFBchUuTFYs%2BQIGhoHd%2BxZcAFrK7VS9Q47FvHCyhO3tOkiT48rcB8spo4ENCKl3SSmEnIAQXiOijs90h5DMhPjhrbb%2BntFpTegHJR8B6kCfGO1sT0v5LTqHDagiwv3jhmoEQm1DOCcP40SwPkamGKdinANgnL36tLld2qyXSX7GiaBySlbvkCNnnMDBkE7TjJArEq7uDSEyM06DCxVXpDXcGyq4CaXYjYMKlevajAcFoH5vUGRSkckBkMnKRGxxGRK8s8lAJx3L%2FUi%2BI4LRV%2Ff2iUybcG0L19O5gBe6RRH%2FqEklBrTDBRd9UGZH5wiRmVTqE8AFC6hg0TUsJGGVLdSUaWIVTd3%2BNEvCqR9Rh7dj6CeIKUN1DnWe%2FoGMCjj1pKZc%2F22b9ZuHMkbaGSNDtkV2TY%2FDldFetdVilBZAqZ3UpLUA2SyE7m11ByCNGOyA54TFhiqSVhY7j8XOeaDgoo9Q5zY53ynTkUnON5kMNQsGdL%2FSroJf0q6CHAt%2BTCqQvKA0RKgut%2FUIdWZL2dD1EjcmV04bSrrPQfIYrPdI9Nsh8FUnD%2FO2%2BM8bZzbek%2F%2B%2FxAQrt3MCWIohLviMqR9Jb%2FDhjRgLL3UkuDA0ADXIRw7q0w8VOVDkQApy0IWa1Vn5xqMhB2PKJuXe3c3rIwf5IdA1ORhTakhv8JGJHFiabmvQ5vqyldqSIgcDIAddKBmelRo6FnJgjinFi3t3F6GXJDk5yA%2BBjsnBqOQOeoOPNOQg9jeJ%2FzT1Iw042NK%2Bbde%2BlnW3bf7qLSVpoKjCAKgCtwKruMS%2FSrJgD48sNAgZDAu9vLC0juWjDpQseO7UJ5uXGy7c5NHPfmHIAjkKdEfTu%2FYkjKrwvTf4yEEWSvhMXX89L8BDfmSgYyJNNzWkf4WI1qw62X%2FOhs6oRF97gw63rI5wohlmWX5aluPHsVUoUU5FLodALqv09sWRS97ZhuiJGpV6BfcWL0JXU25PlKHTHJbuyeWY0sB7g48c5DINU9lYA4AzTGUqRT1FD4ZAD8xe6QHvbEOkB%2BY1Og9MEbp4ctOD4hjoOlB1jUlQZ8NHInrgYE2Hms7T0gObSrFC0YMh0AOnV3rAO9sg6cE1mn%2BmCL0JuelBcQx07T24xvjC2fCRhh5AnXBGADXAo0uCrfqkJUUPFD2Qgh7AqvCdMHrAPdsQ6YEFr3B%2Ft9prIAybHrwdA13Tg3pBBQUfmekB1qdenMvse0%2F0iaRn72OSbKhYEZ0CPizQ02KyJJDaTidBSAaWc%2FrfxI8TbRbMw9kNROX7lymWoE77zabXmkbkp2wU65vIXwRUwT%2B9eO%2Bz5hpMlTOXEz8%2FP0%2Be0SSMluQXqNM18qCTL%2FeBvFuLZ4%2F%2Bk3fC1NnCajcznfSPjx%2B%2BnDrnfNY45WYbrfIJyavhg7%2Fyn3y6YOEDoJJlD23nzHak5s%2BZfoUaeXU%2Be%2Fn7CXMW7efqZw0WK69oVBVPgvWCwmlNP%2BkqnTW7SvvZM%2FW%2F%2Brl%2FhDNvOln6SfI68edbMkLf1X6u5bp54cTPMZkpXHtPfpw%2F3Kppdnf29X%2BDh8f47ufnr1%2BXd8s%2FjS%2BzT39pMpYv6Cfu6%2FXaYelYSkOrmW3rzd7c3%2Bw1p7jEznaPQcV2D3Wx%2B%2F0ebFhUNCJCVTUo2%2FA027A9XTIxxxpCVTaYYMqdHqpJkFBzseDO9348i4JpkOo4fiZfVDgPZt4qTu%2BW3CzUP%2Fz6kR4uNQqOlStu3EUFxzeZbg0z1L9hlqJknsJik%2FXW3jG16AlOeSz5J1zQnx8pBS9f%2FYP%2BNvM23jRYBUlA2xrtvu7uX%2Fef7rS7Xz%2BSn%2F1ZGL%2FGif%2BUCYYm3vcMgx59T%2BoTyOh9nGznr%2BUVCBq2sbcqLutlQzlo8yulL3wK05uchU%2BblU%2F5x2Y7XZEX5Z8oCdPXzFNB09LmJFCf1CJ98cvX%2BI9Yf%2Fndxh%2F%2Fu10ZszvrN23cVqQQpFfYkJVId8QjfRb5XkIO6V2UP0RUzjaeUXh99OI4fRzBsbZtlaCQkYJKDoqqRKeL7X9est%2FCD%2BrQ0HSg6U4rGIzbQSkGBhUBbYEwoN6RMEx2Xv4T%2BfiPH9OzAb3%2Ffw%3D%3D"></iframe>
@@ -1366,7 +1403,7 @@ R7V1bd6M4tv41WWfOA16SuJnHJJVUT3fqdFYl3T1nXmbJINt0YXADjpP%2B9SMJsA0WGHOxgZBVKxXLI
 </tr>
 <tr>
 <td style="text-align: left;">LRM integration</td>
-<td style="text-align: left;">LRM classes and properties are inserted into the CIDOC CRM taxonomy, with some friction<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
+<td style="text-align: left;">LRM classes and properties are inserted into the CIDOC CRM taxonomy, with some friction<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">2</a></sup></td>
 <td style="text-align: left;">Seamless</td>
 </tr>
 <tr>
@@ -1387,17 +1424,15 @@ R7V1bd6M4tv41WWfOA16SuJnHJJVUT3fqdFYl3T1nXmbJINt0YXADjpP%2B9SMJsA0WGHOxgZBVKxXLI
 <p><a class="glightbox" href="../../data/diagrams/formal-model-wemi.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../data/diagrams/formal-model-wemi.svg" /></a></p>
 <h3 id="formal-model-for-the-intermedial-relations-connecting-text-and-items">Formal model for the intermedial relations connecting text and items</h3>
 <p><a class="glightbox" href="../../data/diagrams/formal-model-relations.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../data/diagrams/formal-model-relations.svg" /></a></p>
+<p><a class="glightbox" href="../../data/diagrams/example-just-what.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../data/diagrams/example-just-what.svg" /></a></p>
 <div class="footnote">
 <hr />
 <ol>
-<li id="fn:1">
-<p>Riva, P., Le Boeuf, P., &amp; Žumer, M. (2018). <span class="nocase">IFLA Library Reference Model: A Conceptual Model for Bibliographic Information</span>. <em>International Federation of Library Associations and Institutions (IFLA)</em>. <a href="https://repository.ifla.org/handle/20.500.14598/40">https://repository.ifla.org/handle/20.500.14598/40</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
 <li id="fn:2">
-<p>Oury, C., Boulet, V., Dunsire, G., Howlett, L., &amp; Reynolds, R. (2017). <span class="nocase">Definition of PRESSoo: A conceptual model for Bibliographic Information Pertaining to Serials and Other Continuing Resources (Version 1.3)</span>. <em>International Federation of Library Associations and Institutions (IFLA)</em>. <a href="https://repository.ifla.org/handle/20.500.14598/1173">https://repository.ifla.org/handle/20.500.14598/1173</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Oury, C., Boulet, V., Dunsire, G., Howlett, L., &amp; Reynolds, R. (2017). <span class="nocase">Definition of PRESSoo: A conceptual model for Bibliographic Information Pertaining to Serials and Other Continuing Resources (Version 1.3)</span>. <em>International Federation of Library Associations and Institutions (IFLA)</em>. <a href="https://repository.ifla.org/handle/20.500.14598/1173">https://repository.ifla.org/handle/20.500.14598/1173</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>Beyond the minutiae, it seems redundant to have separate classes for F12 Nomen and E41 Appellation.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Beyond the minutiae, it seems redundant to have separate classes for F12 Nomen and E41 Appellation.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
