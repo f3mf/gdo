@@ -17,7 +17,7 @@ nav:
     - Data interpretation: knowledge-organization/theoretical-model.md
     - Ontology design: knowledge-organization/formal-model.md
   - Knowledge Representation:
-    - RDF production: knowledge-representation/rdf-production.md
+    - Item description: knowledge-representation/item-description.md
 theme:
   name: material
   features:
