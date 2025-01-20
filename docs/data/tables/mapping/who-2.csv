@@ -1,0 +1,34 @@
+Dublin Core Terms,CDWA (Getty),LIDO (ICOM),OAC (ICCD)
+"**dct:creator**
+
+_An entity primarily responsible for making the resource_",4.1. Creator Description,cdwalite:displayCreator,"AU Definizione Culturale:
+
+- AUT Autore
+- AAU Altri autori
+- ATB Ambito di produzione"
+"**dct:contributor**
+
+_An entity responsible for making contributions to the resource._",4.5. Commissioner,,"AU Definizione Culturale:
+
+- EDT Editore
+- CMM Committenza"
+"**dct:publisher**
+
+_An entity responsible for making the resource available._",,,
+"**dct:provenance**
+
+_A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation._","24.1. Exhibition/Loan Description
+
+24.2. Exhibition Title or Name
+
+24.3. Exhibition Type
+
+23.1. Provenance Description
+
+23.1.1. Acquisition Description",,"TU CONDIZIONE GIURIDICA E VINCOLI:
+
+- ACQ Acquisizione
+
+DO FONTI E DOCUMENTI DI RIFERIMENTO:
+
+- MST Mostre"

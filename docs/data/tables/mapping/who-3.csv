@@ -1,0 +1,19 @@
+Dublin Core Terms,IPTC (Core + Extension),EN 15907 (CEN)
+"**dct:creator**
+
+_An entity primarily responsible for making the resource_","Creator (core)
+
+Creator’s jobtitle (core)
+
+Image Creator (ext)",HasAgent
+"**dct:contributor**
+
+_An entity responsible for making contributions to the resource._",Contributor (ext),HasAgent
+"**dct:publisher**
+
+_An entity responsible for making the resource available._",,Publication Event: HasAgent
+"**dct:provenance**
+
+_A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation._","Source (Supply Chain) (core)
+
+Image Supplier (ext)",Record source

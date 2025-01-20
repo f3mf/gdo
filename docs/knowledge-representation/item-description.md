@@ -286,8 +286,9 @@
     --8<-- "docs/data/dataset/rdf-turtle/gdo.ttl"
     ```
 
-
-![](../data/diagrams/rdf-just-what.svg)
+<div class="grid cards" markdown>
+- ![](../data/diagrams/rdf-just-what.svg)
+</div>
 
 <style>
 	table td {
