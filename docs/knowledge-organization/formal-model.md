@@ -82,11 +82,11 @@ PROV-O
 
 ### Formal model for <em>Il Giuoco dell'Oca</em> and the related items, according to LRMOO and RDA ontologies 
 
-<iframe frameborder="0" style="width:100%;height:1217px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&page-id=eTGooQY8yRNoS9DBBdiv#G1Noc7iu9yR81oWBeEbMsjj4U8-9nnb8Ow"></iframe>
+![](../data/diagrams/formal-model-wemi.svg)
 
 ### Formal model for the intermedial relations connecting text and items
 
-<iframe frameborder="0" style="width:100%;height:1024px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&page-id=35Y5kPkmdY_ys3Sy56cA#G1Noc7iu9yR81oWBeEbMsjj4U8-9nnb8Ow"></iframe>
+![](../data/diagrams/formal-model-relations.svg)
 
 
 \bibliography
