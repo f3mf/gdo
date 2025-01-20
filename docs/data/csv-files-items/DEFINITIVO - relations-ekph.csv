@@ -1,0 +1,31 @@
+miro:EkphrasticRelation,miro:hasMediumA,miro:hasMediumB,miro:hasFeature,prov:wasGeneratedBy
+ekph_rel_1,chapter-LXXXVIII,just-what-e,artistic technique and artwork description,interpretationAct_1_ek
+ekph_rel_1,,,typographic element,
+ekph_rel_2,chapter-VII,vak-vak-e,deictic expressions,interpretationAct_2_ek
+ekph_rel_2,,,list of elements,
+ekph_rel_2,,,semantic density,
+ekph_rel_3,chapter-LXXXIII,marilyn-photo-e,citation of textual fragments and music,interpretationAct_3_ek
+ekph_rel_4,chapter-I,cassa-sistina-e,artistic technique and artwork description (internal),interpretationAct_4_ek
+ekph_rel_4,,,,interpretationAct_15_ek
+ekph_rel_4,,,,interpretationAct_16_ek
+ekph_rel_5,chapter-V,cassa-sistina-e,artistic technique and artwork description (external),interpretationAct_5_ek
+ekph_rel_5,,,typographic element,
+ekph_rel_6,chapter-IX,cassa-sistina-e,artistic technique and artwork description (environmental),interpretationAct_6_ek
+ekph_rel_7,chapter-XXXIX,vampyr-e,narratological element,interpretationAct_7_ek
+ekph_rel_7,,,,interpretationAct_17_ek
+ekph_rel_7,,,intermedial reference to cinema,
+ekph_rel_8,chapter-LXXXIV,occhio-degli-occhi-e,mimetic description,interpretationAct_8_ek
+ekph_rel_8,,,,interpretationAct_18_ek
+ekph_rel_9,chapter-CIX,lady-from-shanghai-e,recall of same elements and gestures,interpretationAct_9_ek
+ekph_rel_10,chapter-CII,go-for-your-money-e,citation of cinematographic and graphic techniques,interpretationAct_10_ek
+ekph_rel_10,,,mimetic description,
+ekph_rel_10,,,spatial details,
+ekph_rel_10,,,spatial indicators,
+ekph_rel_11,chapter-CV,go-for-your-money-e,citation of cinematographic and graphic techniques,interpretationAct_11_ek
+ekph_rel_11,,,mimetic description,
+ekph_rel_11,,,spatial details,
+ekph_rel_11,,,spatial indicators,
+ekph_rel_12,chapter-CIX,go-for-your-money-e,citation of cinematographic and graphic techniques,interpretationAct_12_ek
+ekph_rel_12,,,mimetic description,
+ekph_rel_12,,,spatial details,
+ekph_rel_12,,,spatial indicators,

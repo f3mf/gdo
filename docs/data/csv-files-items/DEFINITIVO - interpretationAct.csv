@@ -1,0 +1,32 @@
+hico:InterpretationAct,hico:isExtractedFrom,hico:hasInterpretationType,hico:hasInterpretationCriterion,prov:startedAtTime,cito:disagreesWith,cito:agreesWith
+interpretationAct_1_ek,quot-1-pub-sotgiu-e,ekph-rel-attribution,scholar-attribution,2016,,
+interpretationAct_1_mc,pub-sotgiu-e,media-comb-attribution,scholar-attribution,2016,,
+interpretationAct_2_ek,quot-1-pub-portesine-e,ekph-rel-attribution,scholar-attribution,2021,,
+interpretationAct_2_mr,pub-portesine-e,media-ref-attribution,scholar-attribution,2021,,
+interpretationAct_3_ek,quot-2-pub-portesine-e,ekph-rel-attribution,scholar-attribution,2021,,
+interpretationAct_3_mr,pub-portesine-e,media-ref-attribution,scholar-attribution,2021,,
+interpretationAct_4_ek,quot-3-pub-portesine-e,ekph-rel-attribution,author-declaration,2021,,interpretationAct_15_ek
+interpretationAct_4_ek,,,,,,interpretationAct_16_ek
+interpretationAct_5_ek,quot-4-pub-portesine-e,ekph-rel-attribution,author-declaration,2021,,
+interpretationAct_6_ek,quot-5-pub-portesine-e,ekph-rel-attribution,author-declaration,2021,,
+interpretationAct_7_ek,quot-1-pub-risso-e,ekph-rel-attribution,author-declaration,2023,,interpretationAct_17_ek
+interpretationAct_7_mr,pub-risso-e,media-ref-attribution,author-declaration,2023,,interpretationAct_17_mr
+interpretationAct_8_ek,quot-2-pub-sotgiu-e,ekph-rel-attribution,scholar-attribution,2016,,interpretationAct_18_ek
+interpretationAct_8_mc,pub-sotgiu-e,media-comb-attribution,author-declaration,2016,,interpretationAct_18_mc
+interpretationAct_9_ek,quot-2-pub-risso-e,ekph-rel-attribution,scholar-attribution,2023,interpretationAct_10,
+interpretationAct_10_ek,quot-6-pub-portesine-e,ekph-rel-attribution,archival-documentation ,2021,interpretationAct_9,
+interpretationAct_11_ek,quot-7-pub-portesine-e,ekph-rel-attribution,archival-documentation ,2021,,
+interpretationAct_12_ek,quot-8-pub-portesine-e,ekph-rel-attribution,archival-documentation ,2021,,
+interpretationAct_13_mt,pub-risso-e,media-trasp-attribution,archival-documentation ,2023,,interpretationAct_19_mt
+interpretationAct_14_mt,pub-portesine-e,media-trasp-attribution,archival-documentation ,2021,,interpretationAct_20_mt
+interpretationAct_15_ek,quot-3-pub-sotgiu-e,ekph-rel-attribution,author-declaration,2016,,interpretationAct_4_ek
+interpretationAct_15_ek,,,,,,interpretationAct_16_ek
+interpretationAct_16_ek,quot-3-pub-risso-e,ekph-rel-attribution,scholar-attribution,2023,,interpretationAct_4_ek
+interpretationAct_16_ek,,,,,,interpretationAct_15_ek
+interpretationAct_17_ek,quot-9-pub-portesine-e,ekph-rel-attribution,author-declaration,2021,,interpretationAct_7_ek
+interpretationAct_17_mr,pub-portesine-e,media-ref-attribution,author-declaration,2021,,interpretationAct_7_mr
+interpretationAct_18_ek,quot-4-pub-risso-e,ekph-rel-attribution,scholar-attribution,2023,,interpretationAct_8_ek
+interpretationAct_18_mc,pub-risso-e,media-comb-attribution,author-declaration,2023,,interpretationAct_8_mc
+interpretationAct_19_mt,pub-portesine-e,media-trasp-attribution,linguistic-comparison,2021,,interpretationAct_13_mt
+interpretationAct_20_mt,pub-risso-e,media-trasp-attribution,archival-documentation ,2023,,interpretationAct_14_mt
+interpretationAct_21_mr,pub-risso-e,media-ref-attribution,bibliography,2023,,
