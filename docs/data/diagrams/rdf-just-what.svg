@@ -1,0 +1,332 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3282pt" height="974pt" viewBox="0.00 0.00 3281.65 974.09">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 970.09)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-970.09 3277.65,-970.09 3277.65,4 -4,4"/>
+<text text-anchor="middle" x="1636.82" y="-202.8" font-family="Times,serif" font-size="14.00">Namespaces:</text>
+<text text-anchor="middle" x="1636.82" y="-187.8" font-family="Times,serif" font-size="14.00">cito: http://purl.org/spar/cito/</text>
+<text text-anchor="middle" x="1636.82" y="-172.8" font-family="Times,serif" font-size="14.00">crm: http://www.cidoc-crm.org/cidoc-crm/</text>
+<text text-anchor="middle" x="1636.82" y="-157.8" font-family="Times,serif" font-size="14.00">hico: http://purl.org/emmedi/hico</text>
+<text text-anchor="middle" x="1636.82" y="-142.8" font-family="Times,serif" font-size="14.00">lrmoo: http://iflastandards.info/ns/lrm/lrmoo/</text>
+<text text-anchor="middle" x="1636.82" y="-127.8" font-family="Times,serif" font-size="14.00">miro: https://w3id.org/miro/</text>
+<text text-anchor="middle" x="1636.82" y="-112.8" font-family="Times,serif" font-size="14.00">owl: http://www.w3.org/2002/07/owl#</text>
+<text text-anchor="middle" x="1636.82" y="-97.8" font-family="Times,serif" font-size="14.00">prov: http://www.w3.org/ns/prov#</text>
+<text text-anchor="middle" x="1636.82" y="-82.8" font-family="Times,serif" font-size="14.00">rdaco: http://rdaregistry.info/termList/RDAContentType/</text>
+<text text-anchor="middle" x="1636.82" y="-67.8" font-family="Times,serif" font-size="14.00">rdae: http://rdaregistry.info/Elements/e/</text>
+<text text-anchor="middle" x="1636.82" y="-52.8" font-family="Times,serif" font-size="14.00">rdam: http://rdaregistry.info/Elements/m/</text>
+<text text-anchor="middle" x="1636.82" y="-37.8" font-family="Times,serif" font-size="14.00">rdaw: http://rdaregistry.info/Elements/w/</text>
+<text text-anchor="middle" x="1636.82" y="-22.8" font-family="Times,serif" font-size="14.00">rdfs: http://www.w3.org/2000/01/rdf-schema#</text>
+<text text-anchor="middle" x="1636.82" y="-7.8" font-family="Times,serif" font-size="14.00">xsd: http://www.w3.org/2001/XMLSchema#</text>
+<!-- Rmiro:work/just&#45;what&#45;w -->
+<g id="node1" class="node">
+<title>Rmiro:work/just-what-w</title>
+<ellipse fill="none" stroke="blue" cx="971.8" cy="-546.09" rx="115.08" ry="18"/>
+<text text-anchor="middle" x="971.8" y="-542.39" font-family="Times,serif" font-size="14.00">miro:work/just-what-w</text>
+</g>
+<!-- Rlrmoo:F1 -->
+<g id="node2" class="node">
+<title>Rlrmoo:F1</title>
+<ellipse fill="none" stroke="blue" cx="1817.51" cy="-546.09" rx="52.79" ry="18"/>
+<text text-anchor="middle" x="1817.51" y="-542.39" font-family="Times,serif" font-size="14.00">lrmoo:F1</text>
+</g>
+<!-- Rmiro:work/just&#45;what&#45;w&#45;&gt;Rlrmoo:F1 -->
+<g id="edge1" class="edge">
+<title>Rmiro:work/just-what-w-&gt;Rlrmoo:F1</title>
+<path fill="none" stroke="black" d="M1087.02,-546.09C1267.75,-546.09 1613.55,-546.09 1754.45,-546.09"/>
+<polygon fill="black" stroke="black" points="1754.64,-549.59 1764.64,-546.09 1754.64,-542.59 1754.64,-549.59"/>
+<text text-anchor="middle" x="1393.03" y="-549.89" font-family="Times,serif" font-size="14.00">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</text>
+</g>
+<!-- Rmiro:expression/just&#45;what&#45;e -->
+<g id="node3" class="node">
+<title>Rmiro:expression/just-what-e</title>
+<ellipse fill="none" stroke="blue" cx="1817.51" cy="-736.09" rx="139.98" ry="18"/>
+<text text-anchor="middle" x="1817.51" y="-732.39" font-family="Times,serif" font-size="14.00">miro:expression/just-what-e</text>
+</g>
+<!-- Rmiro:work/just&#45;what&#45;w&#45;&gt;Rmiro:expression/just&#45;what&#45;e -->
+<g id="edge2" class="edge">
+<title>Rmiro:work/just-what-w-&gt;Rmiro:expression/just-what-e</title>
+<path fill="none" stroke="black" d="M1028.51,-561.78C1077.18,-575.1 1149.89,-594.08 1214.03,-607.09 1371.8,-639.08 1433.1,-580.76 1572.03,-662.09 1583.23,-668.64 1579.06,-678.15 1590.03,-685.09 1620.46,-704.34 1657.24,-716.37 1692.23,-723.87"/>
+<polygon fill="black" stroke="black" points="1691.54,-727.3 1702.04,-725.86 1692.94,-720.44 1691.54,-727.3"/>
+<text text-anchor="middle" x="1393.03" y="-665.89" font-family="Times,serif" font-size="14.00">lrmoo:R3</text>
+</g>
+<!-- Lhttps://vocab.getty.edu/aat/300033963|Datatype: xsd:anyURI -->
+<g id="node4" class="node">
+<title>Lhttps://vocab.getty.edu/aat/300033963|Datatype: xsd:anyURI</title>
+<polygon fill="none" stroke="black" points="1671.51,-344.09 1671.51,-390.09 1963.51,-390.09 1963.51,-344.09 1671.51,-344.09"/>
+<text text-anchor="middle" x="1817.51" y="-374.89" font-family="Times,serif" font-size="14.00">https://vocab.getty.edu/aat/300033963</text>
+<polyline fill="none" stroke="black" points="1671.51,-367.09 1963.51,-367.09 "/>
+<text text-anchor="middle" x="1817.51" y="-351.89" font-family="Times,serif" font-size="14.00">Datatype: xsd:anyURI</text>
+</g>
+<!-- Rmiro:work/just&#45;what&#45;w&#45;&gt;Lhttps://vocab.getty.edu/aat/300033963|Datatype: xsd:anyURI -->
+<g id="edge3" class="edge">
+<title>Rmiro:work/just-what-w-&gt;Lhttps://vocab.getty.edu/aat/300033963|Datatype: xsd:anyURI</title>
+<path fill="none" stroke="black" d="M1053.92,-558.74C1101.61,-561.3 1159.51,-555.16 1196.03,-519.09 1239.09,-476.55 1169.05,-424.6 1214.03,-384.09 1277.41,-326.99 1504.45,-335.73 1660.96,-349.6"/>
+<polygon fill="black" stroke="black" points="1660.89,-353.11 1671.17,-350.52 1661.52,-346.14 1660.89,-353.11"/>
+<text text-anchor="middle" x="1393.03" y="-387.89" font-family="Times,serif" font-size="14.00">rdaw:P10004</text>
+</g>
+<!-- LJust what is it that makes today&#39;s homes so appealing?|Datatype: xsd:string -->
+<g id="node5" class="node">
+<title>LJust what is it that makes today's homes so appealing?|Datatype: xsd:string</title>
+<polygon fill="none" stroke="black" points="1613.51,-279.09 1613.51,-325.09 2021.51,-325.09 2021.51,-279.09 1613.51,-279.09"/>
+<text text-anchor="middle" x="1817.51" y="-309.89" font-family="Times,serif" font-size="14.00">Just what is it that makes today's homes so appealing?</text>
+<polyline fill="none" stroke="black" points="1613.51,-302.09 2021.51,-302.09 "/>
+<text text-anchor="middle" x="1817.51" y="-286.89" font-family="Times,serif" font-size="14.00">Datatype: xsd:string</text>
+</g>
+<!-- Rmiro:work/just&#45;what&#45;w&#45;&gt;LJust what is it that makes today&#39;s homes so appealing?|Datatype: xsd:string -->
+<g id="edge4" class="edge">
+<title>Rmiro:work/just-what-w-&gt;LJust what is it that makes today's homes so appealing?|Datatype: xsd:string</title>
+<path fill="none" stroke="black" d="M1051.48,-559.09C1099.92,-562.28 1159.53,-556.69 1196.03,-519.09 1226.8,-487.38 1181.88,-351.39 1214.03,-321.09 1356.35,-186.95 1611.94,-238.53 1739.59,-276.16"/>
+<polygon fill="black" stroke="black" points="1738.72,-279.55 1749.3,-279.07 1740.73,-272.84 1738.72,-279.55"/>
+<text text-anchor="middle" x="1393.03" y="-324.89" font-family="Times,serif" font-size="14.00">rdaw:P10088</text>
+</g>
+<!-- L1956|Datatype: xsd:dateTime -->
+<g id="node6" class="node">
+<title>L1956|Datatype: xsd:dateTime</title>
+<polygon fill="none" stroke="black" points="1724.01,-583.09 1724.01,-629.09 1911.01,-629.09 1911.01,-583.09 1724.01,-583.09"/>
+<text text-anchor="middle" x="1817.51" y="-613.89" font-family="Times,serif" font-size="14.00">1956</text>
+<polyline fill="none" stroke="black" points="1724.01,-606.09 1911.01,-606.09 "/>
+<text text-anchor="middle" x="1817.51" y="-590.89" font-family="Times,serif" font-size="14.00">Datatype: xsd:dateTime</text>
+</g>
+<!-- Rmiro:work/just&#45;what&#45;w&#45;&gt;L1956|Datatype: xsd:dateTime -->
+<g id="edge5" class="edge">
+<title>Rmiro:work/just-what-w-&gt;L1956|Datatype: xsd:dateTime</title>
+<path fill="none" stroke="black" d="M1074.31,-554.32C1117.39,-557.76 1168.15,-561.72 1214.03,-565.09 1389.41,-577.96 1593.62,-591.57 1713.58,-599.42"/>
+<polygon fill="black" stroke="black" points="1713.65,-602.93 1723.85,-600.09 1714.1,-595.94 1713.65,-602.93"/>
+<text text-anchor="middle" x="1393.03" y="-591.89" font-family="Times,serif" font-size="14.00">rdaw:P10219</text>
+</g>
+<!-- Rmiro:agent/richard&#45;hamilton -->
+<g id="node7" class="node">
+<title>Rmiro:agent/richard-hamilton</title>
+<ellipse fill="none" stroke="blue" cx="1817.51" cy="-492.09" rx="141.88" ry="18"/>
+<text text-anchor="middle" x="1817.51" y="-488.39" font-family="Times,serif" font-size="14.00">miro:agent/richard-hamilton</text>
+</g>
+<!-- Rmiro:work/just&#45;what&#45;w&#45;&gt;Rmiro:agent/richard&#45;hamilton -->
+<g id="edge6" class="edge">
+<title>Rmiro:work/just-what-w-&gt;Rmiro:agent/richard-hamilton</title>
+<path fill="none" stroke="black" d="M1073.7,-537.67C1116.9,-534.19 1167.93,-530.24 1214.03,-527.09 1372.13,-516.27 1553.71,-506.02 1675.85,-499.44"/>
+<polygon fill="black" stroke="black" points="1676.21,-502.92 1686.01,-498.89 1675.83,-495.93 1676.21,-502.92"/>
+<text text-anchor="middle" x="1393.03" y="-530.89" font-family="Times,serif" font-size="14.00">rdaw:P10451</text>
+</g>
+<!-- Lhttps://www.wikidata.org/wiki/Q3190307|Datatype: xsd:anyURI -->
+<g id="node8" class="node">
+<title>Lhttps://www.wikidata.org/wiki/Q3190307|Datatype: xsd:anyURI</title>
+<polygon fill="none" stroke="black" points="1663.51,-409.09 1663.51,-455.09 1971.51,-455.09 1971.51,-409.09 1663.51,-409.09"/>
+<text text-anchor="middle" x="1817.51" y="-439.89" font-family="Times,serif" font-size="14.00">https://www.wikidata.org/wiki/Q3190307</text>
+<polyline fill="none" stroke="black" points="1663.51,-432.09 1971.51,-432.09 "/>
+<text text-anchor="middle" x="1817.51" y="-416.89" font-family="Times,serif" font-size="14.00">Datatype: xsd:anyURI</text>
+</g>
+<!-- Rmiro:work/just&#45;what&#45;w&#45;&gt;Lhttps://www.wikidata.org/wiki/Q3190307|Datatype: xsd:anyURI -->
+<g id="edge7" class="edge">
+<title>Rmiro:work/just-what-w-&gt;Lhttps://www.wikidata.org/wiki/Q3190307|Datatype: xsd:anyURI</title>
+<path fill="none" stroke="black" d="M1077.92,-553.05C1117.83,-550.89 1161.86,-542.26 1196.03,-519.09 1209.86,-509.71 1200.06,-495.25 1214.03,-486.09 1347.01,-398.88 1533.48,-395.95 1663.62,-408.1"/>
+<polygon fill="black" stroke="black" points="1663.39,-411.6 1673.68,-409.08 1664.06,-404.63 1663.39,-411.6"/>
+<text text-anchor="middle" x="1393.03" y="-489.89" font-family="Times,serif" font-size="14.00">owl:sameAs</text>
+</g>
+<!-- Rlrmoo:F2 -->
+<g id="node9" class="node">
+<title>Rlrmoo:F2</title>
+<ellipse fill="none" stroke="blue" cx="2606.67" cy="-674.09" rx="52.79" ry="18"/>
+<text text-anchor="middle" x="2606.67" y="-670.39" font-family="Times,serif" font-size="14.00">lrmoo:F2</text>
+</g>
+<!-- Rmiro:expression/just&#45;what&#45;e&#45;&gt;Rlrmoo:F2 -->
+<g id="edge8" class="edge">
+<title>Rmiro:expression/just-what-e-&gt;Rlrmoo:F2</title>
+<path fill="none" stroke="black" d="M1935.39,-726.42C1975.81,-723.1 2021.39,-719.4 2062.99,-716.09 2237.9,-702.16 2444.57,-686.34 2544.92,-678.7"/>
+<polygon fill="black" stroke="black" points="2545.46,-682.17 2555.17,-677.92 2544.93,-675.19 2545.46,-682.17"/>
+<text text-anchor="middle" x="2241.99" y="-719.89" font-family="Times,serif" font-size="14.00">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</text>
+</g>
+<!-- Rmiro:manifestation/just&#45;what&#45;m -->
+<g id="node10" class="node">
+<title>Rmiro:manifestation/just-what-m</title>
+<ellipse fill="none" stroke="blue" cx="2606.67" cy="-789.09" rx="157.07" ry="18"/>
+<text text-anchor="middle" x="2606.67" y="-785.39" font-family="Times,serif" font-size="14.00">miro:manifestation/just-what-m</text>
+</g>
+<!-- Rmiro:expression/just&#45;what&#45;e&#45;&gt;Rmiro:manifestation/just&#45;what&#45;m -->
+<g id="edge9" class="edge">
+<title>Rmiro:expression/just-what-e-&gt;Rmiro:manifestation/just-what-m</title>
+<path fill="none" stroke="black" d="M1940.37,-744.69C1979.52,-747.42 2023.08,-750.42 2062.99,-753.09 2222.07,-763.73 2261.91,-765.38 2420.99,-776.09 2434.41,-776.99 2448.37,-777.94 2462.35,-778.91"/>
+<polygon fill="black" stroke="black" points="2462.3,-782.42 2472.52,-779.62 2462.79,-775.43 2462.3,-782.42"/>
+<text text-anchor="middle" x="2241.99" y="-779.89" font-family="Times,serif" font-size="14.00">lrmoo:R4i</text>
+</g>
+<!-- Rmiro:expression/young&#45;romance&#45;e -->
+<g id="node11" class="node">
+<title>Rmiro:expression/young-romance-e</title>
+<ellipse fill="none" stroke="blue" cx="2606.67" cy="-843.09" rx="167.87" ry="18"/>
+<text text-anchor="middle" x="2606.67" y="-839.39" font-family="Times,serif" font-size="14.00">miro:expression/young-romance-e</text>
+</g>
+<!-- Rmiro:expression/just&#45;what&#45;e&#45;&gt;Rmiro:expression/young&#45;romance&#45;e -->
+<g id="edge10" class="edge">
+<title>Rmiro:expression/just-what-e-&gt;Rmiro:expression/young-romance-e</title>
+<path fill="none" stroke="black" d="M1878.3,-752.3C1927.5,-764.98 1999.26,-781.93 2062.99,-791.09 2220.81,-813.76 2262.51,-796.59 2420.99,-814.09 2449.43,-817.23 2480.19,-821.64 2508.3,-826.09"/>
+<polygon fill="black" stroke="black" points="2508.1,-829.6 2518.52,-827.72 2509.2,-822.69 2508.1,-829.6"/>
+<text text-anchor="middle" x="2241.99" y="-817.89" font-family="Times,serif" font-size="14.00">lrmoo:R75</text>
+</g>
+<!-- Rrdaco:1014 -->
+<g id="node12" class="node">
+<title>Rrdaco:1014</title>
+<ellipse fill="none" stroke="blue" cx="2606.67" cy="-735.09" rx="63.09" ry="18"/>
+<text text-anchor="middle" x="2606.67" y="-731.39" font-family="Times,serif" font-size="14.00">rdaco:1014</text>
+</g>
+<!-- Rmiro:expression/just&#45;what&#45;e&#45;&gt;Rrdaco:1014 -->
+<g id="edge11" class="edge">
+<title>Rmiro:expression/just-what-e-&gt;Rrdaco:1014</title>
+<path fill="none" stroke="black" d="M1957.43,-735.91C2125.66,-735.7 2402.7,-735.34 2533.29,-735.18"/>
+<polygon fill="black" stroke="black" points="2533.57,-738.68 2543.57,-735.17 2533.56,-731.68 2533.57,-738.68"/>
+<text text-anchor="middle" x="2241.99" y="-738.89" font-family="Times,serif" font-size="14.00">rdae:P20001</text>
+</g>
+<!-- Rlrmoo:F3 -->
+<g id="node13" class="node">
+<title>Rlrmoo:F3</title>
+<ellipse fill="none" stroke="blue" cx="3221" cy="-789.09" rx="52.79" ry="18"/>
+<text text-anchor="middle" x="3221" y="-785.39" font-family="Times,serif" font-size="14.00">lrmoo:F3</text>
+</g>
+<!-- Rmiro:manifestation/just&#45;what&#45;m&#45;&gt;Rlrmoo:F3 -->
+<g id="edge12" class="edge">
+<title>Rmiro:manifestation/just-what-m-&gt;Rlrmoo:F3</title>
+<path fill="none" stroke="black" d="M2764.17,-789.09C2892.12,-789.09 3066.31,-789.09 3157.89,-789.09"/>
+<polygon fill="black" stroke="black" points="3158.1,-792.59 3168.1,-789.09 3158.1,-785.59 3158.1,-792.59"/>
+<text text-anchor="middle" x="2971.36" y="-792.89" font-family="Times,serif" font-size="14.00">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</text>
+</g>
+<!-- Rmiro:EkphrasticRelation/ekph_rel_1 -->
+<g id="node14" class="node">
+<title>Rmiro:EkphrasticRelation/ekph_rel_1</title>
+<ellipse fill="none" stroke="blue" cx="176.78" cy="-465.09" rx="176.57" ry="18"/>
+<text text-anchor="middle" x="176.78" y="-461.39" font-family="Times,serif" font-size="14.00">miro:EkphrasticRelation/ekph_rel_1</text>
+</g>
+<!-- Rmiro:EkphrasticRelation/ekph_rel_1&#45;&gt;Rmiro:expression/just&#45;what&#45;e -->
+<g id="edge18" class="edge">
+<title>Rmiro:EkphrasticRelation/ekph_rel_1-&gt;Rmiro:expression/just-what-e</title>
+<path fill="none" stroke="black" d="M194.51,-483.17C225.86,-515.88 297.06,-584.65 371.57,-619.09 598.92,-724.16 1346.12,-736.57 1667.44,-736.89"/>
+<polygon fill="black" stroke="black" points="1667.76,-740.39 1677.76,-736.9 1667.76,-733.39 1667.76,-740.39"/>
+<text text-anchor="middle" x="971.8" y="-730.89" font-family="Times,serif" font-size="14.00">miro:hasMediumB</text>
+</g>
+<!-- Rmiro:EkphrasticRelation -->
+<g id="node15" class="node">
+<title>Rmiro:EkphrasticRelation</title>
+<ellipse fill="none" stroke="blue" cx="971.8" cy="-492.09" rx="124.28" ry="18"/>
+<text text-anchor="middle" x="971.8" y="-488.39" font-family="Times,serif" font-size="14.00">miro:EkphrasticRelation</text>
+</g>
+<!-- Rmiro:EkphrasticRelation/ekph_rel_1&#45;&gt;Rmiro:EkphrasticRelation -->
+<g id="edge13" class="edge">
+<title>Rmiro:EkphrasticRelation/ekph_rel_1-&gt;Rmiro:EkphrasticRelation</title>
+<path fill="none" stroke="black" d="M344.99,-470.78C492.73,-475.81 705.18,-483.04 840.58,-487.65"/>
+<polygon fill="black" stroke="black" points="840.49,-491.15 850.6,-487.99 840.73,-484.16 840.49,-491.15"/>
+<text text-anchor="middle" x="550.57" y="-486.89" font-family="Times,serif" font-size="14.00">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</text>
+</g>
+<!-- Rmiro:interpretationAct/interpretationAct_1_ek -->
+<g id="node16" class="node">
+<title>Rmiro:interpretationAct/interpretationAct_1_ek</title>
+<ellipse fill="none" stroke="blue" cx="971.8" cy="-438.09" rx="224.46" ry="18"/>
+<text text-anchor="middle" x="971.8" y="-434.39" font-family="Times,serif" font-size="14.00">miro:interpretationAct/interpretationAct_1_ek</text>
+</g>
+<!-- Rmiro:EkphrasticRelation/ekph_rel_1&#45;&gt;Rmiro:interpretationAct/interpretationAct_1_ek -->
+<g id="edge14" class="edge">
+<title>Rmiro:EkphrasticRelation/ekph_rel_1-&gt;Rmiro:interpretationAct/interpretationAct_1_ek</title>
+<path fill="none" stroke="black" d="M325.61,-455.37C341.13,-454.52 356.67,-453.73 371.57,-453.09 493.81,-447.77 630.17,-444.18 741.89,-441.84"/>
+<polygon fill="black" stroke="black" points="742.01,-445.34 751.93,-441.63 741.86,-438.34 742.01,-445.34"/>
+<text text-anchor="middle" x="550.57" y="-456.89" font-family="Times,serif" font-size="14.00">prov:wasGeneratedBy</text>
+</g>
+<!-- Lartistic technique and artwork description|Datatype: xsd:string -->
+<g id="node17" class="node">
+<title>Lartistic technique and artwork description|Datatype: xsd:string</title>
+<polygon fill="none" stroke="black" points="812.3,-355.09 812.3,-401.09 1131.3,-401.09 1131.3,-355.09 812.3,-355.09"/>
+<text text-anchor="middle" x="971.8" y="-385.89" font-family="Times,serif" font-size="14.00">artistic technique and artwork description</text>
+<polyline fill="none" stroke="black" points="812.3,-378.09 1131.3,-378.09 "/>
+<text text-anchor="middle" x="971.8" y="-362.89" font-family="Times,serif" font-size="14.00">Datatype: xsd:string</text>
+</g>
+<!-- Rmiro:EkphrasticRelation/ekph_rel_1&#45;&gt;Lartistic technique and artwork description|Datatype: xsd:string -->
+<g id="edge15" class="edge">
+<title>Rmiro:EkphrasticRelation/ekph_rel_1-&gt;Lartistic technique and artwork description|Datatype: xsd:string</title>
+<path fill="none" stroke="black" d="M245.55,-448.46C282.58,-439.95 329.36,-430.14 371.57,-424.09 516.1,-403.34 681.68,-391.53 802.11,-385.09"/>
+<polygon fill="black" stroke="black" points="802.35,-388.58 812.15,-384.56 801.98,-381.59 802.35,-388.58"/>
+<text text-anchor="middle" x="550.57" y="-427.89" font-family="Times,serif" font-size="14.00">miro:hasFeature</text>
+</g>
+<!-- Ltypographic element|Datatype: xsd:string -->
+<g id="node18" class="node">
+<title>Ltypographic element|Datatype: xsd:string</title>
+<polygon fill="none" stroke="black" points="889.8,-290.09 889.8,-336.09 1053.8,-336.09 1053.8,-290.09 889.8,-290.09"/>
+<text text-anchor="middle" x="971.8" y="-320.89" font-family="Times,serif" font-size="14.00">typographic element</text>
+<polyline fill="none" stroke="black" points="889.8,-313.09 1053.8,-313.09 "/>
+<text text-anchor="middle" x="971.8" y="-297.89" font-family="Times,serif" font-size="14.00">Datatype: xsd:string</text>
+</g>
+<!-- Rmiro:EkphrasticRelation/ekph_rel_1&#45;&gt;Ltypographic element|Datatype: xsd:string -->
+<g id="edge16" class="edge">
+<title>Rmiro:EkphrasticRelation/ekph_rel_1-&gt;Ltypographic element|Datatype: xsd:string</title>
+<path fill="none" stroke="black" d="M206.37,-447.18C243.08,-425.15 309.47,-388.54 371.57,-371.09 546.57,-321.89 760.39,-312.77 879.49,-311.98"/>
+<polygon fill="black" stroke="black" points="879.67,-315.48 889.66,-311.93 879.64,-308.48 879.67,-315.48"/>
+<text text-anchor="middle" x="550.57" y="-374.89" font-family="Times,serif" font-size="14.00">miro:hasFeature</text>
+</g>
+<!-- Rmiro:expression/chapter&#45;LXXXVIII -->
+<g id="node19" class="node">
+<title>Rmiro:expression/chapter-LXXXVIII</title>
+<ellipse fill="none" stroke="blue" cx="971.8" cy="-666.09" rx="168.17" ry="18"/>
+<text text-anchor="middle" x="971.8" y="-662.39" font-family="Times,serif" font-size="14.00">miro:expression/chapter-LXXXVIII</text>
+</g>
+<!-- Rmiro:EkphrasticRelation/ekph_rel_1&#45;&gt;Rmiro:expression/chapter&#45;LXXXVIII -->
+<g id="edge17" class="edge">
+<title>Rmiro:EkphrasticRelation/ekph_rel_1-&gt;Rmiro:expression/chapter-LXXXVIII</title>
+<path fill="none" stroke="black" d="M243.69,-481.79C389.99,-518.87 741.07,-607.86 895.61,-647.03"/>
+<polygon fill="black" stroke="black" points="894.95,-650.47 905.5,-649.54 896.67,-643.69 894.95,-650.47"/>
+<text text-anchor="middle" x="550.57" y="-603.89" font-family="Times,serif" font-size="14.00">miro:hasMediumA</text>
+</g>
+<!-- Rmiro:expression/chapter&#45;LXXXVIII&#45;&gt;Rmiro:expression/just&#45;what&#45;e -->
+<g id="edge20" class="edge">
+<title>Rmiro:expression/chapter-LXXXVIII-&gt;Rmiro:expression/just-what-e</title>
+<path fill="none" stroke="black" d="M1118.75,-674.9C1267.29,-684.03 1487.37,-698.07 1572.03,-706.09 1617.45,-710.39 1667.48,-716.31 1710.38,-721.76"/>
+<polygon fill="black" stroke="black" points="1710.2,-725.27 1720.56,-723.06 1711.08,-718.32 1710.2,-725.27"/>
+<text text-anchor="middle" x="1393.03" y="-709.89" font-family="Times,serif" font-size="14.00">miro:hasIntermedialReference</text>
+</g>
+<!-- Rmiro:expression/chapter&#45;LXXXVIII&#45;&gt;Rlrmoo:F2 -->
+<g id="edge19" class="edge">
+<title>Rmiro:expression/chapter-LXXXVIII-&gt;Rlrmoo:F2</title>
+<path fill="none" stroke="black" d="M1140.25,-666.91C1495.7,-668.65 2312.05,-672.65 2543.48,-673.78"/>
+<polygon fill="black" stroke="black" points="2543.72,-677.28 2553.74,-673.83 2543.75,-670.28 2543.72,-677.28"/>
+<text text-anchor="middle" x="1817.51" y="-674.89" font-family="Times,serif" font-size="14.00">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</text>
+</g>
+<!-- Rmiro:MediaCombination/media_comb_1 -->
+<g id="node20" class="node">
+<title>Rmiro:MediaCombination/media_comb_1</title>
+<ellipse fill="none" stroke="blue" cx="971.8" cy="-868.09" rx="193.87" ry="18"/>
+<text text-anchor="middle" x="971.8" y="-864.39" font-family="Times,serif" font-size="14.00">miro:MediaCombination/media_comb_1</text>
+</g>
+<!-- Rmiro:MediaCombination/media_comb_1&#45;&gt;Rmiro:expression/just&#45;what&#45;e -->
+<g id="edge23" class="edge">
+<title>Rmiro:MediaCombination/media_comb_1-&gt;Rmiro:expression/just-what-e</title>
+<path fill="none" stroke="black" d="M1040.31,-851.23C1088.5,-839.63 1154.96,-824.5 1214.03,-814.09 1380.73,-784.7 1575.2,-761.5 1697.11,-748.29"/>
+<polygon fill="black" stroke="black" points="1697.65,-751.75 1707.21,-747.19 1696.9,-744.79 1697.65,-751.75"/>
+<text text-anchor="middle" x="1393.03" y="-817.89" font-family="Times,serif" font-size="14.00">miro:hasMediumA</text>
+</g>
+<!-- Rmiro:MediaCombination/media_comb_1&#45;&gt;Rmiro:expression/young&#45;romance&#45;e -->
+<g id="edge24" class="edge">
+<title>Rmiro:MediaCombination/media_comb_1-&gt;Rmiro:expression/young-romance-e</title>
+<path fill="none" stroke="black" d="M1156.1,-862.52C1278.87,-858.99 1444.13,-854.62 1590.03,-852.09 1884.13,-846.97 2226.18,-844.7 2428.82,-843.74"/>
+<polygon fill="black" stroke="black" points="2428.98,-847.24 2438.97,-843.69 2428.95,-840.24 2428.98,-847.24"/>
+<text text-anchor="middle" x="1817.51" y="-855.89" font-family="Times,serif" font-size="14.00">miro:hasMediumB</text>
+</g>
+<!-- Rmiro:MediaCombination -->
+<g id="node21" class="node">
+<title>Rmiro:MediaCombination</title>
+<ellipse fill="none" stroke="blue" cx="1817.51" cy="-894.09" rx="122.68" ry="18"/>
+<text text-anchor="middle" x="1817.51" y="-890.39" font-family="Times,serif" font-size="14.00">miro:MediaCombination</text>
+</g>
+<!-- Rmiro:MediaCombination/media_comb_1&#45;&gt;Rmiro:MediaCombination -->
+<g id="edge21" class="edge">
+<title>Rmiro:MediaCombination/media_comb_1-&gt;Rmiro:MediaCombination</title>
+<path fill="none" stroke="black" d="M1155.87,-873.73C1316.2,-878.67 1545.14,-885.72 1687.1,-890.1"/>
+<polygon fill="black" stroke="black" points="1687.06,-893.6 1697.17,-890.41 1687.28,-886.6 1687.06,-893.6"/>
+<text text-anchor="middle" x="1393.03" y="-889.89" font-family="Times,serif" font-size="14.00">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</text>
+</g>
+<!-- Rmiro:interpretationAct/interpretationAct_1_mc -->
+<g id="node22" class="node">
+<title>Rmiro:interpretationAct/interpretationAct_1_mc</title>
+<ellipse fill="none" stroke="blue" cx="1817.51" cy="-948.09" rx="227.46" ry="18"/>
+<text text-anchor="middle" x="1817.51" y="-944.39" font-family="Times,serif" font-size="14.00">miro:interpretationAct/interpretationAct_1_mc</text>
+</g>
+<!-- Rmiro:MediaCombination/media_comb_1&#45;&gt;Rmiro:interpretationAct/interpretationAct_1_mc -->
+<g id="edge22" class="edge">
+<title>Rmiro:MediaCombination/media_comb_1-&gt;Rmiro:interpretationAct/interpretationAct_1_mc</title>
+<path fill="none" stroke="black" d="M1064.49,-883.94C1109.44,-891.25 1164.45,-899.52 1214.03,-905.09 1347.44,-920.05 1498.08,-930.8 1615.36,-937.81"/>
+<polygon fill="black" stroke="black" points="1615.34,-941.32 1625.53,-938.42 1615.75,-934.33 1615.34,-941.32"/>
+<text text-anchor="middle" x="1393.03" y="-938.89" font-family="Times,serif" font-size="14.00">prov:wasGeneratedBy</text>
+</g>
+</g>
+</svg>
