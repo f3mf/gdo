@@ -34,10 +34,6 @@
 	| gdo-m     | rdam:P30011              | 1967                                                  |
 	| gdo-m     | rdam:P30420              | giangiacomo-feltrinelli-editore                       |
 	| gdo-m     | rdam:P30088              | milan                                                 |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
 	??? note "See TEI encoding"
 		=== "XML/TEI"
 
@@ -67,10 +63,7 @@
 	| giuoco-marca-stella-m | rdam:P30420              | marca-stella                           |
 	| giuoco-marca-stella-m | rdam:P30011              | 1949                                   |
 	| giuoco-marca-stella-m | rdam:P30088              | milan                                  |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
+
 
 === "Baruchello's Collage"
 
@@ -86,10 +79,7 @@
 	| giuoco-baruchello-e | rdae:P20001              | rdaco:1014                               |
 	| giuoco-baruchello-e | lrmoo:R4i_is_embodied_in | giuoco-baruchello-m                      |
 	| giuoco-baruchello-m | rdf:type                 | lrmoo:F3_Manifestation                   |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
+
 
 === "Cassa Sistina"
 
@@ -105,10 +95,7 @@
 	| cassa-sistina-e | rdae:P20001              | rdaco:1021                           |
 	| cassa-sistina-e | lrmoo:R4i_is_embodied_in | cassa-sistina-m                      |
 	| cassa-sistina-m | rdf:type                 | lrmoo:F3_Manifestation               |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
+
 
 === "Vampyr"
 
@@ -128,10 +115,7 @@
 	| vampyr-e  | lrmoo:R4i_is_embodied_in | vampyr-m                                              |
 	| vampyr-m  | rdf:type                 | lrmoo:F3_Manifestation                                |
 	| vampyr-m  | rdam:P30011              | 1932                                                  |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
+
 
 === "Symbols of Transformation"
 
@@ -152,10 +136,7 @@
 	| symbols-transformation-m | rdam:P30011              | 1970                                                           |
 	| symbols-transformation-m | rdam:P30088              | turin                                                          |
 	| symbols-transformation-m | rdam:P30362              | paolo-boringhieri                                              |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
+
 
 === "The Vak-Vak tree"
 
@@ -172,10 +153,7 @@
 	| vak-vak-m | rdam:P30011              | 1730                                 |
 	| vak-vak-m | rdam:P30088              | constantinople                       |
 	| vak-vak-m | rdam:P30362              | muteferrika-ibrahim                  |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
+
 
 === "L'occhio degli occhi"
 
@@ -191,10 +169,7 @@
 	| occhio-degli-occhi-e | rdae:P20001              | rdaco:1014                           |
 	| occhio-degli-occhi-e | lrmoo:R4i_is_embodied_in | occhio-degli-occhi-m                 |
 	| occhio-degli-occhi-m | rdf:type                 | lrmoo:F3_Manifestation               |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
+
 
 === "Marilyn Photo"
 
@@ -211,10 +186,7 @@
 	| marilyn-photo-e | rdae:P20001              | rdaco:1014                           |
 	| marilyn-photo-e | lrmoo:R4i_is_embodied_in | marilyn-photo-m                      |
 	| marilyn-photo-m | rdf:type                 | lrmoo:F3_Manifestation               |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
+
 
 === "Marilyn Song"
 
@@ -233,10 +205,7 @@
 	| marilyn-song-m | rdf:type                 | lrmoo:F3_Manifestation             |
 	| marilyn-song-m | rdam:P30011              | 1952                               |
 	| marilyn-song-m | rdam:P30420              | capitol-records                    |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
+
 
 === "Hamilton's Collage"
 
@@ -253,10 +222,7 @@
 	| just-what-e | rdae:P20001              | rdaco:1014                                             |
 	| just-what-e | lrmoo:R4i_is_embodied_in | just-what-m                                            |
 	| just-what-m | rdf:type                 | lrmoo:F3_Manifestation                                 |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
+
 
 === "Young Romance"
 
@@ -276,10 +242,7 @@
 	| young-romance-e | lrmoo:R4i_is_embodied_in | young-romance-m                                       |
 	| young-romance-m | rdf:type                 | lrmoo:F3_Manifestation                                |
 	| young-romance-m | rdam:P30420              | feature-publications                                  |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
+
 
 === "Go for Your Money"
 
@@ -295,10 +258,7 @@
 	| go-for-your-money-e | lrmoo:R4i_is_embodied_in | go-for-your-money-m                                   |
 	| go-for-your-money-m | rdf:type                 | lrmoo:F3_Manifestation                                |
 	| go-for-your-money-m | rdam:P30011              | 1966                                                  |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
+
 
 === "The Lady from Shanghai"
 
@@ -318,11 +278,16 @@
 	| lady-from-shanghai-e | lrmoo:R4i_is_embodied_in | lady-from-shanghai-m                                  |
 	| lady-from-shanghai-m | rdf:type                 | lrmoo:F3_Manifestation                                |
 	| lady-from-shanghai-m | rdam:P30011              | 1948                                                  |
-	??? turtle "See RDF triples"
-	    ```turtle
-	    --8<-- ""
-	    ```
 
+
+??? turtle "See RDF Dataset"
+
+    ```turtle
+    --8<-- "docs/data/dataset/rdf-turtle/gdo.ttl"
+    ```
+
+
+![](../data/diagrams/rdf-just-what.svg)
 
 <style>
 	table td {
