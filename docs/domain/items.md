@@ -1,12 +1,13 @@
 # Items
 
-Balance variety (GLAM domain) and representativeness for the domain.
+We conducted a selection from the total number of cultural objects described in the ekphrasis and recognized by scholars, using three specific criteria. 
+<br>1. First, the objects had to be published online with their metadata by a cultural institution responsible for their curation. 
+<br>2. Second, the metadata for these objects needed to adhere to a standardized description, ideally following international standards for metadata. 
+<br>3. Third, the selection was required to include a balanced variety of objects from the GLAM domain. 
+<br>Additionally, we took scholarly interpretations into account to guide our search, ensuring that the items included in the sample exemplify intermedial references within the ekphrasis, along with broader external relations that could be modeled.
+<br>Ultimately, the final selection consists of 14 items, including Sanguineti's text itself and two other cultural objects related to <em>Il Giuoco dell’Oca</em> that were not mentioned in the main chapters: 1) the board game of the <em>Game of the Goose</em>, which inspired Sanguineti; 2) Gianfranco Baruchello's <em>Il Giuoco dell’Oca di Edoardo Sanguineti</em> which was conceived to reinterpret the traditional board game in the light of Sanguineti's work. 
 
-We operated a selection within the total amount of cultural objects described in the ekphrasis and recognized by the scholars applying three selection criteria: first, objects have to be published on the web with their metadata by a cultural institution responsible for the curation of the object and the data. Second, objects metadata had to follow a standardized description, preferably some kind of international standards for metadata. Lastly, the selection had to contain a balanced variety of objects coming from the GLAM domain. In addition to these criteria, we also considered scholarly interpretations to guide our search so that items included in the sample exemplify intermedial references within the ekphrasis and even external and wider relations to be modeled. 
-
-The final selection is composed by 14 items, including Sanguineti text itself and two other cultural objects not mentioned within the chapters but related to the work “Il Giuoco dell’Oca” as well: one is the board game “Game of the Goose” from which Sanguineti is inspired by, the other is the artwork by the Italian artist Gianfranco Baruchello titled “Il Giuoco dell’Oca di Edoardo Sanguineti”, conceived after and in honor of his friend’s novel, recreating the traditional board game in a new way. All items are accompanied by metadata following, when possible, international standard, otherwise those built on proprietary schema have been aligned with the a proper standard selected among those used in the corresponding domain.
-
-problems connected with contemporary objects: not described properly - copyright problems - lack of digital reproductions (images), just metadata
+All selected items come with metadata that, when possible, adhere to international standards. For those using proprietary schemas, the metadata has been aligned with an appropriate standard from the corresponding domain.
 
 ## 1. Il Giuoco dell'Oca
 _A novel by Edoardo Sanguineti_

@@ -72,21 +72,24 @@ We believe this practice is justified not only by the specific requirements of o
 
 ## Reuse of referencing ontologies
 
-CiTO
+CiTO, HiCO, PROV-O where reused for the interpretation acts extracted from the three scholars' publications where most of the intermedial relations has been pointed out.
 
-HiCO
+## Formal model for <em>Il Giuoco dell'Oca</em> and the related items, according to LRMOO and RDA ontologies 
 
-PROV-O
-
-## Formal model
-
-### Formal model for <em>Il Giuoco dell'Oca</em> and the related items, according to LRMOO and RDA ontologies 
+The model formalizes three key aspects of the observed domain: 1) the description of the novel; 2) the description of items connected to the novel’s content; 3) the relation’s types (i.e. between text and items, between chapters, and object-object).
+<br>Each item, including Sanguineti's text, is described in its possible implemented entity in WEMI levels, following FRBR model, to which the relative alignment with the RDA classes corresponds.
 
 ![](../data/diagrams/formal-model-wemi.svg)
 
-### Formal model for the intermedial relations connecting text and items
+## Formal model for the intermedial relations, including interpretation acts
+
+All relationships were modeled integrating LRMoo, CIDOC CRM, and RDA to achieve more granularity. Intermedial relations were divided into three subcategories: media transposition, media combination, and media reference. Each category concerns two different media considered under the perspective of WEMI levels and related by a specific connection. 
 
 ![](../data/diagrams/formal-model-relations.svg)
+
+## An example of integrated modelisation: WEMI levels, relations and interpretation act.
+
+The example below formalizes the description of <em>Just what is it that makes today's homes so different, so appealing?</em>, a collage by Richard Hamilton, described within the chapter LXXXVIII and its relationships with the comics <em>Young Romance</em>.
 
 ![](../data/diagrams/example-just-what.svg)
 
