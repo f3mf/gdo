@@ -1,4 +1,4 @@
-# Knowledge Representation
+# Item description
 
 === "Il Giuoco dell'Oca"
 
@@ -279,16 +279,6 @@
 	| lady-from-shanghai-m | rdf:type                 | lrmoo:F3_Manifestation                                |
 	| lady-from-shanghai-m | rdam:P30011              | 1948                                                  |
 
-
-??? turtle "See RDF Dataset"
-
-    ```turtle
-    --8<-- "docs/data/dataset/rdf-turtle/gdo.ttl"
-    ```
-
-<div class="grid cards" markdown>
-- ![](../data/diagrams/rdf-just-what.svg)
-</div>
 
 <style>
 	table td {

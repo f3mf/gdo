@@ -1,13 +1,8 @@
----
-hide:
-  - toc
----
-
 # Mapping
 
 While the cataloging standard dictates which fields are populated and in what manner, the meaning of the fields is intrinsic to the MARC format. For precise alignment, we found it more effective to map the bibliographic record formats themselves rather than the cataloging standards.
 
-## Who
+## Who?
 
 === "Bibliographic Standards"
 
@@ -94,7 +89,7 @@ While the cataloging standard dictates which fields are populated and in what ma
     | _A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation._ | Image Supplier (ext)         |                             |
     +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+-----------------------------+
 
-## What
+## What?
 
 
 
@@ -102,6 +97,6 @@ While the cataloging standard dictates which fields are populated and in what ma
 
 <style>
     table td:first-child, table th:first-child {
-       max-width: 10rem;
+       width: 8rem;
     }
 </style>
