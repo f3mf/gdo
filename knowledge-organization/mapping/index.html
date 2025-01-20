@@ -549,18 +549,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#to-dublin-core-terms" class="md-nav__link">
+  <a href="#who" class="md-nav__link">
     <span class="md-ellipsis">
-      To Dublin Core Terms
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-dublin-core-to-lrm" class="md-nav__link">
-    <span class="md-ellipsis">
-      From Dublin Core to LRM
+      Who
     </span>
   </a>
   
@@ -723,18 +714,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#to-dublin-core-terms" class="md-nav__link">
+  <a href="#who" class="md-nav__link">
     <span class="md-ellipsis">
-      To Dublin Core Terms
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-dublin-core-to-lrm" class="md-nav__link">
-    <span class="md-ellipsis">
-      From Dublin Core to LRM
+      Who
     </span>
   </a>
   
@@ -760,8 +742,293 @@
 
 <h1 id="mapping">Mapping</h1>
 <p>While the cataloging standard dictates which fields are populated and in what manner, the meaning of the fields is intrinsic to the MARC format. For precise alignment, we found it more effective to map the bibliographic record formats themselves rather than the cataloging standards.</p>
-<h2 id="to-dublin-core-terms">To Dublin Core Terms</h2>
-<h2 id="from-dublin-core-to-lrm">From Dublin Core to LRM</h2>
+<h2 id="who">Who</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="bibliographic-standards" name="__tabbed_1" type="radio" /><input id="cultural-heritage-standards" name="__tabbed_1" type="radio" /><input id="visual-media-standards" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="bibliographic-standards">Bibliographic Standards</label><label for="cultural-heritage-standards">Cultural Heritage Standards</label><label for="visual-media-standards">Visual Media Standards</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Dublin Core Terms</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>MARC21 (Library of Congress)</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>UNIMARC (IFLA)</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>MODS (Library of Congress)</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>ISBD(CR) (IFLA)</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>CONSER-RDA</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>dct:creator</strong></p>
+<p><em>An entity primarily responsible for making the resource</em></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>100$a Personal Name</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>700 $a Personal Name - Primary Intellectual Responsibility</p>
+<p>710 $a Corporate Body Name - Primary Intellectual Responsibility</p>
+<p>200 $f First Statement of Responsibility</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>name</p>
+<p>namePart</p>
+<p>role</p>
+<p>roleTerm</p>
+</td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p>rdaw:P10436 has author person (w)</p>
+<p>rdaw:P10451 has artist person (w)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>dct:contributor</strong></p>
+<p><em>An entity responsible for making contributions to the resource.</em></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>508$a Creation/production credits note</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>702 $a Personal Name - Alternative Intellectual Responsibility</p>
+<p>712 $a Corporate Body Name - Alternative Intellectual Responsibility</p>
+<p>200 $g Subsequent Statement of Responsibility</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>name</p>
+<p>namePart</p>
+<p>role</p>
+<p>roleTerm</p>
+</td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p>rdae:P20340 has colourist person (e)</p>
+<p>rdae:P20387 has letterer person (e)</p>
+<p>rdae:P20338 has editor person (e)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>dct:publisher</strong></p>
+<p><em>An entity responsible for making the resource available.</em></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>260$b Name of publisher, distributor</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>210 $c Name of Publisher, Distributor, etc.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>publisher</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>4.2 Name of publisher and/or distributor</p>
+<p>4.3 Statement of function of distributor</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>rdam:P30420 has publisher corporate body (m)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>dct:provenance</strong></p>
+<p><em>A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.</em></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>561$a Ownership and Custodial History</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>703 – Personal Name – Provenance or Ownership</p>
+</td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Dublin Core Terms</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>CDWA (Getty)</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>LIDO (ICOM)</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>OAC (ICCD)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>dct:creator</strong></p>
+<p><em>An entity primarily responsible for making the resource</em></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>4.1. Creator Description</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>cdwalite:displayCreator</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>AU Definizione Culturale:</p>
+<ul>
+<li>AUT Autore</li>
+<li>AAU Altri autori</li>
+<li>ATB Ambito di produzione</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>dct:contributor</strong></p>
+<p><em>An entity responsible for making contributions to the resource.</em>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>4.5. Commissioner</p>
+</td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p>AU Definizione Culturale:</p>
+<ul>
+<li>EDT Editore</li>
+<li>CMM Committenza</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>dct:publisher</strong></p>
+<p><em>An entity responsible for making the resource available.</em></p>
+</td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>dct:provenance</strong></p>
+<p><em>A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.</em></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>24.1. Exhibition/Loan Description</p>
+<p>24.2. Exhibition Title or Name</p>
+<p>24.3. Exhibition Type</p>
+<p>23.1. Provenance Description</p>
+<p>23.1.1. Acquisition Description</p>
+</td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p>TU Condizione giuridica e vincoli:</p>
+<ul>
+<li>ACQ Acquisizione</li>
+</ul>
+<p>DO Fonti e documenti di riferimento:</p>
+<ul>
+<li>MST Mostre</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Dublin Core Terms</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>IPTC (Core + Extension)</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>EN 15907 (CEN)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>dct:creator</strong></p>
+<p><em>An entity primarily responsible for making the resource</em></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Creator (core)</p>
+<p>Creator’s jobtitle (core)</p>
+<p>Image Creator (ext)</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>HasAgent</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>dct:contributor</strong></p>
+<p><em>An entity responsible for making contributions to the resource.</em></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Contributor (ext)</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>HasAgent</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>dct:publisher</strong></p>
+<p><em>An entity responsible for making the resource available.</em></p>
+</td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p>Publication Event: HasAgent</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>dct:provenance</strong></p>
+<p><em>A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.</em></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Source (Supply Chain) (core)</p>
+<p>Image Supplier (ext)</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Record source</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<style>
+    table td:first-child, table th:first-child {
+        width: 8rem;
+    }
+</style>
 
 
 
