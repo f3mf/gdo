@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Data interpretation
 
 ## Theoretical model
