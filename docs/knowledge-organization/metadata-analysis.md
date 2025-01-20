@@ -87,7 +87,7 @@ Italy:
   </p>
 </div>
 
-Centre Pompidou organizes internally its data in RDF as Linked Enterprise Data, but does not expose them[@bermes2014]. The data model appears clearly inspired by CIDOC-CRM event modeling, with some shortcuts to relate some data directly to resources and not events.
+Centre Pompidou organizes internally its data in RDF as Linked Enterprise Data, but does not expose them[@bermes_following_2014]. The data model appears clearly inspired by CIDOC-CRM event modeling, with some shortcuts to relate some data directly to resources and not events.
 
 For this reason, we chose as a representative standard for metadata provided by Centre Pompidou the LIDO schema (Lightweight Information Describing
 Objects), developed by ICOM to make available for publication a variety of information related to both museum objects and their digital representation. LIDO extends CDWA Lite and is underpinned by CIDOC-CRM, inheriting its event-centered approach.
