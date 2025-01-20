@@ -1,0 +1,12 @@
+subject,predicate,object
+marilyn-photo-w,rdf:type,lrmoo:F1_Work
+marilyn-photo-w,rdaw:P10088,"Rooney, Monroe And Anthony"
+marilyn-photo-w,rdaw:P10004,http://vocab.getty.edu/aat/300134989
+marilyn-photo-w,rdaw:P10539,pictorial-parade
+marilyn-photo-w,rdaw:P10219,1952
+marilyn-photo-w,rdaw:P10218,hollywood
+marilyn-photo-w,lrmoo:R3_is_realised_in,marilyn-photo-e
+marilyn-photo-e,rdf:type,lrmoo:F2_Expression
+marilyn-photo-e,rdae:P20001,rdaco:1014
+marilyn-photo-e,lrmoo:R4i_is_embodied_in,marilyn-photo-m
+marilyn-photo-m,rdf:type,lrmoo:F3_Manifestation

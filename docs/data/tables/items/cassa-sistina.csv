@@ -1,0 +1,11 @@
+subject,predicate,object
+cassa-sistina-w,rdf:type,lrmoo:F1_Work
+cassa-sistina-w,rdaw:P10088,Cassa Sistina
+cassa-sistina-w,rdaw:P10004,http://vocab.getty.edu/aat/300047090
+cassa-sistina-w,rdaw:P10427,mario-ceroli
+cassa-sistina-w,rdaw:P10219,1966
+cassa-sistina-w,lrmoo:R3_is_realised_in,cassa-sistina-e
+cassa-sistina-e,rdf:type,lrmoo:F2_Expression
+cassa-sistina-e,rdae:P20001,rdaco:1021
+cassa-sistina-e,lrmoo:R4i_is_embodied_in,cassa-sistina-m
+cassa-sistina-m,rdf:type,lrmoo:F3_Manifestation

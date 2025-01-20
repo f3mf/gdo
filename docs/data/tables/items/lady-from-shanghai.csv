@@ -1,0 +1,15 @@
+subject,predicate,object
+lady-from-shanghai-w,rdf:type,lrmoo:F1_Work
+lady-from-shanghai-w,rdaw:P10088,The Lady From Shanghai
+lady-from-shanghai-w,rdaw:P10004,http://id.loc.gov/authorities/genreForms/gf2011026250
+lady-from-shanghai-w,rdaw:P10418,orson-welles
+lady-from-shanghai-w,rdaw:P10516,columbia-pictures
+lady-from-shanghai-w,rdaw:P10218,united-states
+lady-from-shanghai-w,owl:sameAs,https://www.wikidata.org/wiki/Q1214303
+lady-from-shanghai-w,lrmoo:R3_is_realised_in,lady-from-shanghai-e
+lady-from-shanghai-e,rdf:type,lrmoo:F2_Expression
+lady-from-shanghai-e,rdae:P20006,en-US
+lady-from-shanghai-e,rdae:P20001,rdaco:1023
+lady-from-shanghai-e,lrmoo:R4i_is_embodied_in,lady-from-shanghai-m
+lady-from-shanghai-m,rdf:type,lrmoo:F3_Manifestation
+lady-from-shanghai-m,rdam:P30011,1948

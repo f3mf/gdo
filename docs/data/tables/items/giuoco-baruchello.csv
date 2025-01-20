@@ -1,0 +1,11 @@
+subject,predicate,object
+giuoco-baruchello-w,rdf.type,lrmoo:F1_Work
+giuoco-baruchello-w,rdaw:P10088,Il Giuoco dell'Oca di Edoardo Sanguineti
+giuoco-baruchello-w,rdaw:P10004,https://vocab.getty.edu/aat/300033963
+giuoco-baruchello-w,rdaw:P10451,gianfranco-baruchello
+giuoco-baruchello-w,rdaw:P10219,1967
+giuoco-baruchello-w,lrmoo:R3_is_realised_in,giuoco-baruchello-e
+giuoco-baruchello-e,rdf.type,lrmoo_F2_Expression
+giuoco-baruchello-e,rdae:P20001,rdaco:1014
+giuoco-baruchello-e,lrmoo:R4i_is_embodied_in,giuoco-baruchello-m
+giuoco-baruchello-m,rdf:type,lrmoo:F3_Manifestation

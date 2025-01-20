@@ -1,0 +1,29 @@
+subject,predicate,object
+gdo-w,rdf:type,lrmoo:F1_Work
+gdo-w,rdaw:P10088,Il Giuoco dell'Oca
+gdo-w,rdaw:P10436,edoardo-sanguineti
+gdo-w,rdawd:P10004,http://id.loc.gov/authorities/genreForms/gf2015026020
+gdo-w,lrmoo:R3_is_realised_in,gdo-e
+gdo-e,rdf:type,lrmoo:F2_Expression
+gdo-e,rdae:P20312,Il Giuoco dell'Oca
+gdo-e,rdae:P20001,rdaco:1020
+gdo-e,rdae:P20006,it
+gdo-e,lrmoo:R5_has_component,regole-gioco
+gdo-e,lrmoo:R5_has_component,chapter-LXXXVIII
+gdo-e,lrmoo:R5_has_component,chapter-LXXXVIII
+gdo-e,lrmoo:R5_has_component,chapter-VII
+gdo-e,lrmoo:R5_has_component,chapter-VII
+gdo-e,lrmoo:R5_has_component,chapter-LXXXIII
+gdo-e,lrmoo:R5_has_component,chapter-LXXXIII
+gdo-e,lrmoo:R5_has_component,chapter-I
+gdo-e,lrmoo:R5_has_component,chapter-XXXIX
+gdo-e,lrmoo:R5_has_component,chapter-LXXXIV
+gdo-e,lrmoo:R5_has_component,chapter-CIX
+gdo-e,lrmoo:R5_has_component,chapter-CIX
+gdo-e,lrmoo:R5_has_component,chapter-CIX
+gdo-e,rdae:P20338,valerio-riva
+gdo-e,lrmoo:R4i_is_embodied_in,gdo-m
+gdo-m,rdf:type,lrmoo:F3_Manifestation
+gdo-m,rdam:P30011,1967
+gdo-m,rdam:P30420,giangiacomo-feltrinelli-editore 
+gdo-m,rdam:P30088,milan

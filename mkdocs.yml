@@ -18,7 +18,6 @@ nav:
     - Ontology design: knowledge-organization/formal-model.md
   - Knowledge Representation:
     - RDF production: knowledge-representation/rdf-production.md
-    - TEI conversion: knowledge-representation/tei-conversion.md
 theme:
   name: material
   features:
@@ -108,3 +107,8 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower

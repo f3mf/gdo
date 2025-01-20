@@ -1,0 +1,12 @@
+subject,predicate,object
+vak-vak-w,rdf:type,lrmoo:F1_Work
+vak-vak-w,rdaw:P10088,The Vak-Vak tree
+vak-vak-w,rdaw:P10004,http://vocab.getty.edu/aat/300015578
+vak-vak-w,lrmoo:R3_is_realised_in,vak-vak-e
+vak-vak-e,rdf:type,lrmoo:F2_Expression
+vak-vak-e,rdae:P20001,rdaco:1014
+vak-vak-e,lrmoo:R4i_is_embodied_in,vak-vak-m
+vak-vak-m,rdf:type,lrmoo:F3_Manifestation
+vak-vak-m,rdam:P30011,1730
+vak-vak-m,rdam:P30088,constantinople
+vak-vak-m,rdam:P30362,muteferrika-ibrahim
