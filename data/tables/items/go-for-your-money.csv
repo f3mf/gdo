@@ -1,0 +1,11 @@
+subject,predicate,object
+go-for-your-money-w,rdf:type,lrmoo:F1_Work
+go-for-your-money-w,rdaw:P10088,Go for your money
+go-for-your-money-w,rdaw:P10004,http://id.loc.gov/authorities/genreForms/gf2011026049
+go-for-your-money-w,rdaw:P10451,magdalo-mussio
+go-for-your-money-w,lrmoo:R3_is_realised_in,go-for-your-money-e
+go-for-your-money-e,rdf:type,lrmoo:F2_Expression
+go-for-your-money-e,rdae:P20001,rdaco:1014
+go-for-your-money-e,lrmoo:R4i_is_embodied_in,go-for-your-money-m
+go-for-your-money-m,rdf:type,lrmoo:F3_Manifestation
+go-for-your-money-m,rdam:P30011,1966

@@ -1,0 +1,14 @@
+subject,predicate,object
+marilyn-song-w,rdf:type,lrmoo:F1_Work
+marilyn-song-w,rdaw:P10088,Marilyn
+marilyn-song-w,rdaw:P10004,http://id.worldcat.org/fast/887553
+marilyn-song-w,rdaw:P10442,ray-anthony
+marilyn-song-w,rdaw:P10218,united-states
+marilyn-song-w,lrmoo:R3_is_realised_in,marilyn-song-e
+marilyn-song-e,rdf:type,lrmoo:F2_Expression
+marilyn-song-e,rdae:P20001,rdaco:1011
+marilyn-song-e,rdae:P20006,en-US
+marilyn-song-e,lrmoo:R4i_is_embodied_in,marilyn-song-m
+marilyn-song-m,rdf:type,lrmoo:F3_Manifestation
+marilyn-song-m,rdam:P30011,1952
+marilyn-song-m,rdam:P30420,capitol-records

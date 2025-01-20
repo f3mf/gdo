@@ -1,0 +1,15 @@
+subject,predicate,object
+vampyr-w,rdf:type,lrmoo:F1_Work
+vampyr-w,rdaw:P10088,Vampyr
+vampyr-w,rdaw:P10004,http://id.loc.gov/authorities/genreForms/gf2011026321
+vampyr-w,rdaw:P10418,carl-theodor-dreyer
+vampyr-w,rdaw:P10422,carl-theodor-dreyer
+vampyr-w,rdaw:P10218,france|germany
+vampyr-w,owl:sameAs,https://www.wikidata.org/wiki/Q304923
+vampyr-w,lrmoo:R3_is_realised_in,vampyr-e
+vampyr-e,rdf:type,lrmoo:F2_Expression
+vampyr-e,rdae:P20006,de
+vampyr-e,rdae:P20001,rdaco:1023
+vampyr-e,lrmoo:R4i_is_embodied_in,vampyr-m
+vampyr-m,rdf:type,lrmoo:F3_Manifestation
+vampyr-m,rdam:P30011,1932

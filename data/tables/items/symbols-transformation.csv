@@ -1,0 +1,16 @@
+subject,predicate,object
+symbols-transformation-w,rdf:type,lrmoo:F1_Work
+symbols-transformation-w,rdaw:P10088,Symbols of Transformation
+symbols-transformation-w,rdaw:P10004,http://id.loc.gov/authorities/genreForms/gf2014026074
+symbols-transformation-w,rdaw:P10065,carl-gustav-jung
+symbols-transformation-w,owl:sameAs,https://id.oclc.org/worldcat/entity/E39PCGgM4td7W4Tr3RX7C9PbBP
+symbols-transformation-w,lrmoo:R3_is_realised_in,symbols-transformation-e
+symbols-transformation-e,rdf:type,lrmoo:F2_Expression
+symbols-transformation-e,rdae:P20001,rdaco:1020
+symbols-transformation-e,rdae:P20346,renato-raho
+symbols-transformation-e,rdae:P20006,it
+symbols-transformation-e,lrmoo:R4i_is_embodied_in,symbols-transformation-m
+symbols-transformation-m,rdf:type,lrmoo:F3_Manifestation
+symbols-transformation-m,rdam:P30011,1970
+symbols-transformation-m,rdam:P30088,turin
+symbols-transformation-m,rdam:P30362,paolo-boringhieri

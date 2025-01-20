@@ -1,0 +1,11 @@
+subject,predicate,object
+occhio-degli-occhi-w,rdf:type,lrmoo:F1_Work
+occhio-degli-occhi-w,rdaw:P10088,L'occhio degli occhi
+occhio-degli-occhi-w,rdaw:P10004,http://vocab.getty.edu/aat/300404586
+occhio-degli-occhi-w,rdaw:P10451,carol-rama
+occhio-degli-occhi-w,rdaw:P10219,1967
+occhio-degli-occhi-w,lrmoo:R3_is_realised_in,occhio-degli-occhi-e
+occhio-degli-occhi-e,rdf:type,lrmoo:F2_Expression
+occhio-degli-occhi-e,rdae:P20001,rdaco:1014
+occhio-degli-occhi-e,lrmoo:R4i_is_embodied_in,occhio-degli-occhi-m
+occhio-degli-occhi-m,rdf:type,lrmoo:F3_Manifestation

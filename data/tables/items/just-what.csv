@@ -1,0 +1,12 @@
+subject,predicate,object
+just-what-w,rdf_type,lrmoo:F1_Work
+just-what-w,rdaw:P10088,Just what is it that makes today's homes so appealing?
+just-what-w,rdaw:P10004,https://vocab.getty.edu/aat/300033963
+just-what-w,rdaw:P10451,richard-hamilton
+just-what-w,rdaw:P10219,1956
+just-what-w,owl:sameAs,https://www.wikidata.org/wiki/Q3190307
+just-what-w,lrmoo:R3_is_realised_in,just-what-e
+just-what-e,rdf:type,lrmoo:F2_Expression
+just-what-e,rdae:P20001,rdaco:1014
+just-what-e,lrmoo:R4i_is_embodied_in,just-what-m
+just-what-m,rdf:type,lrmoo:F3_Manifestation
