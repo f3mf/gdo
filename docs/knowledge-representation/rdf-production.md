@@ -2,7 +2,7 @@
 
 === "Il Giuoco dell'Oca"
 
-	Read the [rules](../data/tei/rules.html){:target="_blank"}
+	[Read the rules  :fontawesome-solid-dice:](../data/tei/rules.html){ .md-button .md-button--primary target="_blank" }
 
 	| subject   | predicate                | object                                                |
 	|:----------|:-------------------------|:------------------------------------------------------|
@@ -39,7 +39,7 @@
 	    --8<-- ""
 	    ```
 	??? note "See TEI encoding"
-		=== "TEI"
+		=== "XML/TEI"
 
 			```xml
 			--8<-- "docs/data/tei/rules.xml"

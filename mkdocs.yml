@@ -71,12 +71,6 @@ plugins:
       background: white
       shadow: true
       manual: false
-  - mermaid2:
-      arguments:
-        layout: elk
-        elk:
-          mergeEdges: true
-          nodePlacementStrategy: NETWORK_SIMPLEX
   - social:
       cards_layout_options:
         background_color: #DB1F74
@@ -101,14 +95,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
