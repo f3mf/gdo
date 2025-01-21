@@ -1,6 +1,6 @@
 # Metadata mining and analysis
 
-Review of employed methods, not claiming to be exhaustive because it depends on the cases we encountered.
+In this section we will review the employed methods for metadata collection and analysis, not claiming to be exhaustive because they depends on the cases we encountered.
 
 A good starting point to get an idea of the available data is the [Open GLAM Survey](https://docs.google.com/spreadsheets/d/1WPS-KJptUJ-o8SXtg00llcxq0IKJu8eO6Ege_GrLaNc/htmlview), an ongoing project that documents open access policies in the GLAM (Galleries, Libraries, Archives, and Museums) sector. It includes a spreadsheet that catalogs metadata sources and the associated license.
 
