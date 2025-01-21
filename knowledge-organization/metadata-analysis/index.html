@@ -584,51 +584,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tate" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tate
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#centre-pompidou" class="md-nav__link">
     <span class="md-ellipsis">
       Centre Pompidou
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-archives" class="md-nav__link">
-    <span class="md-ellipsis">
-      In archives
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="In archives">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#archivio-storico-de-la-biennale-di-venezia" class="md-nav__link">
-    <span class="md-ellipsis">
-      Archivio Storico de La Biennale di Venezia
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#british-film-institute-national-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      British Film Institute National Archive
     </span>
   </a>
   
@@ -648,15 +606,6 @@
   
     <nav class="md-nav" aria-label="Non-institutional providers">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#getty-images" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getty Images
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#grand-comics-database" class="md-nav__link">
@@ -952,51 +901,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tate" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tate
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#centre-pompidou" class="md-nav__link">
     <span class="md-ellipsis">
       Centre Pompidou
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#in-archives" class="md-nav__link">
-    <span class="md-ellipsis">
-      In archives
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="In archives">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#archivio-storico-de-la-biennale-di-venezia" class="md-nav__link">
-    <span class="md-ellipsis">
-      Archivio Storico de La Biennale di Venezia
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#british-film-institute-national-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      British Film Institute National Archive
     </span>
   </a>
   
@@ -1016,15 +923,6 @@
   
     <nav class="md-nav" aria-label="Non-institutional providers">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#getty-images" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getty Images
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#grand-comics-database" class="md-nav__link">
@@ -1099,25 +997,29 @@
 </span></code></pre></div>
 <p>So, if available, it is best to rely on the APIs of the institutions, which directly provide the metadata they hold as organized internally. Of the institutions we consulted, Tate, John Carter Brown Libeary, Centre Pompidou and Trentino library system offered this type of service, although it was not always clearly stated. In fact, often the availability of an API is not indicated but can be verified by analyzing the network connections of the item's page when its population depends on the API itself.</p>
 <h2 id="json-embed-parsing">JSON embed parsing</h2>
-<p>Many collection websites rely on server-side rendering (SSRs), meaning that the HTML content—with the metadata related to the item—is delivered to the user's browser directly from the server, rather than generating it dynamically on the client side using JavaScript. However, some expose the source of the data in json format within an element of the HTML, allowing the categories used in the institution's servers to be reconstructed.</p>
+<p>Many collection websites rely on server-side rendering (SSRs), meaning that the HTML content—with the metadata related to the item—is delivered to the user's browser directly from the server, rather than generating it dynamically on the client side. However, some expose the source of the data in json format within an element of the HTML, allowing the categories used in the institution's servers to be reconstructed.</p>
 <h2 id="extraction-from-marc-records">Extraction from MARC records</h2>
 <p>Another incredibly rich source of information for libraries are bibliographic records, traditionally in MARC format. Getting into the record and its specific syntax allows one to understand many aspects of the resource not visible in the HTML rendering for the public.</p>
-<p>We observed that in Italy the preferred syntax is generally UNIMARC, while in the United States it is MARC 21. One way to distinguish the two is to observe the present fields: if there is field 040 it is MARC21, if there is field 100 it is UNIMARC.</p>
+<p>We observed that in Italy the preferred syntax is generally UNIMARC, while in the United States it is MARC 21. One way to distinguish the two is to look for the required fields in the two MARC flavors: if field <code>040</code> is present it is MARC21, if <code>100</code> it is UNIMARC.</p>
 <p>Style sheets are <a href="https://www.loc.gov/standards/mods/mods-conversions.html">available</a> for MARC21 for automatic conversion to semantic formats such as MODS, but caution is needed because there may be local fields used by the library that are not converted and information is lost. A useful tool for converting MARC binary or text files to MARC-XML or other format using style sheets is <a href="https://www.marcofquality.com/w/">MARC Report</a>.</p>
 <h2 id="identifying-cataloging-standards">Identifying cataloging standards</h2>
-<p>Just as in poetry the meter is not the genre, so in metadata the format is not the standard, although they are not entirely unrelated to one another.</p>
+<p>Just as in poetry the meter is not the genre, so in metadata the format is not the standard, although they are not entirely unrelated to one another. In our survey in few cases was the catalographic standard clearly indicated, and we had to adopt a classification method to match the structure and content of the metadata available to us to the standard that came closest to representing it.</p>
 <h3 id="in-libraries">In libraries</h3>
-<p>Clues:</p>
+<p>For libraries, the MARC file allows exact identification of the standard, as its indication is provided in specific fields.</p>
 <ol>
 <li>
-<p>MARC Fields</p>
-<p>In MARC21: 040 $e (Cataloging Source / Description conventions)</p>
-<p><a href="https://www.loc.gov/standards/sourcelist/descriptive-conventions.html">List of abbreviations for descriptive standards</a>.</p>
-<p>In Unimarc: Area 0 della forma del contenuto (SBN MARC tag 181 $a $b) and  Area del tipo di supporto (SBN MARC tag 182 $b) -&gt; if present, REICAT</p>
+<p>MARC Fields:</p>
+<ul>
+<li>
+<p>In MARC21: 040 $e (Cataloging Source / Description conventions). The field provides a controlled vocabulary for indicating the standard, the is list of which is available <a href="https://www.loc.gov/standards/sourcelist/descriptive-conventions.html">here</a>.</p>
 </li>
 <li>
-<p>ISBD conformity</p>
-<p>In Unimarc Leader pos 18 empty if ISBD-compliant, "i" if partially compliant</p>
+<p>In Unimarc: Area 0 della forma del contenuto (SBN MARC tag 181 $a $b) and Area del tipo di supporto (SBN MARC tag 182 $b).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>ISBD conformity: in Unimarc Leader pos 18 empty if ISBD-compliant, "i" if partially compliant.</p>
 </li>
 <li>
 <p>Controlled vocabularies used, such as RDA Carrier Type</p>
@@ -1126,17 +1028,24 @@
 <p>Country and date of record creation</p>
 </li>
 </ol>
+<p>Our survey identified the use of the following standards:</p>
+<ul>
+<li>
 <p>US:</p>
 <ul>
 <li>AACR2: Anglo-American Cataloguing Rules</li>
 <li>DCRM(B): Descriptive Cataloging of Rare Materials (Books)</li>
 <li>RDA: Resource Description and Access</li>
 </ul>
+</li>
+<li>
 <p>Italy:</p>
 <ul>
 <li>RICA: Regole italiane di catalogazione per autori</li>
 <li>REICAT: Regole italiane di catalogazione</li>
-<li>RNA: Regeln zur Erschließung von Nachlässen und Autographen</li>
+<li>RNA: Regeln zur Erschließung von Nachlässen und Autographen (in Trentino)</li>
+</ul>
+</li>
 </ul>
 <h3 id="in-museums">In museums</h3>
 <ol>
@@ -1150,7 +1059,6 @@
 <p>Metadata structure (Centre Pompidou and Tate Data Models)</p>
 </li>
 </ol>
-<h4 id="tate">Tate</h4>
 <h4 id="centre-pompidou">Centre Pompidou</h4>
 <div class="grid-right">
 <p style="margin-top: 0px !important;">
@@ -1158,16 +1066,14 @@
     <a class="glightbox" href="../../data/references/centre-pompidou-data-model-dark.png#only-dark" data-type="image" data-width="100%" data-height="auto" data-title="Overview of the Digital Pompidou data model" data-desc-position="bottom"><img alt="Overview of the Digital Pompidou data model" src="../../data/references/centre-pompidou-data-model-dark.png#only-dark" /></a>
   </p>
 </div>
-<p>Centre Pompidou organizes internally its data in RDF as Linked Enterprise Data, but does not expose them<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. The data model appears clearly inspired by CIDOC-CRM event modeling, with some shortcuts to relate some data directly to resources and not events.</p>
+<p>As an example of the process used, we describe the rationale behind identifying the standard for a contemporary art museum that does not provide it.
+Centre Pompidou organizes internally its data in RDF as Linked Enterprise Data, but does not expose them<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. The data model appears clearly inspired by CIDOC-CRM event modeling, with some shortcuts to relate some data directly to resources and not events.</p>
 <p>For this reason, we chose as a representative standard for metadata provided by Centre Pompidou the LIDO schema (Lightweight Information Describing
 Objects), developed by ICOM to make available for publication a variety of information related to both museum objects and their digital representation. LIDO extends CDWA Lite and is underpinned by CIDOC-CRM, inheriting its event-centered approach.</p>
-<h3 id="in-archives">In archives</h3>
-<h4 id="archivio-storico-de-la-biennale-di-venezia">Archivio Storico de La Biennale di Venezia</h4>
-<h4 id="british-film-institute-national-archive">British Film Institute National Archive</h4>
 <h3 id="non-institutional-providers">Non-institutional providers</h3>
-<h4 id="getty-images">Getty Images</h4>
+<p>The heterogeneous nature of the resources under consideration—consumer items related to pop culture, niche contemporary art—led us to rely in part on non-institutional sources. However, even in this case it is possible to check whether the descriptive approach is sufficiently authoritative and deserves confidence.</p>
 <h4 id="grand-comics-database">Grand Comics Database</h4>
-<p>The way they treat the descriptive layers of comics magazines is essentially aligned with LRM.</p>
+<p>The metadata source for comics is the reference site for the comics community, has a steering committee and precise guidelines for compiling records. We found that the way they treat the descriptive layers of comics magazines aligns to the cataloging standards for Serial resources in the United States.</p>
 <h4 id="capti">Capti</h4>
 <p>Capti is a web portal developed within the Italian national project <em>Spreading visual culture: contemporary art through periodicals, archives and illustrations</em> (2013-2016), coordianted by Giorgio Bacci of Scuola Normale Superiore of Pisa. It involved meritorious work on the detailed description of periodical instalments down to single illustrations, flyers, and advertisements. For these metadata we identified the International Standard Bibliographic Description for Serials and Other Continuing Resources (ISBD(CR)) as providing a sufficiently granular descriptive framework, which is the same standard <a href="https://cultura.comune.fi.it/system/files/2018-12/PERIODICI_xSola_letturax_0.pdf">used</a> by the Gabinetto scientifico-letterario G. P. Vieusseux in Florence, an institution that among its activities similarly deals with digitization of modern periodicals. This project is noteworthy for the innovative approach at the time: through collaboration with source libraries, it enhanced standard bibliographic descriptions of periodicals—traditionally excluding content—by integrating analytically described digitizations.</p>
 <h2 id="overview">Overview</h2>
