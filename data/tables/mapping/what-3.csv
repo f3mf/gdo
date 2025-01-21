@@ -1,0 +1,41 @@
+Dublin Core Terms,IPTC (Core + Extension),EN 15907 (CEN)
+"**dct:title**
+
+_A name given to the resource._",Title (core),Title
+"**dct:subject**
+
+_A topic of the resource._","Keywords (core)
+
+Scene Code (core)
+
+CV-Term About Image (ext)","Subject Terms
+
+HasAsSubject"
+"**dct:type**
+
+_The nature or genre of the resource. Type includes terms describing general categories, functions, genres, or aggregation levels for content._",Genre (ext),Subject Terms
+"**dct:language**
+
+_A language of the resource._",,Language
+"**dct:medium**
+
+_The material or physical carrier of the resource._",Digital Source Type (ext),Format
+"**dct:isReferencedBy**
+
+_A related resource that references, cites, or otherwise points to the described resource._",,HasOtherRelation
+"**dct:isPartOf**
+
+_A related resource in which the described resource is physically or logically included._",,HasOtherRelation
+"**dct:relation**
+
+_A related resource._","Artwork or Object in the Image (ext)
+
+Name of Organisation Featured in the Image (ext)
+
+Event Name (ext)
+
+Location Shown in the Image (ext)
+
+Person Shown in the Image (ext)
+
+Product Shown in the Image (ext)",HasOtherRelation

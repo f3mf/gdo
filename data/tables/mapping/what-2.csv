@@ -1,0 +1,58 @@
+Dublin Core Terms,CDWA (Getty),LIDO (ICOM),OAC (ICCD)
+"**dct:title**
+
+_A name given to the resource._","
+3.1. Title Text",cdwalite:title,"OG Oggetto:
+
+- SGT Identificazione titolo/soggetto"
+"**dct:subject**
+
+_A topic of the resource._","2.1. Classification Term
+
+5.2. Styles/Periods Indexing Terms
+
+16.2. General Subject Terms","cdwalite:classification
+
+cdwalite:subjectTerm
+   
+cdwalite:style","OG Oggetto:
+
+- SGT Identificazione titolo/soggetto"
+"**dct:type**
+
+_The nature or genre of the resource. Type includes terms describing general categories, functions, genres, or aggregation levels for content._","
+1.2. Object/Work Type",cdwalite:objectWorkType,"OG Oggetto:
+
+- OGT Oggetto"
+"**dct:language**
+
+_A language of the resource._",,,
+"**dct:medium**
+
+_The material or physical carrier of the resource._",7.5. Materials/Techniques Name,cdwalite:termMaterialsTech,"MT Dati tecnici:
+
+- MTC Materiali/Allestimento"
+"**dct:isReferencedBy**
+
+_A related resource that references, cites, or otherwise points to the described resource._","27.1. Citations for Sources
+
+19.1. Critical Comment",cdwalite:recordSource,"DO Fonti e documenti di riferimento:
+
+- BIB Bibliografia"
+"**dct:isPartOf**
+
+_A related resource in which the described resource is physically or logically included._",,,"RV Relazioni:
+
+- RVE Struttura complessa"
+"**dct:relation**
+
+_A related resource._",20.1. Related Work Label/Identification,"cdwalite:labelRelatedWork
+
+cdwalite:locRelatedWork","RV Relazioni:
+
+- RSE  Relazioni dirette
+- ROZ Altre relazioni
+
+RO Rapporto:
+
+- ROF Rapporto opera finale/originale"
