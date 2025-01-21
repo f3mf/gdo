@@ -1,0 +1,15 @@
+Dublin Core Terms,CDWA (Getty),LIDO (ICOM),OAC (ICCD)
+"Place of creation
+
+**dct:spatial**
+
+_The spatial topic or applicability of the resource, or jurisdiction under which the resource is relevant._",4.3. Creation Place/Original Location,cdwalite:locationName (type: creationLocation),"LA Altre localizzazioni:
+
+- TCL Tipo di localizzazione
+"
+"Place of publication
+
+**dct:spatial**",,,
+"Current location
+
+**dct:spatial**",17.2.1. Building/Site,cdwalite:locationName (type: current/former ArchitecturalContext),LC Localizzazione

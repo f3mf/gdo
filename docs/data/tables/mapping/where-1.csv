@@ -1,0 +1,20 @@
+Dublin Core Terms,MARC21 (Library of Congress),UNIMARC (IFLA),MODS (Library of Congress),ISBD(CR) (IFLA),CONSER-RDA
+"Place of creation
+
+**dct:spatial**
+
+_The spatial topic or applicability of the resource, or jurisdiction under which the resource is relevant._",,,originInfo,,rdaw:P10218 has place of origin of work (w)
+"Place of publication
+
+**dct:spatial**","260$a Place of publication, distribution, etc.
+
+260$e Place of manufacture","102$a Country of Publication 
+
+210$a Place of Publication, Distribution, etc.","place
+
+placeTerm","4.1 Place of publication and/or distribution
+
+4.5 Place of printing or manufacture",rdam:P30088 has place of publication (m)
+"Current location
+
+**dct:spatial**",852 Location,335 Location of originals/reproductions,,,

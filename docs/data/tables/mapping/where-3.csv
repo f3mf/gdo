@@ -1,0 +1,12 @@
+Dublin Core Terms,IPTC (Core + Extension),EN 15907 (CEN)
+"Place of creation
+
+**dct:spatial**
+
+_The spatial topic or applicability of the resource, or jurisdiction under which the resource is relevant._",Location created (ext),Country of Reference
+"Place of publication
+
+**dct:spatial**",,Publication Event
+"Current location
+
+**dct:spatial**",,

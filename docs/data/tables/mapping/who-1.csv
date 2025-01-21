@@ -1,11 +1,11 @@
 Dublin Core Terms,MARC21 (Library of Congress),UNIMARC (IFLA),MODS (Library of Congress),ISBD(CR) (IFLA),CONSER-RDA
 "**dct:creator**
 
-_An entity primarily responsible for making the resource_",100$a Personal Name,"700 $a Personal Name - Primary Intellectual Responsibility
+_An entity primarily responsible for making the resource_",100$a Personal Name,"200 $f First Statement of Responsibility
 
-710 $a Corporate Body Name - Primary Intellectual Responsibility
+700 $a Personal Name - Primary Intellectual Responsibility
 
-200 $f First Statement of Responsibility","name
+710 $a Corporate Body Name - Primary Intellectual Responsibility","name
 
 namePart
 
@@ -16,11 +16,11 @@ roleTerm",,"rdaw:P10436 has author person (w)
 rdaw:P10451 has artist person (w)"
 "**dct:contributor**
 
-_An entity responsible for making contributions to the resource._",508$a Creation/production credits note,"702 $a Personal Name - Alternative Intellectual Responsibility
+_An entity responsible for making contributions to the resource._",508$a Creation/production credits note,"200 $g Subsequent Statement of Responsibility
 
-712 $a Corporate Body Name - Alternative Intellectual Responsibility
+702 $a Personal Name - Alternative Intellectual Responsibility
 
-200 $g Subsequent Statement of Responsibility ","name
+712 $a Corporate Body Name - Alternative Intellectual Responsibility","name
 
 namePart
 
@@ -35,7 +35,9 @@ rdae:P20338 has editor person (e)"
 
 _An entity responsible for making the resource available._","260$b Name of publisher, distributor","210 $c Name of Publisher, Distributor, etc.",publisher,"4.2 Name of publisher and/or distributor
 
-4.3 Statement of function of distributor",rdam:P30420 has publisher corporate body (m)
+4.3 Statement of function of distributor
+
+4.6 Name of printer or manufacturer",rdam:P30420 has publisher corporate body (m)
 "**dct:provenance**
 
-_A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation._",561$a Ownership and Custodial History,703 – Personal Name – Provenance or Ownership,,,
+_A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation._",561$a Ownership and Custodial History,703 Personal Name – Provenance or Ownership,,,

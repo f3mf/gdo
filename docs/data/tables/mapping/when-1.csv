@@ -1,0 +1,13 @@
+Dublin Core Terms,MARC21 (Library of Congress),UNIMARC (IFLA),MODS (Library of Congress),ISBD(CR) (IFLA),CONSER-RDA
+"**dct:created**
+
+_Date of creation of the resource._",,,originInfo,,
+"**dct:issued**
+
+_Date of formal issuance of the resource._","260$c Date of production, distribution etc.
+
+260$g Date of manufacture","210 $d Date of Publication, distribution, etc.
+
+210$h Date of Manufacture",dateIssued,"4.4 Date of publication and/or distribution
+
+4.7 Date of printing or manufacture",rdam:P30011 has date of publication (m)

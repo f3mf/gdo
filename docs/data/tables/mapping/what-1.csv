@@ -1,0 +1,47 @@
+Dublin Core Terms,MARC21 (Library of Congress),UNIMARC (IFLA),MODS (Library of Congress),ISBD(CR) (IFLA),CONSER-RDA
+"**dct:title**
+
+_A name given to the resource._",245$a Title,200 Title,"titleInfo
+
+title",1.1 Title proper,"rdaw:P10223 has preferred title of work (w)
+
+rdam:P30156 has title proper (m)"
+"**dct:subject**
+
+_A topic of the resource._",6XX Subject Access Fields-General Information,6XX Subject Analysis,"subject
+
+topic",,rdaw:P10256 has subject (w)
+"**dct:type**
+
+_The nature or genre of the resource. Type includes terms describing general categories, functions, genres, or aggregation levels for content._",366 Content Type,"145 Content Type of Expression
+
+231$c Form of work
+
+608 Form or Genre of Work","genre
+
+typeOfResource",1.2 General material designation,rdaw:P10004 has category of work (w)
+"**dct:language**
+
+_A language of the resource._",546 Language Note,101$a Language of the Item,"language
+
+languageTerm",,rdae:P20006 has language of expression (e)
+"**dct:medium**
+
+_The material or physical carrier of the resource._",340 - Physical Medium,336 Type of Electronic Resource Note,"physicalDescription
+
+form",5.1 Specific material designation and extent,"rdam:P30456 has colour content (m)
+
+rdam:P30169 has dimensions (m)
+
+rdam:P30304 has material (m)
+
+rdam:P30309 has type of binding (m)"
+"**dct:isReferencedBy**
+
+_A related resource that references, cites, or otherwise points to the described resource._","504$a Bibliography, Etc. Note",305 Note/Edition & Bibliographic History,,,
+"**dct:isPartOf**
+
+_A related resource in which the described resource is physically or logically included._",760 Main Series Entry,410 Series,,6.1 Title proper of series or sub-series,rdaw:P10102 is issue of (w)
+"**dct:relation**
+
+_A related resource._",787 Other Relationship Entry,300 General Note,relatedItem,,rdaw:P10191 is continued by work (sw)
