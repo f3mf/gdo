@@ -6,7 +6,7 @@ A good starting point to get an idea of the available data is the [Open GLAM Sur
 
 ## Leveraging APIs
 
-Having access to metadata in its raw form, typically a JSON file, can offer great insights into its underlying structure, the descriptive fields used, and additional information beyond that visible on online collection websites.
+Having access to metadata in its raw form, typically a JSON file outputted from a server or a bibliographic record, can offer great insights into its underlying structure, the descriptive fields used, and additional information beyond that visible on online collection websites.
 
 Some collection management software offers compatibility with the [Open Archives Initiative Protocol for Metadata Harvesting](https://www.openarchives.org/pmh/) (OAI-PMH), a protocol that enables repositories to expose their metadata in a standardized way for aggregation purposes. It relies on Dublin Core as a lingua franca of exchange, with the drawback that the simplification of structured records can lead to the conflation of distinct fields, where the original context of the data can no longer be traced.
 
@@ -22,51 +22,53 @@ Some collection management software offers compatibility with the [Open Archives
 </oai_dc:dc>
 ```
 
+So, if available, it is best to rely on the APIs of the institutions, which directly provide the metadata they hold as organized internally. Of the institutions we consulted, Tate, John Carter Brown Libeary, Centre Pompidou and Trentino library system offered this type of service, although it was not always clearly stated. In fact, often the availability of an API is not indicated but can be verified by analyzing the network connections of the item's page when its population depends on the API itself.
+
 ## JSON embed parsing
 
-For SSRs websites.
+Many collection websites rely on server-side rendering (SSRs), meaning that the HTML content—with the metadata related to the item—is delivered to the user's browser directly from the server, rather than generating it dynamically on the client side. However, some expose the source of the data in json format within an element of the HTML, allowing the categories used in the institution's servers to be reconstructed.
 
 ## Extraction from MARC records
 
-In Italy it is mainly used UNIMARC, in the US MARC21. If there is field 040 it is MARC21, if there is field 100 it is UNIMARC.
+Another incredibly rich source of information for libraries are bibliographic records, traditionally in MARC format. Getting into the record and its specific syntax allows one to understand many aspects of the resource not visible in the HTML rendering for the public.
+
+We observed that in Italy the preferred syntax is generally UNIMARC, while in the United States it is MARC 21. One way to distinguish the two is to look for the required fields in the two MARC flavors: if field `040` is present it is MARC21, if `100` it is UNIMARC.
 
 Style sheets are [available](https://www.loc.gov/standards/mods/mods-conversions.html) for MARC21 for automatic conversion to semantic formats such as MODS, but caution is needed because there may be local fields used by the library that are not converted and information is lost. A useful tool for converting MARC binary or text files to MARC-XML or other format using style sheets is [MARC Report](https://www.marcofquality.com/w/).
 
 ## Identifying cataloging standards
 
-Just as in poetry the meter is not the genre, so in metadata the format is not the standard, although they are not entirely unrelated to one another.
+Just as in poetry the meter is not the genre, so in metadata the format is not the standard, although they are not entirely unrelated to one another. In our survey in few cases was the catalographic standard clearly indicated, and we had to adopt a classification method to match the structure and content of the metadata available to us to the standard that came closest to representing it.
 
 ### In libraries
 
-Clues:
+For libraries, the MARC file allows exact identification of the standard, as its indication is provided in specific fields.
 
-1. MARC Fields
+1. MARC Fields:
 
-    In MARC21: 040 $e (Cataloging Source / Description conventions)
+    - In MARC21: 040 $e (Cataloging Source / Description conventions). The field provides a controlled vocabulary for indicating the standard, the is list of which is available [here](https://www.loc.gov/standards/sourcelist/descriptive-conventions.html).
 
-    [List of abbreviations for descriptive standards](https://www.loc.gov/standards/sourcelist/descriptive-conventions.html).
+    - In Unimarc: Area 0 della forma del contenuto (SBN MARC tag 181 $a $b) and Area del tipo di supporto (SBN MARC tag 182 $b).
 
-    In Unimarc: Area 0 della forma del contenuto (SBN MARC tag 181 $a $b) and  Area del tipo di supporto (SBN MARC tag 182 $b) -> if present, REICAT
-
-2. ISBD conformity
-    
-    In Unimarc Leader pos 18 empty if ISBD-compliant, "i" if partially compliant
+2. ISBD conformity: in Unimarc Leader pos 18 empty if ISBD-compliant, "i" if partially compliant.
 
 3. Controlled vocabularies used, such as RDA Carrier Type
 
 4. Country and date of record creation
 
-US:
+Our survey identified the use of the following standards:
 
-- AACR2: Anglo-American Cataloguing Rules
-- DCRM(B): Descriptive Cataloging of Rare Materials (Books)
-- RDA: Resource Description and Access
+- US:
 
-Italy:
+    - AACR2: Anglo-American Cataloguing Rules
+    - DCRM(B): Descriptive Cataloging of Rare Materials (Books)
+    - RDA: Resource Description and Access
 
-- RICA: Regole italiane di catalogazione per autori
-- REICAT: Regole italiane di catalogazione
-- RNA: Regeln zur Erschließung von Nachlässen und Autographen
+- Italy:
+
+    - RICA: Regole italiane di catalogazione per autori
+    - REICAT: Regole italiane di catalogazione
+    - RNA: Regeln zur Erschließung von Nachlässen und Autographen (in Trentino)
 
 ### In museums
 
@@ -75,8 +77,6 @@ Italy:
 2. Specific field names ("notizie_storico_critiche" for ICCD-OAC)
 
 3. Metadata structure (Centre Pompidou and Tate Data Models)
-
-#### Tate
 
 #### Centre Pompidou
 
@@ -87,24 +87,19 @@ Italy:
   </p>
 </div>
 
+As an example of the process used, we describe the rationale behind identifying the standard for a contemporary art museum that does not provide it.
 Centre Pompidou organizes internally its data in RDF as Linked Enterprise Data, but does not expose them[@bermes2014]. The data model appears clearly inspired by CIDOC-CRM event modeling, with some shortcuts to relate some data directly to resources and not events.
 
 For this reason, we chose as a representative standard for metadata provided by Centre Pompidou the LIDO schema (Lightweight Information Describing
 Objects), developed by ICOM to make available for publication a variety of information related to both museum objects and their digital representation. LIDO extends CDWA Lite and is underpinned by CIDOC-CRM, inheriting its event-centered approach.
 
-### In archives
-
-#### Archivio Storico de La Biennale di Venezia
-
-#### British Film Institute National Archive
-
 ### Non-institutional providers
 
-#### Getty Images
+The heterogeneous nature of the resources under consideration—consumer items related to pop culture, niche contemporary art—led us to rely in part on non-institutional sources. However, even in this case it is possible to check whether the descriptive approach is sufficiently authoritative and deserves confidence.
 
 #### Grand Comics Database
 
-The way they treat the descriptive layers of comics magazines is essentially aligned with LRM.
+The metadata source for comics is the reference site for the comics community, has a steering committee and precise guidelines for compiling records. We found that the way they treat the descriptive layers of comics magazines aligns to the cataloging standards for Serial resources in the United States.
 
 #### Capti
 

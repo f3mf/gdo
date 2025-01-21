@@ -7,4 +7,6 @@ The project objective is to analyze a specific domain within contemporary litera
 
 The following schema illustrates the workflow for the development of the project, starting from the analysis of a chosen domain to the representation and production of new data. Specifically, it emphasizes iterative and formal processes with the objective of transforming raw metadata and domain knowledge into a structured, reusable knowledge graph, leveraging ontology design and data modeling principles.
 
-![](data/diagrams/workflow.svg)
+<div class="grid cards" markdown>
+- ![](data/diagrams/workflow.svg)
+</div>
