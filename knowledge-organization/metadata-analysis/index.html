@@ -1101,7 +1101,8 @@
 <h2 id="json-embed-parsing">JSON embed parsing</h2>
 <p>Many collection websites rely on server-side rendering (SSRs), meaning that the HTML content—with the metadata related to the item—is delivered to the user's browser directly from the server, rather than generating it dynamically on the client side using JavaScript. However, some expose the source of the data in json format within an element of the HTML, allowing the categories used in the institution's servers to be reconstructed.</p>
 <h2 id="extraction-from-marc-records">Extraction from MARC records</h2>
-<p>In Italy it is mainly used UNIMARC, in the US MARC21. If there is field 040 it is MARC21, if there is field 100 it is UNIMARC.</p>
+<p>Another incredibly rich source of information for libraries are bibliographic records, traditionally in MARC format. Getting into the record and its specific syntax allows one to understand many aspects of the resource not visible in the HTML rendering for the public.</p>
+<p>We observed that in Italy the preferred syntax is generally UNIMARC, while in the United States it is MARC 21. One way to distinguish the two is to observe the present fields: if there is field 040 it is MARC21, if there is field 100 it is UNIMARC.</p>
 <p>Style sheets are <a href="https://www.loc.gov/standards/mods/mods-conversions.html">available</a> for MARC21 for automatic conversion to semantic formats such as MODS, but caution is needed because there may be local fields used by the library that are not converted and information is lost. A useful tool for converting MARC binary or text files to MARC-XML or other format using style sheets is <a href="https://www.marcofquality.com/w/">MARC Report</a>.</p>
 <h2 id="identifying-cataloging-standards">Identifying cataloging standards</h2>
 <p>Just as in poetry the meter is not the genre, so in metadata the format is not the standard, although they are not entirely unrelated to one another.</p>
