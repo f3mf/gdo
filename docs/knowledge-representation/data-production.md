@@ -1,6 +1,7 @@
 # Data production
 
-Snippets of the script used for the conversion from CSV data to RDF data, using csv module and RDFLib library of Python. 
+Snippets of the script used for the conversion from CSV data to RDF data, using csv module and RDFLib library of Python.
+
 <br>Snippet of the script for the conversion of <em>Il Giuoco dell'Oca</em> at Work WEMI level.
 
 ```python title="conversion.py"  linenums="1"
