@@ -72,7 +72,7 @@ We believe this practice is justified not only by the specific requirements of o
 
 ## Reuse of referencing ontologies
 
-CiTO, HiCO, PROV-O where reused for the interpretation acts extracted from the three scholars' publications where most of the intermedial relations has been pointed out.
+CiTO, HiCO, PROV-O were reused for the interpretation acts extracted from the three scholars' publications where most of the intermedial relations have been pointed out.
 
 ## Formal model for <em>Il Giuoco dell'Oca</em> and the related items, according to LRMOO and RDA ontologies 
 
